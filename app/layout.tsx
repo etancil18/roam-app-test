@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { SupabaseProvider } from '../components/SupabaseProvider'
-import Link from 'next/link'
+import Navbar from '../components/Navbar'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -25,13 +25,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body
         className={`min-h-screen bg-white text-black antialiased ${geistSans.variable} ${geistMono.variable}`}
       >
-        <SupabaseProvider>
-          <nav className="bg-black text-white px-6 py-4 flex gap-6">
-            <Link href="/">Map</Link>
-            <Link href="/favorites">Favorites</Link>
-          </nav>
-          {children}
-        </SupabaseProvider>
+        <Navbar />
+        <SupabaseProvider>{children}</SupabaseProvider>
       </body>
     </html>
   )
