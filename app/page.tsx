@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
-import { UserRoute } from '../types/roam'
+import { UserRoute, Stop } from '../types/roam'
 
 
 export default function Page() {
@@ -58,10 +58,10 @@ export default function Page() {
               <h2 className="text-lg font-semibold mb-2">{r.name}</h2>
               {r.route_data?.stops?.length > 0 ? (
                 <ul className="space-y-1 pl-4 border-l-4 border-blue-500">
-                  {r.route_data.stops.map((stop: any, idx: number) => (
+                  {r.route_data?.stops?.map((loc: Stop, idx: number) => (
                     <li key={idx} className="text-sm">
-                      <span className="font-medium">{stop.name}</span>
-                      {stop.address && ` — ${stop.address}`}
+                      <span className="font-medium">{loc.name}</span>
+                      {loc.address && ` — ${loc.address}`}
                     </li>
                   ))}
                 </ul>
