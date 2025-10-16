@@ -2,10 +2,12 @@
 
 import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
+import { UserRoute } from '../types/roam'
+
 
 export default function Page() {
   const [userId, setUserId] = useState<string | null>(null)
-  const [routes, setRoutes] = useState<any[]>([])
+  const [routes, setRoutes] = useState<UserRoute[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -51,7 +53,7 @@ export default function Page() {
         <p>No saved crawls yet.</p>
       ) : (
         <ul className="space-y-6">
-          {routes.map((r) => (
+          {routes.map((r: UserRoute) => (
             <li key={r.id} className="bg-gray-100 p-6 rounded-xl shadow">
               <h2 className="text-lg font-semibold mb-2">{r.name}</h2>
               {r.route_data?.stops?.length > 0 ? (
