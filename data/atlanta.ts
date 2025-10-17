@@ -16538,6 +16538,6 @@ const atlantaData = [
   "price": "$",
   "duration": 1
 }
-]
+];
 
 export default atlantaData;

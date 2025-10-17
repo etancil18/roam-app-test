@@ -1,8 +1,10 @@
+'use client';
+
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { useEffect } from "react";
-import atlantaData from "@/data/atlanta";
+import atlantaData from "../../data/atlanta";
 
 const defaultIcon = L.icon({
   iconUrl: "https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon.png",
@@ -17,7 +19,6 @@ L.Marker.prototype.options.icon = defaultIcon;
 
 export default function MapCanvas() {
   useEffect(() => {
-    // Prevent double-loading of CSS
     import("leaflet/dist/leaflet.css");
   }, []);
 
