@@ -6,16 +6,21 @@ export type HoursNumeric = {
 
 export type Venue = {
   name: string;
+  vibe?: string;
+  type?: string;
   lat: number;
   lon: number;
   link: string;
-  vibe?: string;
+  cover?: string;
+  openNow?: string | boolean;
+  hours?: string[];
+  dateEvents?: { date: string; title: string; time: string }[];
   hoursNumeric?: HoursNumeric;
   dayParts?: Record<string, string>;
-  // add other optional fields as needed, e.g.:
-  duration?: number;
-  type?: string;
-  energyRamp?: number;
   timeCategory?: string;
-  // etc.
+  energyRamp?: number;
+  tags?: string;           
+  price?: string;           
+  neighborhood?: string;    
+  duration?: number;
 };

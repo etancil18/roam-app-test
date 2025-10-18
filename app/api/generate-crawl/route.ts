@@ -1,24 +1,20 @@
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server';
+import { generateRoute } from '@/lib/routeEngine';
+import { Venue } from '@/types/venue';
 
-export async function POST(request: Request) {
-  const body = await request.json()
+export async function POST(req: NextRequest) {
+  const body = await req.json();
+  const { venues, options } = body as { venues: Venue[]; options?: any };
 
-  const { tags, tier } = body
+  if (!venues || !Array.isArray(venues)) {
+    return NextResponse.json({ error: 'Invalid venues' }, { status: 400 });
+  }
 
-  const route = [
-    {
-      name: 'Sister Louisa’s Church',
-      lat: 33.7561,
-      lon: -84.3836,
-      instagram: '@sisterlouisas',
-    },
-    {
-      name: 'MJQ Concourse',
-      lat: 33.7716,
-      lon: -84.3516,
-      instagram: '@mjqconcourse',
-    },
-  ]
-
-  return NextResponse.json({ route })
+  try {
+    const route = generateRoute(venues, options);
+    return NextResponse.json({ route });
+  } catch (err) {
+    console.error('Route generation error:', err);
+    return NextResponse.json({ error: 'Could not generate route' }, { status: 500 });
+  }
 }
