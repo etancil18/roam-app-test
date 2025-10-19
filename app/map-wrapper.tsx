@@ -25,12 +25,16 @@ function CrawlControl({
   venues,
   onRoute,
   durationTarget,
+  selectedTheme,
 }: {
   venues: Venue[];
   onRoute: (route: Venue[]) => void;
   durationTarget?: number;
+  selectedTheme: string;
 }) {
   const [loading, setLoading] = useState(false);
+  const [route, setRoute] = useState<Venue[] | null>(null);
+  const [copied, setCopied] = useState(false);
 
   async function handleGenerateCrawl() {
     setLoading(true);
@@ -38,10 +42,18 @@ function CrawlControl({
       const resp = await fetch("/api/generate-crawl", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ venues, options: { maxStops: 10, maxDuration: durationTarget } }),
+        body: JSON.stringify({
+          venues,
+          options: {
+            maxStops: 10,
+            maxDuration: durationTarget,
+            theme: selectedTheme.trim().toLowerCase(),
+          },
+        }),
       });
       const j = await resp.json();
       if (j.route) {
+        setRoute(j.route);
         onRoute(j.route);
       } else {
         console.error("No route in response", j);
@@ -53,15 +65,81 @@ function CrawlControl({
     }
   }
 
+  function handleSave() {
+    if (!route || route.length < 2) return alert("Need at least 2 stops to save.");
+    const existing = localStorage.getItem("savedRoutes");
+    const routes = existing ? JSON.parse(existing) : [];
+    routes.push([...route]);
+    localStorage.setItem("savedRoutes", JSON.stringify(routes));
+    alert("Saved to favorites (local only for now)");
+  }
+
+  function handleExport() {
+    if (!route) return;
+    const base = "https://www.google.com/maps/dir/";
+    const waypoints = route.map((r) => `${r.lat},${r.lon}`).join("/");
+    window.open(`${base}${waypoints}`, "_blank");
+  }
+
+  function handleCopy() {
+    if (!route) return;
+    const ids = route.map((r) => r.id ?? r.name).join(",");
+    const url = new URL(window.location.href);
+    url.searchParams.set("route", ids);
+    navigator.clipboard.writeText(url.toString()).then(() => setCopied(true));
+    setTimeout(() => setCopied(false), 2000);
+  }
+
   return (
-    <div className="absolute bottom-4 left-4 z-[2000] bg-white p-2 rounded shadow w-64">
+    <div className="absolute bottom-4 left-4 z-[2000] bg-white p-3 rounded-xl shadow-lg w-72 border border-gray-300">
       <button
         onClick={handleGenerateCrawl}
         disabled={loading || venues.length === 0}
-        className="w-full px-3 py-1 bg-blue-600 text-white rounded"
+        className="w-full px-3 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition"
       >
         {loading ? "Generating…" : "Generate Crawl"}
       </button>
+
+      {route && route.length > 0 && (
+        <div className="mt-3 space-y-2 text-sm">
+          <h3 className="font-semibold text-gray-800">Your Crawl:</h3>
+          <ol className="list-decimal pl-5 space-y-1 max-h-40 overflow-y-auto">
+            {route.map((stop, i) => (
+              <li key={i}>
+                <a
+                  href={stop.link || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  {stop.name}
+                </a>
+              </li>
+            ))}
+          </ol>
+
+          <div className="pt-2 border-t border-gray-200 space-y-1">
+            <button
+              onClick={handleSave}
+              className="w-full bg-blue-500 text-white py-1 rounded hover:bg-blue-600 transition"
+            >
+              💾 Save
+            </button>
+            <button
+              onClick={handleExport}
+              className="w-full bg-green-500 text-white py-1 rounded hover:bg-green-600 transition"
+            >
+              🌍 Export to Maps
+            </button>
+            <button
+              onClick={handleCopy}
+              className="w-full bg-gray-700 text-white py-1 rounded hover:bg-gray-800 transition"
+            >
+              🔗 {copied ? "Copied!" : "Copy Link"}
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -106,7 +184,6 @@ export default function MapWrapper() {
 
   return (
     <main className="h-screen w-screen relative overflow-hidden">
-      {/* City toggle */}
       <div className="absolute top-4 left-4 z-[1000] bg-white rounded-lg shadow p-2 space-x-2">
         <button
           onClick={() => {
@@ -194,7 +271,6 @@ export default function MapWrapper() {
           <option value="work session">Work Session</option>
         </select>
 
-        {/* Neighborhood dropdown */}
         <select
           value={selectedNeighborhood}
           onChange={(e) => {
@@ -209,7 +285,6 @@ export default function MapWrapper() {
           <option value="Eastside">Eastside</option>
         </select>
 
-        {/* Price dropdown */}
         <select
           value={selectedPrice}
           onChange={(e) => {
@@ -224,7 +299,6 @@ export default function MapWrapper() {
           <option value="$$$">$$$</option>
         </select>
 
-        {/* Duration dropdown */}
         <select
           value={durationTarget ?? ""}
           onChange={(e) => {
@@ -244,9 +318,11 @@ export default function MapWrapper() {
 
       <CrawlControl
         venues={filteredVenues}
-        onRoute={setRoute}
+        onRoute={(r) => setRoute(r)}
         durationTarget={durationTarget}
+        selectedTheme={selectedTheme}
       />
+
       <Suspense fallback={<div className="text-center p-4">Loading map…</div>}>
         <MapCanvas venues={filteredVenues} route={route} city={city} />
       </Suspense>
