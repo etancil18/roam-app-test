@@ -26,17 +26,31 @@ function CrawlControl({
   onRoute,
   durationTarget,
   selectedTheme,
+  userLat,
+  userLon,
+  setUserLat,
+  setUserLon,
+  route,
 }: {
   venues: Venue[];
   onRoute: (route: Venue[]) => void;
   durationTarget?: number;
   selectedTheme: string;
+  userLat: number | null;
+  userLon: number | null;
+  setUserLat: (lat: number | null) => void;
+  setUserLon: (lon: number | null) => void;
+  route: Venue[] | undefined;
 }) {
   const [loading, setLoading] = useState(false);
-  const [route, setRoute] = useState<Venue[] | null>(null);
   const [copied, setCopied] = useState(false);
 
   async function handleGenerateCrawl() {
+    if (userLat == null || userLon == null) {
+      alert("Please enable location or drop a pin on the map to begin.");
+      return;
+    }
+
     setLoading(true);
     try {
       const resp = await fetch("/api/generate-crawl", {
@@ -44,6 +58,8 @@ function CrawlControl({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           venues,
+          userLat,
+          userLon,
           options: {
             maxStops: 10,
             maxDuration: durationTarget,
@@ -53,7 +69,6 @@ function CrawlControl({
       });
       const j = await resp.json();
       if (j.route) {
-        setRoute(j.route);
         onRoute(j.route);
       } else {
         console.error("No route in response", j);
@@ -90,6 +105,12 @@ function CrawlControl({
     setTimeout(() => setCopied(false), 2000);
   }
 
+  function handleClear() {
+    onRoute([]);
+    setUserLat(null);
+    setUserLon(null);
+  }
+
   return (
     <div className="absolute bottom-4 left-4 z-[2000] bg-white p-3 rounded-xl shadow-lg w-72 border border-gray-300">
       <button
@@ -100,7 +121,7 @@ function CrawlControl({
         {loading ? "Generating…" : "Generate Crawl"}
       </button>
 
-      {route && route.length > 0 && (
+      {Array.isArray(route) && route.length > 0 && (
         <div className="mt-3 space-y-2 text-sm">
           <h3 className="font-semibold text-gray-800">Your Crawl:</h3>
           <ol className="list-decimal pl-5 space-y-1 max-h-40 overflow-y-auto">
@@ -137,6 +158,12 @@ function CrawlControl({
             >
               🔗 {copied ? "Copied!" : "Copy Link"}
             </button>
+            <button
+              onClick={handleClear}
+              className="w-full bg-red-500 text-white py-1 rounded hover:bg-red-600 transition"
+            >
+              ❌ Clear Route
+            </button>
           </div>
         </div>
       )}
@@ -147,6 +174,8 @@ function CrawlControl({
 export default function MapWrapper() {
   const [city, setCity] = useState<'atl' | 'nyc'>('atl');
   const [route, setRoute] = useState<Venue[] | undefined>(undefined);
+  const [userLat, setUserLat] = useState<number | null>(null);
+  const [userLon, setUserLon] = useState<number | null>(null);
 
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTheme, setSelectedTheme] = useState<string>("");
@@ -220,7 +249,6 @@ export default function MapWrapper() {
           className="w-full px-2 py-1 border rounded"
         />
 
-        {/* Theme dropdown */}
         <select
           value={selectedTheme}
           onChange={(e) => {
@@ -318,13 +346,27 @@ export default function MapWrapper() {
 
       <CrawlControl
         venues={filteredVenues}
-        onRoute={(r) => setRoute(r)}
+        onRoute={setRoute}
         durationTarget={durationTarget}
         selectedTheme={selectedTheme}
+        userLat={userLat}
+        userLon={userLon}
+        setUserLat={setUserLat}
+        setUserLon={setUserLon}
+        route={route}
       />
 
       <Suspense fallback={<div className="text-center p-4">Loading map…</div>}>
-        <MapCanvas venues={filteredVenues} route={route} city={city} />
+        <MapCanvas
+          venues={filteredVenues}
+          route={route}
+          city={city}
+          onMapClick={(lat, lon) => {
+            setUserLat(lat);
+            setUserLon(lon);
+            alert("Starting point set — you can now generate your crawl.");
+          }}
+        />
       </Suspense>
     </main>
   );

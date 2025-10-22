@@ -7,6 +7,7 @@ import {
   Marker,
   Popup,
   useMap,
+  useMapEvent,
 } from "react-leaflet";
 import L, { Map as LeafletMap } from "leaflet";
 import "leaflet/dist/leaflet.css";
@@ -93,23 +94,35 @@ function MapControl({ center }: { center: [number, number] }) {
   return null;
 }
 
+// --- Map Click Handler Component ---
+function MapClickHandler({ onMapClick }: { onMapClick?: (lat: number, lon: number) => void }) {
+  useMapEvent("click", (e) => {
+    if (onMapClick) {
+      const { lat, lng } = e.latlng;
+      onMapClick(lat, lng);
+    }
+  });
+  return null;
+}
+
 // --- Main MapCanvas Component ---
 export default function MapCanvas({
   venues,
   route,
   city,
+  onMapClick,
 }: {
   venues: Venue[];
   route?: Venue[];
   city: "atl" | "nyc";
+  onMapClick?: (lat: number, lon: number) => void;
 }) {
   const cityCenters: Record<string, [number, number]> = {
-  atl: [33.749, -84.388],
-  nyc: [40.73061, -73.935242],
-};
+    atl: [33.749, -84.388],
+    nyc: [40.73061, -73.935242],
+  };
 
-const center = cityCenters[city];
-
+  const center = cityCenters[city];
 
   return (
     <div className="h-screen w-screen relative">
@@ -124,6 +137,9 @@ const center = cityCenters[city];
         />
 
         <MapControl center={center} />
+
+        {/* Handle map clicks for manual pin-drop fallback */}
+        <MapClickHandler onMapClick={onMapClick} />
 
         {venues.map((loc, idx) => {
           if (
