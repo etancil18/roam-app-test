@@ -1,18 +1,21 @@
 'use client';
 
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   MapContainer,
   TileLayer,
   Marker,
   Popup,
   useMap,
-  useMapEvent,
 } from "react-leaflet";
 import L, { Map as LeafletMap } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-routing-machine";
 import "leaflet-routing-machine/dist/leaflet-routing-machine.css";
+
+import { isVenueOpenNow } from "@/utils/timeUtils";
+import { coverCandidates } from "@/utils/imageUtils";
+import { addVenueToFavorites } from "@/lib/supabase/favorites";
 
 // --- Types ---
 type HoursNumeric = {
@@ -20,6 +23,7 @@ type HoursNumeric = {
 };
 
 type Venue = {
+  id?: string;
   name: string;
   vibe?: string;
   type?: string;
@@ -83,7 +87,6 @@ function RouteControl({ route }: { route: Venue[] }) {
   return null;
 }
 
-// --- Map Recentering Logic ---
 function MapControl({ center }: { center: [number, number] }) {
   const map = useMap();
 
@@ -94,18 +97,15 @@ function MapControl({ center }: { center: [number, number] }) {
   return null;
 }
 
-// --- Map Click Handler Component ---
-function MapClickHandler({ onMapClick }: { onMapClick?: (lat: number, lon: number) => void }) {
-  useMapEvent("click", (e) => {
-    if (onMapClick) {
-      const { lat, lng } = e.latlng;
-      onMapClick(lat, lng);
-    }
+function numberedMarkerIcon(number: number) {
+  return new L.DivIcon({
+    className: 'numbered-marker',
+    html: `<div style="background:#333;color:white;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:12px;">${number}</div>`,
+    iconSize: [24, 24],
+    iconAnchor: [12, 24],
   });
-  return null;
 }
 
-// --- Main MapCanvas Component ---
 export default function MapCanvas({
   venues,
   route,
@@ -123,6 +123,28 @@ export default function MapCanvas({
   };
 
   const center = cityCenters[city];
+  const mapRef = useRef<LeafletMap | null>(null);
+  const [isFavoriting, setIsFavoriting] = useState(false);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (map && onMapClick) {
+      const handler = (e: L.LeafletMouseEvent) => {
+        const { lat, lng } = e.latlng;
+        onMapClick(lat, lng);
+      };
+      map.on("click", handler);
+      return () => {
+        map.off("click", handler);
+      };
+    }
+  }, [onMapClick]);
+
+  useEffect(() => {
+    if (!mapRef.current || !route || route.length < 2) return;
+    const bounds = L.latLngBounds(route.map(r => [r.lat, r.lon]));
+    mapRef.current.fitBounds(bounds, { padding: [50, 50] });
+  }, [route]);
 
   return (
     <div className="h-screen w-screen relative">
@@ -130,6 +152,9 @@ export default function MapCanvas({
         center={center}
         zoom={12}
         className="h-full w-full z-0"
+        ref={(mapInstance) => {
+          mapRef.current = mapInstance as LeafletMap;
+        }}
       >
         <TileLayer
           url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
@@ -138,56 +163,88 @@ export default function MapCanvas({
 
         <MapControl center={center} />
 
-        {/* Handle map clicks for manual pin-drop fallback */}
-        <MapClickHandler onMapClick={onMapClick} />
+        {venues.map((locRaw, idx) => {
+  const loc = locRaw as Venue;
 
-        {venues.map((loc, idx) => {
-          if (
-            !loc.lat ||
-            !loc.lon ||
-            Number.isNaN(loc.lat) ||
-            Number.isNaN(loc.lon)
-          ) {
-            console.warn("⚠️ Skipping venue with invalid coords:", loc);
-            return null;
-          }
+  if (!Number.isFinite(loc.lat) || !Number.isFinite(loc.lon)) return null;
 
-          const today = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"][
-            new Date().getDay()
-          ];
-          const dp = loc.dayParts?.[today] || "";
-          const color = daypartColorMap[dp] || "gray";
+  const today = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"][new Date().getDay()];
+const isOpen = isVenueOpenNow(loc);
+const dp = loc.dayParts?.[today] || "";
+const color = isOpen ? daypartColorMap[dp] || "gray" : "black";
 
-          const icon = new L.Icon({
-            iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${color}.png`,
-            shadowUrl:
-              "https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png",
-            iconSize: [25, 41],
-            iconAnchor: [12, 41],
-            popupAnchor: [1, -34],
-            shadowSize: [41, 41],
-          });
+const candidates = coverCandidates(loc);
+const firstCandidate = candidates[0];
 
-          return (
-            <Marker key={idx} position={[loc.lat, loc.lon]} icon={icon}>
-              <Popup>
-                <strong>{loc.name}</strong>
-                <br />
-                {loc.vibe && (
-                  <span className="text-xs italic">{loc.vibe}</span>
-                )}
-                <br />
-                <a
-                  href={loc.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  More Info
-                </a>
-              </Popup>
-            </Marker>
-          );
-        })}
+const isInRoute = route?.some(r => (r.id ?? r.name) === (loc.id ?? loc.name));
+const isStart = route && route[0] && (loc.id ?? loc.name) === (route[0].id ?? route[0].name);
+
+const routeIndex = route?.findIndex(r => (r.id ?? r.name) === (loc.id ?? loc.name)) ?? -1;
+
+const icon = isInRoute
+  ? numberedMarkerIcon(routeIndex + 1)
+  : new L.Icon({
+      iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${color}.png`,
+      shadowUrl: "https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png",
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41],
+    });
+
+
+  return (
+    <Marker key={idx} position={[loc.lat, loc.lon]} icon={icon}>
+      <Popup>
+        <div style={{ fontSize: "14px", lineHeight: 1.4 }}>
+          <strong>{loc.name}</strong><br />
+          {firstCandidate && (
+            <img
+              src={firstCandidate}
+              alt={loc.name}
+              style={{
+                width: "100%",
+                maxHeight: 140,
+                objectFit: "cover",
+                borderRadius: 8,
+                margin: "6px 0",
+              }}
+            />
+          )}
+          <em>Vibe:</em> {loc.vibe || "N/A"}<br />
+          <em>Status:</em> <span style={{ color: isOpen ? "green" : "red" }}>{isOpen ? "Open Now" : "Closed"}</span><br />
+          <a href={loc.link} target="_blank" rel="noopener noreferrer">More Info</a>
+          <hr />
+          <button
+            onClick={async () => {
+              try {
+                setIsFavoriting(true);
+                await addVenueToFavorites(loc);
+                alert(`⭐ Added "${loc.name}" to your favorites`);
+              } catch (error) {
+                console.error("Error adding favorite:", error);
+                alert("❌ Could not add to favorites");
+              } finally {
+                setIsFavoriting(false);
+              }
+            }}
+            disabled={isFavoriting}
+            style={{
+              width: "100%",
+              marginTop: 6,
+              padding: "6px",
+              fontSize: 14,
+              cursor: "pointer",
+            }}
+          >
+            {isFavoriting ? "Adding..." : "Add to Favorites"}
+          </button>
+        </div>
+      </Popup>
+    </Marker>
+  );
+})}
+
 
         {route && route.length > 1 && <RouteControl route={route} />}
       </MapContainer>
