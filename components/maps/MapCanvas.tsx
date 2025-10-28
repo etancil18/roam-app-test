@@ -141,10 +141,12 @@ export default function MapCanvas({
   }, [onMapClick]);
 
   useEffect(() => {
-    if (!mapRef.current || !route || route.length < 2) return;
-    const bounds = L.latLngBounds(route.map(r => [r.lat, r.lon]));
-    mapRef.current.fitBounds(bounds, { padding: [50, 50] });
-  }, [route]);
+  if (!mapRef.current || !Array.isArray(route) || route.length < 2) return;
+
+  const bounds = L.latLngBounds(route.map(r => [r.lat, r.lon]));
+  mapRef.current.fitBounds(bounds, { padding: [50, 50] });
+}, [route]);
+
 
   return (
     <div className="h-screen w-screen relative">
@@ -176,10 +178,13 @@ const color = isOpen ? daypartColorMap[dp] || "gray" : "black";
 const candidates = coverCandidates(loc);
 const firstCandidate = candidates[0];
 
-const isInRoute = route?.some(r => (r.id ?? r.name) === (loc.id ?? loc.name));
+const isInRoute = Array.isArray(route) && route.some((r: Venue) => (r.id ?? r.name) === (loc.id ?? loc.name));
 const isStart = route && route[0] && (loc.id ?? loc.name) === (route[0].id ?? route[0].name);
 
-const routeIndex = route?.findIndex(r => (r.id ?? r.name) === (loc.id ?? loc.name)) ?? -1;
+const routeIndex = Array.isArray(route)
+  ? route.findIndex((r: Venue) => (r.id ?? r.name) === (loc.id ?? loc.name))
+  : -1;
+
 
 const icon = isInRoute
   ? numberedMarkerIcon(routeIndex + 1)
