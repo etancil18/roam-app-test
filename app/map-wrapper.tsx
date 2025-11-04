@@ -5,8 +5,8 @@ import { Suspense, useEffect, useState } from "react";
 import atlantaData from "@/data/atlanta";
 import nycData from "@/data/nyc";
 import type { Venue } from "@/types/venue";
-import type { RouteOptions } from "@/lib/routeEngine";
 import CrawlControl from "@/components/maps/CrawlControl";
+import type { RouteOptions } from "@/lib/routeEngine";
 
 const MapCanvas = dynamic(() => import("@/components/maps/MapCanvas"), {
   ssr: false,
@@ -29,7 +29,7 @@ export default function MapWrapper() {
   const [filteredVenues, setFilteredVenues] = useState<Venue[]>([]);
   const [route, setRoute] = useState<Venue[] | undefined>(undefined);
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedTheme, setSelectedTheme] = useState<string>("");
+  const [selectedThemeId, setSelectedThemeId] = useState<string>("");
   const [selectedNeighborhood, setSelectedNeighborhood] = useState<string>("");
   const [selectedPrice, setSelectedPrice] = useState<string>("");
   const [customStart, setCustomStart] = useState<{ lat: number; lon: number } | null>(null);
@@ -43,26 +43,35 @@ export default function MapWrapper() {
 
   useEffect(() => {
     const filtered = venues.filter((v) => {
-      const matchesSearch =
-        !searchTerm ||
-        v.vibe?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        v.tags?.toLowerCase().includes(searchTerm.toLowerCase());
+  const matchesSearch =
+    !searchTerm ||
+    v.vibe?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    v.tags?.toLowerCase().includes(searchTerm.toLowerCase());
 
-      const matchesTheme =
-        !selectedTheme ||
-        v.tags?.toLowerCase().includes(selectedTheme.toLowerCase()) ||
-        v.vibe?.toLowerCase().includes(selectedTheme.toLowerCase());
+  const priceRank: Record<string, number> = {
+  "$": 1,
+  "$$": 2,
+  "$$$": 3,
+  "$$$$": 4,
+};
 
-      const matchesNeighborhood =
-        !selectedNeighborhood || v.neighborhood === selectedNeighborhood;
+// Narrow & validate before lookup
+const venuePriceKey = v.price && priceRank[v.price] ? v.price : undefined;
+const selectedPriceKey = selectedPrice && priceRank[selectedPrice] ? selectedPrice : undefined;
 
-      const matchesPrice = !selectedPrice || v.price === selectedPrice;
+const venuePriceRank = venuePriceKey ? priceRank[venuePriceKey] : Infinity;
+const selectedPriceRank = selectedPriceKey ? priceRank[selectedPriceKey] : Infinity;
 
-      return matchesSearch && matchesTheme && matchesNeighborhood && matchesPrice;
-    });
+const matchesPrice =
+  !selectedPriceKey || venuePriceRank <= selectedPriceRank;
+
+
+  return matchesSearch && matchesPrice;
+});
+
 
     setFilteredVenues(filtered);
-  }, [venues, searchTerm, selectedTheme, selectedNeighborhood, selectedPrice]);
+  }, [venues, searchTerm, selectedThemeId, selectedNeighborhood, selectedPrice]);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -97,26 +106,46 @@ export default function MapWrapper() {
     const startLat = customStart?.lat ?? fallbackCoords[city].lat;
     const startLon = customStart?.lon ?? fallbackCoords[city].lon;
 
-    const options: RouteOptions = {
-      maxStops: 6,
-      filterOpen: true,
-      customStart: customStart ?? undefined,
-      startTime: new Date(),
-    };
-
     try {
-      const response = await fetch("/api/generate-crawl", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          venues: filteredVenues,
-          userLat: startLat,
-          userLon: startLon,
-          options,
-        }),
-      });
+      let data;
 
-      const data = await response.json();
+      if (selectedThemeId) {
+        // Theme-based route generation
+        const response = await fetch("/api/generate-theme", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            themeId: selectedThemeId,
+            userLat: startLat,
+            userLon: startLon,
+            venues: filteredVenues,
+            maxStops: 6,
+            filterOpen: true,
+          }),
+        });
+        data = await response.json();
+      } else {
+        // Location-based route generation
+        const options: RouteOptions = {
+          maxStops: 6,
+          filterOpen: true,
+          customStart: customStart ?? undefined,
+          startTime: new Date(),
+        };
+
+        const response = await fetch("/api/generate-crawl", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            venues: filteredVenues,
+            userLat: startLat,
+            userLon: startLon,
+            options,
+          }),
+        });
+        data = await response.json();
+      }
+
       if (!Array.isArray(data.route)) {
         console.error("❌ Invalid route format", data);
         alert("Failed to build a route. Try different filters.");
@@ -169,23 +198,35 @@ export default function MapWrapper() {
           onChange={(e) => setSearchTerm(e.target.value)}
           className="w-full px-2 py-1 border rounded"
         />
-        <select value={selectedTheme} onChange={(e) => setSelectedTheme(e.target.value)} className="w-full px-2 py-1 border rounded">
+        <select value={selectedThemeId} onChange={(e) => setSelectedThemeId(e.target.value)} className="w-full px-2 py-1 border rounded">
           <option value="">Select Theme</option>
-          <option value="art & culture">Art & Culture</option>
-          <option value="foodie tour">Foodie Tour</option>
-          <option value="date night">Date Night</option>
-        </select>
-        <select value={selectedNeighborhood} onChange={(e) => setSelectedNeighborhood(e.target.value)} className="w-full px-2 py-1 border rounded">
-          <option value="">Neighborhood</option>
-          <option value="Buckhead">Buckhead</option>
-          <option value="Midtown">Midtown</option>
-          <option value="Eastside">Eastside</option>
+         <option value="cheap-cheerful">Cheap & Cheerful</option>
+<option value="chill-hang">Chill Hang</option>
+<option value="creative-kickstart">Creative Kickstart</option>
+<option value="date-night">Date Night</option>
+<option value="friends-night-out">Friends Night Out</option>
+<option value="gallery-crawl">Gallery Crawl</option>
+<option value="last-call">Last Call</option>
+<option value="midday-recharge">Midday Recharge</option>
+<option value="mindful-mornings">Mindful Mornings</option>
+<option value="pages-to-pours">Pages to Pours</option>
+<option value="party-time">Party Time</option>
+<option value="patio-perfection">Patio Perfection</option>
+<option value="post-work-wind-down">Post-Work Wind Down</option>
+<option value="saturday-surge">Saturday Surge</option>
+<option value="self-care">Self-Care</option>
+<option value="solo-explorer">Solo Explorer</option>
+<option value="sunrise-start">Sunrise Start</option>
+<option value="sunset-lovers">Sunset Lovers</option>
+<option value="sunday-reset">Sunday Reset</option>
+<option value="work-session">Work Session</option>
         </select>
         <select value={selectedPrice} onChange={(e) => setSelectedPrice(e.target.value)} className="w-full px-2 py-1 border rounded">
           <option value="">Any Price</option>
           <option value="$">$</option>
           <option value="$$">$$</option>
           <option value="$$$">$$$</option>
+          <option value="$$$$">$$$$</option>
         </select>
 
         <button onClick={handleClearRoute} className="w-full mt-1 px-3 py-2 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition">
@@ -197,7 +238,7 @@ export default function MapWrapper() {
         venues={filteredVenues}
         route={route}
         onRoute={setRoute}
-        selectedTheme={selectedTheme}
+        selectedThemeId={selectedThemeId}
         customStart={customStart}
         city={city}
         onGenerateRoute={handleGenerateRoute}

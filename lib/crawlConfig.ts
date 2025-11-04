@@ -1,84 +1,308 @@
-export const crawlFlows: Record<string, string[]> = {
-  "art & culture": ["gallery", "museum", "cocktail", "music", "dessert"],
-  "art to afterparty": ["gallery", "exhibit", "wine bar", "dinner", "club"],
-  "brunch & beyond": ["brunch", "market", "rooftop", "bar", "dessert"],
-  "cheap & cheerful": ["coffee", "market", "random gem", "gallery", "dinner", "bar"],
-  "chill hang": ["coffee", "bookstore", "random gem", "lifestyle", "bar", "dessert"],
-  "creative kickstart": ["coffee", "gallery", "random gem", "bookstore", "lunch"],
-  "date day": ["brunch", "park", "random gem", "lifestyle", "dinner", "dessert"],
-  "date night": ["dinner", "cocktail", "dessert"],
-  "foodie tour": ["market", "lunch", "cocktail", "dinner", "dessert"],
-  "friends night out": ["dinner", "bar", "bar", "club", "late-night"],
-  "gallery crawl": ["gallery", "gallery", "lunch", "wine bar", "music"],
-  "health nut": ["fitness", "juice bar", "spa", "garden"],
-  "hidden gems": ["random gem", "cafe", "restaurant", "speakeasy", "bar"],
-  "last call": ["bar", "club", "late-night", "speakeasy", "lounge", "after hours"],
-  "late start legends": ["brunch", "bar", "cocktail", "dinner", "speakeasy", "lounge"],
-  "luxe life": ["gallery", "dinner", "cocktail", "lounge"],
-  "midday recharge": ["coffee", "lunch", "park", "gallery"],
-  "mindful mornings": ["wellness", "coffee", "garden", "market", "spa"],
-  "music mile": ["live music", "bar", "dinner", "cocktail", "club"],
-  "neighborhood sampler": ["coffee", "random gem", "lunch", "gallery", "bar"],
-  "nightcap circuit": ["cocktail", "speakeasy", "lounge", "dessert"],
-  "pages to pours": ["bookstore", "coffee", "gallery", "wine bar", "lounge"],
-  "party time": ["bar", "dinner", "bar", "club", "late-night"],
-  "patio perfection": ["brunch", "rooftop", "cocktail", "dinner", "dessert"],
-  "post-work wind down": ["bar", "dinner", "cocktail", "lounge"],
-  "quiet escape": ["bookstore", "tea", "park", "random gem", "lounge"],
-  "rom-com main character": ["coffee", "gallery", "wine bar", "rooftop", "speakeasy"],
-  "rooftops & views": ["rooftop", "cocktail", "dinner", "lounge"],
-  "saturday surge": ["activity", "bar", "dinner", "bar", "club", "late-night"],
-  "self-care": ["fitness", "spa", "tea", "bookstore", "park"],
-  "solo explorer": ["coffee", "random gem", "bookstore", "market", "park", "rooftop"],
-  "sports day": ["fitness", "activity", "lunch", "bar", "dinner"],
-  "stretch, shop, sip": ["yoga", "lifestyle", "juice bar", "brunch", "dessert"],
-  "sunrise start": ["fitness", "bakery", "coffee", "market", "park"],
-  "sunset lovers": ["park", "rooftop", "dinner", "cocktail"],
-  "sunday reset": ["fitness", "market", "lifestyle", "tea", "dinner"],
-  "tech bro escape": ["cocktail", "rooftop", "dinner", "club", "late-night"],
-  "weekend warriors": ["bar", "speakeasy", "bar", "club", "late-night"],
-  "work session": ["coffee", "lunch", "coffee", "cocktail"]
-};
+import { CrawlTheme } from "@/lib/theme-engine/types"; 
 
-export const themeMap: Record<string, string[]> = {
-  "art & culture": ["gallery", "aesthetic", "museum", "art", "exhibit", "creative", "theater", "film", "architecture", "history", "design", "photography", "curated", "classical", "modern", "expression", "sculpture", "installation", "culture", "vintage", "inspiration", "refined"],
-  "brunch & beyond": ["brunch", "mimosa", "day party", "pancakes", "bistro", "patio", "sunny", "casual", "daytime", "weekend", "outdoor", "social"],
-  "cheap & cheerful": ["diner", "cheap", "budget", "street", "casual", "$", "bite", "fast", "local", "market", "takeout", "gallery", "food truck"],
-  "chill hang": ["lounge", "cozy", "relaxed", "intimate", "chill", "sofa", "vintage", "casual", "warm", "neighborhood", "laid-back", "friendly", "comfort", "easygoing", "snack", "small bite", "lowkey", "hangout", "easy", "slow", "conversation", "quiet"],
-  "creative kickstart": ["studio", "journal", "sketch", "gallery", "quiet", "inspiration", "café", "bookstore", "sunny", "vinyl", "art", "notebook", "design", "creative space", "makers"],
-  "date day": ["brunch", "park", "casual", "romantic", "patio", "stroll", "serendipity", "daytime", "garden", "outdoor", "café", "dessert", "flirty", "walkable", "flowers", "sunny", "shared-plates", "laughs", "views", "lighthearted", "sweet", "easygoing"],
-  "date night": ["romantic", "date spot", "cocktail", "jazz", "twilight", "vibe", "wine", "dim", "moody", "candlelit", "intimate", "charming", "slow-paced", "flirty", "cozy", "soft", "sweet", "elegant", "lush", "quiet", "dreamy", "gentle", "classic"],
-  "foodie tour": ["restaurant", "tasting", "chef", "bistro", "eats", "gastro", "brunch", "dining", "flavors", "street food", "multi-course", "local cuisine", "fresh", "artisan", "flavorful", "course", "tasting-menu", "bite-sized", "shared", "seasonal", "notable", "refined"],
-  "friends night out": ["loud", "shareable", "pitchers", "group dinner", "crowded", "bar", "dinner", "club", "dj", "party", "scene", "drinks", "late-night", "social", "vibrant", "group", "shots", "energy", "rowdy", "dance", "hype", "weekend", "pregame", "cheers", "lit"],
-  "gallery crawl": ["gallery", "exhibit", "art", "creative", "museum", "opening", "culture", "fine art", "contemporary", "showcase", "art walk", "curated", "aesthetic", "stylish", "visual", "inspired", "refined", "chic", "trendy", "modern", "buzz"],
-  "health nut": ["wellness", "yoga", "juice", "smoothie", "matcha", "organic", "spa", "bathhouse", "vegan", "yoga", "fitness", "light bite", "gym", "meditation", "fresh"],
-  "hidden gems": ["speakeasy", "hidden", "secret", "underground", "niche", "alt", "unmarked", "local", "offbeat", "exclusive", "rare", "quirky", "low-profile"],
-  "last call": ["late-night", "karaoke", "after hours", "lively", "spontaneous", "gritty", "unfiltered", "nocturnal", "dance", "dark", "shots", "underground", "loose", "unhinged", "boozy", "nightcap"],
-  "late start legends": ["brunch", "cocktails", "twilight", "pre-game", "vibe", "evening", "casual", "low key", "date", "nightlife", "urban", "chill"],
-  "luxe life": ["fine dining", "aesthetic", "exclusive", "high-end", "rooftop", "wine", "luxury", "private", "VIP", "premium", "gourmet", "opulent", "exclusive view"],
-  "midday recharge": ["lunch", "coffee", "café", "juice", "quick bite", "park", "sunlight", "relaxed", "low key", "grab-and-go", "outdoor", "break"],
-  "mindful mornings": ["yoga", "meditation", "spa", "sunlight", "tea", "calm", "minimal", "introspective", "garden", "journal", "wellness", "fresh air", "stretch"],
-  "neighborhood sampler": ["walkable", "local", "market", "coffee", "casual", "random gem", "community vibe", "shops", "restaurants", "street life", "hidden spot", "corner café"],
-  "nightcap circuit": ["speakeasy", "whiskey", "jazz", "cozy", "lounge", "low light", "late", "neat", "intimate", "bar", "cigar", "smooth"],
-  "party time": ["club", "dance", "beats", "late", "dj", "loud", "drinks", "bar", "crowded", "energy", "flashy", "after hours", "party", "scene", "friends night out", "saturday surge", "lit", "group", "rowdy", "weekend", "pregame", "vibe", "cheers", "social"],
-  "post-work wind down": ["happy hour", "bar", "tapas", "light bite", "craft beer", "after work", "relax", "casual", "patio", "drinks", "evening", "mingle", "unwind", "refresh", "lowkey", "snacks", "cooldown", "ambient", "hangout", "rounds", "winddown", "ease"],
-  "quiet escape": ["tea", "bookstore", "park", "quiet", "introspective", "relaxed", "cozy", "minimal", "serene", "slow", "niche", "retreat"],
-  "rom-com main character": ["twilight", "charming", "patio", "vintage", "wine", "candlelit", "walkable", "cozy", "date", "serendipity", "scenic", "whimsical"],
-  "rooftops & views": ["rooftop", "view", "skyline", "sunset", "elevated", "balcony", "overlook", "outdoor", "cocktail", "scenic", "glamorous", "night lights"],
-  "saturday surge": ["dance", "dj", "crowded", "club", "party", "high energy", "beats", "rooftop", "late", "scene", "vibrant", "after hours"],
-  "self-care": ["spa", "relax", "yoga", "meditation", "serenity", "retreat", "tea", "calm", "detox", "massage", "rejuvenate", "peace"],
-  "solo explorer": ["bookstore", "gallery", "quiet", "scenic", "café", "park", "rooftop", "garden", "introspective", "nook", "wander", "hidden spot", "photo walk"],
-  "sports day": ["active", "game", "match", "fitness", "team", "outdoor", "energy", "training", "stadium", "competition", "field", "spectator"],
-  "sunrise start": ["coffee", "matcha", "sunrise", "morning", "café", "bakery", "brunch", "acai", "patio", "quiet", "fresh", "early", "energizing", "routine", "mindful", "stretch", "wellness", "cozy", "warm", "comforting", "inviting", "brewed", "caffeine", "mellow", "focused", "calm", "local", "seasonal", "browse", "natural", "neighborhood", "green", "stroll", "breeze", "peaceful", "slow-morning", "outdoor"],
-  "sunset lovers": ["park", "view", "golden hour", "romantic", "cocktail", "outdoor", "patio", "date", "skyline", "twilight", "serene", "photogenic"],
-  "sunday reset": ["garden", "tea", "spa", "quiet", "book", "relax", "wellness", "reflection", "meditation", "sunlight", "fresh", "slow"],
-  "tech bro escape": ["steakhouse", "cocktail", "crypto", "rooftop", "sleek", "bourbon", "high-end", "modern", "rare", "network", "exclusive", "private"],
-  "weekend warriors": ["dive bar", "after hours", "shots", "karaoke", "late night", "chaotic", "party", "crowd", "open late", "wild", "rowdy", "social"],
-  "work session": ["cafe", "wifi", "coffee", "focus", "remote-friendly", "laptop", "casual", "quiet", "workspace", "daytime", "study", "productive", "neighborhood", "light music", "comfortable seating"],
-  "patio perfection": ["patio", "al fresco", "open-air", "sunny", "shade", "breezy", "terrace", "brunchy", "plants", "outdoor", "chill", "garden", "social", "view", "loungy", "relaxed"],
-  "art to afterparty": ["gallery", "creative", "art", "edgy", "expressive", "cocktail", "night", "music", "mood", "chic", "theater", "neon", "bold", "late", "styled", "scene"],
-  "pages to pours": ["bookstore", "quiet", "cozy", "literary", "analog", "warm", "vintage", "library", "indie", "wine", "reflective", "moody", "ink", "writerly", "poetic", "sips"],
-  "al fresco all day": ["sunny", "bloom", "green", "garden", "light", "fresh", "outdoor", "easy", "brunch", "picnic", "open-air", "dog-friendly", "mellow", "daytime", "leisure", "floral", "relaxing"],
-  "music mile": ["live", "sound", "vinyl", "stage", "dance", "band", "DJ", "retro", "acoustic", "loud", "rhythm", "bass", "eclectic", "energy", "jam", "neon", "beat"],
-  "stretch, shop, sip": ["yoga", "fit", "lifestyle", "luxe", "local", "boutique", "intentional", "wellness", "fresh", "feminine", "spa", "curated", "flow", "soft", "leisure", "balance"]
-};
+export const crawlThemes: CrawlTheme[] = [
+  {
+    themeId: "cheap-cheerful",
+    name: "Cheap & Cheerful",
+    description: "Low-budget gems, fast bites, and casual fun throughout the city.",
+    stageFlow: ["coffee", "market", "random gem", "gallery", "dinner", "bar"],
+    filters: {
+      price: [1, 2],
+      vibes: ["diner", "cheap", "budget", "street", "casual", "$", "bite", "fast", "local", "market", "takeout", "gallery", "food truck"],
+      tags: ["coffee", "market", "random gem", "gallery", "dinner", "bar"],
+      timeOfDay: ["day", "evening"],
+    },
+    keywords: [
+      "diner", "cheap", "budget", "street", "casual", "$", "bite", "fast", "local", "market", "takeout", "gallery", "food truck"
+    ]
+  },
+  {
+    themeId: "chill-hang",
+    name: "Chill Hang",
+    description: "Coffee → books → bites → easy vibes → nightcap.",
+    stageFlow: ["coffee", "bookstore", "random gem", "lunch", "lifestyle", "bar", "dessert"],
+    filters: {
+      price: [1, 2, 3],
+      vibes: ["lounge", "cozy", "relaxed", "intimate", "chill", "sofa", "vintage", "casual", "warm", "neighborhood", "laid-back", "friendly", "comfort", "easygoing", "snack", "small bite", "lowkey", "hangout", "easy", "slow", "conversation", "quiet"],
+      tags: ["coffee", "bookstore", "random gem", "lunch", "lifestyle", "bar", "dessert"],
+      timeOfDay: ["day", "evening"],
+    },
+    keywords: [
+      "lounge", "cozy", "relaxed", "intimate", "chill", "sofa", "vintage", "casual", "warm", "neighborhood", "laid-back", "friendly", "comfort", "easygoing", "snack", "small bite", "lowkey", "hangout", "easy", "slow", "conversation", "quiet"
+    ]
+  },
+  {
+    themeId: "creative-kickstart",
+    name: "Creative Kickstart",
+    description: "Inspiration stops to fuel the imagination.",
+    stageFlow: ["coffee", "gallery", "random gem", "bookstore", "lunch"],
+    filters: {
+      price: [1, 2, 3],
+      tags: ["coffee", "gallery", "random gem", "bookstore", "lunch"],
+      vibes: ["studio", "journal", "sketch", "gallery", "quiet", "inspiration", "café", "bookstore", "sunny", "vinyl", "art", "notebook", "design", "creative space", "makers"],
+      timeOfDay: ["morning", "day"],
+    },
+    keywords: [
+      "studio", "journal", "sketch", "gallery", "quiet", "inspiration", "café", "bookstore", "sunny", "vinyl", "art", "notebook", "design", "creative space", "makers"
+    ]
+  },
+  {
+    themeId: "date-night",
+    name: "Date Night",
+    description: "Romance, dim lights, and dessert to close the evening.",
+    stageFlow: ["dinner", "cocktail", "dessert"],
+    filters: {
+      price: [2, 3, 4],
+      vibes: ["romantic", "date spot", "cocktail", "jazz", "twilight", "vibe", "wine", "dim", "moody", "candlelit", "intimate", "charming", "slow-paced", "flirty", "cozy", "soft", "sweet", "elegant", "lush", "quiet", "dreamy", "gentle", "classic"],
+      tags: ["dinner", "cocktail", "dessert", "wine bar"],
+      timeOfDay: ["evening","night"],
+    },
+    keywords: [
+      "romantic", "date spot", "cocktail", "jazz", "twilight", "vibe", "wine", "dim", "moody", "candlelit", "intimate", "charming", "slow-paced", "flirty", "cozy", "soft", "sweet", "elegant", "lush", "quiet", "dreamy", "gentle", "classic"
+    ]
+  },
+  {
+    themeId: "friends-night-out",
+    name: "Friends Night Out",
+    description: "Food → pregame → party → questionable decisions.",
+    stageFlow: ["dinner", "bar", "bar", "club", "late-night"],
+    filters: {
+      price: [1, 2, 3],
+      vibes: ["loud", "shareable", "pitchers", "group dinner", "crowded", "bar", "dinner", "club", "dj", "party", "scene", "drinks", "late-night", "social", "vibrant", "group", "shots", "energy", "rowdy", "dance", "hype", "weekend", "pregame", "cheers", "lit"],
+      tags: ["dinner", "bar", "bar", "club", "late-night"],
+      timeOfDay: ["night","late-night"],
+    },
+    keywords: [
+      "loud", "shareable", "pitchers", "group dinner", "crowded", "bar", "dinner", "club", "dj", "party", "scene", "drinks", "late-night", "social", "vibrant", "group", "shots", "energy", "rowdy", "dance", "hype", "weekend", "pregame", "cheers", "lit"
+    ]
+  },
+  {
+    themeId: "gallery-crawl",
+    name: "Gallery Crawl",
+    description: "Galleries and artsy stops with great aesthetics.",
+    stageFlow: ["gallery", "gallery", "lunch", "wine bar", "music"],
+    filters: {
+      price: [2, 3],
+      vibes: ["gallery", "exhibit", "art", "creative", "museum", "opening", "culture", "fine art", "contemporary", "showcase", "art walk", "curated", "aesthetic", "stylish", "visual", "inspired", "refined", "chic", "trendy", "modern", "buzz"],
+      tags: ["gallery", "gallery", "lunch", "wine bar", "music"],
+      timeOfDay: ["day","evening"],
+    },
+    keywords: [
+      "gallery", "exhibit", "art", "creative", "museum", "opening", "culture", "fine art", "contemporary", "showcase", "art walk", "curated", "aesthetic", "stylish", "visual", "inspired", "refined", "chic", "trendy", "modern", "buzz"
+    ]
+  },
+  {
+    themeId: "patio-perfection",
+    name: "Patio Perfection",
+    description: "Outdoor seating, breezy rooftops, and relaxed vibes.",
+    stageFlow: ["brunch", "rooftop", "cocktail", "dinner", "dessert"],
+    filters: {
+      price: [2, 3, 4],
+      vibes: ["patio", "al fresco", "open-air", "sunny", "shade", "breezy", "terrace", "brunchy", "plants", "outdoor", "chill", "garden", "social", "view", "loungy", "relaxed"],
+      tags: ["brunch", "rooftop", "cocktail", "dinner", "dessert"],
+      timeOfDay: ["day","evening"],
+    },
+    keywords: [
+      "patio", "al fresco", "open-air", "sunny", "shade", "breezy", "terrace", "brunchy", "plants", "outdoor", "chill", "garden", "social", "view", "loungy", "relaxed"
+    ]
+  },
+  {
+    themeId: "saturday-surge",
+    name: "Saturday Surge",
+    description: "Max energy from afternoon to after hours.",
+    stageFlow: ["activity", "bar", "dinner", "bar", "club", "late-night"],
+    filters: {
+      price: [2, 3, 4],
+      vibes: ["dance", "dj", "crowded", "club", "party", "high energy", "beats", "rooftop", "late", "scene", "vibrant", "after hours"],
+      tags: ["activity", "bar", "dinner", "bar", "club", "late-night"],
+      timeOfDay: ["evening","night","late-night"],
+    },
+    keywords: [
+      "dance", "dj", "crowded", "club", "party", "high energy", "beats", "rooftop", "late", "scene", "vibrant", "after hours"
+    ]
+  },
+  {
+    themeId: "solo-explorer",
+    name: "Solo Explorer",
+    description: "Cozy solo spots and hidden gems for wandering.",
+    stageFlow: ["coffee", "random gem", "bookstore", "market", "park", "rooftop"],
+    filters: {
+      price: [1, 2],
+      vibes: ["bookstore", "gallery", "quiet", "scenic", "café", "park", "rooftop", "garden", "introspective", "nook", "wander", "hidden spot", "photo walk"],
+      tags: ["coffee", "random gem", "bookstore", "market", "park", "rooftop"],
+      timeOfDay: ["day","evening"],
+    },
+    keywords: [
+      "bookstore", "gallery", "quiet", "scenic", "café", "park", "rooftop", "garden", "introspective", "nook", "wander", "hidden spot", "photo walk"
+    ]
+  },
+  {
+    themeId: "sunset-lovers",
+    name: "Sunset Lovers",
+    description: "Golden hour to skyline views and cocktails.",
+    stageFlow: ["park", "rooftop", "dinner", "cocktail"],
+    filters: {
+      price: [2, 3, 4],
+      tags: ["park", "rooftop", "dinner", "cocktail"],
+      vibes: ["park", "view", "golden hour", "romantic", "cocktail", "outdoor", "patio", "date", "skyline", "twilight", "serene", "photogenic"],
+      timeOfDay: ["evening"],
+    },
+    keywords: [
+      "park", "view", "golden hour", "romantic", "cocktail", "outdoor", "patio", "date", "skyline", "twilight", "serene", "photogenic"
+    ]
+  },
+  {
+  themeId: "sunday-reset",
+  name: "Sunday Reset",
+  description: "Restore your soul with quiet spaces, gentle wellness, and cozy comfort.",
+  stageFlow: ["fitness", "market", "lifestyle", "bookstore", "dinner"],
+  filters: {
+    price: [1, 2, 3],
+    vibes: ["garden", "tea", "spa", "quiet", "book", "relax", "wellness", "reflection", "meditation", "sunlight", "fresh", "slow"],
+    tags: ["fitness", "market", "lifestyle", "bookstore", "dinner"],
+    timeOfDay: ["morning", "day", "evening"], 
+  },
+  keywords: [
+    "garden", "tea", "spa", "quiet", "book", "relax", "wellness", "reflection", "meditation", "sunlight", "fresh", "slow"
+  ]
+},
+{
+  themeId: "work-session",
+  name: "Work Session",
+  description: "Power through tasks with caffeine, quiet corners, and a rewarding close.",
+  stageFlow: ["coffee", "lunch", "coffee", "cocktail"],
+  filters: {
+    price: [1, 2, 3],
+    tags: ["coffee", "lunch", "coffee", "cocktail"],
+    vibes: ["cafe", "wifi", "coffee", "focus", "remote-friendly", "laptop", "casual", "quiet", "workspace", "daytime", "study", "productive", "neighborhood", "light music", "comfortable seating"],
+    timeOfDay: ["morning", "day"],
+  },
+  keywords: [
+    "cafe", "wifi", "coffee", "focus", "remote-friendly", "laptop", "casual", "quiet", "workspace", "daytime", "study", "productive", "neighborhood", "light music", "comfortable seating"
+  ]
+},
+{
+  themeId: "last-call",
+  name: "Last Call",
+  description: "A wild night that doesn’t end when the lights go out.",
+  stageFlow: ["bar", "club", "late-night", "speakeasy", "lounge", "after hours"],
+  filters: {
+    timeOfDay: ["night", "late-night"],
+    price: [1, 2, 3],
+  },
+  keywords: [
+    "late-night", "karaoke", "after hours", "lively", "spontaneous", "gritty",
+    "unfiltered", "nocturnal", "dance", "dark", "shots", "underground",
+    "loose", "unhinged", "boozy", "nightcap"
+  ]
+},
+{
+  themeId: "mindful-mornings",
+  name: "Mindful Mornings",
+  description: "Ease into the day with peace, balance, and clarity.",
+  stageFlow: ["wellness", "coffee", "garden", "market", "spa"],
+  filters: {
+    timeOfDay: ["morning"],
+    price: [1, 2],
+  },
+  keywords: [
+    "yoga", "meditation", "spa", "sunlight", "tea", "calm", "minimal",
+    "introspective", "garden", "journal", "wellness", "fresh air", "stretch"
+  ]
+},
+{
+  themeId: "pages-to-pours",
+  name: "Pages to Pours",
+  description: "A cozy blend of books, art, and wine-soaked thought.",
+  stageFlow: ["bookstore", "coffee", "gallery", "wine bar", "lounge"],
+  filters: {
+    timeOfDay: ["day", "evening"],
+    price: [1, 2, 3],
+  },
+  keywords: [
+    "bookstore", "quiet", "cozy", "literary", "analog", "warm", "vintage",
+    "library", "indie", "wine", "reflective", "moody", "ink", "writerly",
+    "poetic", "sips"
+  ]
+},
+{
+  themeId: "party-time",
+  name: "Party Time",
+  description: "Bring the crew. Tonight, the city is yours.",
+  stageFlow: ["bar", "dinner", "bar", "club", "late-night"],
+  filters: {
+    timeOfDay: ["evening", "night"],
+    price: [2, 3, 4],
+  },
+  keywords: [
+    "club", "dance", "beats", "late", "dj", "loud", "drinks", "bar",
+    "crowded", "energy", "flashy", "after hours", "party", "scene",
+    "friends night out", "rowdy", "weekend", "pregame", "lit", "cheers", "social"
+  ]
+},
+{
+  themeId: "post-work-wind-down",
+  name: "Post‑Work Wind Down",
+  description: "Unplug and ease into the evening after a long day.",
+  stageFlow: ["bar", "dinner", "cocktail", "lounge"],
+  filters: {
+    timeOfDay: ["evening"],
+    price: [1, 2, 3],
+  },
+  keywords: [
+    "happy hour", "bar", "tapas", "light bite", "craft beer", "after work",
+    "relax", "casual", "patio", "drinks", "mingle", "unwind", "refresh",
+    "lowkey", "cooldown", "ambient", "hangout", "winddown", "ease"
+  ]
+},
+{
+  themeId: "self-care",
+  name: "Self‑Care",
+  description: "Replenish your energy with serene solo stops.",
+  stageFlow: ["fitness", "spa", "tea", "bookstore", "park"],
+  filters: {
+    timeOfDay: ["day"],
+    price: [1, 2, 3],
+  },
+  keywords: [
+    "spa", "relax", "yoga", "meditation", "serenity", "retreat", "tea",
+    "calm", "detox", "massage", "rejuvenate", "peace"
+  ]
+},
+{
+  themeId: "sunrise-start",
+  name: "Sunrise Start",
+  description: "Begin your day grounded and energized.",
+  stageFlow: ["fitness", "bakery", "coffee", "market", "park"],
+  filters: {
+    timeOfDay: ["morning"],
+    price: [1, 2],
+  },
+  keywords: [
+    "coffee", "matcha", "sunrise", "morning", "café", "bakery", "brunch", "acai",
+    "patio", "quiet", "fresh", "early", "energizing", "routine", "mindful",
+    "stretch", "wellness", "cozy", "warm", "comforting", "inviting",
+    "breeze", "peaceful", "slow", "outdoor"
+  ]
+},
+{
+  themeId: "midday-recharge",
+  name: "Midday Recharge",
+  description: "A relaxing midday refresh to reset and recharge before the evening.",
+  stageFlow: ["coffee", "lunch", "park", "gallery"],
+  filters: {
+    timeOfDay: ["day"],
+    price: [1, 2, 3],
+  },
+  keywords: [
+    "lunch", "coffee", "café", "juice", "quick bite", "park", "sunlight", "relaxed",
+    "low key", "grab-and-go", "outdoor", "break", "neighborhood", "casual",
+    "breezy", "chill", "easygoing"
+  ]
+}
+];
+
+// ✅ Quick lookup
+export const themeById: Record<string, CrawlTheme> = Object.fromEntries(
+  crawlThemes.map((t) => [t.themeId, t])
+);

@@ -1,5 +1,3 @@
-// lib/routeEngine.ts
-
 import type { Venue } from "@/types/venue";
 import { _intervalsForDate, daypartAllowedForNow } from "@/utils/timeUtils";
 import { vibeSimilarity } from "@/utils/vibeUtils";
@@ -21,7 +19,7 @@ export interface RouteOptions {
 
 const DEFAULTS = {
   maxStops: 6,
-  durationPerStopHours: 1, // in hours
+  durationPerStopHours: 1,
   bufferHours: 1,
   maxDistMealDefault: 2500,
   maxDistOtherDefault: 1000,
@@ -67,7 +65,7 @@ export async function generateRoute(
   let lastVenue: Venue | null = null;
 
   const today = startTime.getDay();
-  const endHour = latestEndHour ?? (today >= 4 && today <= 6 ? 27 : 24); // Thu‑Sat night
+  const endHour = latestEndHour ?? (today >= 4 && today <= 6 ? 27 : 24);
   const latestEndTime = new Date(startTime);
   latestEndTime.setHours(endHour, 0, 0, 0);
 
@@ -88,26 +86,15 @@ export async function generateRoute(
         if (filterOpen && !_isOpenAt(v, arrival)) return null;
         if (!daypartAllowedForNow(v, arrival)) return null;
 
-if (typeof vibeSimilarity !== "function") {
-  console.error("❌ vibeSimilarity is not a function!", {
-    importedValue: vibeSimilarity,
-    type: typeof vibeSimilarity,
-  });
-}
         const similarity = lastVenue ? vibeSimilarity(lastVenue, v) : 1;
         if (lastVenue && similarity < minVibeSimilarity) return null;
 
-        // Attach a computed score (via type assertion)
         (v as any).__score = similarity * 1000 - dist;
         return v;
       })
       .filter(Boolean) as Venue[];
 
-    if (candidates.length === 0) {
-      // Could log for diagnostics
-      // console.trace(`No candidates found for stage ${i}`, desiredTypes);
-      continue;
-    }
+    if (candidates.length === 0) continue;
 
     candidates.sort((a, b) => (b as any).__score - (a as any).__score);
     const next = candidates[0];
