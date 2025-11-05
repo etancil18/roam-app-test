@@ -1,29 +1,81 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
-import { useRouter } from 'next/navigation';
-import { Database } from '@/types/supabase';
+import type { Database } from '@/types/supabase';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
+  const searchParams = useSearchParams();
   const supabase = createClientComponentClient<Database>();
+
+  useEffect(() => {
+    const handleRedirect = async () => {
+      const code = searchParams.get('code');
+      const authError = searchParams.get('error_description');
+
+      if (authError) {
+        setError(authError);
+        setLoading(false);
+        return;
+      }
+
+      const {
+        data: { session },
+      } = await supabase.auth.getSession();
+
+      if (session) {
+        router.replace('/map');
+        return;
+      }
+
+      if (code) {
+        const { error } = await supabase.auth.exchangeCodeForSession(code);
+        if (error) {
+          setError(error.message);
+          setLoading(false);
+        } else {
+          router.refresh(); // 🛠️ Force middleware to detect session
+          router.replace('/map');
+        }
+      } else {
+        setLoading(false);
+      }
+    };
+
+    handleRedirect();
+  }, [router, searchParams, supabase]);
 
   async function handleLogin(e: React.FormEvent) {
     e.preventDefault();
-    setSubmitted(false);
     setError(null);
+    setSubmitted(false);
 
-    const { error } = await supabase.auth.signInWithOtp({ email });
+    const { error } = await supabase.auth.signInWithOtp({
+      email,
+      options: {
+        emailRedirectTo: `${window.location.origin}/login`,
+      },
+    });
 
     if (error) {
       setError(error.message);
     } else {
       setSubmitted(true);
     }
+  }
+
+  if (loading) {
+    return (
+      <main className="flex justify-center items-center h-screen">
+        <p className="text-gray-600">Loading...</p>
+      </main>
+    );
   }
 
   return (
