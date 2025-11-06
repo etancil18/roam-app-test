@@ -1,5 +1,7 @@
 // utils/timeUtils.ts
 
+import type { Venue } from "@/types/venue";
+
 export function _dayKey(d: Date): string {
   return ["sun", "mon", "tue", "wed", "thu", "fri", "sat"][d.getDay()];
 }
@@ -74,10 +76,32 @@ export function daypartAllowedForNow(
     : hour >= start || hour < end - 24;
 }
 
-import type { Venue } from "@/types/venue";
-
+// --- Existing function ---
 export function isVenueOpenNow(venue: Venue, atTime: Date = new Date()): boolean {
   const hours = venue.hoursNumeric || {};
   const intervals = _intervalsForDate(atTime, hours);
   return intervals.some(([open, close]) => atTime >= open && atTime < close);
 }
+
+// --- New: Check if venue is open at a specific time ---
+function isVenueOpenAtTime(venue: Venue, atTime: Date): boolean {
+  return isVenueOpenNow(venue, atTime);
+}
+
+// --- New: Check if venue will be open within a certain future window (in minutes) ---
+function isVenueOpenWithinWindow(
+  venue: Venue,
+  atTime: Date,
+  windowMinutes: number
+): boolean {
+  const hours = venue.hoursNumeric || {};
+  const intervals = _intervalsForDate(atTime, hours);
+
+  const windowStart = atTime;
+  const windowEnd = new Date(atTime.getTime() + windowMinutes * 60 * 1000);
+
+  // Venue is acceptable if it starts opening at any time in this window
+  return intervals.some(([open, _close]) => open >= windowStart && open <= windowEnd);
+}
+
+export { isVenueOpenAtTime, isVenueOpenWithinWindow };

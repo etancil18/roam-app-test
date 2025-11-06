@@ -16,8 +16,8 @@ import "leaflet-routing-machine/dist/leaflet-routing-machine.css";
 
 import { isVenueOpenNow } from "@/utils/timeUtils";
 import { coverCandidates } from "@/utils/imageUtils";
-import { addVenueToFavorites } from "@/lib/supabase/favorites";
 import { themeById } from "@/lib/crawlConfig";
+import type { Venue } from "@/types/venue";
 
 import type { Database } from '@/types/supabase'
 
@@ -26,26 +26,6 @@ type HoursNumeric = {
   [key: string]: { open: number; close: number } | null;
 };
 
-type Venue = {
-  id?: string;
-  name: string;
-  vibe?: string;
-  type?: string;
-  lat: number;
-  lon: number;
-  link: string;
-  cover?: string;
-  openNow?: string | boolean;
-  hours?: string[];
-  dateEvents?: { date: string; title: string; time: string }[];
-  hoursNumeric?: HoursNumeric;
-  dayParts?: Record<string, string>;
-  timeCategory?: string;
-  energyRamp?: number;
-  tags?: string;
-  price?: string;
-  duration?: number;
-};
 
 // --- Daypart Color Map ---
 const daypartColorMap: Record<string, string> = {
@@ -172,6 +152,25 @@ export default function MapCanvas({
 
   const lineColor = themeColorMap[themeId ?? ""] ?? "cyan";
 
+  // ✅ Add this function to call the server API
+async function handleAddToFavorites(venue: Venue) {
+  try {
+    const res = await fetch('/api/favorites/add', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ venue }),
+    });
+
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.message || 'Failed to add favorite');
+    }
+  } catch (error) {
+    console.error('[MapCanvas] Error adding favorite:', error);
+    throw error; // Re-throw so UI can catch it
+  }
+}
+
   return (
     <div className="h-screen w-screen relative">
       {themeName && (
@@ -262,7 +261,7 @@ export default function MapCanvas({
                     onClick={async () => {
                       try {
                         setIsFavoriting(true);
-                        await addVenueToFavorites(loc);
+                        await handleAddToFavorites(loc as Venue);
                         alert(`⭐ Added "${loc.name}" to your favorites`);
                       } catch (error) {
                         console.error("Error adding favorite:", error);

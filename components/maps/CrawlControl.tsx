@@ -1,23 +1,25 @@
+// components/maps/CrawlControl.tsx
 'use client';
 
 import { useState } from "react";
 import type { Venue } from "@/types/venue";
+import { themeById } from "@/lib/crawlConfig";
 
 type CrawlControlProps = {
   venues: Venue[];
   route?: Venue[];
   onRoute: (route: Venue[]) => void;
-  selectedTheme: string;
+  selectedThemeId: string;
   customStart?: { lat: number; lon: number } | null;
   city: "atl" | "nyc";
-  onGenerateRoute: () => Promise<void>; // ✅ new required prop
+  onGenerateRoute: () => Promise<void>;
 };
 
 export default function CrawlControl({
   venues,
   route,
   onRoute,
-  selectedTheme,
+  selectedThemeId,
   customStart,
   city,
   onGenerateRoute,
@@ -28,7 +30,7 @@ export default function CrawlControl({
   async function handleGenerate() {
     setLoading(true);
     try {
-      await onGenerateRoute(); // ✅ delegated to MapWrapper
+      await onGenerateRoute();
     } finally {
       setLoading(false);
     }
@@ -49,13 +51,13 @@ export default function CrawlControl({
   function handleExportToMaps() {
     if (!Array.isArray(route) || route.length < 2) return;
     const base = "https://www.google.com/maps/dir/";
-    const waypoints = route.map((v: Venue) => `${v.lat},${v.lon}`).join("/");
+    const waypoints = route.map((v) => `${v.lat},${v.lon}`).join("/");
     window.open(`${base}${waypoints}`, "_blank");
   }
 
   function handleCopyLink() {
     if (!Array.isArray(route) || route.length === 0) return;
-    const ids = route.map((v: Venue) => v.id ?? v.name).join(",");
+    const ids = route.map((v) => v.id ?? v.name).join(",");
     const url = new URL(window.location.href);
     url.searchParams.set("route", ids);
 
@@ -73,6 +75,8 @@ export default function CrawlControl({
     setCopied(false);
   }
 
+  const themeName = selectedThemeId ? themeById[selectedThemeId]?.name : null;
+
   return (
     <div className="absolute bottom-4 left-4 z-[2000] bg-white p-3 rounded-xl shadow-lg w-72 border border-gray-300">
       <button
@@ -83,11 +87,17 @@ export default function CrawlControl({
         {loading ? "Generating…" : "Generate Crawl"}
       </button>
 
+      {themeName && (
+        <p className="text-xs text-gray-600 mt-1 italic text-center">
+          Theme: {themeName}
+        </p>
+      )}
+
       {Array.isArray(route) && route.length > 0 && (
         <div className="mt-3 space-y-2 text-sm">
           <h3 className="font-semibold text-gray-800">Your Crawl:</h3>
           <ol className="list-decimal pl-5 space-y-1 max-h-40 overflow-y-auto">
-            {route.map((stop: Venue, i: number) => (
+            {route.map((stop, i) => (
               <li key={i}>
                 <a
                   href={stop.link || "#"}
@@ -132,3 +142,5 @@ export default function CrawlControl({
     </div>
   );
 }
+
+export type { CrawlControlProps };

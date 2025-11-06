@@ -1,82 +1,97 @@
 // lib/supabase/favorites.ts
-import type { SupabaseClient } from '@supabase/supabase-js'
-import type { Database } from '@/types/supabase'
+
+import { supabaseServerComponent } from '@/lib/supabase/serverClient'
+import type { FavoriteRecord, FavoriteData } from '@/types/supabase'
 import type { Venue } from '@/types/venue'
+import { z } from 'zod'
 
-type FavoritesInsert = Database['public']['Tables']['favorites']['Insert']
+// ✅ Runtime validator for FavoriteData
+const favoriteDataSchema = z.object({
+  name: z.string(),
+  lat: z.number(),
+  lon: z.number(),
+  instagram_handle: z.string().nullable().optional(),
+})
 
-/**
- * Resolves the current user ID from the session, or throws.
- */
-async function resolveUserId(supabase: SupabaseClient<Database>, override?: string): Promise<string> {
-  if (override) return override
+// ✅ Internal helper to get Supabase client + user ID
+async function getClientAndUserId() {
+  const supabase = supabaseServerComponent()
+  const {
+    data: { user },
+    error,
+  } = await supabase.auth.getUser()
 
-  const { data: { user }, error } = await supabase.auth.getUser()
-  if (error) throw error
+  if (error) throw new Error(`Auth error: ${error.message}`)
   if (!user) throw new Error('User not authenticated')
-  return user.id
+
+  return { supabase, userId: user.id }
 }
 
-/**
- * Adds a venue to the user's favorites, or updates if already exists.
- */
+// ➕ Add or update a favorite venue
 export async function addVenueToFavorites(
-  supabase: SupabaseClient<Database, any, any>,
   venue: Venue,
-  userId?: string
-) {
-  const resolvedUserId = await resolveUserId(supabase, userId)
+  passedUserId?: string,
+  note?: string
+): Promise<FavoriteRecord[]> {
+  const { supabase, userId } = await getClientAndUserId()
+  const finalUserId = passedUserId ?? userId
 
-  const insertData: FavoritesInsert = {
-    user_id: resolvedUserId,
-    venue_id: venue.id ?? venue.name, // fallback if no ID
-    data: venue,
+  // ✅ Prepare and validate the JSON data stored inside "favorites.data"
+  const favoriteData: FavoriteData = {
+    name: venue.name,
+    lat: venue.lat,
+    lon: venue.lon,
+    instagram_handle: venue.link ?? null,
   }
 
-  const { data, error } = await supabase
-    .from('favorites')
-    .upsert([insertData], { onConflict: 'user_id,venue_id' })
-    .select()
+  const parsed = favoriteDataSchema.safeParse(favoriteData)
+  if (!parsed.success) {
+    console.error('❌ FavoriteData validation failed:', parsed.error.format())
+    throw new Error('Invalid venue data format')
+  }
 
-  if (error) throw error
-  return data
+  // ✅ Explicit Insert payload type (not derived)
+
+const insertPayload = {
+  user_id: finalUserId,
+  venue_id: venue.id ?? venue.name,
+  data: parsed.data,
 }
 
-/**
- * Removes a venue from the user's favorites.
- */
-export async function removeFavorite(
-  supabase: SupabaseClient<Database>,
-  venueId: string,
-  userId?: string
-) {
-  const resolvedUserId = await resolveUserId(supabase, userId)
+const { data, error } = await supabase
+  .from('favorites')
+  .upsert([insertPayload] as any, { onConflict: 'user_id,venue_id' })
+  .select()
+
+
+  if (error) throw new Error(`Failed to add favorite: ${error.message}`)
+  return data ?? []
+}
+
+// ❌ Remove a favorite
+export async function removeFavorite(venueId: string): Promise<boolean> {
+  const { supabase, userId } = await getClientAndUserId()
 
   const { error } = await supabase
     .from('favorites')
     .delete()
-    .eq('user_id', resolvedUserId)
+    .eq('user_id', userId)
     .eq('venue_id', venueId)
 
-  if (error) throw error
+  if (error) throw new Error(`Failed to remove favorite: ${error.message}`)
   return true
 }
 
-/**
- * Fetches all favorites for the user.
- */
-export async function getFavorites(
-  supabase: SupabaseClient<Database>,
-  userId?: string
-) {
-  const resolvedUserId = await resolveUserId(supabase, userId)
+// 📥 Get all user favorites
+export async function getFavorites(): Promise<FavoriteRecord[]> {
+  const { supabase, userId } = await getClientAndUserId()
 
   const { data, error } = await supabase
     .from('favorites')
-    .select('*')
-    .eq('user_id', resolvedUserId)
+    .select()
+    .eq('user_id', userId)
     .order('created_at', { ascending: false })
 
-  if (error) throw error
-  return data || []
+  if (error) throw new Error(`Failed to fetch favorites: ${error.message}`)
+  return data ?? []
 }
