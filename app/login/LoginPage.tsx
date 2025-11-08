@@ -30,7 +30,7 @@ export default function LoginPage() {
       } = await supabase.auth.getSession();
 
       if (session) {
-        router.replace('/map');
+        router.replace('/');
         return;
       }
 
@@ -41,7 +41,7 @@ export default function LoginPage() {
           setLoading(false);
         } else {
           router.refresh(); // 🛠️ Force middleware to detect session
-          router.replace('/map');
+          router.replace('/');
         }
       } else {
         setLoading(false);
