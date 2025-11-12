@@ -1,4 +1,3 @@
-// components/maps/CrawlControl.tsx
 'use client';
 
 import { useState } from "react";
@@ -36,16 +35,34 @@ export default function CrawlControl({
     }
   }
 
-  function handleSaveToLocal() {
+  async function handleSaveToCloud() {
     if (!Array.isArray(route) || route.length < 2) {
       alert("Need at least 2 stops to save.");
       return;
     }
-    const existing = localStorage.getItem("savedRoutes");
-    const savedRoutes = existing ? JSON.parse(existing) : [];
-    savedRoutes.push(route);
-    localStorage.setItem("savedRoutes", JSON.stringify(savedRoutes));
-    alert("Saved to local favorites.");
+
+    const name = prompt("Name this crawl?");
+    if (!name) return;
+
+    try {
+      const res = await fetch('/api/routes/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name,
+          stops: route,
+          city,
+        }),
+      });
+
+      if (!res.ok) throw new Error('Failed to save route.');
+
+      alert('✅ Saved to your account!');
+      // Optional: trigger SWR or context refresh here if needed
+    } catch (err) {
+      console.error(err);
+      alert('❌ Error saving route.');
+    }
   }
 
   function handleExportToMaps() {
@@ -113,7 +130,7 @@ export default function CrawlControl({
 
           <div className="pt-2 border-t border-gray-200 space-y-1">
             <button
-              onClick={handleSaveToLocal}
+              onClick={handleSaveToCloud}
               className="w-full bg-blue-500 text-white py-1 rounded hover:bg-blue-600 transition"
             >
               💾 Save

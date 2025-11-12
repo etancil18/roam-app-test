@@ -22,18 +22,15 @@
       "@/utils/*": ["utils/*"],
       "@/types/*": ["types/*"]
     },
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "plugins": [{ "name": "next" }]
   },
   "include": [
-    "types",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "types",
     ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", ".next"]
 }

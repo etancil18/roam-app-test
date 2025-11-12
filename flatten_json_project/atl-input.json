@@ -1,6 +1,6 @@
-const atlantaData = [
+[
   {
-    "slug": "beso-buckhead",    "name": "Beso Buckhead",
+    "name": "Beso Buckhead",
     "vibe": "upscale, trendy, latin, cocktails, nightlife, romantic, stylish, crowd-pleaser, vibrant, energetic, chic, social, high-energy, fashionable",
     "type": "club",
         "lat": 33.84377,
@@ -46,7 +46,7 @@ const atlantaData = [
     "duration": 3
   },
   {
-    "slug": "pisces",    "name": "Pisces",
+    "name": "Pisces",
     "vibe": "club, electronic, late-night, dance, gritty, neon, high-energy, pulsing, underground, immersive, nightlife, party",
     "type": "club",
         "lat": 33.754117,
@@ -92,7 +92,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "alici-oyster-bar",    "name": "Alici Oyster Bar",
+    "name": "Alici Oyster Bar",
     "vibe": "oysters, bright, coastal, elegant, fresh, raw-bar, lunch-friendly, mediterranean, seaside, crisp, airy, refined, light, polished",
     "type": "dinner",
         "lat": 33.7803409,
@@ -138,7 +138,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "kr-steakbar",    "name": "KR SteakBar",
+    "name": "KR SteakBar",
     "vibe": "steak, italian, power-lunch, upscale, wine, quiet, refined, romantic, classic, sophisticated, intimate, indulgent, polished",
     "type": "dinner",
         "lat": 33.81826905,
@@ -184,7 +184,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "ruby-chows",    "name": "Ruby Chow's",
+    "name": "Ruby Chow's",
     "vibe": "asian-fusion, dim, moody, design-forward, group-friendly, hip, cocktails, inventive, trendy, bold, stylish, curated, modern",
     "type": "dinner",
         "lat": 33.7715868,
@@ -230,7 +230,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "after-eight",    "name": "After Eight",
+    "name": "After Eight",
     "vibe": "lounge, late-night, cocktails, DJ, velvet, exclusive, dressy, music, sleek, intimate, chic, sophisticated, upscale, nightlife",
     "type": "cocktail",
         "lat": 33.7802207,
@@ -276,7 +276,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "bon-ton",    "name": "Bon Ton",
+    "name": "Bon Ton",
     "vibe": "cajun, vietnamese, funky, bold, neon, seafood, casual, lively, eclectic, playful, colorful, upbeat, quirky",
     "type": "dinner",
         "lat": 33.772956,
@@ -322,7 +322,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "apt-4b",    "name": "APT 4B",
+    "name": "APT 4B",
     "vibe": "afro-caribbean, vintage, vinyl, lounge, curated, cozy, cool, intimate, soulful, nostalgic, warm, vibey, atmospheric",
     "type": ["brunch", "lounge"],
         "lat": 33.8156255,
@@ -368,7 +368,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "delbar-buckhead",    "name": "Delbar - Buckhead",
+    "name": "Delbar - Buckhead",
     "vibe": "middle-eastern, garden, modern, romantic, flavors, chic, mediterranean, lush, airy, elegant, colorful, aromatic, exotic",
     "type": ["lunch", "dinner", "cocktail"],
         "lat": 33.839527,
@@ -414,7 +414,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "echo-room",    "name": "Echo Room",
+    "name": "Echo Room",
     "vibe": "minimal, loft, industrial, event-space, alternative, mixed-crowd, warehouse, artsy, raw, open, urban, edgy, creative",
     "type": "bar",
         "lat": 33.7749037,
@@ -460,7 +460,7 @@ const atlantaData = [
     "duration": 3
   },
   {
-    "slug": "97-estoria",    "name": "97 Estoria",
+    "name": "97 Estoria",
     "vibe": "dive, artsy, indie, laid-back, casual, murals, beer, low-key, local, unpretentious, neighborhood, friendly, authentic",
     "type": "bar",
         "lat": 33.7519921,
@@ -506,7 +506,6 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "bona-fide-deluxe",    
     "name": "Bona Fide Deluxe",
     "vibe": "retro, creative, diner-style, cocktails, quirky, colorful, playful, nostalgic, funky, vibrant, whimsical, artistic, bold",
     "type": "bar",
@@ -553,7 +552,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "the-porter-beer-bar",    "name": "The Porter Beer Bar",
+    "name": "The Porter Beer Bar",
     "vibe": "beer, cozy, gastropub, nerdy, hipster, local, classic, belgian, craft, warm, inviting, casual, community",
     "type": "bar",
         "lat": 33.7652193,
@@ -599,7 +598,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "wish-atlanta",    "name": "Wish Atlanta",
+    "name": "Wish Atlanta",
     "vibe": "streetwear, fashion, sneakers, hype, urban, boutique, minimalist, edgy, modern, exclusive, curated, stylish, premium",
     "type": ["random gem", "lifestyle"],
         "lat": 33.7665546,
@@ -645,7 +644,7 @@ const atlantaData = [
     "duration": 0.75
   },
   {
-    "slug": "wrecking-bar-brewpub",    "name": "Wrecking Bar Brewpub",
+    "name": "Wrecking Bar Brewpub",
     "vibe": "historic, craft-beer, cozy, elevated, tavern, patio, house-converted, warm, rustic, vintage, inviting, character, friendly",
     "type": "bar",
         "lat": 33.762309,
@@ -691,7 +690,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "the-brewhouse-cafe",    "name": "The Brewhouse Cafe",
+    "name": "The Brewhouse Cafe",
     "vibe": "pub, sports, soccer, brunch, casual, TVs, group-friendly, chill, laid-back, lively, approachable, easygoing, classic",
     "type": "bar",
         "lat": 33.7652432,
@@ -737,7 +736,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "east-palisades-trailhead",    "name": "East Palisades Trailhead",
+    "name": "East Palisades Trailhead",
     "vibe": "outdoors, nature, forest, scenic, peaceful, hiking, trails, serene, refreshing, green, quiet, escape, tranquil",
     "type": ["nature", "walk", "activity", "fitness"],
         "lat": 33.87122555,
@@ -783,7 +782,7 @@ const atlantaData = [
     "duration": 3.5
   },
   {
-    "slug": "e-rose-wellness-cafe-westside-provisions-atlanta",    "name": "E+ROSE Wellness Cafe - Westside Provisions Atlanta",
+    "name": "E+ROSE Wellness Cafe - Westside Provisions Atlanta",
     "vibe": "wellness, vegan, minimalist, smoothie, healthy, clean, daytime, fresh, bright, nourishing, energizing, plant-based, wholesome",
     "type": ["coffee", "breakfast", "juice bar"],
         "lat": 33.7847648,
@@ -829,7 +828,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "smiths-olde-bar",    "name": "Smith's Olde Bar",
+    "name": "Smith's Olde Bar",
     "vibe": "rock, dive, bar, music-venue, local, gritty, live-music, unpolished, vintage, alternative, lively, casual, classic",
     "type": ["bar", "club"],
         "lat": 33.79770375,
@@ -875,7 +874,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "jenis-splendid-ice-creams",    "name": "Jeni's Splendid Ice Creams",
+    "name": "Jeni's Splendid Ice Creams",
     "vibe": "ice-cream, artisan, colorful, dessert, family-friendly, fun, sweet, whimsical, inviting, photogenic, nostalgic, indulgent, bright",
     "type": "dessert",
         "lat": 33.8401417,
@@ -921,7 +920,7 @@ const atlantaData = [
     "duration": 0.75
   },
   {
-    "slug": "redacted-basement-drink-parlor",    "name": "Redacted Basement Drink Parlor",
+    "name": "Redacted Basement Drink Parlor",
     "vibe": "speakeasy, cocktails, moody, underground, hidden, intimate, retro, mysterious, exclusive, dim, vintage, stylish, atmospheric",
     "type": "speakeasy",
         "lat": 33.7367005,
@@ -967,7 +966,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "edgars-proof-provision",    "name": "Edgar's Proof & Provision",
+    "name": "Edgar's Proof & Provision",
     "vibe": "whiskey, upscale, leather, masculine, classic, cocktail-bar, hotel, polished, refined, cozy, lounge, sophisticated, warm",
     "type": "cocktail",
         "lat": 33.7724536,
@@ -1013,7 +1012,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "red-phone-booth",    "name": "Red Phone Booth",
+    "name": "Red Phone Booth",
     "vibe": "speakeasy, exclusive, cigar, dress-code, secretive, prohibition, vintage, refined, luxurious, intimate, classic, atmospheric, tailored",
     "type": "speakeasy",
         "lat": 33.7595884,
@@ -1059,7 +1058,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "stats-brewpub",    "name": "STATS Brewpub",
+    "name": "STATS Brewpub",
     "vibe": "sports, casual, tvs, beer, group-friendly, loud, downtown, lively, approachable, festive, big-screen, energetic, relaxed",
     "type": "bar",
         "lat": 33.7615575,
@@ -1105,7 +1104,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "the-painted-duck",    "name": "The Painted Duck",
+    "name": "The Painted Duck",
     "vibe": "bowling, upscale, industrial, cocktails, playful, social, events, interactive, vibrant, trendy, competitive, stylish, group-oriented",
     "type": ["activity", "cocktail"],
         "lat": 33.7814781,
@@ -1151,7 +1150,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "mjq-concourse",    "name": "MJQ Concourse",
+    "name": "MJQ Concourse",
     "vibe": "club, underground, electronic, late-night, dance, gritty, alternative, edgy, neon, raw, eclectic, loud, immersive",
     "type": "club",
         "lat": 33.7518911,
@@ -1197,7 +1196,7 @@ const atlantaData = [
     "duration": 3
   },
   {
-    "slug": "lazy-betty",    "name": "Lazy Betty",
+    "name": "Lazy Betty",
     "vibe": "fine-dining, tasting-menu, romantic, upscale, modern, elegant, chef-driven, sophisticated, intimate, polished, creative, seasonal, gourmet",
     "type": "dinner",
         "lat": 33.7811172,
@@ -1243,7 +1242,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "jojos-beloved-cocktail-lounge",    "name": "Jojo’s Beloved Cocktail Lounge",
+    "name": "Jojo’s Beloved Cocktail Lounge",
     "vibe": "disco, retro, cocktails, intimate, neon, immersive, curated, nostalgic, glamorous, themed, stylish, atmospheric, playful",
     "type": ["speakeasy", "lounge"],
         "lat": 33.787223,
@@ -1289,7 +1288,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "distillery-of-modern-art-in-chamblee",    "name": "Distillery of Modern Art in Chamblee",
+    "name": "Distillery of Modern Art in Chamblee",
     "vibe": "distillery, gallery, events, modern, industrial, artisan, design-focused, creative, cultural, upscale, experiential, polished, unique",
     "type": "bar",
         "lat": 33.8971099,
@@ -1335,7 +1334,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "larakin",    "name": "Larakin",
+    "name": "Larakin",
     "vibe": "cocktail-bar, chic, downtown, intimate, modern, clean, polished, stylish, minimal, curated, cozy, upscale, contemporary",
     "type": "wine bar",
         "lat": 33.7844809,
@@ -1381,7 +1380,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "evergreen-butcher-baker",    "name": "Evergreen Butcher + Baker",
+    "name": "Evergreen Butcher + Baker",
     "vibe": "brunch, bakery, local, hipster, seasonal, fresh, artisanal, warm, rustic, wholesome, friendly, inviting, casual",
     "type": "lunch",
         "lat": 33.7510262,
@@ -1427,7 +1426,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "wais-gong-fu-tea-house",    "name": "Wai's Gong Fu Tea House",
+    "name": "Wai's Gong Fu Tea House",
     "vibe": "tea, zen, minimalist, traditional, asian, slow, ritual, serene, calming, cultural, authentic, meditative, elegant",
     "type": "tea",
         "lat": 33.79233935,
@@ -1473,7 +1472,7 @@ const atlantaData = [
     "duration": 1.33
   },
   {
-    "slug": "kinship-butcher-sundry",    "name": "Kinship Butcher & Sundry",
+    "name": "Kinship Butcher & Sundry",
     "vibe": "butcher, grocery, casual, artisanal, neighborhood, rustic, heritage, hearty",
     "type": ["lunch", "market"],
         "lat": 33.7822964,
@@ -1519,7 +1518,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "whoopsies",    "name": "Whoopsie's",
+    "name": "Whoopsie's",
     "vibe": "divey, funky, queer-friendly, playful, casual, late-night, offbeat, eclectic, alternative, spirited, vibrant, colorful, relaxed",
     "type": "dinner",
         "lat": 33.7534631,
@@ -1565,7 +1564,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "may-peel",    "name": "May Peel",
+    "name": "May Peel",
     "vibe": "cocktail-bar, velvet, moody, feminine, date-night, stylish, cozy, refined, intimate, upscale, curated, romantic, elegant",
     "type": "cocktail",
         "lat": 33.7901025,
@@ -1611,7 +1610,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "commune",    "name": "Commune",
+    "name": "Commune",
     "vibe": "vinyl, music, cocktail, creative, neighborhood, quaint, artistic, comfortable, cozy, chill",
     "type": ["cocktail", "music"],
         "lat": 33.775806,
@@ -1657,7 +1656,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "the-waiting-room",    "name": "The Waiting Room",
+    "name": "The Waiting Room",
     "vibe": "lounge, rooftop, moody, intimate, scenic, bar, skyline, stylish, upscale, panoramic, chic, sophisticated, ambient",
     "type": "speakeasy",
         "lat": 33.772956,
@@ -1703,7 +1702,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "controllerise",    "name": "Controllerise",
+    "name": "Controllerise",
     "vibe": "creative, hip-hop, anime, gaming, alt-culture, underground, chill, retro, niche, immersive, eclectic, community, artistic",
     "type": "activity",
         "lat": 33.7949913,
@@ -1749,7 +1748,7 @@ const atlantaData = [
     "duration": 3
   },
   {
-    "slug": "grana",    "name": "Grana",
+    "name": "Grana",
     "vibe": "italian, patio, pizza, casual, family-style, bright, buzzy, lively, rustic, flavorful, warm, friendly, approachable",
     "type": ["lunch", "dinner"],
         "lat": 33.805921,
@@ -1795,7 +1794,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "home-grown-ga-restaurant",    "name": "Home grown GA Restaurant",
+    "name": "Home grown GA Restaurant",
     "vibe": "southern, kitschy, breakfast, local, vintage, casual, diner, hearty, nostalgic, homey, relaxed, unfussy, classic",
     "type": "breakfast",
         "lat": 33.7467393,
@@ -1841,7 +1840,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "small-fry",    "name": "Small Fry",
+    "name": "Small Fry",
     "vibe": "smashburgers, casual, counter-service, neon, retro, street-food, fun, quick, approachable, fast-casual, indulgent, bold",
     "type": ["lunch", "dinner"],
         "lat": 33.74483765,
@@ -1887,7 +1886,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "wicked-wolf-atlanta",    "name": "Wicked Wolf Atlanta",
+    "name": "Wicked Wolf Atlanta",
     "vibe": "sports-bar, nightlife, downtown, party, casual, high-energy, lively, bustling, social, fun, festive, urban, upbeat",
     "type": "bar",
         "lat": 33.7838568,
@@ -1933,7 +1932,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "block-drum",    "name": "BLOCK & DRUM",
+    "name": "BLOCK & DRUM",
     "vibe": "whiskey, lounge, upscale, bourbon, polished, local, industrial, refined, stylish, intimate, masculine, moody, crafted",
     "type": "bar",
         "lat": 33.888521,
@@ -1979,7 +1978,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "victory-sandwich-bar",    "name": "Victory Sandwich Bar",
+    "name": "Victory Sandwich Bar",
     "vibe": "sandwiches, quirky, laid-back, drinks, ping pong, divey, quick-bite, fun, casual, hip, low-key",
     "type": "lunch",
         "lat": 33.7639997,
@@ -2025,7 +2024,7 @@ const atlantaData = [
     "duration": 1.25
   },
   {
-    "slug": "twains-brewpub-billiards",    "name": "Twain's Brewpub & Billiards",
+    "name": "Twain's Brewpub & Billiards",
     "vibe": "billiards, beer, games, local, pub, casual, arcade, fun, group-friendly, laid-back, classic, social, relaxed",
     "type": "bar",
         "lat": 33.77228,
@@ -2071,7 +2070,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "fawn-wine-amaro",    "name": "Fawn Wine + Amaro",
+    "name": "Fawn Wine + Amaro",
     "vibe": "wine, intimate, european, seafood, romantic, dim, curated, aperitif, refined, cozy, stylish, upscale, slow-paced, warm",
     "type": ["wine bar", "cocktail"],
         "lat": 33.775424,
@@ -2117,7 +2116,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "indaco",    "name": "Indaco",
+    "name": "Indaco",
     "vibe": "italian, stylish, light-filled, brunch, group-friendly, pasta, fresh, airy, modern, inviting, elegant, rustic, approachable",
     "type": ["lunch", "dinner"],
         "lat": 33.77372173,
@@ -2163,7 +2162,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "tesserae",    "name": "Tesserae",
+    "name": "Tesserae",
     "vibe": "rooftop, lounge, swanky, skyline, DJ, upscale, cocktails, chic, panoramic, modern, vibrant, stylish, lively",
     "type": ["rooftop", "lounge"],
         "lat": 33.83820075,
@@ -2209,7 +2208,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "halfway-crooks-beer",    "name": "Halfway Crooks Beer",
+    "name": "Halfway Crooks Beer",
     "vibe": "brewery, belgian-style, minimalist, local, industrial, craft, hipster, casual",
     "type": "bar",
         "lat": 33.736999,
@@ -2255,7 +2254,7 @@ const atlantaData = [
     "duration": 1.25
   },
   {
-    "slug": "skylounge",    "name": "SkyLounge",
+    "name": "SkyLounge",
     "vibe": "rooftop, skyline, hotel, cocktails, dressy, lounge, city-view, upscale, sophisticated, panoramic, chic, romantic",
     "type": ["rooftop", "lounge"],
         "lat": 33.7569695,
@@ -2301,7 +2300,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "fox-marquee-club",    "name": "Fox Marquee Club",
+    "name": "Fox Marquee Club",
     "vibe": "lounge, theater-adjacent, stylish, cocktails, moody, upscale, elegant, intimate, glamorous, curated, sleek, fashionable, social",
     "type": ["rooftop", "lounge"],
         "lat": 33.7726429,
@@ -2347,7 +2346,7 @@ const atlantaData = [
     "duration": 1.66
   },
   {
-    "slug": "9-mile-station",    "name": "9 Mile Station",
+    "name": "9 Mile Station",
     "vibe": "rooftop, beer-garden, gastropub, skyline, open-air, scenic, relaxed, social, warm, inviting, picturesque, casual, lively",
     "type": "rooftop",
         "lat": 33.7728212,
@@ -2393,7 +2392,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "breaker-breaker",    "name": "Breaker Breaker",
+    "name": "Breaker Breaker",
     "vibe": "retro, seafood, colorful, beachy, tropical, casual, dog-friendly, patio, nautical, relaxed",
     "type": ["dinner", "lunch", "rooftop"],
         "lat": 33.7521019,
@@ -2439,7 +2438,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "scad-fash-museum-of-fashion-film",    "name": "SCAD FASH Museum of Fashion + Film",
+    "name": "SCAD FASH Museum of Fashion + Film",
     "vibe": "museum, fashion, culture, design, art-forward, modern, educational, inspiring, curated, creative, immersive, elevated",
     "type": "gallery",
         "lat": 33.798045,
@@ -2485,7 +2484,7 @@ const atlantaData = [
     "duration": 2.25
   },
   {
-    "slug": "moonlight",    "name": "Moonlight",
+    "name": "Moonlight",
     "vibe": "rooftop, nightlife, sleek, elevated, vibey, cocktails, trendy, chic, moody, upscale, romantic, lively",
     "type": ["rooftop", "cocktail"],
         "lat": 33.768629,
@@ -2531,7 +2530,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "little-spirit",    "name": "Little Spirit",
+    "name": "Little Spirit",
     "vibe": "cocktails, edgy, neighborhood, stylish, mixology, curated, intimate, trendy, moody, artisanal",
     "type": "cocktail",
         "lat": 33.7624505,
@@ -2577,7 +2576,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "blind-willies",    "name": "Blind Willie's",
+    "name": "Blind Willie's",
     "vibe": "blues, live-music, dive, old-school, intimate, local, no-frills, authentic, soulful, gritty, casual, classic, raw",
     "type": "music",
         "lat": 33.77707,
@@ -2623,7 +2622,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "academy-coffee",    "name": "Academy Coffee",
+    "name": "Academy Coffee",
     "vibe": "espresso, local, creative, small-batch, indie, minimalist, quiet, modern, refined, cozy, hip, artisanal, relaxed",
     "type": "coffee",
         "lat": 33.7822964,
@@ -2669,7 +2668,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "big-softie",    "name": "Big Softie",
+    "name": "Big Softie",
     "vibe": "soft-serve, cute, dessert, family-friendly, colorful, walk-up, sweet, playful, whimsical, casual, nostalgic, fun, bright",
     "type": "dessert",
         "lat": 33.77173338,
@@ -2715,7 +2714,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "plaza-theatre",    "name": "Plaza Theatre",
+    "name": "Plaza Theatre",
     "vibe": "indie-film, historic, retro, cult-classic, cinema, vintage, artistic, nostalgic, cultural, local, alternative, quirky, atmospheric",
     "type": "cinema",
         "lat": 33.77334445,
@@ -2761,7 +2760,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "whitespace-gallery",    "name": "Whitespace Gallery",
+    "name": "Whitespace Gallery",
     "vibe": "art, contemporary, white-box, curated, local, emerging-art, clean, minimal, modern, refined, experimental, airy, cultural",
     "type": "gallery",
         "lat": 33.7557099,
@@ -2807,7 +2806,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "abv-gallery",    "name": "ABV Gallery",
+    "name": "ABV Gallery",
     "vibe": "street-art, urban, curated, modern, edgy, youth-driven, mural, vibrant, cultural, alternative, colorful, bold, creative",
     "type": "gallery",
         "lat": 33.7419059,
@@ -2853,7 +2852,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "mason-fine-art",    "name": "Mason Fine Art",
+    "name": "Mason Fine Art",
     "vibe": "gallery, contemporary, upscale, curated, rotating-exhibits, polished, large-space, modern, refined, artistic, cultural, professional, bright",
     "type": "gallery",
         "lat": 33.830522,
@@ -2899,7 +2898,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "johnson-lowe-gallery",    "name": "Johnson Lowe Gallery",
+    "name": "Johnson Lowe Gallery",
     "vibe": "gallery, modern, black-art, curated, fine-art, boutique, emerging, cultural, intimate, refined, elegant, artistic, stylish",
     "type": "gallery",
         "lat": 33.8312303,
@@ -2945,7 +2944,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "the-painted-pin",    "name": "The Painted Pin",
+    "name": "The Painted Pin",
     "vibe": "bowling, upscale, nightlife, social, arcade, cocktails, industrial, trendy, vibrant, playful, polished, stylish, group-friendly",
     "type": "activity",
         "lat": 33.83001715,
@@ -2991,7 +2990,7 @@ const atlantaData = [
     "duration": 3
   },
   {
-    "slug": "painted-pickle",    "name": "Painted Pickle",
+    "name": "Painted Pickle",
     "vibe": "pickleball, social-club, games, bar, vibrant, indoor-outdoor, sporty, lively, casual, competitive, energetic, trendy, active",
     "type": "activity",
         "lat": 33.81169055,
@@ -3037,7 +3036,7 @@ const atlantaData = [
     "duration": 3
   },
   {
-    "slug": "sweetwater-brewing-company",    "name": "SweetWater Brewing Company",
+    "name": "SweetWater Brewing Company",
     "vibe": "brewery, beer, outdoors, casual, spacious, southern, laid-back, lively, social",
     "type": "bar",
         "lat": 33.8083643,
@@ -3083,7 +3082,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "hotto-hotto-ramen-teppanyaki",    "name": "Hotto Hotto Ramen & Teppanyaki",
+    "name": "Hotto Hotto Ramen & Teppanyaki",
     "vibe": "ramen, teppanyaki, asian, bold-flavor, urban, sit-down, warm",
     "type": "dinner",
         "lat": 33.7258276,
@@ -3129,7 +3128,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "buteco",    "name": "Buteco",
+    "name": "Buteco",
     "vibe": "brazilian, music, bar, multicultural, vibrant, relaxed, patio",
     "type": ["music", "cocktail", "workspace"],
         "lat": 33.7250434,
@@ -3175,7 +3174,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "zibas-bistro-and-wine-bar",    "name": "Ziba's Bistro and Wine Bar",
+    "name": "Ziba's Bistro and Wine Bar",
     "vibe": "wine, cozy, european, low-light, casual, intimate, charming",
     "type": "wine bar",
         "lat": 33.7391559,
@@ -3221,7 +3220,7 @@ const atlantaData = [
     "duration": 1.66
   },
   {
-    "slug": "hc-biergarten",    "name": "HC Biergarten",
+    "name": "HC Biergarten",
     "vibe": "biergarten, outdoor, social, casual, festive, group-friendly, picnic",
     "type": "bar",
         "lat": 33.73708276,
@@ -3267,7 +3266,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "boca",    "name": "BOCA",
+    "name": "BOCA",
     "vibe": "latin, bar, cocktails, night-out, vibrant, modern, small-plates",
     "type": ["dinner", "lunch", "cocktail"],
         "lat": 33.736626,
@@ -3305,7 +3304,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "talat-market",    "name": "Talat Market",
+    "name": "Talat Market",
     "vibe": "thai, inventive, buzzy, chef-driven, patio, seasonal, flavor-packed, aromatic, vibrant, contemporary, casual-elegant, fresh, creative",
     "type": "dinner",
         "lat": 33.7317567,
@@ -3343,7 +3342,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "lottafrutta",    "name": "Lottafrutta",
+    "name": "Lottafrutta",
     "vibe": "smoothie, fruit, cuban, breakfast, fresh, colorful, daytime, healthy, tropical, vibrant, casual, cheerful, light",
     "type": "lunch",
         "lat": 33.75597905,
@@ -3381,7 +3380,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "the-little-tart-bakeshop",    "name": "The Little Tart Bakeshop",
+    "name": "The Little Tart Bakeshop",
     "vibe": "bakery, coffee, french-inspired, pastry, minimalist, local, cozy, artisanal, quaint, bright, casual, sweet, neighborhood",
     "type": "bakery",
         "lat": 33.746078,
@@ -3419,7 +3418,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "staplehouse",    "name": "Staplehouse",
+    "name": "Staplehouse",
     "vibe": "fine-dining, modern, tasting-menu, seasonal, elegant, chef-driven, intimate, curated, upscale, artistic, refined, innovative, romantic",
     "type": "dinner",
         "lat": 33.754103,
@@ -3457,7 +3456,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "ok-yaki",    "name": "OK YAKI",
+    "name": "OK YAKI",
     "vibe": "japanese, okonomiyaki, authentic, counter-service, casual, niche, neighborhood, cozy, quirky, traditional, street-food, hidden-gem",
     "type": ["dinner", "patio"],
         "lat": 33.7348157,
@@ -3495,7 +3494,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "gaja-korean-bar",    "name": "Gaja Korean Bar",
+    "name": "Gaja Korean Bar",
     "vibe": "korean, cocktails, late-night, trendy, neon, grilled, edgy, bold, vibrant, casual, nightlife, youthful, social",
     "type": ["dinner", "cocktail"],
         "lat": 33.7405484,
@@ -3533,7 +3532,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "bellwood-coffee-east-atlanta-village",    "name": "Bellwood Coffee - East Atlanta Village",
+    "name": "Bellwood Coffee - East Atlanta Village",
     "vibe": "coffee, local, minimalist, plant-filled, laptop-friendly, cozy, airy, quiet, neighborhood, casual, relaxed",
     "type": "coffee",
         "lat": 33.7403846,
@@ -3571,7 +3570,7 @@ const atlantaData = [
     "duration": 0.75
   },
   {
-    "slug": "banshee",    "name": "Banshee",
+    "name": "Banshee",
     "vibe": "upscale, date-night, cocktails, new-american, moody, buzzy, chic, intimate, curated, creative, stylish, refined, dimly-lit",
     "type": "dinner",
         "lat": 33.7400282,
@@ -3609,7 +3608,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "lifting-noodles-ramen",    "name": "Lifting Noodles Ramen",
+    "name": "Lifting Noodles Ramen",
     "vibe": "ramen, street-style, quick-bite, flavorful, casual, cozy",
     "type": ["dinner", "lunch"],
         "lat": 33.7409824,
@@ -3647,7 +3646,7 @@ const atlantaData = [
     "duration": 1.25
   },
   {
-    "slug": "pure-quill-superette",    "name": "Pure Quill Superette",
+    "name": "Pure Quill Superette",
     "vibe": "gourmet, pantry, local-goods, deli, quirky, small-format, curated, artisanal, unique, cozy, nostalgic, boutique, casual",
     "type": "lunch",
         "lat": 33.7477238,
@@ -3685,7 +3684,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "adult-big-wheel-club",    "name": "Adult Big Wheel Club",
+    "name": "Adult Big Wheel Club",
     "vibe": "nostalgic, active, kitschy, playful, quirky, colorful, lively, casual, fun, social",
     "type": "activity",
         "lat": 33.74970365,
@@ -3723,7 +3722,7 @@ const atlantaData = [
     "duration": 3
   },
   {
-    "slug": "parkgrounds",    "name": "ParkGrounds",
+    "name": "ParkGrounds",
     "vibe": "dog-friendly, coffee, patio, casual, local, community, relaxed, social, cozy, laid-back",
     "type": ["coffee", "workspace"],
         "lat": 33.7501026,
@@ -3761,7 +3760,7 @@ const atlantaData = [
     "duration": 0.75
   },
   {
-    "slug": "el-malo",    "name": "El Malo",
+    "name": "El Malo",
     "vibe": "tropical, moody, cocktails, immersive, latin, bar, vibrant, colorful, nightlife, trendy, stylish, social, exotic",
     "type": "club",
         "lat": 33.7460782,
@@ -3799,7 +3798,7 @@ const atlantaData = [
     "duration": 3
   },
   {
-    "slug": "muchacho",    "name": "Muchacho",
+    "name": "Muchacho",
     "vibe": "tacos, colorful, casual, breakfast, patio, trendy, lively, vibrant, bright, fun, street-food, approachable, hip",
     "type": ["bar", "lunch", "patio", "breakfast", "dinner"],
         "lat": 33.7468699,
@@ -3837,7 +3836,7 @@ const atlantaData = [
     "duration": 1.25
   },
   {
-    "slug": "el-tesoro",    "name": "El Tesoro",
+    "name": "El Tesoro",
     "vibe": "mexican, outdoor, margaritas, authentic, family-friendly, casual, vibrant, neighborhood",
     "type": ["bar", "dinner"],
         "lat": 33.749472,
@@ -3875,7 +3874,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "a-mano",    "name": "a mano",
+    "name": "a mano",
     "vibe": "italian, cozy, seasonal, neighborhood, date-night, romantic, intimate, casual-elegant, rustic, warm, charming, inviting, classic",
     "type": "dinner",
         "lat": 33.76387055,
@@ -3913,7 +3912,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "woodys-cheesesteaks",    "name": "Woody's CheeseSteaks",
+    "name": "Woody's CheeseSteaks",
     "vibe": "cheesesteak, late-night, classic, fast-casual, local, no-frills, neighborhood, quick-bite, casual, hearty, retro, laid-back, friendly",
     "type": ["lunch"],
         "lat": 33.77935922,
@@ -3951,7 +3950,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "park-tavern",    "name": "Park Tavern",
+    "name": "Park Tavern",
     "vibe": "patio, casual, events, piedmont-park, group-friendly, scenic, social, lively, outdoors, festive, laid-back",
     "type": "bar",
         "lat": 33.7821472,
@@ -3989,7 +3988,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "bar-margot",    "name": "Bar Margot",
+    "name": "Bar Margot",
     "vibe": "upscale, hotel, cocktails, modern, stylish, refined, chic, intimate, polished, creative, dimly-lit, curated, trendy",
     "type": "cocktail",
         "lat": 33.78657571,
@@ -4027,7 +4026,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "midcity",    "name": "MidCity",
+    "name": "MidCity",
     "vibe": "cocktails, sleek, modern, casual, downtown, stylish, social, upscale, moody, lively, trendy, polished, inviting",
     "type": "cocktail",
         "lat": 33.7776363,
@@ -4065,7 +4064,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "the-garden-room",    "name": "The Garden Room",
+    "name": "The Garden Room",
     "vibe": "floral, whimsical, upscale, brunch, experiential, photo-ready, chic, vibrant, romantic, creative, lively, curated, elegant",
     "type": ["cocktail", "brunch", "dinner"],
         "lat": 33.8398015,
@@ -4103,7 +4102,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "himitsu",    "name": "Himitsu",
+    "name": "Himitsu",
     "vibe": "speakeasy, exclusive, japanese, intimate, moody, upscale, polished, refined, romantic, dimly-lit, luxurious, curated, stylish",
     "type": "speakeasy",
         "lat": 33.8387046,
@@ -4141,7 +4140,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "ranger-station",    "name": "Ranger Station",
+    "name": "Ranger Station",
     "vibe": "casual, urban, hangout, eclectic, lounge, local, relaxed, social, neighborhood, inviting, fun, cozy, unpretentious",
     "type": ["speakeasy", "lounge"],
         "lat": 33.759717,
@@ -4179,7 +4178,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "bully-boy",    "name": "Bully Boy",
+    "name": "Bully Boy",
     "vibe": "japanese, chic, fusion, minimalist, date-night, hip, modern, stylish, intimate, refined, creative, curated, upscale",
     "type": ["dinner", "cocktail"],
         "lat": 33.768267,
@@ -4217,7 +4216,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "burles-bar",    "name": "Burle's Bar",
+    "name": "Burle's Bar",
     "vibe": "intimate, cocktails, plants, patio, jazz, music, hidden, lounge",
     "type": "cocktail",
         "lat": 33.7681929,
@@ -4255,7 +4254,7 @@ const atlantaData = [
     "duration": 1.25
   },
   {
-    "slug": "the-local",    "name": "The Local",
+    "name": "The Local",
     "vibe": "dive-bar, casual, wings, no-frills, neighborhood, friendly, gritty, laid-back, social, unpretentious, local-hangout",
     "type": "bar",
         "lat": 33.7741056,
@@ -4293,7 +4292,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "alons-bakery-market",    "name": "Alon's Bakery & Market",
+    "name": "Alon's Bakery & Market",
     "vibe": "bakery, market, brunch, refined, artisanal, fresh, cozy",
     "type": ["bakery", "lunch"],
         "lat": 33.7926253,
@@ -4331,7 +4330,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "Mary-macs-tea-room",    "name": "Mary Mac's Tea Room",
+    "name": "Mary Mac's Tea Room",
     "vibe": "southern, historic, traditional, comfort-food, family, hearty, vintage, homestyle, nostalgic, community, warm, classic",
     "type": "tea",
         "lat": 33.7728357,
@@ -4369,7 +4368,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "the-varsity",    "name": "The Varsity",
+    "name": "The Varsity",
     "vibe": "fast-food, retro, iconic, american, touristy, casual, historic, lively, playful, classic, quick-service, nostalgic",
     "type": "lunch",
         "lat": 33.77170735,
@@ -4407,7 +4406,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "drawbar",    "name": "Drawbar",
+    "name": "Drawbar",
     "vibe": "rooftop, scenic, upscale, brunch, cocktails, stylish, modern, airy, vibrant, social, relaxed, photogenic",
     "type": ["rooftop", "brunch", "cocktail"],
         "lat": 33.78497,
@@ -4445,7 +4444,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "little-sparrow",    "name": "Little Sparrow",
+    "name": "Little Sparrow",
     "vibe": "cocktail-bar, moody, modern, chic, intimate, curated, dimly-lit, sophisticated, stylish, cozy, romantic",
     "type": ["cocktail", "dinner"],
         "lat": 33.787134,
@@ -4483,7 +4482,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "palo-santo",    "name": "Palo Santo",
+    "name": "Palo Santo",
     "vibe": "rooftop, latin, upscale, views, mezcal, nightlife, vibrant, trendy, exotic, festive, scenic, social, lively",
     "type": ["cocktail", "dinner", "rooftop"],
         "lat": 33.78396723,
@@ -4521,7 +4520,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "high-museum-of-art",    "name": "High Museum of Art",
+    "name": "High Museum of Art",
     "vibe": "art, contemporary, culture, modern, architecture, educational, design-forward, curated, inspiring, public, artistic, creative, iconic",
     "type": "gallery",
         "lat": 33.78953465,
@@ -4559,7 +4558,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "johnnys-hideaway",    "name": "Johnny's Hideaway",
+    "name": "Johnny's Hideaway",
     "vibe": "dance, retro, classic, nightlife, throwback, energetic, nostalgic, lively, social, themed, playful",
     "type": "club",
         "lat": 33.857791,
@@ -4597,7 +4596,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "le-bon-nosh",    "name": "Le Bon Nosh",
+    "name": "Le Bon Nosh",
     "vibe": "french, café, elegant, gourmet, brunch, minimalist, refined, chic, contemporary",
     "type": ["bakery", "brunch", "dinner"],
         "lat": 33.84132675,
@@ -4650,7 +4649,7 @@ const atlantaData = [
     "duration": 1.25
   },
   {
-    "slug": "irbys-tavern",    "name": "Irby's Tavern",
+    "name": "Irby's Tavern",
     "vibe": "sports, casual, neighborhood, tvs, social, drinks, lively, group-friendly, classic, easygoing, upbeat, fun",
     "type": "bar",
         "lat": 33.83958005,
@@ -4688,7 +4687,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "st-julep",    "name": "St. Julep",
+    "name": "St. Julep",
     "vibe": "rooftop, colorful, cocktails, trendy, skyline, fun, vibrant, casual, upbeat, youthful, scenic, playful, photogenic",
     "type": ["rooftop", "cocktail"],
         "lat": 33.83935865,
@@ -4726,7 +4725,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "yeppa-co-buckhead",    "name": "Yeppa & Co. - Buckhead",
+    "name": "Yeppa & Co. - Buckhead",
     "vibe": "italian, lively, upscale, espresso martini, pasta, bright, social, stylish, contemporary, group-friendly",
     "type": ["cocktail", "brunch", "dinner"],
         "lat": 33.83831,
@@ -4764,7 +4763,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "fado-irish-pub",    "name": "Fado Irish Pub",
+    "name": "Fado Irish Pub",
     "vibe": "irish, pub, sports, beer, community, casual, bar-food, friendly, lively, social, traditional, festive",
     "type": "bar",
         "lat": 33.7797074,
@@ -4802,7 +4801,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "le-colonial-atlanta",    "name": "Le Colonial Atlanta",
+    "name": "Le Colonial Atlanta",
     "vibe": "vietnamese, fine-dining, colonial-style, chic, upscale, romantic, refined, intimate, exotic, curated, hip, sophisticated",
     "type": ["cocktail", "lunch", "dinner"],
         "lat": 33.83847596,
@@ -4840,7 +4839,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "northside-tavern",    "name": "Northside Tavern",
+    "name": "Northside Tavern",
     "vibe": "dive-bar, live-music, blues, gritty, historic, late-night, local, unpretentious, raw, neighborhood, soulful, casual, authentic",
     "type": "bar",
         "lat": 33.7836184,
@@ -4878,7 +4877,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "wagyu-house-atlanta-rooftop-bbq",    "name": "Wagyu House Atlanta | Rooftop BBQ",
+    "name": "Wagyu House Atlanta | Rooftop BBQ",
     "vibe": "rooftop, korean, cocktails, scenic, modern, trendy, casual, lively, social, stylish, group-friendly, flavorful, urban",
     "type": ["rooftop", "dinner", "cocktail"],
         "lat": 33.783135,
@@ -4916,7 +4915,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "ormsbys",    "name": "Ormsby's",
+    "name": "Ormsby's",
     "vibe": "pub, games, basement, chill, bocce, darts, social, casual, playful, retro, fun, beer, lively",
     "type": "bar",
         "lat": 33.7859263,
@@ -4954,7 +4953,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "stereo",    "name": "STEREO",
+    "name": "STEREO",
     "vibe": "bar, funky, music, vinyl, curated, cocktails, stylish, energetic, urban, coffee, creative, trendy",
     "type": ["coffee", "cocktail", "music"],
         "lat": 33.755066,
@@ -4992,7 +4991,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "lloyds-restaurant-lounge",    "name": "LLoyd's Restaurant & Lounge",
+    "name": "LLoyd's Restaurant & Lounge",
     "vibe": "retro, diner-vibes, dive-bar, cheeky, cocktails, casual, nostalgic, quirky, lively",
     "type": ["dinner", "bar"],
         "lat": 33.755066,
@@ -5030,7 +5029,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "glide-pizza",    "name": "Glide Pizza",
+    "name": "Glide Pizza",
     "vibe": "pizza, slice-shop, casual, quick-bite, local",
     "type": ["dinner", "lunch"],
         "lat": 33.7560215,
@@ -5068,7 +5067,7 @@ const atlantaData = [
     "duration": 0.75
   },
   {
-    "slug": "the-james-room",    "name": "The James Room",
+    "name": "The James Room",
     "vibe": "speakeasy, cocktail, upscale, moody, lounge, intimate, low-light",
     "type": "speakeasy",
         "lat": 33.7555043,
@@ -5106,7 +5105,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "yuji-modern-japanese",    "name": "Yuji Modern Japanese",
+    "name": "Yuji Modern Japanese",
     "vibe": "omakase, minimalist, modern, japanese, refined, small-plates, chef-driven, exclusive",
     "type": "dinner",
         "lat": 33.75704209,
@@ -5144,7 +5143,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "ladybird-grove-mess-hall",    "name": "Ladybird Grove & Mess Hall",
+    "name": "Ladybird Grove & Mess Hall",
     "vibe": "patio, bar, beer, american, sports, group-friendly, lively, social, sunny",
     "type": "bar",
         "lat": 33.759717,
@@ -5182,7 +5181,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "painted-park",    "name": "Painted Park",
+    "name": "Painted Park",
     "vibe": "bar, outdoor, casual, sports, fun, lively, crowd-pleaser",
     "type": "bar",
         "lat": 33.76254145,
@@ -5220,7 +5219,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "harbor-coffee",    "name": "Harbor Coffee",
+    "name": "Harbor Coffee",
     "vibe": "coffee, minimalist, calm, daytime, local, light-filled, relaxed",
     "type": "coffee",
         "lat": 33.76346,
@@ -5258,7 +5257,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "beetlecat",    "name": "BeetleCat",
+    "name": "BeetleCat",
     "vibe": "seafood, nautical, oysters, brunch, stylish, fresh, patio",
     "type": "dinner",
         "lat": 33.7624505,
@@ -5296,7 +5295,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "highland-tap",    "name": "Highland Tap",
+    "name": "Highland Tap",
     "vibe": "steakhouse, underground, dark, classic, old-school, cozy, martinis",
     "type": ["cocktail", "dinner"],
         "lat": 33.78284196,
@@ -5334,7 +5333,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "dark-horse-tavern",    "name": "Dark Horse Tavern",
+    "name": "Dark Horse Tavern",
     "vibe": "dive-bar, rock, karaoke, grungy, casual, nightlife, local, rowdy",
     "type": "bar",
         "lat": 33.7768237,
@@ -5372,7 +5371,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "dads",    "name": "Dad's",
+    "name": "Dad's",
     "vibe": "cocktails, patio, retro, cinema, funky, fun, casual, eclectic",
     "type": ["bar", "cocktail"],
         "lat": 33.77832855,
@@ -5410,7 +5409,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "moes-and-joes",    "name": "Moe's and Joe's",
+    "name": "Moe's and Joe's",
     "vibe": "pub, casual, sports, patio, local-favorite, old-school, unpretentious",
     "type": "bar",
         "lat": 33.7828246,
@@ -5448,7 +5447,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "the-rooftop-at-clermont",    "name": "The Rooftop at Clermont",
+    "name": "The Rooftop at Clermont",
     "vibe": "rooftop, skyline, cocktails, scenic, lively, retro, photogenic, breezy",
     "type": ["rooftop", "cocktail"],
         "lat": 33.77347,
@@ -5486,7 +5485,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "clermont-lounge",    "name": "Clermont Lounge",
+    "name": "Clermont Lounge",
     "vibe": "dive-bar, burlesque, historic, eccentric, gritty, legendary, unfiltered",
     "type": "bar",
         "lat": 33.77347,
@@ -5524,7 +5523,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "spaceman",    "name": "Spaceman",
+    "name": "Spaceman",
     "vibe": "rooftop, modern, cocktails, hotel-bar, skyline, upscale",
     "type": "rooftop",
         "lat": 33.8436339,
@@ -5562,7 +5561,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "elemental-spirits-co",    "name": "Elemental Spirits Co.",
+    "name": "Elemental Spirits Co.",
     "vibe": "wine, spirits, curated, boutique, artisanal",
     "type": "random gem",
         "lat": 33.7707666,
@@ -5600,7 +5599,7 @@ const atlantaData = [
     "duration": 0.66
   },
   {
-    "slug": "murphys-wine-shop",    "name": "Murphy's Wine Shop",
+    "name": "Murphy's Wine Shop",
     "vibe": "wine, cozy, boutique, romantic, intimate, neighborhood",
     "type": "random gem",
         "lat": 33.782121,
@@ -5638,7 +5637,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "wine-shoe",    "name": "Wine Shoe",
+    "name": "Wine Shoe",
     "vibe": "wine shop, casual, classes, boutique, local",
     "type": ["wine bar", "lifestyle"],
         "lat": 33.7515516,
@@ -5676,7 +5675,7 @@ const atlantaData = [
     "duration": 0.66
   },
   {
-    "slug": "vin-atl",    "name": "Vin ATL",
+    "name": "Vin ATL",
     "vibe": "wine, natural, curated, neighborhood, hipster, boutique",
     "type": "wine bar",
         "lat": 33.76066881,
@@ -5714,7 +5713,7 @@ const atlantaData = [
     "duration": 0.66
   },
   {
-    "slug": "perrines-wine-westside",    "name": "PERRINE's WINE - Westside",
+    "name": "PERRINE's WINE - Westside",
     "vibe": "wine, upscale, french, boutique, refined, expert",
     "type": "random gem",
         "lat": 33.785691,
@@ -5752,7 +5751,7 @@ const atlantaData = [
     "duration": 0.66
   },
   {
-    "slug": "barcelona-wine-bar",    "name": "Barcelona Wine Bar",
+    "name": "Barcelona Wine Bar",
     "vibe": "tapas, wine, spanish, bustling, date-night, patio, energetic",
     "type": "wine bar",
         "lat": 33.76254145,
@@ -5790,7 +5789,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "lucian-books-and-wine",    "name": "Lucian Books and Wine",
+    "name": "Lucian Books and Wine",
     "vibe": "wine, bookstore, quiet, elegant, artistic, refined",
     "type": ["wine bar", "dinner"],
         "lat": 33.8369462,
@@ -5828,7 +5827,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "3-parks-wine-shop-old-fourth-ward",    "name": "3 Parks Wine Shop - Old Fourth Ward",
+    "name": "3 Parks Wine Shop - Old Fourth Ward",
     "vibe": "wine, boutique, local, approachable, curated, small-producer",
     "type": "wine bar",
         "lat": 33.7687646,
@@ -5866,7 +5865,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "vinoteca",    "name": "VinoTeca",
+    "name": "VinoTeca",
     "vibe": "wine, stylish, retail, european, tastings, intimate, outdoor seating, live music",
     "type": "wine bar",
         "lat": 33.7624505,
@@ -5904,7 +5903,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "sebastian-pintxos-bar",    "name": "SEBASTIAN PINTXOS BAR",
+    "name": "SEBASTIAN PINTXOS BAR",
     "vibe": "lively, social, euro, chic, wine, tapas, group, bites, vibrant, upscale",
     "type": ["bar", "dinner"],
         "lat": 33.7768867,
@@ -5950,7 +5949,7 @@ const atlantaData = [
     "duration": 2.33
   },
   {
-    "slug": "criminal-records",    "name": "Criminal Records",
+    "name": "Criminal Records",
     "vibe": "indie, artsy, vinyl, music, cultural, low-key, shop, retro, niche, local",
     "type": ["random gem", "lifestyle"],
         "lat": 33.7652096,
@@ -5996,7 +5995,7 @@ const atlantaData = [
     "duration": 0.66
   },
   {
-    "slug": "carroll-street-cafe",    "name": "Carroll Street Cafe",
+    "name": "Carroll Street Cafe",
     "vibe": "cozy, artistic, neighborhood, brunch, laid-back, local, casual, cafe, friendly, social",
     "type": ["brunch", "dinner"],
         "lat": 33.7489907,
@@ -6042,7 +6041,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "brick-store-pub",    "name": "Brick Store Pub",
+    "name": "Brick Store Pub",
     "vibe": "historic, craft, beer, pub, warm, casual, local, friendly, classic, social",
     "type": "bar",
         "lat": 33.7751446,
@@ -6088,7 +6087,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "the-family-dog",    "name": "The Family Dog",
+    "name": "The Family Dog",
     "vibe": "casual, dog-friendly, sports, patio, pub, local, laid-back, social, neighborhood, chill",
     "type": "bar",
         "lat": 33.792682,
@@ -6134,7 +6133,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "ash-coffee",    "name": "Ash Coffee",
+    "name": "Ash Coffee",
     "vibe": "minimalist, slow, mornings, work, hipster, coffee, calm, bright, modern, cafe",
     "type": "coffee",
         "lat": 33.77983002,
@@ -6180,7 +6179,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "java-saga",    "name": "Java Saga",
+    "name": "Java Saga",
     "vibe": "quick, korean, fusion, hidden, takeaway, casual, street, flavorful, local, lunch",
     "type": "lunch",
         "lat": 33.8932252,
@@ -6226,7 +6225,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "hudson-and-alphonse",    "name": "Hudson and Alphonse",
+    "name": "Hudson and Alphonse",
     "vibe": "stylish, brunch, date, modern, american, upscale, cafe, social, bright, local",
     "type": "lunch",
         "lat": 33.71936579,
@@ -6272,7 +6271,7 @@ const atlantaData = [
     "duration": 0.66
   },
   {
-    "slug": "how-crispy-express",    "name": "How Crispy Express",
+    "name": "How Crispy Express",
     "vibe": "funky, retro, chicken, fast, casual, urban, local, colorful, quick, street",
     "type": "dinner",
         "lat": 33.736586,
@@ -6318,7 +6317,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "genes",    "name": "Gene's",
+    "name": "Gene's",
     "vibe": "elevated, local, dine, wine, trendy, neighborhood, upscale, modern, social, evening",
     "type": "dinner",
         "lat": 33.7506665,
@@ -6364,7 +6363,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "sublime-doughnuts",    "name": "Sublime Doughnuts",
+    "name": "Sublime Doughnuts",
     "vibe": "quirky, sweet, cravings, colorful, dessert, casual, 24-hour, playful, local, treat",
     "type": "dessert",
         "lat": 33.8284633,
@@ -6410,7 +6409,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "paolos-gelato-italiano",    "name": "Paolo's Gelato Italiano",
+    "name": "Paolo's Gelato Italiano",
     "vibe": "euro, charm, family, dessert, walk-up, casual, sweet, colorful, local, treat",
     "type": "dessert",
         "lat": 33.78231572,
@@ -6456,7 +6455,7 @@ const atlantaData = [
     "duration": 0.66
   },
   {
-    "slug": "miss-conduck",    "name": "Miss Conduck",
+    "name": "Miss Conduck",
     "vibe": "hidden, intimate, modern, southern, date, cozy, local, refined, upscale, evening",
     "type": "dinner",
         "lat": 33.754172,
@@ -6502,7 +6501,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "boccalupo",    "name": "BoccaLupo",
+    "name": "BoccaLupo",
     "vibe": "upscale, intimate, modern, italian, culinary, romantic, refined, local, luxe, dinner",
     "type": "dinner",
         "lat": 33.7547586,
@@ -6548,7 +6547,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "yakitori-kona",    "name": "Yakitori Kona",
+    "name": "Yakitori Kona",
     "vibe": "late-night, japanese, skewers, sake, local, urban, casual, lively, grill, bar",
     "type": ["dinner", "cocktail"],
         "lat": 33.78242657,
@@ -6594,7 +6593,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "blackjack-bar-tapas",    "name": "Blackjack Bar Tapas",
+    "name": "Blackjack Bar Tapas",
     "vibe": "after-hours, tapas, dimly-lit, urban, cool, late-night, social, lounge, drinks, bar",
     "type": "bar",
         "lat": 33.7838568,
@@ -6640,7 +6639,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "gigis-italian-kitchen-restaurant",    "name": "Gigi's Italian Kitchen & Restaurant",
+    "name": "Gigi's Italian Kitchen & Restaurant",
     "vibe": "romantic, intimate, chef, cozy, european, upscale, refined, local, dinner, date",
     "type": "dinner",
         "lat": 33.7649126,
@@ -6686,7 +6685,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "little-bear",    "name": "Little Bear",
+    "name": "Little Bear",
     "vibe": "contemporary, neighborhood, seasonal, quiet, luxe, refined, modern, local, cozy, upscale",
     "type": "dinner",
         "lat": 33.736586,
@@ -6732,7 +6731,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "tum-pok-pok",    "name": "Tum Pok Pok",
+    "name": "Tum Pok Pok",
     "vibe": "vibrant, thai, street, spicy, artsy, casual, flavorful, local, bold, colorful",
     "type": "dinner",
         "lat": 33.8877912,
@@ -6778,7 +6777,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "northern-china-eatery",    "name": "Northern China Eatery",
+    "name": "Northern China Eatery",
     "vibe": "hole-in-the-wall, dumpling, authentic, no-frills, casual, local, comfort, flavorful, street, simple",
     "type": ["lunch", "dinner"],
         "lat": 33.8925867,
@@ -6824,7 +6823,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "lanzhou-ramen",    "name": "LanZhou Ramen",
+    "name": "LanZhou Ramen",
     "vibe": "urban, noodle, fast, flavorful, comfort, casual, local, warm, quick, street",
     "type": "dinner",
         "lat": 33.8948429,
@@ -6870,7 +6869,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "la-calavera",    "name": "La Calavera",
+    "name": "La Calavera",
     "vibe": "wholesome, family, morning, latin, casual, bakery, local, bright, fresh, friendly",
     "type": "dinner",
         "lat": 33.74751926,
@@ -6916,7 +6915,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "bread-butterfly",    "name": "Bread & Butterfly",
+    "name": "Bread & Butterfly",
     "vibe": "parisian, cafe, dreamy, brunch, euro, chic, stylish, local, bright, instagram",
     "type": ["coffee", "brunch"],
         "lat": 33.7624293,
@@ -6962,7 +6961,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "buena-gente-cuban-bakery",    "name": "Buena Gente Cuban Bakery",
+    "name": "Buena Gente Cuban Bakery",
     "vibe": "cuban, charm, morning, takeaway, bright, breezy, bakery, local, casual, quick",
     "type": ["bakery", "coffee"],
         "lat": 33.79332375,
@@ -7008,7 +7007,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "heaps-pies",    "name": "Heaps Pies",
+    "name": "Heaps Pies",
     "vibe": "aussie, comfort, grab-and-go, casual, savory, pie, local, quick, bakery, snack",
     "type": "bakery",
         "lat": 33.778269,
@@ -7054,7 +7053,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "galette",    "name": "Galette",
+    "name": "Galette",
     "vibe": "french, minimal, local, quiet, charm, crepe, cozy, casual, cafe, sweet",
     "type": ["bakery", "coffee"],
         "lat": 33.77627052,
@@ -7100,7 +7099,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "thinking-man-tavern",    "name": "Thinking Man Tavern",
+    "name": "Thinking Man Tavern",
     "vibe": "dive, trivia, tavern, late-night, casual, local, pub, comfort, bar, social",
     "type": "bar",
         "lat": 33.76787415,
@@ -7146,7 +7145,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "reds-beer-garden",    "name": "Red's Beer Garden",
+    "name": "Red's Beer Garden",
     "vibe": "laid-back, outdoor, beer, dog-friendly, local, casual, social, patio, hangout, sunny",
     "type": "bar",
         "lat": 33.71880063,
@@ -7192,7 +7191,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "arepa-mia",    "name": "Arepa Mia",
+    "name": "Arepa Mia",
     "vibe": "latin, casual, flavorful, counter, quick, cultural, street, colorful, vibrant, local",
     "type": "lunch",
         "lat": 33.7770981,
@@ -7238,7 +7237,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "my-parenets-basement",    "name": "My Parents' Basement",
+    "name": "My Parents' Basement",
     "vibe": "nerdy, comics, beer, chill, quirky, fun, casual, retro, pop-culture, hangout",
     "type": "bar",
         "lat": 33.7755875,
@@ -7284,7 +7283,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "boggs-social-supply",    "name": "Boggs Social & Supply",
+    "name": "Boggs Social & Supply",
     "vibe": "alt, music, grunge, dive, bar, diy, live, casual, loud, edgy",
     "type": "bar",
         "lat": 33.7371739,
@@ -7330,7 +7329,7 @@ const atlantaData = [
     "duration": null
   },
   {
-    "slug": "joystick-gamebar",    "name": "Joystick Gamebar",
+    "name": "Joystick Gamebar",
     "vibe": "arcade, retro, gamer, neon, rowdy, nostalgic, bar, fun, drinks, social",
     "type": ["activity", "bar"],
         "lat": 33.754137,
@@ -7376,7 +7375,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "sister-louisas-church-of-the-living-room",    "name": "Sister Louisa's Church of the Living Room &...",
+    "name": "Sister Louisa's Church of the Living Room &...",
     "vibe": "irreverent, dive, offbeat, southern, gothic, weird, artsy, quirky, retro, bar",
     "type": "bar",
         "lat": 33.7544842,
@@ -7422,7 +7421,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "Jackson-fine-art",    "name": "Jackson Fine Art",
+    "name": "Jackson Fine Art",
     "vibe": "refined, minimalist, photography, quiet, sophisticated, gallery, elegant, modern, curated",
     "type": "gallery",
         "lat": 33.8402295,
@@ -7468,7 +7467,7 @@ const atlantaData = [
     "duration": 0.75
   },
   {
-    "slug": "the-bakery-atlanta-arts-organization",    "name": "The Bakery Atlanta (Arts Organization)",
+    "name": "The Bakery Atlanta (Arts Organization)",
     "vibe": "experimental, diy, art, collective, gritty, creative, local, raw, cultural, alt",
     "type": "gallery",
         "lat": 42.089736,
@@ -7508,7 +7507,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "zucot-gallery",    "name": "ZuCot Gallery",
+    "name": "ZuCot Gallery",
     "vibe": "contemporary, black-art, polished, cultural, intimate, refined, modern, elegant, gallery, curated",
     "type": "gallery",
         "lat": 33.7522285,
@@ -7554,7 +7553,7 @@ const atlantaData = [
     "duration": 0.75
   },
   {
-    "slug": "monday-night-brewing-west-midtown",    "name": "Monday Night Brewing - West Midtown",
+    "name": "Monday Night Brewing - West Midtown",
     "vibe": "industrial, social, beer, garden, polished, after-work, lively, casual, taproom, craft",
     "type": "bar",
         "lat": 33.7949288,
@@ -7600,7 +7599,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "the-goat-farm-arts-center",    "name": "The Goat Farm Arts Center",
+    "name": "The Goat Farm Arts Center",
     "vibe": "industrial, art, creative, hidden, gritty, inspiring, cultural, local, alt, raw",
     "type": ["activity", "gallery"],
         "lat": 33.7866125,
@@ -7646,7 +7645,7 @@ const atlantaData = [
     "duration": 3
   },
   {
-    "slug": "la-bodega-atl",    "name": "La Bodega Atl",
+    "name": "La Bodega Atl",
     "vibe": "latin, cafe, local, chill, cozy, daytime, casual, bright, friendly, social",
     "type": ["coffee", "lunch"],
         "lat": 33.700541,
@@ -7692,7 +7691,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "sammys",    "name": "Sammy's",
+    "name": "Sammy's",
     "vibe": "diner, old-school, hearty, southern, breakfast, casual, local, comfort, vintage, classic",
     "type": ["breakfast", "lunch"],
         "lat": 33.7406345,
@@ -7738,7 +7737,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "atlanta-auction-gallery",    "name": "Atlanta Auction Gallery",
+    "name": "Atlanta Auction Gallery",
     "vibe": "quiet, hidden, curated, collector, refined, art, gallery, elegant, niche, upscale",
     "type": "gallery",
         "lat": 33.7400956,
@@ -7778,7 +7777,7 @@ const atlantaData = [
     "duration": 2.25
   },
   {
-    "slug": "the-sun-atl",    "name": "The Sun ATL",
+    "name": "The Sun ATL",
     "vibe": "boutique, artsy, curated, minimal, emerging, refined, modern, local, elegant, gallery",
     "type": "gallery",
         "lat": 33.7542004,
@@ -7824,7 +7823,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "one-contemporary-gallery",    "name": "One Contemporary Gallery",
+    "name": "One Contemporary Gallery",
     "vibe": "modern, quiet, appreciation, art, gallery, refined, curated, minimal, contemporary, cultural",
     "type": "gallery",
         "lat": 33.754138,
@@ -7870,7 +7869,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "blooms-emporium-atlanta",    "name": "Blooms Emporium Atlanta",
+    "name": "Blooms Emporium Atlanta",
     "vibe": "vintage, cute, plant, eclectic, giftable, local, cozy, boutique, floral, decor",
     "type": ["random gem", "lifestyle"],
         "lat": 33.77243965,
@@ -7916,7 +7915,7 @@ const atlantaData = [
     "duration": 1.66
   },
   {
-    "slug": "the-supermarket",    "name": "The Supermarket",
+    "name": "The Supermarket",
     "vibe": "dark, edgy, alt, late-night, buzz, dance, dine, hybrid, urban, nightlife",
     "type": "gallery",
         "lat": 33.7718481,
@@ -7962,7 +7961,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "spalding-nix-fine-art",    "name": "Spalding Nix Fine Art",
+    "name": "Spalding Nix Fine Art",
     "vibe": "elegant, upscale, art, collector, professional, gallery, refined, curated, modern, stylish",
     "type": "gallery",
         "lat": 33.81937457,
@@ -8008,7 +8007,7 @@ const atlantaData = [
     "duration": 0.75
   },
   {
-    "slug": "7th-house",    "name": "7th House",
+    "name": "7th House",
     "vibe": "mystical, lounge, sultry, tarot, cocktails, intimate, dark, moody, romantic, niche",
     "type": ["lounge", "cocktail"],
         "lat": 33.7406345,
@@ -8054,7 +8053,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "madre-selva-atlanta",    "name": "Madre Selva Atlanta",
+    "name": "Madre Selva Atlanta",
     "vibe": "latin, modern, jungle, chic, dine, romantic, upscale, vibrant, lush, stylish",
     "type": "dinner",
         "lat": 33.8226467,
@@ -8100,7 +8099,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "strangers-in-paradise",    "name": "Strangers in Paradise",
+    "name": "Strangers in Paradise",
     "vibe": "tropical, lounge, cocktails, bright, bar, drinks, retro, cozy",
     "type": "bar",
         "lat": 33.732134,
@@ -8146,7 +8145,7 @@ const atlantaData = [
     "duration": 1.66
   },
   {
-    "slug": "bovino-after-dark",    "name": "Bovino after dark",
+    "name": "Bovino after dark",
     "vibe": "hidden, speakeasy, dinner, drama, dim, intimate, upscale, moody, refined, bar",
     "type": "dinner",
         "lat": 33.732134,
@@ -8192,7 +8191,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "piedmont-park",    "name": "Piedmont Park",
+    "name": "Piedmont Park",
     "vibe": "scenic, active, escape, picnic, dog-friendly, outdoor, sunny, walking, open, green",
     "type": ["park", "nature"],
         "lat": 33.78904775,
@@ -8238,7 +8237,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "decatur-farmers-market",    "name": "Decatur Farmers Market",
+    "name": "Decatur Farmers Market",
     "vibe": "local, fresh, community, casual, shopping, laid-back, morning, produce, friendly, market",
     "type": "market",
         "lat": 33.77916675,
@@ -8284,7 +8283,7 @@ const atlantaData = [
     "duration": 1.33
   },
   {
-    "slug": "east-atlanta-village-farmers-market",    "name": "East Atlanta Village Farmers Market",
+    "name": "East Atlanta Village Farmers Market",
     "vibe": "funky, local, music, produce, weekend, market, vibrant, artisan, fresh, cultural",
     "type": "market",
         "lat": 33.7385222,
@@ -8330,7 +8329,7 @@ const atlantaData = [
     "duration": 1.33
   },
   {
-    "slug": "brookhaven-farmers-market",    "name": "Brookhaven Farmers Market",
+    "name": "Brookhaven Farmers Market",
     "vibe": "suburban, family, organic, goods, morning, market, calm, fresh, friendly, local",
     "type": "market",
         "lat": 33.8598471,
@@ -8376,7 +8375,7 @@ const atlantaData = [
     "duration": 1.33
   },
   {
-    "slug": "peachtree-road-farmers-market",    "name": "Peachtree Road Farmers Market",
+    "name": "Peachtree Road Farmers Market",
     "vibe": "family, organic, upscale, market, health, fresh, local, seasonal, vibrant, friendly",
     "type": "market",
         "lat": 33.8312329,
@@ -8422,7 +8421,7 @@ const atlantaData = [
     "duration": 1.33
   },
   {
-    "slug": "morningside-farmers-market",    "name": "Morningside Farmer's Market",
+    "name": "Morningside Farmer's Market",
     "vibe": "intimate, artisan, community, quiet, local, market, fresh, seasonal, niche, morning",
     "type": "market",
         "lat": 33.79301775,
@@ -8468,7 +8467,7 @@ const atlantaData = [
     "duration": 1.33
   },
   {
-    "slug": "virginia-highland-farmers-market",    "name": "Virginia Highland Farmers Market",
+    "name": "Virginia Highland Farmers Market",
     "vibe": "neighborhood, relaxed, walkable, local, fresh, friendly, market, produce, small, casual",
     "type": "market",
         "lat": 33.781839,
@@ -8514,7 +8513,7 @@ const atlantaData = [
     "duration": 1.33
   },
   {
-    "slug": "freedom-farmers-market",    "name": "Freedom Farmers Market",
+    "name": "Freedom Farmers Market",
     "vibe": "diverse, cultural, urban, market, foodie, fresh, vibrant, local, seasonal, community",
     "type": "market",
         "lat": 33.76778394,
@@ -8560,7 +8559,7 @@ const atlantaData = [
     "duration": 1.33
   },
   {
-    "slug": "grant-park-farmers-market",    "name": "Grant Park Farmers Market",
+    "name": "Grant Park Farmers Market",
     "vibe": "lively, dog-friendly, food-trucks, family, park, shopping, local, fresh, weekend, social",
     "type": "market",
         "lat": 33.72660094,
@@ -8606,7 +8605,7 @@ const atlantaData = [
     "duration": 1.33
   },
   {
-    "slug": "the-earl",    "name": "The EARL",
+    "name": "The EARL",
     "vibe": "dive, indie, rock, gritty, loud, music, late-night, bar, live",
     "type": ["music", "bar"],
         "lat": 33.740986,
@@ -8652,7 +8651,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "flight-club-atlanta",    "name": "Flight Club Atlanta",
+    "name": "Flight Club Atlanta",
     "vibe": "darts, social, competitive, fun, upscale, pub, crowd, drinks, energetic",
     "type": "bar",
         "lat": 33.7831991,
@@ -8698,7 +8697,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "bar-avize",    "name": "Bar Avize",
+    "name": "Bar Avize",
     "vibe": "wine, elegant, minimalist, date, upscale, refined, intimate",
     "type": ["dinner", "cocktail"],
         "lat": 33.78198587,
@@ -8744,7 +8743,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "atlanta-contemporary",    "name": "Atlanta Contemporary",
+    "name": "Atlanta Contemporary",
     "vibe": "art, modern, gallery, creative, quiet, design, culture, exhibit, space",
     "type": "gallery",
         "lat": 33.772975,
@@ -8790,7 +8789,7 @@ const atlantaData = [
     "duration": 2.33
   },
   {
-    "slug": "jolene-jolene",    "name": "Jolene Jolene",
+    "name": "Jolene Jolene",
     "vibe": "casual, indie, date, southern, charm, style, cozy, vintage, local",
     "type": ["lunch", "cocktail"],
         "lat": 33.7596328,
@@ -8836,7 +8835,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "pullman-yards",    "name": "Pullman Yards",
+    "name": "Pullman Yards",
     "vibe": "industrial, events, art, entertainment, creative, cultural, large, venue, adaptive",
     "type": "market",
         "lat": 33.7596269,
@@ -8882,7 +8881,7 @@ const atlantaData = [
     "duration": 3
   },
   {
-    "slug": "ticonderoga-club",    "name": "Ticonderoga Club",
+    "name": "Ticonderoga Club",
     "vibe": "hidden, intimate, dining, cocktails, old-school, cozy, retro, classic, bar",
     "type": ["bar", "dinner"],
         "lat": 33.7588882,
@@ -8928,7 +8927,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "a-cappella-books",    "name": "A Cappella Books",
+    "name": "A Cappella Books",
     "vibe": "books, literary, local, intellectual, offbeat, indie, niche, vintage, curated",
     "type": "bookstore",
         "lat": 33.7595421,
@@ -8974,7 +8973,7 @@ const atlantaData = [
     "duration": 0.75
   },
   {
-    "slug": "bar-blanc",    "name": "Bar Blanc",
+    "name": "Bar Blanc",
     "vibe": "romantic, low-light, chic, european, date, upscale, refined, intimate, stylish",
     "type": "cocktail",
         "lat": 33.787134,
@@ -9020,7 +9019,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "carmel",    "name": "Carmel",
+    "name": "Carmel",
     "vibe": "coastal, mediterranean, modern, breezy, upscale, seafood, refined, fresh",
     "type": ["dinner", "cocktail"],
         "lat": 33.83727906,
@@ -9066,7 +9065,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "lyla-lila",    "name": "Lyla Lila",
+    "name": "Lyla Lila",
     "vibe": "trendy, dinner, refined, upscale, polished, creative, modern, elegant, seasonal",
     "type": ["dinner", "cocktail"],
         "lat": 33.7735507,
@@ -9112,7 +9111,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "elektra",    "name": "Elektra",
+    "name": "Elektra",
     "vibe": "bold, latin, dj, nightlife, social, vibrant, colorful, dance, chic",
     "type": ["cocktail", "dinner"],
         "lat": 33.768629,
@@ -9158,7 +9157,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "mend-coffee-goods",    "name": "Mend Coffee & Goods",
+    "name": "Mend Coffee & Goods",
     "vibe": "coffee, minimalist, relaxed, work, organic, bright, cozy, clean, local",
     "type": "coffee",
         "lat": 33.855474,
@@ -9204,7 +9203,7 @@ const atlantaData = [
     "duration": 0.75
   },
   {
-    "slug": "daydreamer-coffee",    "name": "Daydreamer Coffee",
+    "name": "Daydreamer Coffee",
     "vibe": "coffee, bright, local, morning, plant-filled, cozy, airy, fresh, casual",
     "type": "coffee",
         "lat": 33.77820925,
@@ -9250,7 +9249,7 @@ const atlantaData = [
     "duration": 0.75
   },
   {
-    "slug": "cochran-shoals-trail-river-loop",    "name": "Cochran Shoals Trail - River Loop",
+    "name": "Cochran Shoals Trail - River Loop",
     "vibe": "outdoor, trail, scenic, active, nature, riverside, walking, fresh, jogging",
     "type": ["nature", "activity", "walk", "fitness"],
         "lat": 33.9032313,
@@ -9296,7 +9295,7 @@ const atlantaData = [
     "duration": 3
   },
   {
-    "slug": "seans-harvest-market",    "name": "Sean’s Harvest Market",
+    "name": "Sean’s Harvest Market",
     "vibe": "casual, local, fresh, healthy, patio, market, bright, airy, friendly",
     "type": ["breakfast", "brunch", "market"],
     "lat": 33.78830585,
@@ -9342,7 +9341,7 @@ const atlantaData = [
     "duration": 0.66
   },
   {
-    "slug": "antico-pizza-napoletana",    "name": "Antico Pizza Napoletana",
+    "name": "Antico Pizza Napoletana",
     "vibe": "pizza, italian, authentic, communal, bustling, casual, no-frills, local, rustic",
     "type": ["lunch", "dinner"],
     "lat": 33.7846556,
@@ -9388,7 +9387,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "pelicana-chicken-atlanta",    "name": "Pelicana Chicken Atlanta",
+    "name": "Pelicana Chicken Atlanta",
     "vibe": "korean, chicken, crispy, saucy, casual, hangout, late-night, flavorful, pub",
     "type": ["lunch", "dinner", "late-night"],
     "lat": 33.78592805,
@@ -9434,7 +9433,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "the-albert",    "name": "The Albert",
+    "name": "The Albert",
     "vibe": "pub, local, sports, casual, comfort, beer, neighborhood, friendly, bar",
     "type": ["bar", "dinner"],
     "lat": 33.76200645,
@@ -9480,7 +9479,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "der-biergarten",    "name": "Der Biergarten",
+    "name": "Der Biergarten",
     "vibe": "german, beer, hall, pretzel, brat, festive, lively, pub, social",
     "type": "bar",
     "lat": 33.7615575,
@@ -9526,7 +9525,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "starlight-drive‑in-theatre-flea-market",    "name": "Starlight Drive‑In Theatre & Flea Market",
+    "name": "Starlight Drive‑In Theatre & Flea Market",
     "vibe": "retro, outdoor, movie, nostalgic, family, vintage, americana, fun, casual",
     "type": ["cinema", "market"],
     "lat": 33.7026988,
@@ -9572,7 +9571,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "one-flew-south-beltline",    "name": "One Flew South – BeltLine",
+    "name": "One Flew South – BeltLine",
     "vibe": "fusion, global, upscale, sleek, date, refined, dining, modern, creative",
     "type": ["lunch", "dinner", "cocktail"],
     "lat": 33.7615452,
@@ -9618,7 +9617,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "double-zero",    "name": "Double Zero",
+    "name": "Double Zero",
     "vibe": "italian, contemporary, refined, wine, upscale, date, modern, elegant, dining",
     "type": ["lunch", "dinner"],
     "lat": 33.7879838,
@@ -9664,7 +9663,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "all-fired-up",    "name": "All Fired Up",
+    "name": "All Fired Up",
     "vibe": "pottery, creative, hands-on, family, art, workshop, fun, craft, local",
     "type": "activity",
     "lat": 33.78788597,
@@ -9710,7 +9709,7 @@ const atlantaData = [
     "duration": 2.33
   },
   {
-    "slug": "the-po-boy-shop-basement-bar",    "name": "The Po’Boy Shop Basement Bar",
+    "name": "The Po’Boy Shop Basement Bar",
     "vibe": "bar, casual, southern, underground, beer, local, pub, hearty, comfort",
     "type": "bar",
     "lat": 33.79113765,
@@ -9756,7 +9755,7 @@ const atlantaData = [
     "duration": 1.66
   },
   {
-    "slug": "salaryman-toco-hills",    "name": "Salaryman Toco Hills",
+    "name": "Salaryman Toco Hills",
     "vibe": "korean, pub, comfort, casual, neighborhood, food, local, social, friendly",
     "type": ["lunch", "dinner"],
     "lat": 33.815529,
@@ -9802,7 +9801,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "che-butter-jonez",    "name": "CHE BUTTER JONEZ",
+    "name": "CHE BUTTER JONEZ",
     "vibe": "southern, creative, local, flavorful, casual, vibrant, eatery",
     "type": ["lunch", "dinner"],
     "lat": 33.81502703,
@@ -9848,7 +9847,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "kodak-film-lab-atlanta",    "name": "KODAK Film Lab Atlanta",
+    "name": "KODAK Film Lab Atlanta",
     "vibe": "vintage, artistic, analog, creative, retro, photo, niche, indie, studio",
     "type": "random gem",
     "lat": 33.81227048,
@@ -9894,7 +9893,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "eleventh-street-pub",    "name": "Eleventh Street Pub",
+    "name": "Eleventh Street Pub",
     "vibe": "pub, classic, casual, sports, beer, local, tv, friendly, relaxed",
     "type": "bar",
     "lat": 33.7830897,
@@ -9940,7 +9939,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "bulla-gastrobar",    "name": "Bulla Gastrobar",
+    "name": "Bulla Gastrobar",
     "vibe": "spanish, tapas, chic, social, lively, brunch, wine, vibrant, upscale",
     "type": ["lunch", "dinner", "wine bar"],
     "lat": 33.7834161,
@@ -9986,7 +9985,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "lure",    "name": "Lure",
+    "name": "Lure",
     "vibe": "coastal, seafood, elegant, patio, upscale, refined, fresh, modern, relaxed",
     "type": ["lunch", "dinner"],
     "lat": 33.78499975,
@@ -10032,7 +10031,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "el-valle",    "name": "El Valle",
+    "name": "El Valle",
     "vibe": "latin, modern, stylish, vibrant, date, upscale, flavorful, lively, bar",
     "type": ["lunch", "dinner", "cocktail"],
     "lat": 33.7763008,
@@ -10078,7 +10077,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "trap-music-museum",    "name": "Trap Music Museum",
+    "name": "Trap Music Museum",
     "vibe": "urban, culture, immersive, hip-hop, history, art, photo, music, social",
     "type": "gallery",
     "lat": 33.7718036,
@@ -10124,7 +10123,7 @@ const atlantaData = [
     "duration": 3
   },
   {
-    "slug": "mirko-pasta",    "name": "Mirko Pasta",
+    "name": "Mirko Pasta",
     "vibe": "italian, cozy, neighborhood, pasta, comfort, casual, local, hearty, classic",
     "type": ["lunch", "dinner"],
     "lat": 33.870015,
@@ -10170,7 +10169,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "hals-the-steakhouse",    "name": "Hal’s - The Steakhouse",
+    "name": "Hal’s - The Steakhouse",
     "vibe": "steakhouse, upscale, jazz, classic, luxury, refined, cigar, elegant, old-school",
     "type": "dinner",
     "lat": 33.8546922,
@@ -10216,7 +10215,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "the-punchline-comedy-club",    "name": "The Punchline Comedy Club",
+    "name": "The Punchline Comedy Club",
     "vibe": "comedy, casual, intimate, laughter, local, entertainment, stage, night-out, fun",
     "type": "comedy",
     "lat": 33.85515489,
@@ -10262,7 +10261,7 @@ const atlantaData = [
     "duration": 3
   },
   {
-    "slug": "little-alley-steak-buckhead",    "name": "Little Alley Steak Buckhead",
+    "name": "Little Alley Steak Buckhead",
     "vibe": "steakhouse, upscale, whiskey, moody, business, refined, dark, bourbon, classic",
     "type": "dinner",
     "lat": 33.85211425,
@@ -10308,7 +10307,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "rose-and-rye",    "name": "Rose and Rye",
+    "name": "Rose and Rye",
     "vibe": "rooftop, cocktails, upscale, date, views, glamorous, skyline, chic, romantic",
     "type": ["cocktail", "dinner", "rooftop"],
     "lat": 33.8479272,
@@ -10354,7 +10353,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "raging-burrito",    "name": "Raging Burrito",
+    "name": "Raging Burrito",
     "vibe": "mexican, casual, patio, colorful, social, fusion, local, tex-mex, lively",
     "type": ["lunch", "dinner"],
     "lat": 33.78443335,
@@ -10400,7 +10399,7 @@ const atlantaData = [
     "duration": 1.25
   },
   {
-    "slug": "ooo-coffee",    "name": "Opo Coffee",
+    "name": "Opo Coffee",
     "vibe": "coffee, minimalist, modern, work, quiet, specialty, bright, local, cozy",
     "type": "coffee",
     "lat": 33.77188743,
@@ -10446,7 +10445,7 @@ const atlantaData = [
     "duration": 0.75
   },
   {
-    "slug": "casa-balam",    "name": "Casa Balam",
+    "name": "Casa Balam",
     "vibe": "latin, cocktails, artistic, nightlife, vibrant, mezcal, social, stylish, colorful",
     "type": "dinner",
     "lat": 33.77548713,
@@ -10492,7 +10491,7 @@ const atlantaData = [
     "duration": 2.25
   },
   {
-    "slug": "the-s-o-s-tiki-bar",    "name": "The S.O.S. Tiki Bar",
+    "name": "The S.O.S. Tiki Bar",
     "vibe": "tiki, tropical, rum, kitschy, playful, colorful, themed, lively, exotic",
     "type": ["bar", "cocktail"],
     "lat": 33.7742092,
@@ -10538,7 +10537,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "sapphire-karaoke-restaurant",    "name": "Sapphire Karaoke & Restaurant",
+    "name": "Sapphire Karaoke & Restaurant",
     "vibe": "karaoke, nightlife, asian, private, late-night, social, bar, lively, music",
     "type": "activity",
     "lat": 33.893689,
@@ -10584,7 +10583,7 @@ const atlantaData = [
     "duration": 3
   },
   {
-    "slug": "heirloom-market-bbq",    "name": "Heirloom Market BBQ",
+    "name": "Heirloom Market BBQ",
     "vibe": "bbq, korean, casual, fusion, smoky, local, flavorful, hole-in-the-wall, hearty",
     "type": ["lunch", "dinner"],
     "lat": 33.8985938,
@@ -10630,7 +10629,7 @@ const atlantaData = [
     "duration": 0.66
   },
   {
-    "slug": "the-daily-cafe-buckhead",    "name": "The Daily Cafe – Buckhead",
+    "name": "The Daily Cafe – Buckhead",
     "vibe": "brunch, bright, minimalist, healthy, coffee, café, social, fresh, airy",
     "type": ["coffee", "breakfast", "brunch"],
     "lat": 33.85513221,
@@ -10676,7 +10675,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "bellwood-coffee-riverside",    "name": "Bellwood Coffee – Riverside",
+    "name": "Bellwood Coffee – Riverside",
     "vibe": "coffee, industrial, cozy, specialty, local, modern, work, warm, neighborhood",
     "type": "coffee",
     "lat": 33.81057,
@@ -10722,7 +10721,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "hankook-taqueria",    "name": "Hankook Taqueria",
+    "name": "Hankook Taqueria",
     "vibe": "korean, mexican, casual, fusion, quick, flavorful, street, local, taco",
     "type": ["lunch", "dinner"],
     "lat": 33.8114042,
@@ -10768,7 +10767,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "taste-wine-bar-and-market",    "name": "Taste Wine Bar and Market",
+    "name": "Taste Wine Bar and Market",
     "vibe": "wine, cozy, upscale, small-plates, boutique, date, tasting, intimate, refined",
     "type": "wine bar",
     "lat": 33.80201249,
@@ -10814,7 +10813,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "deljou-art-group",    "name": "Deljou Art Group",
+    "name": "Deljou Art Group",
     "vibe": "gallery, contemporary, creative, curated, artistic, inspiring, local, modern, design",
     "type": "gallery",
     "lat": 33.7987173,
@@ -10860,7 +10859,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "floral-park-market",    "name": "Floral Park Market",
+    "name": "Floral Park Market",
     "vibe": "grocery, artisanal, local, gourmet, small-batch, market, fresh, seasonal, specialty",
     "type": "market",
     "lat": 33.79438345,
@@ -10906,7 +10905,7 @@ const atlantaData = [
     "duration": 0.66
   },
   {
-    "slug": "aces-place",    "name": "Ace’s Place",
+    "name": "Ace’s Place",
     "vibe": "sports, bar, casual, local, screens, neighborhood, beer, social, friendly",
     "type": ["bar", "lunch"],
     "lat": 33.86082479,
@@ -10952,7 +10951,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "gunshow",    "name": "Gunshow",
+    "name": "Gunshow",
     "vibe": "chef, dining, southern, global, playful, interactive, refined, creative, bold",
     "type": "dinner",
     "lat": 33.7407083,
@@ -10998,7 +10997,7 @@ const atlantaData = [
     "duration": 2.25
   },
   {
-    "slug": "the-dirty-tea",    "name": "The Dirty Tea",
+    "name": "The Dirty Tea",
     "vibe": "tea, boba, colorful, casual, lounge, youth, drinks, sweet, fun",
     "type": ["tea", "dessert"],
     "lat": 33.7755446,
@@ -11044,7 +11043,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "unknown",    "name": "Unknown",
+    "name": "Unknown",
     "vibe": "american, seasonal, casual, modern, neighborhood, local, date, fresh, social",
     "type": ["dinner", "cocktail"],
     "lat": 33.8148981,
@@ -11090,7 +11089,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "whitehall-tavern",    "name": "Whitehall Tavern",
+    "name": "Whitehall Tavern",
     "vibe": "sports, bar, casual, laid-back, local, beer, burgers, pub, friendly",
     "type": ["bar", "lunch"],
     "lat": 33.8201785,
@@ -11136,7 +11135,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "brewdog-atlanta",    "name": "Brewdog Atlanta",
+    "name": "Brewdog Atlanta",
     "vibe": "beer, craft, industrial, patio, social, brewery, dog-friendly, casual, lively",
     "type": "bar",
     "lat": 33.756269,
@@ -11182,7 +11181,7 @@ const atlantaData = [
     "duration": 1.66
   },
   {
-    "slug": "the-salty-donut",    "name": "The Salty Donut",
+    "name": "The Salty Donut",
     "vibe": "donuts, artisanal, sweet, coffee, bakery, local, treat, dessert",
     "type": ["dessert", "bakery"],
     "lat": 33.75772085,
@@ -11228,7 +11227,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "the-vortex-bar-grill",    "name": "The Vortex Bar & Grill",
+    "name": "The Vortex Bar & Grill",
     "vibe": "burgers, rock, eclectic, casual, local, pub, landmark, bar, bold",
     "type": ["bar", "dinner"],
     "lat": 33.7662554,
@@ -11274,7 +11273,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "no-246",    "name": "no. 246",
+    "name": "no. 246",
     "vibe": "italian, patio, seasonal, date, garden, upscale, modern, local, romantic",
     "type": ["brunch", "dinner"],
     "lat": 33.775422,
@@ -11320,7 +11319,7 @@ const atlantaData = [
     "duration": 2.25
   },
   {
-    "slug": "sotto-sotto-restaurant",    "name": "Sotto Sotto Restaurant",
+    "name": "Sotto Sotto Restaurant",
     "vibe": "italian, romantic, intimate, wine, upscale, fine-dining, classic, cozy, refined",
     "type": "dinner",
     "lat": 33.7628556,
@@ -11366,7 +11365,7 @@ const atlantaData = [
     "duration": 2.25
   },
   {
-    "slug": "la-grotta-ristorante",    "name": "La Grotta Ristorante",
+    "name": "La Grotta Ristorante",
     "vibe": "italian, fine-dining, elegant, upscale, classic, romantic, refined, special, formal",
     "type": "dinner",
     "lat": 33.82618443,
@@ -11412,7 +11411,7 @@ const atlantaData = [
     "duration": 2.25
   },
   {
-    "slug": "yonder-yoga-inman-park",    "name": "Yonder Yoga – Inman Park",
+    "name": "Yonder Yoga – Inman Park",
     "vibe": "yoga, bright, airy, wellness, mindful, community, movement, fresh, calm",
     "type": ["fitness", "yoga"],
     "lat": 33.7611561,
@@ -11458,7 +11457,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "evolation-yoga-atlanta",    "name": "evolation yoga atlanta",
+    "name": "evolation yoga atlanta",
     "vibe": "yoga, calm, warm, flow, friendly, wellness, minimal, guided, serene",
     "type": ["fitness", "yoga"],
     "lat": 33.7801725,
@@ -11504,7 +11503,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "yebo-beach-haus",    "name": "Yebo Beach Haus",
+    "name": "Yebo Beach Haus",
     "vibe": "coastal, trendy, seasonal, upscale, social, seafood, modern, vibrant, fresh",
     "type": ["lunch", "dinner"],
     "lat": 33.84334392,
@@ -11550,7 +11549,7 @@ const atlantaData = [
     "duration": 2.25
   },
   {
-    "slug": "tiny-lous",    "name": "Tiny Lou’s",
+    "name": "Tiny Lou’s",
     "vibe": "french, retro, chic, romantic, brasserie, upscale, classic, elegant, intimate",
     "type": ["brunch", "lunch", "dinner"],
     "lat": 33.77347,
@@ -11596,7 +11595,7 @@ const atlantaData = [
     "duration": 2.25
   },
   {
-    "slug": "yalda",    "name": "Yalda",
+    "name": "Yalda",
     "vibe": "persian, elegant, upscale, stylish, refined, flavorful, luxury, modern, vibrant",
     "type": ["dinner", "cocktail"],
     "lat": 33.7811243,
@@ -11642,7 +11641,7 @@ const atlantaData = [
     "duration": 2.25
   },
   {
-    "slug": "vesper-atlanta",    "name": "Vesper Atlanta",
+    "name": "Vesper Atlanta",
     "vibe": "cocktails, lounge, upscale, moody, late-night, intimate, trendy, dim-lighting, chic",
     "type": ["cocktail", "bar"],
     "lat": 33.7407235,
@@ -11688,7 +11687,7 @@ const atlantaData = [
     "duration": 2.25
   },
   {
-    "slug": "umi",    "name": "Umi",
+    "name": "Umi",
     "vibe": "japanese, sushi, upscale, sleek, celebrity, fine-dining, refined, elegant, high-end",
     "type": ["dinner", "cocktail"],
     "lat": 33.8395908,
@@ -11734,7 +11733,7 @@ const atlantaData = [
     "duration": 2.25
   },
   {
-    "slug": "fudo",    "name": "Fudo",
+    "name": "Fudo",
     "vibe": "japanese, sushi, creative, sleek, local, modern, rolls, fresh, casual",
     "type": ["lunch", "dinner"],
     "lat": 33.8877602,
@@ -11780,7 +11779,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "mujo",    "name": "Mujō",
+    "name": "Mujō",
     "vibe": "omakase, minimalist, upscale, japanese, intimate, luxury, refined, seasonal, precise",
     "type": "dinner",
     "lat": 33.7861054,
@@ -11826,7 +11825,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "rock-steady-atlanta",    "name": "Rock Steady – Atlanta",
+    "name": "Rock Steady – Atlanta",
     "vibe": "caribbean, nightlife, stylish, dance, vibrant, dj, high-energy, social, urban",
     "type": ["dinner", "cocktail", "late-night"],
     "lat": 33.777293,
@@ -11872,7 +11871,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "cafe-comma",    "name": "Cafe Comma",
+    "name": "Cafe Comma",
     "vibe": "coffee, minimalist, work, pastry, cozy, modern, quiet, bright, study",
     "type": ["coffee", "breakfast"],
     "lat": 33.8647205,
@@ -11918,7 +11917,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "old-vinings-inn",    "name": "Old Vinings Inn",
+    "name": "Old Vinings Inn",
     "vibe": "historic, southern, upscale, porch, charm, classic, romantic, traditional, scenic",
     "type": ["lunch", "dinner"],
     "lat": 33.86654265,
@@ -11964,7 +11963,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "canoe",    "name": "Canoe",
+    "name": "Canoe",
     "vibe": "riverside, romantic, garden, seasonal, american, upscale, scenic, elegant, patio",
     "type": ["lunch", "dinner"],
     "lat": 33.85974,
@@ -12010,7 +12009,7 @@ const atlantaData = [
     "duration": 2.25
   },
   {
-    "slug": "read-shop-by-the-merchant",    "name": "Read Shop by The Merchant",
+    "name": "Read Shop by The Merchant",
     "vibe": "bookstore, café, coffee, creative, cozy, quiet, stylish, design, literary",
     "type": ["coffee", "bookstore"],
     "lat": 33.8649149,
@@ -12056,7 +12055,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "folk-art-restaurant-inman-park",    "name": "Folk Art Restaurant Inman Park",
+    "name": "Folk Art Restaurant Inman Park",
     "vibe": "diner, southern, brunch, eclectic, casual, comfort-food, retro, local, hearty",
     "type": ["breakfast", "brunch"],
     "lat": 33.766686,
@@ -12102,7 +12101,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "communidad-taqueria",    "name": "Communidad Taqueria",
+    "name": "Communidad Taqueria",
     "vibe": "mexican, casual, bright, quick, fresh, colorful, local, taco, neighborhood",
     "type": ["lunch", "dinner"],
     "lat": 33.7611561,
@@ -12148,7 +12147,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "la-semilla",    "name": "La Semilla",
+    "name": "La Semilla",
     "vibe": "vegan, modern, latin, brunch, plant-based, fresh, bright, innovative, casual",
     "type": ["lunch", "dinner"],
     "lat": 33.74673873,
@@ -12194,7 +12193,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "monday-night-brewing-the-garage",    "name": "Monday Night Brewing – The Garage",
+    "name": "Monday Night Brewing – The Garage",
     "vibe": "beer, brewery, warehouse, social, experimental, casual, craft, group, lively",
     "type": "bar",
     "lat": 33.729269,
@@ -12240,7 +12239,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "daily-chew",    "name": "Daily Chew",
+    "name": "Daily Chew",
     "vibe": "seasonal, café, fresh, plant-based, wholesome, bright, healthy, casual, breakfast",
     "type": ["breakfast", "lunch"],
     "lat": 33.8117273,
@@ -12286,7 +12285,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "fellaship-atl",    "name": "Fellaship.ATL",
+    "name": "Fellaship.ATL",
     "vibe": "lounge, sports, southern, cigar, upscale, lively, social, drinks, crowd",
     "type": ["bar", "dinner"],
     "lat": 33.7521147,
@@ -12332,7 +12331,7 @@ const atlantaData = [
     "duration": 2.25
   },
   {
-    "slug": "the-record-loft",    "name": "The Record Loft",
+    "name": "The Record Loft",
     "vibe": "vinyl, retro, collector, casual, music, vintage, niche, indie, relaxed",
     "type": "random gem",
     "lat": 33.73453585,
@@ -12378,7 +12377,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "your-3rd-spot",    "name": "Your 3rd Spot",
+    "name": "Your 3rd Spot",
     "vibe": "dining, games, group, modern, social, entertainment, fun, interactive, casual",
     "type": ["bar", "activity"],
     "lat": 33.80292775,
@@ -12424,7 +12423,7 @@ const atlantaData = [
     "duration": 2.75
   },
   {
-    "slug": "side-saddle-wine-saloon-bar",    "name": "Side Saddle Wine Saloon & Bar",
+    "name": "Side Saddle Wine Saloon & Bar",
     "vibe": "wine, rustic, intimate, date, cozy, charming, vintage, soft-light, boutique",
     "type": "wine bar",
     "lat": 33.72584216,
@@ -12462,7 +12461,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "fat-matts-rib-shack",    "name": "Fat Matt’s Rib Shack",
+    "name": "Fat Matt’s Rib Shack",
     "vibe": "bbq, blues, casual, southern, live-music, classic, smoky, local, comfort",
     "type": ["lunch", "dinner"],
     "lat": 33.80470696,
@@ -12500,7 +12499,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "pata-negra-mezcaleria",    "name": "Pata Negra Mezcaleria",
+    "name": "Pata Negra Mezcaleria",
     "vibe": "mezcal, mexican, rustic, intimate, bar, artisanal, cocktail, cozy, warm",
     "type": ["cocktail", "dinner"],
     "lat": 33.80277748,
@@ -12538,7 +12537,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "varasanos-pizzeria-buckhead",    "name": "Varasano’s Pizzeria – Buckhead",
+    "name": "Varasano’s Pizzeria – Buckhead",
     "vibe": "pizza, italian, casual, family, neighborhood, classic, thin-crust, local, friendly",
     "type": ["lunch", "dinner", "brunch"],
     "lat": 33.813769,
@@ -12576,7 +12575,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-  "slug": "tuk-tuk-thai-food-loft",    "name": "Tuk Tuk Thai Food Loft",
+  "name": "Tuk Tuk Thai Food Loft",
   "vibe": "thai, upscale, bold, scenic, flavorful, colorful, modern, vibrant, city-view",
   "type": ["lunch", "dinner"],
   "lat": 33.8003326,
@@ -12614,7 +12613,7 @@ const atlantaData = [
   "duration": 2
 },
   {
-    "slug": "el-azteca",    "name": "El Azteca",
+    "name": "El Azteca",
     "vibe": "mexican, casual, margarita, patio, festive, colorful, local, lively, relaxed",
     "type": ["lunch", "dinner", "bar"],
     "lat": 33.80292081,
@@ -12652,7 +12651,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "little-rey",    "name": "Little Rey",
+    "name": "Little Rey",
     "vibe": "mexican, casual, chicken, family, bright, fresh, local, quick, upbeat",
     "type": ["lunch", "dinner"],
     "lat": 33.807094,
@@ -12690,7 +12689,7 @@ const atlantaData = [
     "duration": 1.75
   },
   {
-    "slug": "new-realm-brewing-co",    "name": "New Realm Brewing Co.",
+    "name": "New Realm Brewing Co.",
     "vibe": "brewery, rooftop, industrial, events, taproom, large, social, group, casual",
     "type": ["rooftop", "bar"],
     "lat": 33.7690299,
@@ -12728,7 +12727,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "atlanta-worldwide-gallery",    "name": "Atlanta Worldwide Gallery",
+    "name": "Atlanta Worldwide Gallery",
     "vibe": "photography, shop, specialty, expert, camera, niche, creative, visual, art",
     "type": ["random gem", "lifestyle"],
     "lat": 33.758602,
@@ -12766,7 +12765,7 @@ const atlantaData = [
     "duration": 0.75
   },
   {
-    "slug": "ten-atl",    "name": "TEN ATL",
+    "name": "TEN ATL",
     "vibe": "lounge, hip-hop, urban, nightlife, party, lively, music, local, social",
     "type": ["bar", "music"],
     "lat": 33.7403991,
@@ -12804,7 +12803,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "five-iron-golf",    "name": "Five Iron Golf",
+    "name": "Five Iron Golf",
     "vibe": "golf, sports, social, group, lounge, interactive, fun, modern, competitive",
     "type": "activity",
     "lat": 33.773304,
@@ -12842,7 +12841,7 @@ const atlantaData = [
     "duration": 3
   },
   {
-    "slug": "cafe-intermezzo-midtown",    "name": "Café Intermezzo - Midtown",
+    "name": "Café Intermezzo - Midtown",
     "vibe": "decadent, cake, date, coffee, cocktails, sultry, romantic, nostalgic, indulgent, European",
     "type": "dessert",
     "lat": 33.78354631,
@@ -12884,7 +12883,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "the-daily-pilates-inman-park",    "name": "The Daily Pilates - Inman Park",
+    "name": "The Daily Pilates - Inman Park",
     "vibe": "local, intentional, bright, feminine, habit, clean, structured, fresh",
     "type": ["fitness", "yoga"],
     "lat": 33.755066,
@@ -12926,7 +12925,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "peche-pilates",    "name": "Pêche Pilates",
+    "name": "Pêche Pilates",
     "vibe": "airy, elegant, soft, graceful, curated, feminine, minimal, fluid",
     "type": ["fitness", "yoga"],
     "lat": 33.84303775,
@@ -12968,7 +12967,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "le-muse-pilates",    "name": "Le' Muse Pilates",
+    "name": "Le' Muse Pilates",
     "vibe": "poised, sculpted, boutique, refined, mindful, luxe, ambient, precise",
     "type": ["fitness", "yoga"],
     "lat": 33.789128,
@@ -13010,7 +13009,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "the-union-fit-hub",    "name": "The Union Fit Hub",
+    "name": "The Union Fit Hub",
     "vibe": "bold, driven, modern, collective, functional, kinetic, focused, energized",
     "type": "fitness",
     "lat": 33.7683055,
@@ -13052,7 +13051,7 @@ const atlantaData = [
     "duration": 1.25
   },
   {
-    "slug": "urban-body-fitness",    "name": "Urban Body Fitness",
+    "name": "Urban Body Fitness",
     "vibe": "gritty, active, strength, reliable, durable, fast-paced, grounded, local-core",
     "type": "fitness",
     "lat": 33.78830585,
@@ -13094,7 +13093,7 @@ const atlantaData = [
     "duration": 1.25
   },
   {
-    "slug": "the-reading-room",    "name": "The Reading Room",
+    "name": "The Reading Room",
     "vibe": "spiritual, healing, immersive, meditative, warm, slow, candlelit, sonic",
     "type": ["bookstore", "coffee"],
     "lat": 33.77501829,
@@ -13136,7 +13135,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "memento",    "name": "Memento",
+    "name": "Memento",
     "vibe": "geometric, thought-provoking, neutral, layered, intentional, stark, conceptual, bold",
     "type": "gallery",
     "lat": 33.7732851,
@@ -13178,7 +13177,7 @@ const atlantaData = [
     "duration": 1.5
   },
   {
-    "slug": "the-independent",    "name": "The Independent",
+    "name": "The Independent",
     "vibe": "analog, gamey, smoky, gritty, nostalgic, hangout, dive, spontaneous",
     "type": "bar",
     "lat": 33.7803409,
@@ -13220,7 +13219,7 @@ const atlantaData = [
     "duration": 2
   },
    {
-    "slug": "crates-atl",    "name": "Crates ATL",
+    "name": "Crates ATL",
     "vibe": "crate-digging, underground, beats, localism, raw, audio, lo-fi, hip-hop",
     "type": "lifestyle",
     "lat": 33.7520364,
@@ -13262,7 +13261,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "wild-leap-atlanta",    "name": "Wild Leap Atlanta",
+    "name": "Wild Leap Atlanta",
     "vibe": "energized, bold, contemporary, experimental, brewhouse, date-friendly, branded, bustling",
     "type": "bar",
     "lat": 33.751177,
@@ -13304,7 +13303,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "versus-atl",    "name": "Versus ATL",
+    "name": "Versus ATL",
     "vibe": "drop-culture, sneakerhead, expressive, logo-heavy, curated, urbanwear, collector, fashion",
     "type": "lifestyle",
     "lat": 33.75165703,
@@ -13346,7 +13345,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "bacchanalia",    "name": "Bacchanalia",
+    "name": "Bacchanalia",
     "vibe": "refined, ceremonial, exclusive, chef-driven, ambient, sophisticated, intimate, indulgent",
     "type": "dinner",
     "lat": 33.7947137,
@@ -13388,7 +13387,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "star-provisions-market-cafe",    "name": "Star Provisions Market & Cafe",
+    "name": "Star Provisions Market & Cafe",
     "vibe": "daylight, fragrant, mellow, brunchy, pastry, relaxed, warm, wholesome",
     "type": "brunch",
     "lat": 33.7948534,
@@ -13430,7 +13429,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "young-blood",    "name": "YOUNG BLOOD",
+    "name": "YOUNG BLOOD",
     "vibe": "indie, vibrant, curated, sustainable, maker-focused, homey, thoughtful, quirky",
     "type": "lifestyle",
     "lat": 33.76496879,
@@ -13472,7 +13471,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "fernbank-forest",    "name": "Fernbank Forest",
+    "name": "Fernbank Forest",
     "vibe": "shaded, expansive, organic, rooted, still, immersive, canopy, wander",
     "type": "walk",
     "lat": 33.773853,
@@ -13514,7 +13513,7 @@ const atlantaData = [
     "duration": 2.33
   },
   {
-    "slug": "clyde-shepherd-nature-preserve",    "name": "Clyde Shepherd Nature Preserve",
+    "name": "Clyde Shepherd Nature Preserve",
     "vibe": "birding, low-key, community, dirt-trail, slow, hidden-gem, uncut, chill",
     "type": ["park", "walk"],
     "lat": 33.80619705,
@@ -13556,7 +13555,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "blue-heron-nature-preserve",    "name": "Blue Heron Nature Preserve",
+    "name": "Blue Heron Nature Preserve",
     "vibe": "creekside, holistic, reflective, mindful, eco-conscious, airy, peaceful, small-scale",
     "type": ["park", "walk"],
     "lat": 33.8671587,
@@ -13598,7 +13597,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "morningside-nature-preserve",    "name": "Morningside Nature Preserve",
+    "name": "Morningside Nature Preserve",
     "vibe": "leaf-covered, worn-in, earthy, animal-friendly, meandering, locals-only, ambient, nature",
     "type": ["park", "walk"],
     "lat": 33.8096851,
@@ -13640,7 +13639,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "deepdene-park",    "name": "Deepdene Park",
+    "name": "Deepdene Park",
     "vibe": "curved, vintage, overgrown, mossy, legacy, tucked-away, poetic, historic-core",
     "type": "park",
     "lat": 33.7724424,
@@ -13682,7 +13681,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "tanyard-creek-park",    "name": "Tanyard Creek Park",
+    "name": "Tanyard Creek Park",
     "vibe": "babbling, runner-friendly, active-use, fresh-air, daylight, informal, playground, scenic",
     "type": "park",
     "lat": 33.8105983,
@@ -13724,7 +13723,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "iris-garden-pond-winn-park",    "name": "Iris Garden & Pond @ Winn Park",
+    "name": "Iris Garden & Pond @ Winn Park",
     "vibe": "blossoming, quaint, hidden, poetic, floral-scented, charming, organic, bright",
     "type": "garden",
     "lat": 33.79033845,
@@ -13766,7 +13765,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "woodlands-garden",    "name": "Woodlands Garden",
+    "name": "Woodlands Garden",
     "vibe": "native-plants, intimate, restful, biodiverse, sheltered, rooted, hand-built, local-lush",
     "type": "garden",
     "lat": 33.78638075,
@@ -13808,7 +13807,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "virginia-highland-books",    "name": "Virginia Highland Books",
+    "name": "Virginia Highland Books",
     "vibe": "readerly, niche, indie-lit, writerly, quietude, analog-space, charming, timeless",
     "type": "bookstore",
     "lat": 33.7829119,
@@ -13850,7 +13849,7 @@ const atlantaData = [
     "duration": 1
   },
   {
-    "slug": "murphys-restaurant",    "name": "Murphy's Restaurant",
+    "name": "Murphy's Restaurant",
     "vibe": "neighborhood, homey, well-balanced, dependable, legacy, relaxed-upscale, weekend, hearty",
     "type": "dinner",
     "lat": 33.782121,
@@ -13892,7 +13891,7 @@ const atlantaData = [
     "duration": 2.5
   },
   {
-    "slug": "superica-buckhead",    "name": "Superica Buckhead",
+    "name": "Superica Buckhead",
     "vibe": "neon, upbeat, colorful, vibey, new-school, zesty, group-dining, pop",
     "type": ["lunch", "dinner"],
     "lat": 33.85989,
@@ -13934,7 +13933,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "postino-buckhead",    "name": "Postino Buckhead",
+    "name": "Postino Buckhead",
     "vibe": "buzzed, modern, chatter, minimal-luxe, curated-space, sips, airy, patio",
     "type": "wine bar",
     "lat": 33.855474,
@@ -13976,7 +13975,7 @@ const atlantaData = [
     "duration": 2
   },
   {
-    "slug": "jds-summerhill-variety-deli",    "name": "JDS SUMMERHILL VARIETY DELI",
+    "name": "JDS SUMMERHILL VARIETY DELI",
     "vibe": "corner-shop, wrap-joint, fast-casual, lowkey, gritty, delicious, backdoor, local-vibe",
     "type": "lunch",
     "lat": 33.73933505,
@@ -14018,7 +14017,7 @@ const atlantaData = [
     "duration": 0.5
   },
   {
-    "slug": "mannys-grant-park",    "name": "Manny's Grant Park",
+    "name": "Manny's Grant Park",
     "vibe": "game-day, old-friend, easygoing, talky, neighborhood-core, shots, unfussy, casual-mood",
     "type": "bar",
     "lat": 33.745608,
@@ -14060,7 +14059,7 @@ const atlantaData = [
     "duration": 2.33
   },
   {
-    "slug": "el-ponce",    "name": "El Ponce",
+    "name": "El Ponce",
     "vibe": "Latin-pop, punchy, flavorful, retro-vibe, salsa, late-bite, neighborhood-joint, festive",
     "type": ["lunch", "dinner"],
     "lat": 33.7734985,
@@ -14102,7 +14101,7 @@ const atlantaData = [
     "duration": 2
   },
 {
-  "slug": "roshambo",    "name": "Roshambo",
+  "name": "Roshambo",
   "vibe": "Modern American, Neighborhood charm, Brunch glow, Creative comfort, Casual chic, Local spirit, Stylish bustle, Approachable, Happy hour buzz, Family-friendly",
   "type": ["lunch", "dinner"],
   "lat": 33.81919459,
@@ -14148,7 +14147,7 @@ const atlantaData = [
   "duration": 1.5
 },
 {
-  "slug": "hawkers-asian-street-food",    "name": "Hawkers Asian Street Food",
+  "name": "Hawkers Asian Street Food",
   "vibe": "Street eats, Shareable plates, Bold flavors, Craft cocktails, Urban energy, Lively, Generational recipes, Communal vibe, BeltLine buzz, Casual edge",
   "type": ["lunch", "dinner"],
   "lat": 33.7562599,
@@ -14194,7 +14193,7 @@ const atlantaData = [
   "duration": 1.5
 },
 {
-  "slug": "kevin-rathbun-steak",    "name": "Kevin Rathbun Steak",
+  "name": "Kevin Rathbun Steak",
   "vibe": "Industrial-cool ambiance, Prime cuts, Stylish, BeltLine locale, Elevated comfort, Classic steakhouse charm, Refined yet warm, Date-night worthy, Timeless, Welcoming",
   "type": "dinner",
   "lat": 33.7589303,
@@ -14240,7 +14239,7 @@ const atlantaData = [
   "duration": 2
 },
 {
-  "slug": "buckhead-art-company",    "name": "Buckhead Art & Company",
+  "name": "Buckhead Art & Company",
   "vibe": "Contemporary, Gallery stroll, Artful, Joy-building, Community voice, Curated exhibitions, Thought-provoking, White-walled, Private events, Cultural spark",
   "type": "gallery",
   "lat": 33.83830287,
@@ -14286,7 +14285,7 @@ const atlantaData = [
   "duration": 1
 },
 {
-  "slug": "mister-o1-extraordinary-pizza-buckhead",    "name": "Mister O1 Extraordinary Pizza - Buckhead",
+  "name": "Mister O1 Extraordinary Pizza - Buckhead",
   "vibe": "Artisanal, Thin-crust, Italian import, Innovative star-shaped, Light dough, Crafted, Fresh ingredients, Playful plating, Shareable, Creative",
   "type": ["lunch", "dinner"],
   "lat": 33.8496628,
@@ -14332,7 +14331,7 @@ const atlantaData = [
   "duration": 1
 },
 {
-  "slug": "bar-pilar",    "name": "Bar Pilar",
+  "name": "Bar Pilar",
   "vibe": "Hidden cocktail den, Hemingway-inspired, Seasonal, Intimate, Dramatic, New American flair, Cozy intrigue, Sophisticated, Underground cool, Curated libations",
   "type": ["dinner", "cocktail"],
   "lat": 33.7797376,
@@ -14378,7 +14377,7 @@ const atlantaData = [
   "duration": 1.5
 },
 {
-  "slug": "pink-lotus-thai-restaurant",    "name": "Pink Lotus Thai Restaurant",
+  "name": "Pink Lotus Thai Restaurant",
   "vibe": "Modern Thai, Regional specialties, Shareable, Lively, Unexpected, Isaan-inspired, After-work buzz, Refined street food, Vibrant plating, Bold flavors",
   "type": ["lunch", "dinner", "patio", "cocktail"],
   "lat": 33.7814781,
@@ -14424,7 +14423,7 @@ const atlantaData = [
   "duration": 2
 },
 {
-  "slug": "slingshot-social-game-club",    "name": "Slingshot Social Game Club",
+  "name": "Slingshot Social Game Club",
   "vibe": "Arcade fun, Social gaming, Exclusive cocktails, Duckpin & skeeball, Welcoming, Night-out energy, Group play, Retro games, Casual entertainment, Inclusive",
   "type": ["bar", "activity"],
   "lat": 33.78177753,
@@ -14470,7 +14469,7 @@ const atlantaData = [
   "duration": 3
 },
 {
-  "slug": "the-optimist",    "name": "The Optimist",
+  "name": "The Optimist",
   "vibe": "Coastal escape, Seafood raw bar, Nautical-touch, Breezy, Oyster bar charm, Re-purposed ham-aging house vibe, Date-night fish camp, Casual elegance, Seaside mood, Inviting",
   "type": ["cocktail", "dinner"],
   "lat": 33.7798543,
@@ -14516,7 +14515,7 @@ const atlantaData = [
   "duration": 2
 },
 {
-  "slug": "belen-bistro-market-argentina",    "name": "Belen Bistro + Market Argentina",
+  "name": "Belen Bistro + Market Argentina",
   "vibe": "Charming, Empanada queen, Three-level dining, Decatur warmth, Argentine staples, Malbec friendly, Shareable bites, Cozy, Cultural, Lavishly filled",
   "type": ["lunch", "dinner"],
   "lat": 33.7744047,
@@ -14562,7 +14561,7 @@ const atlantaData = [
   "duration": 2
 },
 {
-  "slug": "norifish-sushi-izakaya",    "name": "NoriFish Sushi & Izakaya",
+  "name": "NoriFish Sushi & Izakaya",
   "vibe": "Minimalist, Fresh cuts, Sake, Intimate, Japanese touch, Crisp flavors, Elevated, Chef-driven, Small plates, Serene",
   "type": "dinner",
   "lat": 33.8161351,
@@ -14608,7 +14607,7 @@ const atlantaData = [
   "duration": 2
 },
 {
-  "slug": "cafe-momentum-atlanta",    "name": "Café Momentum Atlanta",
+  "name": "Café Momentum Atlanta",
   "vibe": "Mission-driven, Nonprofit dining, Youth empowerment, Cozy lighting, Seasonal menu, Dimmed ambiance, Social impact, Hopeful, Community nurture, Uplifting",
   "type": ["lunch", "dinner"],
   "lat": 33.75924167,
@@ -14654,7 +14653,7 @@ const atlantaData = [
   "duration": 2
 },
 {
-  "slug": "billys-avondale",    "name": "Billy's Avondale",
+  "name": "Billy's Avondale",
   "vibe": "Sandwich heaven, Nostalgic bites, Bespoke counter, Community rooted, Jersey flair, Historic charm, Handmade, Lettuce & lore, Local ode, Cozy counter",
   "type": "lunch",
   "lat": 33.776965,
@@ -14700,7 +14699,7 @@ const atlantaData = [
   "duration": 1
 },
 {
-  "slug": "smileys-burger-club",    "name": "Smiley's Burger Club",
+  "name": "Smiley's Burger Club",
   "vibe": "Smashburger, Casual, Comfort food, Retro, Nostalgic, Quick bite, Neighborhood, Juicy, Fun, No-frills",
   "type": ["lunch", "dinner", "patio"],
   "lat": 33.771963,
@@ -14746,7 +14745,7 @@ const atlantaData = [
   "duration": 1.25
 },
 {
-  "slug": "reynolds-makery-pulperia",    "name": "Reynolds Makery & Pulperia",
+  "name": "Reynolds Makery & Pulperia",
   "vibe": "Artistic, Crafty, Hidden gem, Creative hub, Local, Eclectic, Food & art, Quirky, Gathering space, Offbeat",
   "type": ["coffee", "lifestyle"],
   "lat": 33.74969185,
@@ -14792,7 +14791,7 @@ const atlantaData = [
   "duration": 0.5
 },
 {
-  "slug": "flora-fauna",    "name": "Flora/Fauna",
+  "name": "Flora/Fauna",
   "vibe": "Botanical, Natural wine, Light bites, Cozy, Earthy, Social, Plant-filled, Mindful dining, Vibrant, Chill",
   "type": "random gem",
   "lat": 33.7480535,
@@ -14838,7 +14837,7 @@ const atlantaData = [
   "duration": 0.66
 },
 {
-  "slug": "tropical-express-atl",    "name": "Tropical Express Atl",
+  "name": "Tropical Express Atl",
   "vibe": "Lush escapes, Plant sanctuary, Creative hub, Urban jungle, Green vibes, Community roots, Sensory calm, Flori-art, Cozy botany, Creative gathering",
   "type": "random gem",
   "lat": 33.7752395,
@@ -14884,7 +14883,7 @@ const atlantaData = [
   "duration": 0.66
 },
 {
-  "slug": "vinyl-paradise-at-tropical-express",    "name": "Vinyl Paradise at Tropical Express",
+  "name": "Vinyl Paradise at Tropical Express",
   "vibe": "Retro vinyl, Music and greens, Hidden gem, Vintage tunes, Chill browsing, Plant + record fusion, Creative enclave, Quirky pairing, Nostalgic vibe, Local-luxe",
   "type": ["random gem", "lifestyle"],
   "lat": 33.7752395,
@@ -14930,7 +14929,7 @@ const atlantaData = [
   "duration": 0.66
 },
 {
-  "slug": "adios-cafe",    "name": "ADios Cafe",
+  "name": "ADios Cafe",
   "vibe": "Mexican-breakfast haven, Specialty coffee, Antiques charm, Patio glow, Warm décor, Creative brunch, Cozy nook, Early riser, Flavorful, Inviting retreat",
   "type": ["breakfast", "dessert", "coffee"],
   "lat": 33.749891,
@@ -14976,7 +14975,7 @@ const atlantaData = [
   "duration": 1
 },
 {
-  "slug": "bottle-rocket-fine-food-and-beverage",    "name": "Bottle Rocket Fine Food and Beverage",
+  "name": "Bottle Rocket Fine Food and Beverage",
   "vibe": "Laid-back sushi lounge, Fusion bites, Dive-bar vibe, Friendly staff, Downtown gem, Burger meets roll, Warm eclectic, Neighborhood favorite, Quirky, Welcoming bar setting",
   "type": "dinner",
   "lat": 33.749828,
@@ -15022,7 +15021,7 @@ const atlantaData = [
   "duration": 2
 },
 {
-  "slug": "smorgasburg-atlanta",    "name": "Smorgasburg Atlanta",
+  "name": "Smorgasburg Atlanta",
   "vibe": "Food carnival, Open-air feast, Saturdays alive, Local pop-ups, Street-food stage, Community pulse, Global bites, Bar tents, Vibrant, Urban festival",
   "type": "market",
   "lat": 33.75003202,
@@ -15068,7 +15067,7 @@ const atlantaData = [
   "duration": 2
 },
 {
-  "slug": "cat-eye-creative",    "name": "Cat Eye Creative",
+  "name": "Cat Eye Creative",
   "vibe": "Contemporary gallery, Artistic buzz, Neon & pop art, Community hub, Rotating exhibitions, Global artists, Studio charm, Event-ready, Creative incubator, Curated vibes",
   "type": "gallery",
   "lat": 33.7513147,
@@ -15114,7 +15113,7 @@ const atlantaData = [
   "duration": 1
 },
 {
-  "slug": "rays-in-the-city",    "name": "Ray's In the City",
+  "name": "Ray's In the City",
   "vibe": "Timeless fine dining, Seafood & steaks, Live jazz evenings, Upscale downtown, Elegant comfort, Private dining, Wine‑forward, Classic institution, Urban elegance, Polished ambiance",
   "type": ["lunch", "dinner"],
   "lat": 33.7603914,
@@ -15160,7 +15159,7 @@ const atlantaData = [
   "duration": 2
 },
 {
-  "slug": "mister-burger",    "name": "Mister Burger",
+  "name": "Mister Burger",
   "vibe": "Late-night smashburger, Buckhead hotspot, Open past midnight, Smash-style, Saucy indulgence, Quick counter, Night-owl favorite, Brunch-on-repeat, Juicy sliders, Casual crave",
   "type": ["lunch", "dinner", "late‑night"],
   "lat": 33.8371162,
@@ -15206,7 +15205,7 @@ const atlantaData = [
   "duration": 1.25
 },
 {
-  "slug": "brasiliana-pizza-atlanta",    "name": "Brasiliana Pizza - Atlanta",
+  "name": "Brasiliana Pizza - Atlanta",
   "vibe": "Brazilian‑Italian fusion, Long‑fermented dough, Unique toppings, Dessert pizzas, Flavor adventure, Creative crust, East Atlanta vibe, Bold layers, Cultural mash‑up, Artisan flair",
   "type": ["lunch", "dinner"],
   "lat": 33.7400183,
@@ -15252,7 +15251,7 @@ const atlantaData = [
   "duration": 1.25
 },
 {
-  "slug": "krog-bar",    "name": "Krog Bar",
+  "name": "Krog Bar",
   "vibe": "Pizza, Coal‑fired, Intimate, Rustic, Cozy, Buckhead, Wine, Neighborhood, Casual, Small‑plates",
   "type": ["lunch", "dinner"],
   "lat": 33.81826905,
@@ -15298,7 +15297,7 @@ const atlantaData = [
   "duration": 1.75
 },
 {
-  "slug": "the-57th-fighter-group-restaurant",    "name": "The 57th Fighter Group Restaurant",
+  "name": "The 57th Fighter Group Restaurant",
   "vibe": "Aviation, Historic, Planes, Themed, Southern, Nostalgic, WWII, Runway, Family-friendly, Quirky",
   "type": ["lunch", "dinner"],
   "lat": 33.87143786,
@@ -15344,7 +15343,7 @@ const atlantaData = [
   "duration": 1.75
 },
 {
-  "slug": "so-so-fed",    "name": "So So Fed",
+  "name": "So So Fed",
   "vibe": "Local, Cozy, Creative, Neighborhood, Intimate, Wholesome, Seasonal, Friendly, Small-batch",
   "type": "dinner",
   "lat": 33.7348134,
@@ -15390,7 +15389,7 @@ const atlantaData = [
   "duration": 1.75
 },
 {
-  "slug": "skyline-park",    "name": "Skyline Park",
+  "name": "Skyline Park",
   "vibe": "Rooftop, Views, Games, Retro, Social, Carnival, Skyline, Amusement, Colorful, Playful",
   "type": ["activity", "rooftop"],
   "lat": 33.7728212,
@@ -15436,7 +15435,7 @@ const atlantaData = [
   "duration": 2.5
 },
 {
-  "slug": "social-space",    "name": "Social Space",
+  "name": "Social Space",
   "vibe": "Creative, Modern, Events, Minimalist, Flexible, Urban, Collaborative, Cultural, Gathering, Community",
   "type": "lifestyle",
   "lat": 33.759365,
@@ -15482,7 +15481,7 @@ const atlantaData = [
   "duration": 0.66
 },
 {
-  "slug": "elmyr",    "name": "Elmyr",
+  "name": "Elmyr",
   "vibe": "Tex‑Mex, Divey, Graffiti, Casual, Quirky, Margaritas, Local, Alternative, Funky, Eclectic",
   "type": ["bar", "lunch", "dinner"],
   "lat": 33.7633915,
@@ -15528,7 +15527,7 @@ const atlantaData = [
   "duration": 1.25
 },
 {
-  "slug": "ollies-market-deli",    "name": "Ollie's Market & Deli",
+  "name": "Ollie's Market & Deli",
   "vibe": "Deli, Sandwiches, Local, Fresh, Casual, Neighborhood, Simple, Everyday, Grab-and-go, Friendly",
   "type": ["breakfast", "lunch"],
   "lat": 33.7301663,
@@ -15574,7 +15573,7 @@ const atlantaData = [
   "duration": 0.66
 },
 {
-  "slug": "pizza-verdura-sincera",    "name": "Pizza Verdura Sincera",
+  "name": "Pizza Verdura Sincera",
   "vibe": "Pizza, Vegan, Artisan, Plant-based, Fresh, Creative, Natural, Mindful, Modern, Cozy",
   "type": ["lunch", "dinner"],
   "lat": 33.7647329,
@@ -15620,7 +15619,7 @@ const atlantaData = [
   "duration": 1.25
 },
 {
-  "slug": "the-midway-pub",    "name": "The Midway Pub",
+  "name": "The Midway Pub",
   "vibe": "Pub, Beer, Sports, Burgers, Patio, Chill, Neighborhood, Craft, Casual, Laid-back",
   "type": ["bar", "patio"],
   "lat": 33.739449,
@@ -15666,7 +15665,7 @@ const atlantaData = [
   "duration": 1.25
 },
 {
-  "slug": "universal-joint-decatur",    "name": "Universal Joint Decatur",
+  "name": "Universal Joint Decatur",
   "vibe": "Pub, Patio, Casual, Beer, Family, Local, Burgers, Easygoing, Friendly, Neighborhood",
   "type": ["bar", "lunch"],
   "lat": 33.7594521,
@@ -15712,7 +15711,7 @@ const atlantaData = [
   "duration": 1.5
 },
 {
-  "slug": "havana-nightclub-atl",    "name": "Havana Nightclub ATL",
+  "name": "Havana Nightclub ATL",
   "vibe": "Latin, Nightclub, Dance, Live, Music, Salsa, Reggaeton, Lively, Colorful, Party",
   "type": "club",
   "lat": 33.84095755,
@@ -15758,7 +15757,7 @@ const atlantaData = [
   "duration": 2.5
 },
 {
-  "slug": "sanctuary-nightclub",    "name": "Sanctuary Nightclub",
+  "name": "Sanctuary Nightclub",
   "vibe": "Club, Dance, Elegant, DJs, Nightlife, Chic, Lounge, Packed, High-energy, International",
   "type": "club",
   "lat": 33.8426247,
@@ -15804,7 +15803,7 @@ const atlantaData = [
   "duration": 2.5
 },
 {
-  "slug": "tongue-groove",    "name": "Tongue & Groove",
+  "name": "Tongue & Groove",
   "vibe": "Club, Dance, DJs, Upscale, Packed, Energetic, Trendy, Party, Lively, Social",
   "type": "club",
   "lat": 33.8223388,
@@ -15850,7 +15849,7 @@ const atlantaData = [
   "duration": 2.5
 },
 {
-  "slug": "anis-cafe-bistro",    "name": "Anis Cafe & Bistro",
+  "name": "Anis Cafe & Bistro",
   "vibe": "Bistro, Cozy, European, Brunch, Coffee, Charming, Romantic, French, Garden, Warm",
   "type": ["lunch", "dinner"],
   "lat": 33.8357586,
@@ -15896,7 +15895,7 @@ const atlantaData = [
   "duration": 2
 },
 {
-  "slug": "westside-motor-lounge",    "name": "Westside Motor Lounge",
+  "name": "Westside Motor Lounge",
   "vibe": "Lounge, Retro, Motor, Drinks, Stylish, Casual, Social, Creative, Outdoor, Community",
   "type": ["bar", "patio"],
   "lat": 33.77475185,
@@ -15942,7 +15941,7 @@ const atlantaData = [
   "duration": 1.75
 },
 {
-  "slug": "hattie-bs-hot-chicken-atlanta-west-midtown",    "name": "Hattie B's Hot Chicken - Atlanta West Midtown",
+  "name": "Hattie B's Hot Chicken - Atlanta West Midtown",
   "vibe": "Hot-chicken, Spicy, Nashville, Famous, Southern, Comfort, Casual, Juicy, Fried, Local",
   "type": ["lunch", "dinner", "patio"],
   "lat": 33.7818182,
@@ -15988,7 +15987,7 @@ const atlantaData = [
   "duration": 1
 },
 {
-  "slug": "flower-child-westside-provisions",    "name": "Flower Child Westside Provisions",
+  "name": "Flower Child Westside Provisions",
   "vibe": "Healthy, Bowl, Bright, Fresh, Modern, Vegan, Wholesome, Organic, Light, Daytime",
   "type": ["lunch", "dinner"],
   "lat": 33.7854942,
@@ -16034,7 +16033,7 @@ const atlantaData = [
   "duration": 1
 },
 {
-  "slug": "kinjo-room",    "name": "Kinjo Room",
+  "name": "Kinjo Room",
   "vibe": "Fusion, Japanese, Elegant, Modern, Chic, Cocktails, Upscale, Intimate, Stylish, Refined",
   "type": "dinner",
   "lat": 33.7866813,
@@ -16080,7 +16079,7 @@ const atlantaData = [
   "duration": 2
 },
 {
-  "slug": "o-ku",    "name": "O-Ku",
+  "name": "O-Ku",
   "vibe": "Sushi, Upscale, Japanese, Modern, Elegant, Refined, Rooftop, Creative, Date-night, Sophisticated",
   "type": ["brunch", "dinner", "cocktail", "rooftop"],
   "lat": 33.7845132,
@@ -16126,7 +16125,7 @@ const atlantaData = [
   "duration": 2
 },
 {
-  "slug": "prevail-union",    "name": "Prevail Union",
+  "name": "Prevail Union",
   "vibe": "Healthy, Smoothie, Bright, Clean, Wholesome, Modern, Fresh, Coffee, Wellness, Minimal",
   "type": "coffee",
   "lat": 33.78345123,
@@ -16172,7 +16171,7 @@ const atlantaData = [
   "duration": 0.5
 },
 {
-  "slug": "negril-atl",    "name": "Negril ATL",
+  "name": "Negril ATL",
   "vibe": "Caribbean, Jerk, Casual, Colorful, Flavorful, Island, Rum, Tropical, Spicy, Lively",
   "type": ["lunch", "dinner"],
   "lat": 33.8007556,
@@ -16218,7 +16217,7 @@ const atlantaData = [
   "duration": 2
 },
 {
-  "slug": "con-leche-coffee",    "name": "Con Leche Coffee",
+  "name": "Con Leche Coffee",
   "vibe": "Coffee, Latte, Cozy, Friendly, Local, Warm, Bright, Community, Chill, Breakfast",
   "type": "coffee",
   "lat": 33.7486994,
@@ -16264,7 +16263,7 @@ const atlantaData = [
   "duration": 0.66
 },
 {
-  "slug": "necessary-purveyor",    "name": "Necessary Purveyor",
+  "name": "Necessary Purveyor",
   "vibe": "Market, All-day, Coffee, Casual, Grab-and-go, Bakery, Neighborhood, Fresh, Social, Creative",
   "type": ["coffee", "breakfast", "lunch"],
   "lat": 33.7724308,
@@ -16310,7 +16309,7 @@ const atlantaData = [
   "duration": 1.5
 },
 {
-  "slug": "the-postcard",    "name": "The Postcard",
+  "name": "The Postcard",
   "vibe": "Wine-bar, Chic, Romantic, Stylish, Intimate, Modern, Social, Cozy, Trendy, Elegant",
   "type": ["coffee", "bakery"],
   "lat": 33.8399014,
@@ -16356,7 +16355,7 @@ const atlantaData = [
   "duration": 0.5
 },
 {
-  "slug": "pecan-jacks-ice-cream-candy",    "name": "Pecan Jacks Ice Cream & Candy",
+  "name": "Pecan Jacks Ice Cream & Candy",
   "vibe": "Sweets, Nostalgic, Fun, Ice cream, Candy, Treats, Colorful, Family, Dessert, Playful",
   "type": "dessert",
   "lat": 33.7738251,
@@ -16402,7 +16401,7 @@ const atlantaData = [
   "duration": 0.5
 },
 {
-  "slug": "the-book-bird-of-avondale-estates",    "name": "The Book Bird of Avondale Estates",
+  "name": "The Book Bird of Avondale Estates",
   "vibe": "Books, Independent, Cozy, Local, Charming, Quiet, Niche, Friendly, Relaxed, Browsing",
   "type": "bookstore",
   "lat": 33.7757252,
@@ -16448,7 +16447,7 @@ const atlantaData = [
   "duration": 0.66
 },
 {
-  "slug": "atlanta-vintage-books",    "name": "Atlanta Vintage Books",
+  "name": "Atlanta Vintage Books",
   "vibe": "Vintage, Books, Nostalgic, Rare, Quiet, Independent, Collectors, Historic, Cozy, Literary",
   "type": "bookstore",
   "lat": 33.8667473,
@@ -16494,7 +16493,7 @@ const atlantaData = [
   "duration": 0.66
 },
 {
-  "slug": "joes-coffeehouse-eav",    "name": "Joe's Coffeehouse EAV",
+  "name": "Joe's Coffeehouse EAV",
   "vibe": "Coffee, Cozy, Local, Friendly, Casual, Neighborhood, EAV, Community, Chill, Warm",
   "type": "coffee",
   "lat": 33.7403697,
@@ -16539,6 +16538,4 @@ const atlantaData = [
   "price": "$",
   "duration": 1
 }
-];
-
-export default atlantaData;
+]

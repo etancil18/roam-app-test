@@ -19,7 +19,7 @@ export default function Map() {
       />
       <Marker position={position}>
         <Popup>
-          Welcome to Roam ATL.
+          Welcome to Roam ATL x NYC.
         </Popup>
       </Marker>
     </MapContainer>

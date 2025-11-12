@@ -1,77 +1,70 @@
-'use client'
+// app/favorites/page.tsx
 
-import { useEffect, useState } from 'react'
-import { supabase } from '../../lib/supabase'
-import { UserRoute, Stop } from '../../types/roam'
+import { getFavorites as getVenueFavorites } from '@/lib/supabase/favorites'
+import { getSavedRoutes } from '@/lib/supabase/routes'
+import FavoritesList from '@/components/FavoritesList'
+import type { FavoriteRecord, SavedRouteRecord } from '@/types/supabase'
 
+type CombinedFavorite =
+  | { type: 'venue'; record: FavoriteRecord; data: any }
+  | { type: 'route'; record: SavedRouteRecord; data: any }
 
-export default function Page() {
-  const [userId, setUserId] = useState<string | null>(null)
-  const [routes, setRoutes] = useState<UserRoute[]>([])
-  const [loading, setLoading] = useState(true)
+export default async function FavoritesPage() {
+  let combined: CombinedFavorite[] = []
 
-  useEffect(() => {
-    const loadData = async () => {
-      const {
-        data: { user },
-        error: userError,
-      } = await supabase.auth.getUser()
+  try {
+    const [venueFavs, savedRoutes] = await Promise.all([
+      getVenueFavorites(),
+      getSavedRoutes(),
+    ])
 
-      console.log("Logged in user:", user)
-      if (userError) console.error("User error:", userError)
+    const mappedVenues: CombinedFavorite[] = venueFavs.map((v) => ({
+      type: 'venue',
+      record: v,
+      data: v.data,
+    }))
 
-      if (!user) {
-        setUserId(null)
-        setLoading(false)
-        return
-      }
+    const mappedRoutes: CombinedFavorite[] = savedRoutes.map((r) => ({
+      type: 'route',
+      record: r,
+      data: r.stops,
+    }))
 
-      setUserId(user.id)
+    // Combine and sort newest first
+    combined = [...mappedRoutes, ...mappedVenues].sort((a, b) => {
+      const dateA =
+        a.type === 'venue'
+          ? new Date(a.record.created_at ?? 0).getTime()
+          : new Date(a.record.created_at ?? 0).getTime()
+      const dateB =
+        b.type === 'venue'
+          ? new Date(b.record.created_at ?? 0).getTime()
+          : new Date(b.record.created_at ?? 0).getTime()
+      return dateB - dateA
+    })
+  } catch (error: any) {
+    const isAuthError = error.message?.toLowerCase().includes('not authenticated')
 
-      const { data, error } = await supabase
-        .from('user_routes')
-        .select('*')
-        .eq('user_id', user.id)
-
-      console.log("Fetched routes:", data)
-      if (error) console.error("Route query error:", error)
-
-      setRoutes(data || [])
-      setLoading(false)
-    }
-
-    loadData()
-  }, [])
+    return (
+      <main className="min-h-screen p-8 bg-white text-black">
+        <h1 className="text-2xl font-bold mb-4">My Favorites</h1>
+        {isAuthError ? (
+          <p className="text-gray-500">
+            Please log in to view your saved routes and favorite venues.
+          </p>
+        ) : (
+          <p className="text-red-600">
+            Unable to load data. Please try again later.
+          </p>
+        )}
+      </main>
+    )
+  }
 
   return (
     <main className="min-h-screen p-8 bg-white text-black">
-      <h1 className="text-2xl font-bold mb-4">My Saved Crawls</h1>
-      <p className="text-sm mb-4 text-gray-600">Logged in user: {userId ?? 'None'}</p>
-      {loading ? (
-        <p>Loading...</p>
-      ) : routes.length === 0 ? (
-        <p>No saved crawls yet.</p>
-      ) : (
-        <ul className="space-y-6">
-          {routes.map((r: UserRoute) => (
-            <li key={r.id} className="bg-gray-100 p-6 rounded-xl shadow">
-              <h2 className="text-lg font-semibold mb-2">{r.name}</h2>
-              {r.route_data?.stops?.length > 0 ? (
-                <ul className="space-y-1 pl-4 border-l-4 border-blue-500">
-                  {r.route_data?.stops?.map((loc: Stop, idx: number) => (
-                    <li key={idx} className="text-sm">
-                      <span className="font-medium">{loc.name}</span>
-                      {loc.address && ` — ${loc.address}`}
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-sm text-gray-500">No stops in route.</p>
-              )}
-            </li>
-          ))}
-        </ul>
-      )}
+      <h1 className="text-2xl font-bold mb-4">My Favorites</h1>
+      <FavoritesList favorites={combined} />
     </main>
   )
 }
