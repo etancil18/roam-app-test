@@ -12,7 +12,7 @@ function validateUUID(uuid: string): uuid is UUID {
 }
 
 // --- Server Action: Remove Favorite ---
-export async function removeFavoriteAction(venueId: string) {
+export async function removeFavoriteAction(venueId: string): Promise<void> {
   const supabase = await createServerClient()
   const {
     data: { user },

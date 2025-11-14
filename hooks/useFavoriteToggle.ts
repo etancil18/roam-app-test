@@ -44,35 +44,8 @@ export function useFavoriteToggle() {
     }
   }
 
-  async function removeFavorite(venueId: string): Promise<boolean> {
-    try {
-      setLoading(true)
-      setError(null)
-
-      const res = await fetch('/api/favorites/remove', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ venueId }),
-      })
-
-      if (!res.ok) {
-        const msg = await res.text()
-        throw new Error(msg || 'Failed to remove favorite')
-      }
-
-      return true
-    } catch (err: any) {
-      console.error('❌ Error removing favorite:', err)
-      setError(err.message || 'Unknown error')
-      return false
-    } finally {
-      setLoading(false)
-    }
-  }
-
   return {
     addFavorite,
-    removeFavorite,
     loading,
     error,
   }

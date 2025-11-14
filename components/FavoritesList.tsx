@@ -4,10 +4,10 @@ import React from 'react'
 import type { CombinedFavorite } from '@/types/ui'
 import SavedCrawlsList from './SavedCrawlsList'
 import { getEmojiForType } from '@/utils/emoji'
-import { MapPin, PlusCircle, Trash2 } from 'lucide-react'
+import { MapPin, PlusCircle } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { useRouteStore } from '@/lib/store/routeStore'
-import { useFavoriteToggle } from '@/hooks/useFavoriteToggle'
+import { removeFavoriteAction } from '@/app/favorites/actions'
 
 export default function FavoritesList({
   favorites,
@@ -20,7 +20,18 @@ export default function FavoritesList({
   const routes = favorites.filter((f) => f.type === 'route')
   const router = useRouter()
   const { addStop } = useRouteStore()
-  const { removeFavorite, loading } = useFavoriteToggle()
+
+  async function handleRemove(venueId: string) {
+    const confirmed = confirm('Are you sure you want to remove this favorite?')
+    if (!confirmed) return
+
+    try {
+      await removeFavoriteAction(venueId)
+    } catch (err) {
+      console.error('❌ Error removing favorite:', err)
+      alert('Failed to remove favorite')
+    }
+  }
 
   return (
     <div className="space-y-10">
@@ -89,10 +100,9 @@ export default function FavoritesList({
 
                   <button
                     className="flex items-center gap-1 text-red-600 hover:underline"
-                    onClick={() => removeFavorite(v.record.venue_id)}
-                    disabled={loading}
+                    onClick={() => handleRemove(v.record.venue_id)}
                   >
-                    <Trash2 size={14} /> Remove
+                    Remove
                   </button>
                 </div>
               </li>

@@ -1,10 +1,10 @@
 'use client'
 
-import React from 'react'
+import React, { useTransition } from 'react'
 import { useRouter } from 'next/navigation'
-import { useFavoriteToggle } from '@/hooks/useFavoriteToggle'
 import { MapPin, PlusCircle, Trash2, Tag } from 'lucide-react'
 import { useRouteStore } from '@/lib/store/routeStore'
+import { removeFavoriteAction } from '@/app/favorites/actions'
 import type { FavoriteVenueData } from '@/validators/favorite'
 import type { FavoriteRecord } from '@/types/supabase'
 import type { Venue } from '@/types/venue'
@@ -17,14 +17,8 @@ export default function FavoritesVenuesList({
   venues: FavoriteWithParsedData[]
 }) {
   const router = useRouter()
-  const { removeFavorite, loading } = useFavoriteToggle()
   const { addStop } = useRouteStore()
-
-  console.log('🔍 favorites venues incoming:', venues)
-
-  if (!venues.length) {
-    return <p className="text-sm text-gray-500">No favorited venues yet.</p>
-  }
+  const [isPending, startTransition] = useTransition()
 
   const toVenue = (fav: FavoriteWithParsedData): Venue => ({
     id: fav.venue_id,
@@ -45,15 +39,34 @@ export default function FavoritesVenuesList({
     city: fav.city || undefined,
   })
 
+  async function handleRemove(venueId: string) {
+    const confirmDelete = confirm('Are you sure you want to remove this favorite?')
+    if (!confirmDelete) return
+
+    startTransition(async () => {
+      try {
+        await removeFavoriteAction(venueId)
+        router.refresh()
+      } catch (error) {
+        console.error('❌ Failed to remove favorite:', error)
+        alert('Something went wrong removing this favorite.')
+      }
+    })
+  }
+
+  if (!venues.length) {
+    return <p className="text-sm text-gray-500">No favorited venues yet.</p>
+  }
+
   return (
     <ul className="space-y-4">
       {venues.map((fav) => {
+        const { name, lat, lon, type, image_url, vibe_tags } = fav.data
+
         if (!fav.data) {
           console.warn('⚠️ fav missing data:', fav)
           return null
         }
-
-        const { name, lat, lon, type, image_url, vibe_tags } = fav.data
 
         return (
           <li
@@ -67,9 +80,6 @@ export default function FavoritesVenuesList({
               }
               alt={name}
               className="w-16 h-16 rounded-lg object-cover"
-              onError={(e) => {
-                e.currentTarget.src = '/placeholder.png'
-              }}
             />
 
             <div className="flex-1">
@@ -80,7 +90,7 @@ export default function FavoritesVenuesList({
 
               {vibe_tags?.length ? (
                 <div className="flex gap-1 flex-wrap mt-1">
-                  {vibe_tags.map((tag) => (
+                  {vibe_tags.map((tag: string) => (
                     <span
                       key={tag}
                       className="inline-flex items-center gap-1 text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full"
@@ -112,11 +122,15 @@ export default function FavoritesVenuesList({
                 </button>
 
                 <button
-                  className="text-xs flex items-center gap-1 text-red-600 hover:underline"
-                  onClick={() => removeFavorite(fav.venue_id)}
-                  disabled={loading}
+                  className={`text-xs flex items-center gap-1 ${
+                    isPending
+                      ? 'text-gray-400 cursor-not-allowed'
+                      : 'text-red-600 hover:underline'
+                  }`}
+                  onClick={() => handleRemove(fav.venue_id)}
+                  disabled={isPending}
                 >
-                  <Trash2 size={14} /> Remove
+                  <Trash2 size={14} /> {isPending ? 'Removing…' : 'Remove'}
                 </button>
               </div>
             </div>

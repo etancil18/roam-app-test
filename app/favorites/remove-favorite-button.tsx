@@ -1,7 +1,7 @@
 'use client'
 
 import { useTransition } from 'react'
-import { removeFavoriteAction } from './actions'
+import { removeFavoriteAction } from 'app/favorites/actions'  // ← adjust if path differs
 
 type Props = {
   venueId: string
@@ -17,11 +17,15 @@ export default function RemoveFavoriteButton({ venueId, onRemoved }: Props) {
       return
     }
 
-    if (!confirm('Are you sure you want to remove this favorite?')) return
+    const confirmDelete = confirm('Are you sure you want to remove this favorite?')
+    if (!confirmDelete) return
 
     startTransition(async () => {
       try {
+        // removeFavoriteAction returns void — success = no error thrown.
         await removeFavoriteAction(venueId)
+
+        // Trigger callback to refresh UI.
         onRemoved?.()
       } catch (error) {
         console.error('❌ Failed to remove favorite:', error)
