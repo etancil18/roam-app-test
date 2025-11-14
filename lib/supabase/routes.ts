@@ -21,7 +21,7 @@ export async function saveRoute({
   sourceUrl?: string
   slug: string
 }) {
-  const supabase = createServerClient() as unknown as import('@supabase/supabase-js').SupabaseClient<Database>
+  const supabase = await createServerClient() as unknown as import('@supabase/supabase-js').SupabaseClient<Database>
 
   const payload: SavedRouteInsert = {
     user_id: userId,
@@ -47,7 +47,7 @@ export async function saveRoute({
 }
 
 export async function getSavedRoutes(): Promise<SavedRouteRecord[]> {
-  const supabase = createServerClient() as unknown as import('@supabase/supabase-js').SupabaseClient<Database>
+  const supabase = await createServerClient() as unknown as import('@supabase/supabase-js').SupabaseClient<Database>
 
   const { data, error } = await supabase
     .from('saved_routes')
@@ -67,7 +67,7 @@ export async function getSavedRoutes(): Promise<SavedRouteRecord[]> {
 }
 
 export async function getRouteBySlug(slug: string): Promise<SavedRouteRecord> {
-  const supabase = createServerClient() as unknown as import('@supabase/supabase-js').SupabaseClient<Database>
+  const supabase = await createServerClient() as unknown as import('@supabase/supabase-js').SupabaseClient<Database>
 
   const { data, error } = await supabase
     .from('saved_routes')
@@ -82,3 +82,4 @@ export async function getRouteBySlug(slug: string): Promise<SavedRouteRecord> {
 
   return data as SavedRouteRecord
 }
+

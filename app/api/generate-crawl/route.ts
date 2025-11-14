@@ -30,7 +30,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid or missing user location." }, { status: 400 });
   }
 
-  // ✅ Convert incoming startTime string → Date properly
   if (options.startTime) {
     options.startTime = new Date(options.startTime);
   }
@@ -54,7 +53,7 @@ export async function POST(req: NextRequest) {
     venueCount: venues.length,
     startLat,
     startLon,
-    options: { ...options, customStart: undefined }, // Hide nested logging noise
+    options,
   });
 
   try {
@@ -63,7 +62,6 @@ export async function POST(req: NextRequest) {
     const duration = performance.now() - t0;
 
     console.log(`✅ Route generated in ${duration.toFixed(1)}ms with ${route.length} stops`);
-
     return NextResponse.json({ route });
   } catch (err) {
     console.error("❌ Route generation failed:", err);

@@ -7,7 +7,7 @@ type VenueRow = Database['public']['Tables']['venues']['Row']
  * Fetches all venues for a given city.
  */
 export async function getVenuesByCity(city: 'atl' | 'nyc'): Promise<VenueRow[]> {
-  const supabase = createServerClient()
+  const supabase = await createServerClient()
 
   const { data: rawData, error } = await supabase
     .from('venues')
@@ -30,7 +30,7 @@ export async function getVenuesByCity(city: 'atl' | 'nyc'): Promise<VenueRow[]> 
  * Fetches a venue by its slug.
  */
 export async function getVenueBySlug(slug: string): Promise<VenueRow | null> {
-  const supabase = createServerClient()
+  const supabase = await createServerClient()
 
   const { data, error } = await supabase
     .from('venues')
@@ -51,7 +51,7 @@ export async function getVenueBySlug(slug: string): Promise<VenueRow | null> {
  * Fetches a venue by its unique ID.
  */
 export async function getVenueById(id: string): Promise<VenueRow | null> {
-  const supabase = createServerClient()
+  const supabase = await createServerClient()
 
   const { data, error } = await supabase
     .from('venues')

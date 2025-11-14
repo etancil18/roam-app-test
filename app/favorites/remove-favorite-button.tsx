@@ -3,7 +3,12 @@
 import { useTransition } from 'react'
 import { removeFavoriteAction } from './actions'
 
-export default function RemoveFavoriteButton({ venueId }: { venueId: string }) {
+type Props = {
+  venueId: string
+  onRemoved?: () => void
+}
+
+export default function RemoveFavoriteButton({ venueId, onRemoved }: Props) {
   const [isPending, startTransition] = useTransition()
 
   const handleClick = () => {
@@ -17,6 +22,7 @@ export default function RemoveFavoriteButton({ venueId }: { venueId: string }) {
     startTransition(async () => {
       try {
         await removeFavoriteAction(venueId)
+        onRemoved?.()
       } catch (error) {
         console.error('❌ Failed to remove favorite:', error)
         alert('Something went wrong removing this favorite.')

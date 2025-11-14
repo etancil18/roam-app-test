@@ -20,6 +20,8 @@ export default function FavoritesVenuesList({
   const { removeFavorite, loading } = useFavoriteToggle()
   const { addStop } = useRouteStore()
 
+  console.log('🔍 favorites venues incoming:', venues)
+
   if (!venues.length) {
     return <p className="text-sm text-gray-500">No favorited venues yet.</p>
   }
@@ -47,6 +49,11 @@ export default function FavoritesVenuesList({
     <ul className="space-y-4">
       {venues.map((fav) => {
         const { name, lat, lon, type, image_url, vibe_tags } = fav.data
+
+        if (!fav.data) {
+          console.warn('⚠️ fav missing data:', fav)
+          return null
+        }
 
         return (
           <li
