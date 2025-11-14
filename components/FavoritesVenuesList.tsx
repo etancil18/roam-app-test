@@ -48,12 +48,12 @@ export default function FavoritesVenuesList({
   return (
     <ul className="space-y-4">
       {venues.map((fav) => {
-        const { name, lat, lon, type, image_url, vibe_tags } = fav.data
-
         if (!fav.data) {
           console.warn('⚠️ fav missing data:', fav)
           return null
         }
+
+        const { name, lat, lon, type, image_url, vibe_tags } = fav.data
 
         return (
           <li
@@ -67,6 +67,9 @@ export default function FavoritesVenuesList({
               }
               alt={name}
               className="w-16 h-16 rounded-lg object-cover"
+              onError={(e) => {
+                e.currentTarget.src = '/placeholder.png'
+              }}
             />
 
             <div className="flex-1">
@@ -77,7 +80,7 @@ export default function FavoritesVenuesList({
 
               {vibe_tags?.length ? (
                 <div className="flex gap-1 flex-wrap mt-1">
-                  {vibe_tags.map((tag: string) => (
+                  {vibe_tags.map((tag) => (
                     <span
                       key={tag}
                       className="inline-flex items-center gap-1 text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full"

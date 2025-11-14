@@ -1,11 +1,13 @@
-// components/FavoritesList.tsx
-
 'use client'
 
 import React from 'react'
 import type { CombinedFavorite } from '@/types/ui'
 import SavedCrawlsList from './SavedCrawlsList'
 import { getEmojiForType } from '@/utils/emoji'
+import { MapPin, PlusCircle, Trash2 } from 'lucide-react'
+import { useRouter } from 'next/navigation'
+import { useRouteStore } from '@/lib/store/routeStore'
+import { useFavoriteToggle } from '@/hooks/useFavoriteToggle'
 
 export default function FavoritesList({
   favorites,
@@ -16,6 +18,9 @@ export default function FavoritesList({
 }) {
   const venues = favorites.filter((f) => f.type === 'venue')
   const routes = favorites.filter((f) => f.type === 'route')
+  const router = useRouter()
+  const { addStop } = useRouteStore()
+  const { removeFavorite, loading } = useFavoriteToggle()
 
   return (
     <div className="space-y-10">
@@ -41,10 +46,54 @@ export default function FavoritesList({
                 <h3 className="font-semibold">{v.data.name}</h3>
                 <p className="text-xs text-gray-500">{v.record.city}</p>
                 <div className="mt-2 flex items-center gap-2">
-                  <span className="text-lg">
-                    {getEmojiForType(v.data.type)}
-                  </span>
+                  <span className="text-lg">{getEmojiForType(v.data.type)}</span>
                   <span className="text-sm">{v.data.type ?? 'Unknown type'}</span>
+                </div>
+
+                <div className="mt-3 flex gap-3 flex-wrap text-xs">
+                  <button
+                    className="flex items-center gap-1 text-blue-600 hover:underline"
+                    onClick={() =>
+                      router.push(`/?focus=${v.record.venue_id}&lat=${v.data.lat}&lon=${v.data.lon}`)
+                    }
+                  >
+                    <MapPin size={14} /> View on Map
+                  </button>
+
+                  <button
+                    className="flex items-center gap-1 text-green-700 hover:underline"
+                    onClick={() => {
+                      addStop({
+                        id: v.record.venue_id,
+                        slug: v.record.venue_id,
+                        name: v.data.name,
+                        lat: v.data.lat,
+                        lon: v.data.lon,
+                        instagram_handle: v.data.instagram_handle || undefined,
+                        link: '',
+                        type: v.data.type || undefined,
+                        cover: v.data.image_url || undefined,
+                        tags: v.data.vibe_tags?.join(', ') || undefined,
+                        tier: undefined,
+                        timeCategory: undefined,
+                        energyRamp: undefined,
+                        price: v.data.price_tier ? String(v.data.price_tier) : undefined,
+                        duration: undefined,
+                        city: v.record.city || undefined,
+                      })
+                      router.push('/')
+                    }}
+                  >
+                    <PlusCircle size={14} /> Add to Crawl
+                  </button>
+
+                  <button
+                    className="flex items-center gap-1 text-red-600 hover:underline"
+                    onClick={() => removeFavorite(v.record.venue_id)}
+                    disabled={loading}
+                  >
+                    <Trash2 size={14} /> Remove
+                  </button>
                 </div>
               </li>
             ))}
