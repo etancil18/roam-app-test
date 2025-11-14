@@ -16,8 +16,9 @@ export default function LoginPage() {
 
   useEffect(() => {
     const handleRedirect = async () => {
-      const code = searchParams.get('code');
-      const authError = searchParams.get('error_description');
+      const code = searchParams?.get('code') ?? null;
+const authError = searchParams?.get('error_description') ?? null;
+
 
       if (authError) {
         setError(authError);

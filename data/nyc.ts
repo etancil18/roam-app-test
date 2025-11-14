@@ -2,7 +2,7 @@ console.log("Loaded nyc.ts");
 
 const nycData = [
   {
-    "name": "StEight(behind KUNIYA HAIR)",
+    "slug": "steight-behind-kuniya-hair",    "name": "StEight(behind KUNIYA HAIR)",
     "vibe": "Speakeasy, Japanese, Jazz, Eclectic, Cozy, Moody, Hidden, Niche, Lowkey",
     "type": "speakeasy",
         "lat": "40.718182",
@@ -46,7 +46,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Doris",
+    "slug": "doris",    "name": "Doris",
     "vibe": "Hip, Patio, Neighborhood Spot, Vinyl, Dimly Lit, Retro, Stylish, Intimate, Groovy, Lounge",
     "type": "bar",
         "lat": "40.68121",
@@ -90,7 +90,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Abe's Pagoda Bar",
+    "slug": "abes-pagoda-bar",    "name": "Abe's Pagoda Bar",
     "vibe": "Laid-back, Quirky, Pool Table, Disco Ball, DJ, Playful, Funky, Nostalgic, Boozy, Energetic",
     "type": "bar",
         "lat": "40.703831",
@@ -134,7 +134,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Carmelo’s",
+    "slug": "carmelos",    "name": "Carmelo’s",
     "vibe": "Casual, Pool Table, Red Lighting, Neighborhood Spot, Authentic, Welcoming, Gritty, Unpretentious, Nostalgic",
     "type": "bar",
         "lat": "40.7027604",
@@ -178,7 +178,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Saturdays NYC Crosby St",
+    "slug": "saturdays-nyc-crosby-st",    "name": "Saturdays NYC Crosby St",
     "vibe": "Modern, Stylish, Lifestyle, Patio, Curated, Sunny, Trendy, Minimal, Urban",
     "type": "lifestyle",
         "lat": "40.7207453",
@@ -222,7 +222,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Honey's",
+    "slug": "honeys",    "name": "Honey's",
     "vibe": "Vibrant, Chic, Social, Cocktails, Dance Floor, Rooftop, Electric, Glam, Bubbly, Party, Elevated",
     "type": ["rooftop", "cocktail"],
         "lat": "40.710449",
@@ -266,7 +266,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "La Cabra",
+    "slug": "la-cabra",    "name": "La Cabra",
     "vibe": "Contemporary, Outdoor Seating, Artisanal, Coffee, Bright, Fresh, Minimal, Design-forward, Chic",
     "type": "coffee",
         "lat": "40.7065032",
@@ -310,7 +310,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Freemans",
+    "slug": "freemans",    "name": "Freemans",
     "vibe": "Rustic, Intimate, Hidden Gem, Woodsy, Historic, Dim, Romantic, Timeless",
     "type": ["brunch", "lunch", "dinner"],
         "lat": "40.7219458",
@@ -354,7 +354,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Blue-Sun Record Store",
+    "slug": "blue-sun-record-store",    "name": "Blue-Sun Record Store",
     "vibe": "Vintage, Vinyl, Lifestyle, Music, Dusty, Eclectic, Indie, Curated, Nostalgic",
     "type": ["music", "lifestyle"],
         "lat": "40.7093019",
@@ -398,7 +398,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Carousel",
+    "slug": "carousel",    "name": "Carousel",
     "vibe": "Laid-Back, Eclectic, Disco Ball, DJ, Hip, Pool Table, Social, Retro, Playful, Boisterous, Quirky, Nostalgic",
     "type": ["bar", "cocktail"],
         "lat": "40.7058463",
@@ -442,7 +442,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Kanoyama",
+    "slug": "kanoyama",    "name": "Kanoyama",
     "vibe": "Intimate, Authentic, Japanese, Omakase, Michelin, Sake, Precise, Minimal, Quiet, Cultured",
     "type": "dinner",
         "lat": "40.7306669",
@@ -486,7 +486,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Waiting on a Friend",
+    "slug": "waiting-on-a-friend",    "name": "Waiting on a Friend",
     "vibe": "Lively, Eclectic, Aesthetic, Social, Disco Ball, Cocktails, Vintage, Flirty, Art-scene, Buzzy, Playful",
     "type": ["cocktail", "lounge"],
         "lat": "40.7294609",
@@ -530,7 +530,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Bakeri",
+    "slug": "bakeri",    "name": "Bakeri",
     "vibe": "Cozy, Bakery, European, Café, Homey, Aromatic, Sunlit, Soft, Handcrafted",
     "type": "bakery",
         "lat": "40.7200222",
@@ -574,7 +574,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Red Sorghum 夜宴",
+    "slug": "red-sorghum",    "name": "Red Sorghum 夜宴",
     "vibe": "Dimly Lit, Intimate, Szechuan, Authentic, Spicy, Moody, Bold, Sultry, Textured",
     "type": "dinner",
         "lat": "40.7484928",
@@ -618,7 +618,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Rucola",
+    "slug": "rucola",    "name": "Rucola",
     "vibe": "Italian, Rustic, Sunday Dinner, Wine, Hearty, Timeless, Homestyle, Soothing",
     "type": ["lunch", "dinner", "cocktail"],
         "lat": "40.6856132",
@@ -684,7 +684,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Dead Letter No. 9",
+    "slug": "dead-letter-no-9",    "name": "Dead Letter No. 9",
     "vibe": "Speakeasy, Intimate, Cocktails, Social, Theatrical, After-Hours, Dramatic, Edgy, Whispered, Hidden, Vintage",
     "type": ["cocktail", "dj"],
         "lat": "40.716096",
@@ -728,7 +728,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "HOMERUN NYC",
+    "slug": "homerun-nyc",    "name": "HOMERUN NYC",
     "vibe": "Trendy, Creative, Vibrant, Lifestyle, Dynamic, Urban, Youthful, Bold, Cinematic",
     "type": ["random gem", "lifestyle"],
         "lat": "40.71536325",
@@ -772,7 +772,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "The Cactus Shop",
+    "slug": "the-cactus-shop",    "name": "The Cactus Shop",
     "vibe": "Quirky, Patio, Latin, Hidden Gem, Speakeasy, Succulent, Colorful, Sunny, Eclectic",
     "type": ["speakeasy", "cocktail"],
         "lat": "40.71669275",
@@ -816,7 +816,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Chisholm Larsson Gallery",
+    "slug": "chisholm-larsson-gallery",    "name": "Chisholm Larsson Gallery",
     "vibe": "Artistic, Vintage, Gallery, Posters, Décor, Curated, Retro, Inspirational, Print-Forward, Creative",
     "type": "gallery",
         "lat": "40.7419044",
@@ -860,7 +860,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Nightly's",
+    "slug": "nightlys",    "name": "Nightly's",
     "vibe": "Sophisticated, Intimate, Sunday Dinner, Bistro, Neighborhood Spot, Timeless, Understated, Whispered, Velvet, Moody",
     "type": ["dinner", "cocktail"],
         "lat": "40.7724775",
@@ -911,7 +911,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "schmuck.",
+    "slug": "schmuck",    "name": "schmuck.",
     "vibe": "Eclectic, Trendy, Hip, Cocktails, Edgy, Curated, Bold, Lounge, Artful",
     "type": "cocktail",
         "lat": "40.7263723",
@@ -955,7 +955,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Wo Hop",
+    "slug": "wo-hop",    "name": "Wo Hop",
     "vibe": "Classic, Iconic, Chinese, Group Dinner, Authentic, Bustling, Heritage, Casual",
     "type": ["dinner", "lunch"],
         "lat": "40.71420566",
@@ -999,7 +999,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "L'Appartement 4F",
+    "slug": "l-appartement-4f",    "name": "L'Appartement 4F",
     "vibe": "Cozy, Charming, French, Natural Wine, Bakery, Elegant, Refined, Intimate, Sunny, Whimsical",
     "type": ["bakery, wine bar"],
         "lat": "40.6950814",
@@ -1056,7 +1056,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Cafe Mogador",
+    "slug": "cage-mogador",    "name": "Cafe Mogador",
     "vibe": "Laid-Back, Moroccan, Outdoor Seating, Brunch, Warm, Inviting, Sunlit, Flavorful, Airy",
     "type": ["brunch", "lunch", "dinner"],
         "lat": "40.7273469",
@@ -1100,7 +1100,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Skarstedt Gallery",
+    "slug": "skarstedt-gallery",    "name": "Skarstedt Gallery",
     "vibe": "Artistic, High-End, Contemporary, Sleek, Curated, Elevated, Minimalist, Avant-Garde",
     "type": "gallery",
         "lat": "40.7762331",
@@ -1144,7 +1144,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "BrownstoneJAZZ",
+    "slug": "brownstonejazz",    "name": "BrownstoneJAZZ",
     "vibe": "Relaxed, Intimate, Hidden Gem, Jazz, Moody, Smooth, Sultry, Underground, Soulful",
     "type": "music",
         "lat": "40.68156285",
@@ -1188,7 +1188,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Million Goods",
+    "slug": "million-goods",    "name": "Million Goods",
     "vibe": "Eclectic, Creative, Social, Wine, DJ, Lifestyle, Patio, Vibrant, Local, Artistic, Cozy, Community",
     "type": ["bar", "wine bar", "dj"],
         "lat": "40.7275193",
@@ -1232,7 +1232,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "El Pingüino",
+    "slug": "el-pinguino",    "name": "El Pingüino",
     "vibe": "Cozy, Hidden Gem, Spanish, Seafood, Oysters, Patio, Rustic, Seaside, Exclusive, Romantic, Leisurely",
     "type": "dinner",
         "lat": "40.7298408",
@@ -1276,7 +1276,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "The Se7en",
+    "slug": "the-se7en",    "name": "The Se7en",
     "vibe": "Stylish, Laid-Back, Trendy, Lounge, Social, Sleek, Assertive, Urbane, Chic, Spirited",
     "type": ["lounge", "dj"],
         "lat": "40.676976",
@@ -1320,7 +1320,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Experimental Cocktail Club",
+    "slug": "experimental-cocktail-club",    "name": "Experimental Cocktail Club",
     "vibe": "Elegant, Lively, Craft Cocktails, Piano, Vinyl, Swanky, Immersive, Jazzy, Refined, Vibrant",
     "type": ["cocktail", "lounge"],
         "lat": "40.7424861",
@@ -1364,7 +1364,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "So & So's Neighborhood Piano Bar",
+    "slug": "so-sos-neighborhood-piano-bar",    "name": "So & So's Neighborhood Piano Bar",
     "vibe": "Cozy, Vintage, Ambiance, Piano Bar, Relaxed, Nostalgic, Melodic, Communal, Mellow, Retro",
     "type": ["lounge", "music"],
         "lat": "40.76355292",
@@ -1408,7 +1408,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "LunÀtico",
+    "slug": "lunatico",    "name": "LunÀtico",
     "vibe": "Eclectic, Date Spot, Live Music, Jazz, Enchanted, Aesthetic, Seductive, Moody, Artistic",
     "type": ["music", "cocktail"],
         "lat": "40.68337885",
@@ -1452,7 +1452,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Carpenters Workshop Gallery",
+    "slug": "carpenters-workshop-gallery",    "name": "Carpenters Workshop Gallery",
     "vibe": "High-End, Artistic, Gallery, Showroom, Sculptural, Exclusive, Polished, Minimalist, Architectural",
     "type": "gallery",
         "lat": "40.7611603",
@@ -1496,7 +1496,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "The Tusk Bar",
+    "slug": "the-tusk-bar",    "name": "The Tusk Bar",
     "vibe": "Chic, Aesthetic, Trendy, Upscale, Oysters, Cocktails, Refined, Sleek, Contemporary, Oceanic, Luxe",
     "type": ["cocktail", "lounge", "dinner"],
         "lat": "40.7440135",
@@ -1540,7 +1540,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Codex",
+    "slug": "codex",    "name": "Codex",
     "vibe": "Bookstore, Cozy, Intellectual, Espresso Bar, Studious, Quiet, Aromatic, Niche, Thoughtful",
     "type": ["bookstore", "coffee"],
         "lat": "40.692626",
@@ -1584,7 +1584,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "The Hole",
+    "slug": "the-hole",    "name": "The Hole",
     "vibe": "Contemporary, Artistic, Gallery, Avant-Garde, Edgy, Provocative, Raw, Conceptual",
     "type": "gallery",
         "lat": "40.7250551",
@@ -1628,7 +1628,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Botanica Bar",
+    "slug": "botanica-bar",    "name": "Botanica Bar",
     "vibe": "Botanical, Cozy, Trendy, DJ, Lively, Lush, Verdant, Energetic, Modern, Inventive",
     "type": ["bar", "cocktail", "dj"],
         "lat": "40.7246217",
@@ -1672,7 +1672,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Bibliotheque",
+    "slug": "bibliotheque",    "name": "Bibliotheque",
     "vibe": "Literary, Cozy, Wine, Café, Wistful, Reflective, Ambient, Tucked-In, Classic",
     "type": ["bookstore", "wine bar", "coffee"],
         "lat": "40.7218082",
@@ -1716,7 +1716,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "% Arabica",
+    "slug": "percent-arabica",    "name": "% Arabica",
     "vibe": "Minimalist, Coffee, Clean, Refined, Elegant, Focused, Geometric",
     "type": "coffee",
         "lat": "40.7025899",
@@ -1760,7 +1760,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Tuffet",
+    "slug": "tuffet",    "name": "Tuffet",
     "vibe": "Laid-Back, Cozy, Bar, Outdoor Fireplace, Patio, Serene, Embers, Retreat, Moody, Intimate",
     "type": ["bar", "cocktail"],
         "lat": "40.7121269",
@@ -1804,7 +1804,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Bisou",
+    "slug": "bisou",    "name": "Bisou",
     "vibe": "Sophisticated, Chic, Intimate, Wine, Red Lighting, Aesthetic, Sensual, Plush, Moody, Romantic, Alluring",
     "type": "wine bar",
         "lat": "40.723743",
@@ -1848,7 +1848,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Superbueno",
+    "slug": "superbueno",    "name": "Superbueno",
     "vibe": "Vibrant, Fun, Cocktails, Mexican, Small-Bites, Red-Lighting, Energetic, Social, Lively, Bold, Festive, Colorful",
     "type": ["cocktail", "dinner"],
         "lat": "40.7234538",
@@ -1892,7 +1892,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Bar Mario",
+    "slug": "bar-mario",    "name": "Bar Mario",
     "vibe": "Cozy, Neighborhood Bar, Italian, Warm, Classic, Rustic, Intimate, Familiar, Inviting, Hearth",
     "type": ["bar", "dinner"],
         "lat": "40.6766251",
@@ -1936,7 +1936,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Milady's",
+    "slug": "miladys",    "name": "Milady's",
     "vibe": "Classic, Neighborhood Bar, Vibrant, Retro, Charming, Sociable, Timeless, Welcoming, Nostalgic, LGBTQ+ Friendly",
     "type": "cocktail",
         "lat": "40.7259071",
@@ -1980,7 +1980,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Pepe Rosso",
+    "slug": "pepe-rosso",    "name": "Pepe Rosso",
     "vibe": "Traditional, Casual, Italian, Comfort Food, Hearty, Rustic, Homestyle, Soulful, Welcoming, Familiar",
     "type": ["dinner", "lunch"],
         "lat": "40.7279209",
@@ -2024,7 +2024,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Clover Club",
+    "slug": "clover-club",    "name": "Clover Club",
     "vibe": "Upscale, Neighborhood Bar, Craft Cocktails, Refined, Stylish, Polished, Elegant, Curation, Sophisticated, Urban",
     "type": "cocktail",
         "lat": "40.6845677",
@@ -2068,7 +2068,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Brooklyn Social",
+    "slug": "brooklyn-social",    "name": "Brooklyn Social",
     "vibe": "Beer, Casual, Neighborhood Spot, Speakeasy, Cocktails, Back Patio, Chill, Friendly, Local, Relaxed",
     "type": "bar",
         "lat": "40.6804846",
@@ -2112,7 +2112,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Hard to Explain",
+    "slug": "hard-to-explain",    "name": "Hard to Explain",
     "vibe": "Creative, Eclectic, Japanese, Speakeasy, Cozy, Artsy, Quirky, Intimate, Cozy, Inviting",
     "type": "speakeasy",
         "lat": "40.7291261",
@@ -2156,7 +2156,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Have & Meyer",
+    "slug": "have-meyer",    "name": "Have & Meyer",
     "vibe": "Italian, Natural Wine, Outdoor Seating, Sunday Dinner, Laid-back, Charming, Seasonal, Relaxed",
     "type": "dinner",
         "lat": "40.7132253",
@@ -2200,7 +2200,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Antidote",
+    "slug": "antidote",    "name": "Antidote",
     "vibe": "Chinese, Sichuan, Intimate, Sophisticated, Creative Cocktails, Hidden, Flavors, Refined, Moody, Authentic",
     "type": ["cocktail", "dinner"],
         "lat": "40.7142684",
@@ -2244,7 +2244,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Sake Bar Decibel",
+    "slug": "sake-bar-decibel",    "name": "Sake Bar Decibel",
     "vibe": "Hidden Gem, Japanese, Sake, Cocktails, Authentic, Intimate, Refined, Quiet, Cultured, Subtle",
     "type": ["speakeasy", "cocktail"],
         "lat": "40.7292871",
@@ -2288,7 +2288,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Raku",
+    "slug": "raku",    "name": "Raku",
     "vibe": "Casual, Traditional, Japanese, Udon Noodles, Date Spot, Warm, Cozy, Simple, Comforting, Homestyle",
     "type": "dinner",
         "lat": "40.7273101",
@@ -2332,7 +2332,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Ichibantei",
+    "slug": "ichibantei",    "name": "Ichibantei",
     "vibe": "Authentic, Japanese, Soul Food, Bar, Movie Night, Nostalgic, Vibrant, Unique, Fun, Youthful",
     "type": "dinner",
         "lat": "40.7324491",
@@ -2376,7 +2376,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Ask For Janice",
+    "slug": "ask-for-janice",    "name": "Ask For Janice",
     "vibe": "Speakeasy, Intimate, Pizza, Hip, Cocktails, Small Bites, Understated, Cool, Secret, Relaxed",
     "type": ["speakeasy", "cocktail"],
         "lat": "40.7241881",
@@ -2420,7 +2420,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "With Others",
+    "slug": "with-others",    "name": "With Others",
     "vibe": "Casual, Social, Wine, Back Patio, Girl’s Night, Friendly, Laid-back, Gossip, Cozy, Inclusive",
     "type": "wine bar",
         "lat": "40.7128073",
@@ -2464,7 +2464,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Samurai Mama",
+    "slug": "samurai-mama",    "name": "Samurai Mama",
     "vibe": "Japanese, Comfort Food, Udon Noodles, Cozy, Casual, Upbeat, Homestyle, Familial, Laid-back, Satisfying",
     "type": ["lunch", "dinner"],
         "lat": "40.7141481",
@@ -2530,7 +2530,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Birds of a Feather",
+    "slug": "birds-of-a-feather",    "name": "Birds of a Feather",
     "vibe": "Sichuan, Social, Group Dinner, Sharable Plates, Bold, Communal, Shared, Lively, Spice-forward, Festive",
     "type": ["lunch", "dinner"],
         "lat": "40.7143133",
@@ -2574,7 +2574,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "ACRE",
+    "slug": "acre",    "name": "ACRE",
     "vibe": "Health-Conscious, Plant, Japanese, Comfort Food, Back Patio, Fresh, Clean, Green, Wholesome, Balanced",
     "type": ["brunch", "lunch", "dinner"],
         "lat": "40.72624105",
@@ -2618,7 +2618,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Smalls Jazz Club",
+    "slug": "smalls-jazz-club",    "name": "Smalls Jazz Club",
     "vibe": "Intimate, Live Music, Jazz, Moody, Rhythmic, Low-lit, Classic, Soulful, Cozy, Immersive",
     "type": "music",
         "lat": "40.7343811",
@@ -2662,7 +2662,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Ornithology Jazz Club",
+    "slug": "ornithology-jazz-club",    "name": "Ornithology Jazz Club",
     "vibe": "Artistic, Live Music, Laid-Back, Jazz, Eclectic, Creative, Nostalgic, Smooth, Lush, Inventive",
     "type": "music",
         "lat": "40.6955322",
@@ -2706,7 +2706,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Angel’s Share",
+    "slug": "angels-share",    "name": "Angel’s Share",
     "vibe": "Sophisticated, Intimate, Craft Cocktails, Hidden, Refined, Elegant, Atmospheric, Luxe, Quiet, Exclusive",
     "type": ["cocktail", "speakeasy"],
         "lat": "40.73301145",
@@ -2750,7 +2750,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Layla",
+    "slug": "layla",    "name": "Layla",
     "vibe": "Cozy, Stylish, European, Back Patio, Date Spot, Chic, Romantic, Ambient, Cultured, Welcoming",
     "type": ["cocktail", "patio"],
         "lat": "40.71232145",
@@ -2794,7 +2794,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Taqueria Ramirez",
+    "slug": "taqueria-ramirez",    "name": "Taqueria Ramirez",
     "vibe": "Vibrant, Casual, Mexican, Street Tacos, Authentic, Neighborhood Gem, Flavorful, Laid-back, Colorful",
     "type": ["lunch", "dinner"],
         "lat": "40.7278816",
@@ -2838,7 +2838,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Madeline's Martini",
+    "slug": "madelines-martini",    "name": "Madeline's Martini",
     "vibe": "Elegant, Cozy, Martini, Aesthetic, Refined, Luxurious, Soft-Lit, Tasteful, Inviting, Sleek",
     "type": ["cocktail", "lounge"],
         "lat": "40.7263349",
@@ -2882,7 +2882,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "MONO+MONO",
+    "slug": "mono-mono",    "name": "MONO+MONO",
     "vibe": "Chic, Cozy, Korean, Vinyl, Date Spot, Minimalist, Local, Curated, Polished",
     "type": "dinner",
         "lat": "40.7254822",
@@ -2926,7 +2926,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Romeos",
+    "slug": "romeos",    "name": "Romeos",
     "vibe": "Casual, Eclectic, Cocktails, Red Lighting, Bold, Urban, Lively, Neon, Welcoming, Stylish",
     "type": ["cocktail", "bar", "late-night"],
         "lat": "40.726959",
@@ -2970,7 +2970,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Simple",
+    "slug": "simple",    "name": "Simple",
     "vibe": "French, Brunch, Bistro, Relaxed, Cozy, Neighborhood, Wine, Fresh, Light, Calm, Timeless",
     "type": ["brunch", "lunch", "dinner"],
         "lat": "40.71242",
@@ -3014,7 +3014,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "The Belfry",
+    "slug": "the-belfry",    "name": "The Belfry",
     "vibe": "Cocktail, Live Music, Intimate, Cozy, Dimly Lit, Jazz, Understated, Warm, Romantic, Moody",
     "type": ["cocktail", "music"],
         "lat": "40.732743",
@@ -3058,7 +3058,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Spectacle",
+    "slug": "spectacle",    "name": "Spectacle",
     "vibe": "Indie Films, Intimate, Cinema, Movies, Hidden Gem, Artsy, Nostalgic, Low-Key, Poetic, Secret",
     "type": "random gem",
         "lat": "40.7125158",
@@ -3102,7 +3102,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Nightmoves",
+    "slug": "nightmoves",    "name": "Nightmoves",
     "vibe": "Social, Hidden, Dance, Nightlife, DJ, Disco, Energetic, Glowing, Pulsating, Clubby",
     "type": ["club", "dj"],
         "lat": "40.7130756",
@@ -3146,7 +3146,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Radegast Hall & Biergarten",
+    "slug": "radegast-hall-biergarten",    "name": "Radegast Hall & Biergarten",
     "vibe": "Lively, Beer Garden, Casual Hangout, Outdoor, Cheerful, Rustic, Communal, Spacious, Welcoming, Laid-Back",
     "type": "bar",
         "lat": "40.7167708",
@@ -3190,7 +3190,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Deux Chats",
+    "slug": "deux-chats",    "name": "Deux Chats",
     "vibe": "Cozy, Chic, Martini, Intimate, Plush, Elegant, Sleek, Quiet, Refined, Tasteful",
     "type": "cocktail",
         "lat": "40.7108795",
@@ -3234,7 +3234,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Sauced",
+    "slug": "sauced-bk",    "name": "Sauced",
     "vibe": "Cozy, Spacious, Wine Bar, Outdoor Patio, DJ, Breezy, Relaxed, Ambient, Modern, Social",
     "type": ["wine bar", "patio"],
         "lat": "40.71263565",
@@ -3278,7 +3278,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Ponyboy",
+    "slug": "ponyboy",    "name": "Ponyboy",
     "vibe": "Hip, Dance Floor, Lively, Social, Disco Ball, DJ, Rowdy, Electric, Flashy, Exciting",
     "type": ["club", "dj"],
         "lat": "40.7239657",
@@ -3322,7 +3322,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Twins Lounge",
+    "slug": "twins-lounge",    "name": "Twins Lounge",
     "vibe": "Relaxed, Intimate, Neighborhood Bar, Pool Table, Upstairs Patio, Photo Booth, Nostalgic, Comfortable, Local",
     "type": ["bar", "patio", "cocktail"],
         "lat": "40.7263236",
@@ -3366,7 +3366,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Hotel Delmano",
+    "slug": "hotel-delmano",    "name": "Hotel Delmano",
     "vibe": "Cocktails, Intimate, Date Spot, People Watch, Vintage, Refined, Quiet, Old-School, Charming, Elegant",
     "type": "cocktail",
         "lat": "40.7197084",
@@ -3410,7 +3410,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Studio 151",
+    "slug": "studio-151",    "name": "Studio 151",
     "vibe": "Hidden, Cozy, Vinyl, Sushi, DJ, Niche, Serene, Stylish, Understated, Trendy",
     "type": ["speakeasy", "cocktail", "dj"],
         "lat": "40.7256585",
@@ -3454,7 +3454,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Joyface",
+    "slug": "joyface",    "name": "Joyface",
     "vibe": "Lively, Disco Ball, Throwback Music, Social, Dance, Retro, Energetic, Flashy, Fun, Uplifting",
     "type": ["club", "dj"],
         "lat": "40.723859",
@@ -3498,7 +3498,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Fresh Kills Bar",
+    "slug": "fresh-kills-bar",    "name": "Fresh Kills Bar",
     "vibe": "Creative, Cocktails, Laid-Back, Date Spot, Artistic, Eclectic, Chill, Cozy, Unique, Trendy",
     "type": "cocktail",
         "lat": "40.7147822",
@@ -3542,7 +3542,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Bar Blondeau",
+    "slug": "bar-blondeau",    "name": "Bar Blondeau",
     "vibe": "Chic, Rooftop, Skyline Views, Cocktails, Elegant, Scenic, Sophisticated, Breezy, Polished, Urban",
     "type": ["cocktail", "rooftop"],
         "lat": "40.7219036",
@@ -3586,7 +3586,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Night of Joy",
+    "slug": "night-of-joy",    "name": "Night of Joy",
     "vibe": "Chill, Rooftop, Neighborhood Bar, Cozy, Laid-Back, Urban, Sweet, Quiet, Inviting, Warm",
     "type": ["bar", "rooftop", "cocktail"],
         "lat": "40.7169821",
@@ -3630,7 +3630,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "PPL",
+    "slug": "ppl",    "name": "PPL",
     "vibe": "Relaxed, Coffee, Plant-Filled, Green, Calm, Quiet, Tranquil, Cozy, Fresh, Casual",
     "type": "coffee",
         "lat": "40.712872",
@@ -3674,7 +3674,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Barano",
+    "slug": "barano",    "name": "Barano",
     "vibe": "Sunday Dinner, Italian, Outdoor Seating, View, Spacious, Sunlit, Rustic, Charming, Green, Warm",
     "type": "dinner",
         "lat": "40.7105655",
@@ -3718,7 +3718,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Pollyn",
+    "slug": "pollyn",    "name": "Pollyn",
     "vibe": "Artistic, Eclectic, Plant-Filled, Creative, Bohemian, Whimsical, Colorful, Inviting, Green, Unique",
     "type": ["garden", "coffee"],
         "lat": "40.7104488",
@@ -3762,7 +3762,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Fan Fried Rice Bar",
+    "slug": "fan-fried-rice-bar",    "name": "Fan Fried Rice Bar",
     "vibe": "Fun, Taiwanese, Creative, Asian, Comfort Food, Projector, Quirky, Bright, Playful, Bold",
     "type": "dinner",
         "lat": "40.712665",
@@ -3806,7 +3806,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Casa Magazines",
+    "slug": "casa-magazines",    "name": "Casa Magazines",
     "vibe": "Vintage, Cozy, Magazines, Newspaper, Nostalgic, Laid-Back, Quiet, Retro, Reflective",
     "type": ["bookstore", "random gem", "lifestyle"],
         "lat": "40.737675",
@@ -3850,7 +3850,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Café-Flor / Bar 21",
+    "slug": "cafe-flor-bar-21",    "name": "Café-Flor / Bar 21",
     "vibe": "Plants, Coffee, Cozy, Lo‑Fi, Calm, Quaint, Green, Relaxed, Intimate",
     "type": ["coffee", "cocktail"],
         "lat": "40.744122",
@@ -3894,7 +3894,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Frevo",
+    "slug": "frevo",    "name": "Frevo",
     "vibe": "Hidden, Art, Gallery, Sophisticated, Brazilian, Chef’s Counter, Dining, Elegant, Creative, Curated, Stylish, Refined",
     "type": "dinner",
         "lat": "40.73449485",
@@ -3938,7 +3938,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Au Cheval",
+    "slug": "au-cheval",    "name": "Au Cheval",
     "vibe": "Trendy, Hip, American, Diner, Craft Cocktails, Bold, Retro, Upbeat, Nostalgic, Chic",
     "type": ["dinner", "cocktail"],
         "lat": "40.7180421",
@@ -3982,7 +3982,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Casa Mono",
+    "slug": "casa-mono",    "name": "Casa Mono",
     "vibe": "Upscale, Michelin‑Star, Wine, Intimate, Spanish, Tapas, Elegant, Refined, Lush, Romantic, Elevated",
     "type": ["lunch", "dinner"],
         "lat": "40.7359257",
@@ -4026,7 +4026,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Ampersand",
+    "slug": "ampersand",    "name": "Ampersand",
     "vibe": "Chic, Warm, Cocktails, Neighborhood Bar, Date Spot, Inviting, Stylish, Mellow, Sociable, Glow",
     "type": "cocktail",
         "lat": "40.7386819",
@@ -4070,7 +4070,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Cherry on Top",
+    "slug": "cherry-on-top",    "name": "Cherry on Top",
     "vibe": "Cozy, Natural Wine, Rooftop, Airy, Sunset‑Ready, Soft, Intimate, Radiant",
     "type": ["wine bar", "rooftop"],
         "lat": "40.7049007",
@@ -4114,7 +4114,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Close Up",
+    "slug": "close-up",    "name": "Close Up",
     "vibe": "Jazz, Live Music, Intimate, Vibrant, Soulful, Lively, Sophisticated, Warm, Engaging",
     "type": "music",
         "lat": "40.72079935",
@@ -4158,7 +4158,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "The Noguchi Museum",
+    "slug": "the-noguchi-museum",    "name": "The Noguchi Museum",
     "vibe": "Artistic, Serene, Japanese, Cultural, Sculpture, Meditative, Minimalist, Peaceful, Reflective, Pure",
     "type": "gallery",
         "lat": "40.76699005",
@@ -4202,7 +4202,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "SculptureCenter",
+    "slug": "sculpturecenter",    "name": "SculptureCenter",
     "vibe": "Artistic, Sculpture, Contemporary, Bold, Monolithic, Curatorial, Modern, Thought-Provoking",
     "type": "gallery",
         "lat": "40.7469077",
@@ -4246,7 +4246,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Glenn Marlowe Sculpture Studio and Gallery",
+    "slug": "glenn-marlowe-sculpture-studio-and-gallery",    "name": "Glenn Marlowe Sculpture Studio and Gallery",
     "vibe": "Artistic, Creative, Gallery, Sculpture, Imaginative, Unique, Inspiring, Craft, Visionary",
     "type": "gallery",
         "lat": "40.7496655",
@@ -4290,7 +4290,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Salon 94",
+    "slug": "salon-94",    "name": "Salon 94",
     "vibe": "Upscale, Contemporary, Artistic, Gallery, Aesthetic, Polished, Stylish, Trendy, Elegant, Designer",
     "type": "gallery",
         "lat": "40.78344811",
@@ -4334,7 +4334,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "APPARATUS",
+    "slug": "apparatus",    "name": "APPARATUS",
     "vibe": "Sophisticated, Design‑focused, Aesthetic, Showroom, Sleek, Minimalist, Curated, Neutral, Modern",
     "type": "gallery",
         "lat": "40.7476547",
@@ -4378,7 +4378,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Yan's Antique Jewelry Inc.",
+    "slug": "yans-antique-jewelry-inc",    "name": "Yan's Antique Jewelry Inc.",
     "vibe": "Elegant, Vintage, Watches, Jewelry, Timeless, Crafted, Collectible, Refined, Heritage",
     "type": ["random gem", "lifestyle"],
         "lat": "40.7149056",
@@ -4422,7 +4422,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Magic Jewelry",
+    "slug": "magic-jewelry",    "name": "Magic Jewelry",
     "vibe": "Mystical, Aura Photo, Crystals, Unique, Jewelry, Date Idea, Ethereal, Sparkly, Enchanting, Dreamlike, Magical",
     "type": "random gem",
         "lat": "40.71807671",
@@ -4466,7 +4466,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Philip Williams Posters",
+    "slug": "philip-williams-posters",    "name": "Philip Williams Posters",
     "vibe": "Artistic, Vintage, Posters, Collectibles, Creative, Graphic, Retro, Textured, Iconic, Nostalgic",
     "type": "random gem",
         "lat": "40.7149888",
@@ -4510,7 +4510,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Westsider Rare & Used Books Inc.",
+    "slug": "westsider-rare-used-books-inc",    "name": "Westsider Rare & Used Books Inc.",
     "vibe": "Cozy, Rare Finds, Books, Quiet, Curated, Historic, Intellectual",
     "type": "bookstore",
         "lat": "40.7846803",
@@ -4554,7 +4554,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "niconeco zakkaya",
+    "slug": "niconeco-zakkaya",    "name": "niconeco zakkaya",
     "vibe": "Stationary, Whimsical, Japanese, Unique, Gifts, Playful, Charming, Quirky, Delightful, Crafted",
     "type": "random gem",
         "lat": "40.7284229",
@@ -4598,7 +4598,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Bungee Space",
+    "slug": "bungee-space",    "name": "Bungee Space",
     "vibe": "Artistic, Creative, Magazines, Art Books, Hidden Gem, Coffee, Unique, Bohemian, Eclectic, Nurturing, Tucked‑In, Cultured",
     "type": ["random gem", "coffee"],
         "lat": "40.7224818",
@@ -4642,7 +4642,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Brandy Library",
+    "slug": "brandy-library",    "name": "Brandy Library",
     "vibe": "Sophisticated, Cozy, Whiskey, Spirits, Moody, Elegant, Low‑Lit, Cultured, Lounge",
     "type": "cocktail",
         "lat": "40.7199472",
@@ -4686,7 +4686,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Cafe Erzulie",
+    "slug": "cafe-erzulie",    "name": "Cafe Erzulie",
     "vibe": "Cozy, Jazz, Hip, Live Music, Social, Dance, Laid‑Back, Rhythmic, Cool, Warm, Soulful, Expressive",
     "type": ["music", "bar"],
         "lat": "40.6978902",
@@ -4730,7 +4730,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Mr. Melo",
+    "slug": "mr-melo",    "name": "Mr. Melo",
     "vibe": "Listening Bar, DJ, Vinyl, Relaxed, Lounge, Cocktails, Retro, Vinyl‑Rich, Chill, Groovy, Smooth",
     "type": ["bar", "lounge"],
         "lat": "40.7169978",
@@ -4774,7 +4774,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Nem's Japandi Bistro",
+    "slug": "nems-japandi-bistro",    "name": "Nem's Japandi Bistro",
     "vibe": "Minimalist, Smoothie, Brunch, Japanese, Outdoor Seating, Zen, Light, Clean, Fresh, Calm",
     "type": ["brunch", "lunch", "dinner"],
         "lat": "40.7189664",
@@ -4818,7 +4818,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Milk & Roses",
+    "slug": "milk-roses",    "name": "Milk & Roses",
     "vibe": "Cozy, Rustic, Intimate, Bistro, Outdoor Patio, Jazz Nights, Warm, Homestyle, Sunset, Breezy, Charming",
     "type": ["brunch", "patio", "dinner", "cocktail"],
         "lat": "40.737425",
@@ -4862,7 +4862,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Tula House",
+    "slug": "tula-house",    "name": "Tula House",
     "vibe": "Cactus, Plant, Garden, Home Décor, Green, Botanical, Tranquil, Artsy, Nurturing",
     "type": "random gem",
         "lat": "40.7263995",
@@ -4906,7 +4906,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Death & Co East Village",
+    "slug": "death-co-east-village",    "name": "Death & Co East Village",
     "vibe": "Dimly Lit, Intimate, Moody, Craft Cocktails, Lively, Sultry, Refined, Hidden, Elegant, Dramatic",
     "type": "cocktail",
         "lat": "40.725936",
@@ -4950,7 +4950,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Midnight Blue",
+    "slug": "midnight-blue",    "name": "Midnight Blue",
     "vibe": "Intimate, Jazz, Cocktails, Whiskey, Live Music, Smoky, Smooth, Classic, Nighttime, Soulful",
     "type": "music",
         "lat": "40.7371981",
@@ -4994,7 +4994,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "The Office of Mr. Moto",
+    "slug": "the-office-of-mr-moto",    "name": "The Office of Mr. Moto",
     "vibe": "Speakeasy, Hidden Gem, Japanese, Gallery, Cocktails, Secret, Curated, Artful, Quiet, Sleek",
     "type": ["speakeasy", "dinner"],
         "lat": "40.7268131",
@@ -5038,7 +5038,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Jones Street Wine Bar & Chefs Tasting Counter",
+    "slug": "jones-street-wine-bar-chefs-tasting-counter",    "name": "Jones Street Wine Bar & Chefs Tasting Counter",
     "vibe": "Cozy, Intimate, Natural Wine, Wine Tasting, Earthy, Refined, Savoring, Chic, Floral",
     "type": "wine bar",
         "lat": "40.72618255",
@@ -5082,7 +5082,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "A-1 Record Shop",
+    "slug": "a-1-record-shop",    "name": "A-1 Record Shop",
     "vibe": "Classic, Large Collection, Vinyl, Analog, Retro, Nostalgic, Curated, Music‑Lover",
     "type": ["random gem", "lifestyle"],
         "lat": "40.7257903",
@@ -5126,7 +5126,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "The Lot Radio",
+    "slug": "the-lot-radio",    "name": "The Lot Radio",
     "vibe": "Hip, DJ, Radio Station, Outdoors, Beer, Urban, Vibrant, Open‑Air, Community, Chill",
     "type": ["music", "patio", "bar", "dj"],
         "lat": "40.722668",
@@ -5170,7 +5170,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Rule of Thirds",
+    "slug": "rule-of-thirds",    "name": "Rule of Thirds",
     "vibe": "Artistic, Cozy, Creative, Brunch, Group Dinner, Japanese, Whimsical, Bright, Social, Fusion, Inviting",
     "type": ["brunch", "lunch", "dinner"],
         "lat": "40.7247377",
@@ -5218,7 +5218,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Met Cloisters",
+    "slug": "the-met-cloisters",    "name": "The Met Cloisters",
     "vibe": "Historic, Serene, Cultural, Art, Monastic, Lush, Timeless, Iconic, Reflective",
     "type": "gallery",
         "lat": "40.8648684",
@@ -5262,7 +5262,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Lexington Candy Shop",
+    "slug": "lexington-candy-shop",    "name": "Lexington Candy Shop",
     "vibe": "Classic, Nostalgic, Retro, Diner, Timeless, Sweet, Local, Vintage, Charming",
     "type": ["breakfast", "lunch"],
         "lat": "40.7775102",
@@ -5306,7 +5306,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Tsumo Omakase",
+    "slug": "tsumo-omakase",    "name": "Tsumo Omakase",
     "vibe": "Intimate, Sushi, Omakase, Minimal, Precise, Luxe, Quiet, Refined",
     "type": "dinner",
         "lat": "40.74235215",
@@ -5369,7 +5369,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Piccola Strada",
+    "slug": "piccola-strada",    "name": "Piccola Strada",
     "vibe": "Cozy, BYOB (wine), Hidden Gem, Sunday Dinner, Hearty, Welcoming, Rustic, Family‑style, Comfortable",
     "type": "dinner",
         "lat": "40.7267074",
@@ -5413,7 +5413,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Kam Man Market",
+    "slug": "kam-man-market",    "name": "Kam Man Market",
     "vibe": "Traditional, Asian Market, Bustling, Fresh, Authentic, Colorful, Local",
     "type": ["random gem", "lunch"],
         "lat": "40.7168494",
@@ -5457,7 +5457,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Kai Feng Fu Dumpling House",
+    "slug": "kai-feng-fu-dumpling-house",    "name": "Kai Feng Fu Dumpling House",
     "vibe": "Authentic, Casual, Dumplings, Savory, Comforting, Street‑wise, No‑frills, Welcoming",
     "type": "lunch",
         "lat": "40.64200185",
@@ -5501,7 +5501,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Le Veau d'Or",
+    "slug": "le-veau-dor",    "name": "Le Veau d'Or",
     "vibe": "Elegant, French, Bistro, Old-School, Classic Dining, Polished, Luxurious, Soft‑lit, Romantic, Refined",
     "type": ["lunch", "dinner"],
         "lat": "40.763157",
@@ -5557,7 +5557,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Cafe Regular",
+    "slug": "cafe-regular",    "name": "Cafe Regular",
     "vibe": "Cozy, European, Neighborhood, Café, Simple, Warm, Local, Charming, Steady",
     "type": ["coffee", "breakfast"],
         "lat": "40.67509325",
@@ -5601,7 +5601,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "NBetween",
+    "slug": "nbetween",    "name": "NBetween",
     "vibe": "Chill, Vinyl, Relaxed, Hidden, Cocktails, Groovy, Low‑key, Niche",
     "type": "cocktail",
         "lat": "40.743558",
@@ -5645,7 +5645,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Craftsman Ave",
+    "slug": "craftsman-ave",    "name": "Craftsman Ave",
     "vibe": "Creative, Rustic, Crafts, Date, Artistic, Handcrafted, Earthy, Warm, Inviting",
     "type": "random gem",
         "lat": "40.6711851",
@@ -5689,7 +5689,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Untermyer Gardens",
+    "slug": "untermyer-gardens",    "name": "Untermyer Gardens",
     "vibe": "Serene, Historic Gardens, Peaceful, Scenic, Lush, Elegant, Tranquil",
     "type": "garden",
         "lat": "40.96599465",
@@ -5733,7 +5733,7 @@ const nycData = [
     "duration": 3
   },
   {
-    "name": "Dahing Plants",
+    "slug": "dahing-plants",    "name": "Dahing Plants",
     "vibe": "Botanical, Plant Shop, Garden, Green, Fresh, Growing, Nurturing, Secluded",
     "type": "random gem",
         "lat": "40.7175216",
@@ -5777,7 +5777,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Bricolage",
+    "slug": "bricolage",    "name": "Bricolage",
     "vibe": "Eclectic, Creative, Artsy, Vietnamese, French, Gastropub, Fusion, Unique, Vibrant, Experimental, Crafty",
     "type": ["lunch", "dinner"],
         "lat": "40.6778967",
@@ -5843,7 +5843,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Bar at Café Kitsuné",
+    "slug": "the-bar-at-cafe-kitsune",    "name": "The Bar at Café Kitsuné",
     "vibe": "Chic, Minimalist, Vinyl, Cocktails, Urban, Sleek, Rhythmic, Stylish, Hip",
     "type": "cocktail",
         "lat": "40.686585",
@@ -5887,7 +5887,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Public Records",
+    "slug": "public-records",    "name": "Public Records",
     "vibe": "Upscale, Lounge, DJ, Dancing, Multiple Rooms, Hi‑Fi, Modern, Stylish, Multi‑level, Nightlife",
     "type": ["club", "cocktail", "late-night"],
         "lat": "40.6821013",
@@ -5941,7 +5941,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Casino",
+    "slug": "casino",    "name": "Casino",
     "vibe": "Intimate, Date, Cocktails, Aesthetic, Trendy, Romantic, Sleek, Plush, Chic, Mood-setting",
     "type": ["cocktail", "dinner"],
         "lat": "40.7139367",
@@ -5985,7 +5985,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Bode Men’s",
+    "slug": "bode-mens",    "name": "Bode Men’s",
     "vibe": "Upscale, Trendy, Fashion, Aesthetic, Lifestyle, Polished, Curated, Stylish, Refined, Oversize",
     "type": "lifestyle",
         "lat": "40.715837",
@@ -6029,7 +6029,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Desert Vintage",
+    "slug": "desert-vintage",    "name": "Desert Vintage",
     "vibe": "Unique, Curated, Vintage, Fashion, Aesthetic, Lifestyle, Boho, Eclectic, Retro, Artful, Nostalgic",
     "type": "lifestyle",
         "lat": "40.71573925",
@@ -6073,7 +6073,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Regina's Grocery",
+    "slug": "reginas-grocery",    "name": "Regina's Grocery",
     "vibe": "Casual, Neighborhood Spot, Sandwich, Deli, Wholesome, Local, Quaint, Laid‑back, Fresh",
     "type": "lunch",
         "lat": "40.7154868",
@@ -6117,7 +6117,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "TUMBAO",
+    "slug": "tumbao",    "name": "TUMBAO",
     "vibe": "Latin‑inspired, Fashion, Vibe, Rhythmic, Bold, Colorful, Energetic, Streetwise",
     "type": "lifestyle",
         "lat": "40.7152638",
@@ -6161,7 +6161,7 @@ const nycData = [
     "duration": 0
   },
   {
-    "name": "Sommwhere",
+    "slug": "sommwhere",    "name": "Sommwhere",
     "vibe": "Pop‑Up, Event Venue, Immersive, Dynamic, Curated, Trendsetting, Experimental",
     "type": "random gem",
         "lat": "40.7162588",
@@ -6205,7 +6205,7 @@ const nycData = [
     "duration": 0
   },
   {
-    "name": "Old Friend Photobooth",
+    "slug": "old-friend-photobooth",    "name": "Old Friend Photobooth",
     "vibe": "Fun, Quirky, Photo Booth, Playful, Nostalgic, Flashy, Retro, Interactive",
     "type": "random gem",
         "lat": "40.7204819",
@@ -6249,7 +6249,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "The Little Shop",
+    "slug": "the-little-shop",    "name": "The Little Shop",
     "vibe": "Hidden, Speakeasy, Cocktails, Vinyl, Secretive, Moody, Indie, Retro, Delicate",
     "type": "speakeasy",
         "lat": "40.7083307",
@@ -6293,7 +6293,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Cellar 36",
+    "slug": "cellar-36",    "name": "Cellar 36",
     "vibe": "Cozy, Intimate, Natural Wine, Small Plates, Rustic, Romantic, Lush, Artisanal",
     "type": "wine bar",
         "lat": "40.71256495",
@@ -6337,7 +6337,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "the Ground",
+    "slug": "the-ground",    "name": "the Ground",
     "vibe": "Soccer, Casual, Sports, DJ, Energetic, Communal, Cheerful, Playful, Grassroots",
     "type": "random gem",
         "lat": "40.71209225",
@@ -6381,7 +6381,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Amsterdam Billiards Club",
+    "slug": "amsterdam-billiards-club",    "name": "Amsterdam Billiards Club",
     "vibe": "Lively, Social, Pool Tables, Bar, Vintage, Gritty, Bold, No‑frills, Friendly",
     "type": ["bar", "activity"],
         "lat": "40.7317233",
@@ -6425,7 +6425,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "colbo",
+    "slug": "colbo",    "name": "colbo",
     "vibe": "Cozy, Coffee, Vinyl, Clothing, Lifestyle, Trendy, Hip, Textural, Local, Artisanal",
     "type": ["coffee", "lifestyle", "dj"],
         "lat": "40.7165595",
@@ -6469,7 +6469,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "tearoom by calmplex",
+    "slug": "tearoom-by-calmplex",    "name": "tearoom by calmplex",
     "vibe": "Calm, Minimalist, Japanese, Tea, Serene, Meditative, Zen, Refined, Soft",
     "type": "tea",
         "lat": "40.7555061",
@@ -6513,7 +6513,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "St Jardim",
+    "slug": "st-jardim",    "name": "St Jardim",
     "vibe": "Cozy, Brunch Spot, Coffee, Natural Wine, Bar, Sunny, Rustic, Nourishing, Low‑key, Artisan",
     "type": ["coffee", "wine bar", "brunch"],
         "lat": "40.7343755",
@@ -6557,7 +6557,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "renewfinds",
+    "slug": "renewfinds",    "name": "renewfinds",
     "vibe": "Eclectic, Curated, Vintage, Upcycled, Funky, Quirky, Sustainable, One‑of‑a‑kind",
     "type": "random gem",
         "lat": "40.7274515",
@@ -6601,7 +6601,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Bury Your Dead Downwind",
+    "slug": "bury-your-dead-downwind",    "name": "Bury Your Dead Downwind",
     "vibe": "Artistic, Display, Furniture, Aesthetic, Crafted, Raw, Inspired, Avant‑garde, Understated",
     "type": "lifestyle",
         "lat": "40.7194984",
@@ -6645,7 +6645,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Paquita",
+    "slug": "paquita",    "name": "Paquita",
     "vibe": "Cozy, Intimate, Tea, Coffee, Plants, Botanical, Homey, Relaxing, Whisper‑soft, Green",
     "type": ["tea", "coffee"],
         "lat": "40.7336769",
@@ -6689,7 +6689,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Bar Orai",
+    "slug": "bar-orai",    "name": "Bar Orai",
     "vibe": "Speakeasy, Vinyl, Soul, Japanese, Whiskey, DJ, Understated, Urban, Smooth, Comfortable, Hip",
     "type": ["speakeasy", "dj"],
         "lat": "40.75658145",
@@ -6733,7 +6733,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Sake Bar Asoko",
+    "slug": "sake-bar-asoko",    "name": "Sake Bar Asoko",
     "vibe": "Intimate, Japanese, Cozy, Sake, Retro Video Games, Nostalgic, Arcady, Retro, Playful, Underground",
     "type": "speakeasy",
         "lat": "40.7136931",
@@ -6777,7 +6777,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Mezzrow",
+    "slug": "mezzrow",    "name": "Mezzrow",
     "vibe": "Intimate, Live Music, Jazz, Bar, Smoky, Classic, Soulful, Warm, Nightcap",
     "type": "music",
         "lat": "40.7345395",
@@ -6821,7 +6821,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Sun at Six Gallery",
+    "slug": "sun-at-six-gallery",    "name": "Sun at Six Gallery",
     "vibe": "Artistic, Furniture, Contemporary, Showroom, By Appointment, Clean, Modernist, Bright, Curated",
     "type": "gallery",
         "lat": "40.6742921",
@@ -6865,7 +6865,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Quarters",
+    "slug": "quarters",    "name": "Quarters",
     "vibe": "Cozy, Warm, Wine, Aesthetic, Hidden, Showroom, Chic, Subtle, Designer, Ambient",
     "type": ["wine bar", "gallery"],
         "lat": "40.71821778",
@@ -6909,7 +6909,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Sullaluna",
+    "slug": "sullaluna",    "name": "Sullaluna",
     "vibe": "Charming, Cozy, Bookshop, Italian Bistro, Warm, Inviting, Literary, Sunny, Relaxed",
     "type": ["dinner", "bookstore"],
         "lat": "40.73018045",
@@ -6953,7 +6953,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Parcelle Chinatown",
+    "slug": "parcelle-chinatown",    "name": "Parcelle Chinatown",
     "vibe": "Casual, Wine, Date, Trendy, Outdoor Seating, Laid-Back, Chic, Breezy, Local, Stylish",
     "type": "wine bar",
         "lat": "40.71437695",
@@ -6997,7 +6997,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Mao Mao",
+    "slug": "mao-mao",    "name": "Mao Mao",
     "vibe": "Retro, Thai, Cinema, Fun Date, Lively, Cool, Playful, Neon, Energetic, Quirky, Vintage",
     "type": "dinner",
         "lat": "40.695805",
@@ -7041,7 +7041,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Damballa",
+    "slug": "damballa",    "name": "Damballa",
     "vibe": "Relaxed, Cool, Creative Cocktails, Hip, Vinyl, Dance, Bohemian, Funky, Rhythmic, Artistic, Nightly",
     "type": "cocktail",
         "lat": "40.69811855",
@@ -7085,7 +7085,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Lévy Gorvy Dayan",
+    "slug": "levy-gorvy-dayan",    "name": "Lévy Gorvy Dayan",
     "vibe": "High-End, Contemporary, Art Gallery, Aesthetic, Polished, Curated, Elegant, Modern, Refined",
     "type": "gallery",
         "lat": "40.767004",
@@ -7129,7 +7129,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Dream Fishing Tackle",
+    "slug": "dream-fishing-tackle",    "name": "Dream Fishing Tackle",
     "vibe": "Vintage, Furniture, Artistic, Quirky, Records, Crafty, Nostalgic, Offbeat, Eclectic, Authentically-Retro",
     "type": "random gem",
         "lat": "40.7250097",
@@ -7173,7 +7173,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Silence Please",
+    "slug": "silence-please",    "name": "Silence Please",
     "vibe": "Café, Hi-Fi, Listening Room, Tea House, Spacious, Serene, Intimate, Quiet, Audio, Minimalist",
     "type": ["tea", "music"],
         "lat": "40.7189289",
@@ -7217,7 +7217,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "le gaz",
+    "slug": "le-gaz",    "name": "le gaz",
     "vibe": "Relaxed, Hip, Coffee, DJ, Weekend, Ambient, Smooth, Urban, Chill",
     "type": "coffee",
         "lat": "40.7150483",
@@ -7261,7 +7261,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Chess Forum",
+    "slug": "chess-forum",    "name": "Chess Forum",
     "vibe": "Classic, Games, Backgammon, Chess, Strategic, Nostalgic, Brainy, Casual, Timeless",
     "type": ["random gem", "activity"],
         "lat": "40.7291544",
@@ -7305,7 +7305,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Early Terrible [New York City]",
+    "slug": "early-terrible-new-york-city",    "name": "Early Terrible [New York City]",
     "vibe": "Cocktails, Sophisticated, Welcoming, Girls Night Out, Disco Ball, Glam, Glitter, Social, Inclusive, Upbeat",
     "type": "cocktail",
         "lat": "40.71951196",
@@ -7349,7 +7349,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Elvis",
+    "slug": "elvis",    "name": "Elvis",
     "vibe": "French, Chic, Cozy, Wine Bar, Outdoor Seating, Romantic, Elegant, Quaint, Midnight, Refined",
     "type": "wine bar",
         "lat": "40.7267174",
@@ -7393,7 +7393,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "High Valley Books",
+    "slug": "high-valley-books",    "name": "High Valley Books",
     "vibe": "Vintage, Books, Coffee Table Gems, Hidden, Quiet, Magazine, Niche, Rustic, Curated, By Appointment",
     "type": "bookstore",
         "lat": "40.7229711",
@@ -7437,7 +7437,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Ed’s Elbow Room",
+    "slug": "eds-elbow-room",    "name": "Ed’s Elbow Room",
     "vibe": "Cozy, Comfort Food, Sunday Dinner, Classic, Homey, Friendly, Warm, Casual",
     "type": "dinner",
         "lat": "40.7723172",
@@ -7481,7 +7481,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "la milagrosa",
+    "slug": "la-milagrosa",    "name": "la milagrosa",
     "vibe": "Speakeasy, Hidden Gem, Nightlife, DJ, Mysterious, Lush, Rhythmic, Nocturnal, Underground",
     "type": ["speakeasy", "late-night"],
         "lat": "40.7117087",
@@ -7525,7 +7525,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Film Noir Cinema",
+    "slug": "film-noir-cinema",    "name": "Film Noir Cinema",
     "vibe": "Indie, Film, Intimate, Cinema, Moody, Retro, Deep, Distracted, Nostalgic",
     "type": "random gem",
         "lat": "40.7273136",
@@ -7569,7 +7569,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Pearlbox",
+    "slug": "pearlbox",    "name": "Pearlbox",
     "vibe": "Cozy, Intimate, Stylish, Hidden, Aesthetic, Boutique, Chic, Velvet, Ambient, Refined",
     "type": ["speakeasy", "cocktail"],
         "lat": "40.72289975",
@@ -7613,7 +7613,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "We Got Company",
+    "slug": "we-got-company",    "name": "We Got Company",
     "vibe": "Cocktails, Date, Intimate, Creative, Cultured, Artistic, Thoughtful, Ambient, Romantic",
     "type": "cocktail",
         "lat": "40.7141936",
@@ -7657,7 +7657,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Oxomoco",
+    "slug": "oxomoco",    "name": "Oxomoco",
     "vibe": "Trendy, Mexican‑Inspired, Modern Dining, Michelin Star, Vibrant, Fresh, Bold, Innovative, Elevated",
     "type": ["lunch", "dinner"],
         "lat": "40.72977",
@@ -7701,7 +7701,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Frog",
+    "slug": "frog",    "name": "Frog",
     "vibe": "Artsy, Eclectic, Natural Wine Bar, Outdoor Area, Bohemian, Relaxed, Green, Experimental, Local",
     "type": ["wine bar", "patio"],
         "lat": "40.6848704",
@@ -7745,7 +7745,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Apotheke Chinatown",
+    "slug": "apotheke-chinatown",    "name": "Apotheke Chinatown",
     "vibe": "Experimental Cocktail, Speakeasy, Social, Hypnotic, Avant-Garde, Mysterious, Chic, Urban",
     "type": ["speakeasy", "cocktail"],
         "lat": "40.7144",
@@ -7789,7 +7789,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Patent Pending",
+    "slug": "patent-pending",    "name": "Patent Pending",
     "vibe": "Speakeasy, Moody, Creative Cocktails, Introspective, Bold, Artistic, Dramatic, Stylish",
     "type": "speakeasy",
         "lat": "40.7453222",
@@ -7833,7 +7833,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Wilfie & Nell",
+    "slug": "wilfie-nell",    "name": "Wilfie & Nell",
     "vibe": "Cozy, Rustic, Neighborhood Bar, Warm, Familiar, Welcoming, Rooted, Friendly",
     "type": "bar",
         "lat": "40.734068",
@@ -7877,7 +7877,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Rosecrans Cafe & Wine Bar",
+    "slug": "rosecrans-cafe-wine-bar",    "name": "Rosecrans Cafe & Wine Bar",
     "vibe": "Coffee, Chic, Cozy Café, Flowers, Wine, Inviting, Floral, Mellow, Quaint, Relaxed",
     "type": "coffee",
         "lat": "40.7341712",
@@ -7921,7 +7921,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Sunshine Laundromat",
+    "slug": "sunshine-laundromat",    "name": "Sunshine Laundromat",
     "vibe": "Hidden Gem, Casual, Arcade Bar, Playful, Nostalgic, Quirky, Low‑Key, Fun",
     "type": "random gem",
         "lat": "40.7292851",
@@ -7965,7 +7965,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Gran Torino",
+    "slug": "gran-torino",    "name": "Gran Torino",
     "vibe": "Dining, Italian‑inspired, Outdoor Seating, Bar, Hearty, Sunny, Communal, Rustic, Welcoming",
     "type": ["lunch", "dinner", "patio"],
         "lat": "40.7183923",
@@ -8009,7 +8009,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Cafe Balearica",
+    "slug": "cafe-balearica",    "name": "Cafe Balearica",
     "vibe": "Disco Ball, Cocktails, Salsa Dancing, DJ, Social, Nightlife, Festive, Rhythmic, Wild, Colorful, Lively",
     "type": "club",
         "lat": "40.7210681",
@@ -8053,7 +8053,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Juliette Restaurant",
+    "slug": "juliette-restaurant",    "name": "Juliette Restaurant",
     "vibe": "Rooftop, French Dining, Date Spot, Wine, Romantic, Elegant, Elevated, City‑Lit, Sunset",
     "type": ["lunch", "dinner", "rooftop"],
         "lat": "40.716997",
@@ -8097,7 +8097,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "MIDNIGHTS",
+    "slug": "midnights",    "name": "MIDNIGHTS",
     "vibe": "Back Patio, Intimate, Cocktails, Bar, DJ, Moody, Shadowed, Sultry, Music‑Driven",
     "type": ["cocktail", "patio", "dj"],
         "lat": "40.7174706",
@@ -8141,7 +8141,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Skinny Dennis",
+    "slug": "skinny-dennis",    "name": "Skinny Dennis",
     "vibe": "Country, Live Music, Dive Bar, Outdoor Seating, Rustic, Loud, Laid‑Back, Authentic, Barefoot",
     "type": ["music", "bar"],
         "lat": "40.7158872",
@@ -8185,7 +8185,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Pokito",
+    "slug": "pokito",    "name": "Pokito",
     "vibe": "Casual, Caribbean‑Inspired, Vibrant, Cocktails, Bright, Tropic, Lively, Warm, Relaxed",
     "type": "cocktail",
         "lat": "40.7116327",
@@ -8229,7 +8229,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "MoMA PS1",
+    "slug": "moma-ps1",    "name": "MoMA PS1",
     "vibe": "Artsy, Museum, Concert, Outdoor/Open‑Air, Dynamic, Cultural, Edgy, Expansive, Experimental",
     "type": "gallery",
         "lat": "40.745568",
@@ -8273,7 +8273,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Record Room",
+    "slug": "record-room",    "name": "Record Room",
     "vibe": "Bar, Lounge, DJ, Cocktails, Vinyl, Smoky, Retro, Chill, Hip, Groovy",
     "type": ["lounge", "dj"],
         "lat": "40.74574039",
@@ -8317,7 +8317,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Honeycomb Hi-Fi Lounge",
+    "slug": "honeycomb-hi-fi-lounge",    "name": "Honeycomb Hi-Fi Lounge",
     "vibe": "Vinyl, Sound Room, Hi‑Fi, Cocktails, Textural, Immersive, Analog, Warm, Curated",
     "type": ["cocktail", "lounge"],
         "lat": "40.6807473",
@@ -8361,7 +8361,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Rhodora Wine Bar",
+    "slug": "rhodora-wine-bar",    "name": "Rhodora Wine Bar",
     "vibe": "Cozy, Intimate, Neighborhood Bar, Natural Wine, Earthy, Nuanced, Soft,Lush, Quiet",
     "type": "wine bar",
         "lat": "40.6917428",
@@ -8405,7 +8405,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Bar Birba",
+    "slug": "bar-birba",    "name": "Bar Birba",
     "vibe": "Wine, Pizza, Aperitif, Neighborhood Spot, Rustic, Casual, Friendly, Classic, Authentic",
     "type": "wine bar",
         "lat": "40.6874732",
@@ -8449,7 +8449,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Entre Nous",
+    "slug": "entre-nous",    "name": "Entre Nous",
     "vibe": "Sophisticated, French Small Plates, Natural Wine, Elegant, Cultured, Intimate, Refined, Tender",
     "type": "wine bar",
         "lat": "40.6879326",
@@ -8493,7 +8493,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Anaïs",
+    "slug": "anais",    "name": "Anaïs",
     "vibe": "Casual, Natural Wine, Books, Outdoor Seating, Bookish, Breezy, Cozy, Reflective, Sunlit",
     "type": "wine bar",
         "lat": "40.6848831",
@@ -8537,7 +8537,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Petit Paulette",
+    "slug": "petit-paulette",    "name": "Petit Paulette",
     "vibe": "Cozy, Casual, French Bistro, Natural Wine, Outdoor Seating, Chic, Peaceful, Floral, Casual, Charming",
     "type": "wine bar",
         "lat": "40.689612",
@@ -8581,7 +8581,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "The Ten Bells Brooklyn",
+    "slug": "the-ten-bells-brooklyn",    "name": "The Ten Bells Brooklyn",
     "vibe": "Cozy, Wine, Oysters, Cocktails, Laid‑Back, Warm, Tactile, Comfortable, Rustic, Friendly",
     "type": "wine bar",
         "lat": "40.70467705",
@@ -8625,7 +8625,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Bouquet",
+    "slug": "bouquet",    "name": "Bouquet",
     "vibe": "Wine, Cozy, DJ, Social, Backyard Patio, Romantic, Casual, Nostalgic, Soft",
     "type": ["wine bar", "patio"],
         "lat": "40.73538615",
@@ -8669,7 +8669,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Diamond Lil",
+    "slug": "diamond-lil",    "name": "Diamond Lil",
     "vibe": "Dive Bar, Cocktails, Neighborhood Gem, Backyard Patio, Date Spot, Gritty, Casual, Neon, Charming, Local",
     "type": ["cocktail", "patio"],
         "lat": "40.725437",
@@ -8713,7 +8713,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Heaven & Earth",
+    "slug": "heaven-earth",    "name": "Heaven & Earth",
     "vibe": "Chill, Neighborhood Bar, Natural Wine, Small Plates, Earthy, Community, Minimalist, Seasonal, Serene",
     "type": "wine bar",
         "lat": "40.7260331",
@@ -8757,7 +8757,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "BABA on Withers",
+    "slug": "baba-on-withers",    "name": "BABA on Withers",
     "vibe": "Hidden Gem, Cozy, Creative Cocktails, Wine, Intimate, Inventive, Low-Key, Artsy",
     "type": ["wine bar", "patio"],
         "lat": "40.717003",
@@ -8801,7 +8801,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Plus de Vin",
+    "slug": "plus-de-vin",    "name": "Plus de Vin",
     "vibe": "Cozy, Wine, Rustic, Back Patio, Sun-Dappled, French-Inspired, Laid-Back, Vintage, Welcoming",
     "type": ["wine bar", "patio"],
         "lat": "40.7185124",
@@ -8845,7 +8845,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Woodhul Wine Bar",
+    "slug": "woodhul-wine-bar",    "name": "Woodhul Wine Bar",
     "vibe": "Cozy, Small Bites, Wine, Cocktails, Craft Beers, Intimate, Warm, Relaxed, Tasting, Lowkey",
     "type": ["wine bar", "cocktail"],
         "lat": "40.7149932",
@@ -8889,7 +8889,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Pinkerton Wine Bar",
+    "slug": "pinkerton-wine-bar",    "name": "Pinkerton Wine Bar",
     "vibe": "Chill, Neighborhood Bar, Craft Wines, Quiet, Lowkey, Warm, Cozy, Vintage",
     "type": "wine bar",
         "lat": "40.7148899",
@@ -8933,7 +8933,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Sauced",
+    "slug": "sauced-nyc",    "name": "Sauced",
     "vibe": "Cozy, Casual, Trendy Wine Bar, Hip, Casual, Creative, Refined, Chill, Modern",
     "type": "wine bar",
         "lat": "40.7254538",
@@ -8977,7 +8977,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Immigrant",
+    "slug": "the-immigrant",    "name": "The Immigrant",
     "vibe": "Laid‑back, Rustic, Wine, Craft Beer, Earthy, Local, Relaxed, Neighborhood, Friendly",
     "type": "wine bar",
         "lat": "40.7285237",
@@ -9021,7 +9021,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Ruffian",
+    "slug": "ruffian",    "name": "Ruffian",
     "vibe": "Bistro, Intimate, Casual, Natural Wine, Artistic, Understated, Tasteful, Cozy, Refined",
     "type": "wine bar",
         "lat": "40.7264",
@@ -9065,7 +9065,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Bibi Wine Bar",
+    "slug": "bibi-wine-bar",    "name": "Bibi Wine Bar",
     "vibe": "Cozy, Small Bites, Wine Bar, Intimate, Vintage, Warm, Lowkey, Charming",
     "type": "wine bar",
         "lat": "40.7238517",
@@ -9109,7 +9109,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Brick Wine Bar",
+    "slug": "brick-wine-bar",    "name": "Brick Wine Bar",
     "vibe": "Casual, Charming, Intimate Wine Bar, Cozy, Rustic, Neighborhood, Relaxed, Welcoming",
     "type": "wine bar",
         "lat": "40.7206712",
@@ -9153,7 +9153,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Domino Wine Bar",
+    "slug": "domino-wine-bar",    "name": "Domino Wine Bar",
     "vibe": "Cozy, Small Bites, Neighborhood Spot, Natural Wine, Vintage, Lowkey, Authentic, Warm, Retro",
     "type": "wine bar",
         "lat": "40.7114643",
@@ -9197,7 +9197,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Lise & Vito",
+    "slug": "lise-vito",    "name": "Lise & Vito",
     "vibe": "Date, Modern, Wine Bar, Vinyl Nights, Small Bites, Chic, Retro, Intimate, Stylish, Cool",
     "type": "wine bar",
         "lat": "40.72438215",
@@ -9241,7 +9241,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Maison Premiere",
+    "slug": "maison-premiere",    "name": "Maison Premiere",
     "vibe": "Elegant, Classic, Cocktail Lounge, Seafood, Refined, Vintage, Tasting, Romantic, Aesthetic",
     "type": ["cocktail", "patio", "dinner"],
         "lat": "40.7142409",
@@ -9285,7 +9285,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Horses and Divorces",
+    "slug": "horses-and-divorces",    "name": "Horses and Divorces",
     "vibe": "Dive, Eclectic, Artsy, Pool Table, Quirky, Raw, Underground, Social, Creative",
     "type": "bar",
         "lat": "40.7140953",
@@ -9329,7 +9329,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "The Sultan Room",
+    "slug": "the-sultan-room",    "name": "The Sultan Room",
     "vibe": "Live Music, Moroccan-inspired, Stylish, Exotic, Elegant, Vibrant, Culture, Nightlife",
     "type": "music",
         "lat": "40.705705",
@@ -9373,7 +9373,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Elsewhere",
+    "slug": "elsewhere",    "name": "Elsewhere",
     "vibe": "Alternative, DJ, Multi-Room, Live Music, Social, Vibrant, Eclectic, Energetic, Nightlife, Collective",
     "type": "club",
         "lat": "40.70947715",
@@ -9417,7 +9417,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Mansions",
+    "slug": "mansions",    "name": "Mansions",
     "vibe": "Club, Fog Room, Social, Dance, Luxurious, Lively, Bold, Chic, After‑Hours",
     "type": "club",
         "lat": "40.713964",
@@ -9461,7 +9461,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Please Tell Me",
+    "slug": "please-tell-me",    "name": "Please Tell Me",
     "vibe": "Cozy, Intimate, Casual, Wine Bar, Hidden, Romantic, Quiet, Soft, Mood",
     "type": "wine bar",
         "lat": "40.71463863",
@@ -9505,7 +9505,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Arcane Estate Coffee",
+    "slug": "arcane-estate-coffee",    "name": "Arcane Estate Coffee",
     "vibe": "Cozy, Café, Latin, Specialty Coffee, Artistic, Calm, Creative, Warm, Neighborhood",
     "type": "coffee",
         "lat": "40.7312595",
@@ -9549,7 +9549,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "PUBLIC Hotel",
+    "slug": "public-hotel",    "name": "PUBLIC Hotel",
     "vibe": "Modern, Trendy, Rooftop, DJ, Cocktails, Glamorous, Chic, Elevated, Stylish, Scene",
     "type": ["cocktail", "rooftop"],
         "lat": "40.723034",
@@ -9593,7 +9593,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Ray’s",
+    "slug": "rays-nyc",    "name": "Ray’s",
     "vibe": "Laid‑Back, Country, Chill, Bar, Rustic, Friendly, Casual, Cozy, Down‑home",
     "type": "bar",
         "lat": "40.7212174",
@@ -9637,7 +9637,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Fig. 19",
+    "slug": "fig-19",    "name": "Fig. 19",
     "vibe": "Cozy, Trendy, Hidden Gem, Cocktails, Lowkey, Stylish, Intimate, Chill",
     "type": ["cocktail", "speakeasy"],
         "lat": "40.71951185",
@@ -9681,7 +9681,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Attaboy",
+    "slug": "attaboy",    "name": "Attaboy",
     "vibe": "Chic, Upscale, Speakeasy, Classic Cocktails, Refined, Quiet, Elegant, Trendy, Sleek",
     "type": "cocktail",
         "lat": "40.7188823",
@@ -9725,7 +9725,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Flower Shop",
+    "slug": "the-flower-shop",    "name": "The Flower Shop",
     "vibe": "Lively, Basement Bar, Pool Table, Cocktail Bar, Trendy, Vibrant, Fun, Retro, Playful, Social",
     "type": "bar",
         "lat": "40.7180663",
@@ -9769,7 +9769,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Skin Contact",
+    "slug": "skin-contact",    "name": "Skin Contact",
     "vibe": "Wine Bar, Artsy, Dark, Cozy, Moody, Intimate, Aesthetic, Refined, Dim-Lit",
     "type": "wine bar",
         "lat": "40.7176753",
@@ -9813,7 +9813,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Ramen Ishida",
+    "slug": "ramen-ishida",    "name": "Ramen Ishida",
     "vibe": "Intimate, Japanese, Cozy, Authentic Ramen, Quiet, Traditional, Craft, Comforting, Local",
     "type": "dinner",
         "lat": "40.7196475",
@@ -9857,7 +9857,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "The Back Room",
+    "slug": "the-back-room",    "name": "The Back Room",
     "vibe": "Hidden, Speakeasy, Jazz, Cocktails, Classic, Curated, Low-key, Nostalgic, Late‑night",
     "type": "speakeasy",
         "lat": "40.7187356",
@@ -9901,7 +9901,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Dear Irving Gramercy",
+    "slug": "dear-irving-gramercy",    "name": "Dear Irving Gramercy",
     "vibe": "Classic, Elegant, Speakeasy, Cocktail Bar, Refined, Vintage, Glamorous, Intimate, Polished",
     "type": "cocktail",
         "lat": "40.7361878",
@@ -9945,7 +9945,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Raines Law Room Chelsea",
+    "slug": "raines-law-room-chelsea",    "name": "Raines Law Room Chelsea",
     "vibe": "Sophisticated, Elegant, Speakeasy, Cocktails, Aesthetic, Understated, Low-light, Chic, Lavish",
     "type": ["cocktail", "speakeasy"],
         "lat": "40.7387302",
@@ -9989,7 +9989,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "La Noxe",
+    "slug": "la-noxe",    "name": "La Noxe",
     "vibe": "Hidden Gem, Red Lighting, Intimate, Trendy, Jazz Vibes, Chic, Moody, Sultry, Refined, Stylish, Secretive",
     "type": "speakeasy",
         "lat": "40.747027",
@@ -10033,7 +10033,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "The Coyote Club",
+    "slug": "the-coyote-club",    "name": "The Coyote Club",
     "vibe": "Cozy, Low-key, Neighborhood Bar, Dive, Warm, Earthy, Familiar, No‑frills, Local, Photo Booth",
     "type": "bar",
         "lat": "40.6886088",
@@ -10077,7 +10077,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Union Pool",
+    "slug": "union-pool",    "name": "Union Pool",
     "vibe": "Laid-back, Chill, Local Hangout, Live Music, Spacious, Casual, Communal, Summer, Outdoor, Friendly",
     "type": ["bar", "music"],
         "lat": "40.7150021",
@@ -10121,7 +10121,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "7 Spring",
+    "slug": "7-spring",    "name": "7 Spring",
     "vibe": "Backgammon, Café, Coffee, Cozy, Gamey, Relaxed, Daytime, Friendly",
     "type": ["coffee", "activity"],
         "lat": "40.7213601",
@@ -10165,7 +10165,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "yakuni",
+    "slug": "yakuni",    "name": "yakuni",
     "vibe": "Cozy, Japanese, Intimate, Sushi Bar, Speakeasy, Quiet, Minimalist, Crafted, Warm, Hidden",
     "type": "speakeasy",
         "lat": "40.7571743",
@@ -10209,7 +10209,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Bar Bianchi",
+    "slug": "bar-bianchi",    "name": "Bar Bianchi",
     "vibe": "Cozy, Italian, Cocktail Bar, Neighborhood Spot, Classic, Laid-back, Warm",
     "type": "cocktail",
         "lat": "40.7225634",
@@ -10253,7 +10253,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Little Fino",
+    "slug": "little-fino",    "name": "Little Fino",
     "vibe": "Casual, Cafe, Italian, Neighborhood Bar, Friendly, Unpretentious, Sunny, Local, Chill",
     "type": ["breakfast", "lunch", "dinner", "cocktail"],
         "lat": "40.7220606",
@@ -10297,7 +10297,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Clemente Bar",
+    "slug": "clemente-bar",    "name": "Clemente Bar",
     "vibe": "Art, Aesthetic, Cocktail Bar, Intimate, Best Bars North America, Curated, Stylish, Cozy, Creative, Elevated",
     "type": "cocktail",
         "lat": "40.7415982",
@@ -10341,7 +10341,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Greenburg Café",
+    "slug": "greenberg-cafe",    "name": "Greenburg Café",
     "vibe": "Neighborhood Café, Cozy, Casual, Back Patio, Sunny, Botanical, Quiet, Welcoming, Local",
     "type": "coffee",
         "lat": "40.7273389",
@@ -10385,7 +10385,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "RHYTHM ZERO | GREENPOINT",
+    "slug": "rhythm-zero-greenpoint",    "name": "RHYTHM ZERO | GREENPOINT",
     "vibe": "Aesthetic, Chill, Hip, Artsy, Weekend Coffee, Minimalist, Curated, Quiet, Creative, Calm",
     "type": "coffee",
         "lat": "40.73015835",
@@ -10429,7 +10429,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "The Metropolitan Museum of Art",
+    "slug": "the-metropolitan-museum-of-art",    "name": "The Metropolitan Museum of Art",
     "vibe": "Cultural, Historic, Iconic, Art, Curated, Classical, Grand, Refined, Architectural",
     "type": "gallery",
         "lat": "40.7794396",
@@ -10473,7 +10473,7 @@ const nycData = [
     "duration": 3
   },
   {
-    "name": "Solomon R. Guggenheim Museum",
+    "slug": "Solomon-r-guggenheim-museum",    "name": "Solomon R. Guggenheim Museum",
     "vibe": "Modern, Iconic, Cultural, Art, Architectural, Curated, Avant‑garde, Meandering, Museum‑goer",
     "type": "gallery",
         "lat": "40.78301",
@@ -10517,7 +10517,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "The Frick Collection",
+    "slug": "the-frick-collection",    "name": "The Frick Collection",
     "vibe": "Historic, Cultural, Elegant, Classic Art, Refined, Quiet, Intimate, Stately, Curated",
     "type": "gallery",
         "lat": "40.7710857",
@@ -10561,7 +10561,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "American Museum of Natural History",
+    "slug": "american-museum-of-natural-history",    "name": "American Museum of Natural History",
     "vibe": "Educational, Cultural, Family-friendly, Museum, Artsy, Interactive, Historical, Inspiring",
     "type": "gallery",
         "lat": "40.7813241",
@@ -10605,7 +10605,7 @@ const nycData = [
     "duration": 3
   },
   {
-    "name": "Whitney Museum of American Art",
+    "slug": "whitney-museum-of-american-art",    "name": "Whitney Museum of American Art",
     "vibe": "Modern, Iconic, Cultural, Art, Contemporary, Sculptural, Bold, Architectural",
     "type": "gallery",
         "lat": "40.73964505",
@@ -10649,7 +10649,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Eden Gallery",
+    "slug": "eden-gallery",    "name": "Eden Gallery",
     "vibe": "Contemporary, Art Gallery, Trendy, Curated, Polished, Stylish, Visual, Creative",
     "type": "gallery",
         "lat": "40.757618",
@@ -10693,7 +10693,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Taglialatella Galleries",
+    "slug": "taglialatella-galleries",    "name": "Taglialatella Galleries",
     "vibe": "Contemporary, Art Gallery, Vibrant, Artful, Colorful, Curated, Energetic, Local",
     "type": "gallery",
         "lat": "40.7482129",
@@ -10737,7 +10737,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Gagosian",
+    "slug": "gagosian",    "name": "Gagosian",
     "vibe": "Prestigious, Modern Art, Iconic Gallery, Curated, Gallery, Luxe, Refined, Contemporary",
     "type": "gallery",
         "lat": "40.7494423",
@@ -10781,7 +10781,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Agora Gallery",
+    "slug": "agora-gallery",    "name": "Agora Gallery",
     "vibe": "Art Gallery, Eclectic, Modern Art, Exhibit, Creative, Curated, Contemporary",
     "type": "gallery",
         "lat": "40.7494529",
@@ -10825,7 +10825,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Pace Gallery",
+    "slug": "pace-gallery",    "name": "Pace Gallery",
     "vibe": "Contemporary, High-end, Modern, Curated, Gallery",
     "type": "gallery",
         "lat": "40.7495759",
@@ -10869,7 +10869,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "David Zwirner",
+    "slug": "david-zwirner",    "name": "David Zwirner",
     "vibe": "Contemporary, Modern, Gallery, Art, Curated, Stylish, Refined, Fine Art",
     "type": "gallery",
         "lat": "40.745866",
@@ -10913,7 +10913,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Lisson Gallery",
+    "slug": "lisson-gallery",    "name": "Lisson Gallery",
     "vibe": "Modern Art, Sleek, Gallery, Minimal, Curated, Contemporary, Aesthetic",
     "type": "gallery",
         "lat": "40.7485502",
@@ -10957,7 +10957,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Gladstone Gallery",
+    "slug": "gladstone-gallery",    "name": "Gladstone Gallery",
     "vibe": "Contemporary, Chic, Gallery, Creative, Stylish, Curated, Fine Art",
     "type": "gallery",
         "lat": "40.7489761",
@@ -11001,7 +11001,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Eli Klein Gallery",
+    "slug": "eli-klein-gallery",    "name": "Eli Klein Gallery",
     "vibe": "Modern, Asian Art, Gallery, Cultural, Creative, Refined, Curated",
     "type": "gallery",
         "lat": "40.73341965",
@@ -11045,7 +11045,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "The Jazz Gallery",
+    "slug": "the-jazz-gallery",    "name": "The Jazz Gallery",
     "vibe": "Artsy, Intimate, Live Music, Jazz, Cozy, Live, Lounge, Creative, Improvisational, Classic",
     "type": "music",
         "lat": "40.7445908",
@@ -11089,7 +11089,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "PERROTIN NEW YORK",
+    "slug": "perrotin-new-york",    "name": "PERROTIN NEW YORK",
     "vibe": "Contemporary, Iconic, Gallery, Curated, Modern, Fine Art, Bold",
     "type": "gallery",
         "lat": "40.7196517",
@@ -11133,7 +11133,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Hannah Traore Gallery",
+    "slug": "hannah-traore-gallery",    "name": "Hannah Traore Gallery",
     "vibe": "Contemporary, Trendy, Gallery, Visual, Creative, Curated, Chic",
     "type": "gallery",
         "lat": "40.7206549",
@@ -11177,7 +11177,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Mr. Purple",
+    "slug": "mr-purple",    "name": "Mr. Purple",
     "vibe": "Trendy, Social, Cool Vibes, Rooftop, Lounge, Stylish, Elevated, Chic",
     "type": ["lounge", "rooftop"],
         "lat": "40.7216444",
@@ -11221,7 +11221,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Van Der Plas Gallery",
+    "slug": "van-der-plas-gallery",    "name": "Van Der Plas Gallery",
     "vibe": "Contemporary, Vibrant, Gallery, Creative, Curated, Bright, Modern",
     "type": "gallery",
         "lat": "40.7208693",
@@ -11265,7 +11265,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "BAR GOTO",
+    "slug": "bar-goto",    "name": "BAR GOTO",
     "vibe": "Japanese, Cozy, Cocktail Bar, Chic, Small Bites, Refined, Low-key, Intimate, Aesthetic, Crafted",
     "type": "cocktail",
         "lat": "40.7227628",
@@ -11309,7 +11309,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Make Believe",
+    "slug": "make-believe",    "name": "Make Believe",
     "vibe": "Rooftop, Dance, DJ, Trendy, Night, Vibe, Scene, Party, Elevated",
     "type": ["club", "rooftop", "dj"],
         "lat": "40.7218303",
@@ -11353,7 +11353,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "River Deli",
+    "slug": "river-deli",    "name": "River Deli",
     "vibe": "Cozy, Intimate, Italian, Casual Dining, Sunday Dinner, Comfort, Nostalgic, Family-style, Warm, Laid-back",
     "type": ["lunch", "dinner"],
         "lat": "40.6936542",
@@ -11397,7 +11397,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "The Sandwich Board",
+    "slug": "the-sandwich-board",    "name": "The Sandwich Board",
     "vibe": "Casual, Quick Bites, Sandwiches, Fast, Local, Easygoing, Bite",
     "type": "lunch",
         "lat": "40.7183721",
@@ -11441,7 +11441,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Chimito's",
+    "slug": "chimitos",    "name": "Chimito's",
     "vibe": "Casual, Dominican, Comfort Food, Community Spot, Friendly, Flavorful, Warm, Local, Unpretentious",
     "type": ["lunch", "dinner"],
         "lat": "40.740812",
@@ -11485,7 +11485,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Krispy Pizza- Brooklyn, NY",
+    "slug": "krispy-pizza-brooklyn-ny",    "name": "Krispy Pizza- Brooklyn, NY",
     "vibe": "Casual, Classic, Comfort Food, Pizza, Nostalgic, Cheap & Cheerful, Cozy, Familiar, Quick",
     "type": ["lunch", "dinner"],
         "lat": "40.622363",
@@ -11529,7 +11529,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Tigre",
+    "slug": "tigre",    "name": "Tigre",
     "vibe": "Trendy, Cozy, Date Night, Cocktails, Date Night, Romantic, Intimate, Stylish, Elegant",
     "type": "cocktail",
         "lat": "40.7199283",
@@ -11573,7 +11573,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Nines",
+    "slug": "the-nines",    "name": "The Nines",
     "vibe": "Trendy, Upscale, Vibrant, Cocktails, Piano Bar, Luxe, Stylish, Night, Elegant, Social",
     "type": "cocktail",
         "lat": "40.7272258",
@@ -11617,7 +11617,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Lovers of Today",
+    "slug": "lovers-of-today",    "name": "Lovers of Today",
     "vibe": "Hidden, Intimate, Romantic, Craft Cocktails, Hidden Gems, Date Night, Intimate, Romantic, Elegant",
     "type": ["speakeasy", "cocktail", "late-night"],
         "lat": "40.7258254",
@@ -11661,7 +11661,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Pebble Bar",
+    "slug": "pebble-bar",    "name": "Pebble Bar",
     "vibe": "Chic, Seafood, Cocktail Bar, Trendy Lounge, Lounge, Stylish, Refined, Social, Upscale",
     "type": "cocktail",
         "lat": "40.7592111",
@@ -11705,7 +11705,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "HiLot",
+    "slug": "hilot",    "name": "HiLot",
     "vibe": "Hip, Red Aesthetic, Trendy, Cocktail Bar, Refined, Vintage, Intimate, Chill",
     "type": "cocktail",
         "lat": "40.7238208",
@@ -11749,7 +11749,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Ding-a-ling",
+    "slug": "ding-a-ling",    "name": "Ding-a-ling",
     "vibe": "Fun, Social, Lively Bar, DJ, Disco Ball, Late-night, Retro, Party, Energetic, Kinetic",
     "type": ["club", "dj"],
         "lat": "40.7243198",
@@ -11793,7 +11793,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Bar Room at the Beekman",
+    "slug": "bar-room-at-the-beekman",    "name": "Bar Room at the Beekman",
     "vibe": "Elegant, Luxury, Upscale, Cocktails, Opulent, High-end, Refined, Classic, Chic",
     "type": "cocktail",
         "lat": "40.7110329",
@@ -11831,7 +11831,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "The Portrait Bar",
+    "slug": "the-portrait-bar",    "name": "The Portrait Bar",
     "vibe": "Stylish, Elegant, Intimate, Cocktail Bar, Best Bars North America, Polished, Romantic, Exclusive, Sophisticated, Quiet",
     "type": "cocktail",
         "lat": "40.7449926",
@@ -11875,7 +11875,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Shinji's",
+    "slug": "shinjis",    "name": "Shinji's",
     "vibe": "Chic, Hidden, Caviar, Japanese Whiskey, Best Bars North America, Refined, Intimate, Luxe, Curated, Exclusive",
     "type": "speakeasy",
         "lat": "40.740715",
@@ -11919,7 +11919,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Dante West Village",
+    "slug": "dante-west-village",    "name": "Dante West Village",
     "vibe": "Classic, Trendy, Cocktails, Martini, Aperitivo, People Watching, Retro, Elegant, Cultured, Social, Cosmopolitan",
     "type": ["brunch", "lunch", "cocktail"],
         "lat": "40.7352204",
@@ -11963,7 +11963,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Martiny’s",
+    "slug": "martinys",    "name": "Martiny’s",
     "vibe": "Intimate, Japanese, Cocktail Bar, Martini, Date, Refined, Cozy, Date Night, Quiet, Elegant",
     "type": "speakeasy",
         "lat": "40.73615025",
@@ -12007,7 +12007,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Jac's on Bond",
+    "slug": "jacs-on-bond",    "name": "Jac's on Bond",
     "vibe": "Social, Trendy, Cozy, Cocktail Bar, Light Bites, Vibrant, Chic, Friendly",
     "type": "cocktail",
         "lat": "40.7265452",
@@ -12051,7 +12051,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Ma•dé",
+    "slug": "made",    "name": "Ma•dé",
     "vibe": "Padang Dining, Group Dinner, Artistic, Trendy, Hidden Gem, Creative, Communal, Niche, Aesthetic, Warm",
     "type": ["lunch", "dinner"],
         "lat": "40.7214053",
@@ -12095,7 +12095,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Mulberry",
+    "slug": "the-mulberry",    "name": "The Mulberry",
     "vibe": "Aesthetic, Cozy, Speakeasy, Casual, Hidden Bar, Vintage, Intimate, Low-key, Chic, Whimsical",
     "type": ["speakeasy", "cocktail"],
         "lat": "40.72278985",
@@ -12139,7 +12139,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Café Leon Dore",
+    "slug": "cafe-leon-dore",    "name": "Café Leon Dore",
     "vibe": "Stylish, Trendy, Modern Café, Coffee, Chic, Casual, Bright, Neighborhood",
     "type": ["coffee", "lifestyle"],
         "lat": "40.72221429",
@@ -12183,7 +12183,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Torrisi",
+    "slug": "torrisi",    "name": "Torrisi",
     "vibe": "Chic, Modern, Italian, Upscale Dining, Dinner, Luxe Life, Elegant, Refined, Classic",
     "type": ["lunch", "dinner"],
         "lat": "40.724217",
@@ -12243,7 +12243,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Lil' Frankie's",
+    "slug": "lil-frankies",    "name": "Lil' Frankie's",
     "vibe": "Energy, Italian, Neighborhood, Casual Dining, Group Dinner, Warm, Comfortable, Local, Relaxed, Friendly",
     "type": ["lunch", "dinner"],
         "lat": "40.7235847",
@@ -12287,7 +12287,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Mission Ceviche",
+    "slug": "mission-ceviche",    "name": "Mission Ceviche",
     "vibe": "Bright, Latin, Trendy, Casual Dining, Brunch, Weekend DJ, Vibrant, Sunny, Social, Fresh, Dance",
     "type": ["lunch", "dinner"],
         "lat": "40.76924287",
@@ -12331,7 +12331,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Xolo",
+    "slug": "xolo",    "name": "Xolo",
     "vibe": "Trendy, Latin-Inspired, Relaxed, Casual, Neighborhood",
     "type": "dinner",
         "lat": "40.711594",
@@ -12375,7 +12375,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Bird Dog",
+    "slug": "bird-dog",    "name": "Bird Dog",
     "vibe": "Comfort Food, Italian, Southern, Cocktails/Wine, Sunday Dinner, Warm, Cozy, Hearty, Relaxed, Intimate",
     "type": "dinner",
         "lat": "40.7340612",
@@ -12419,7 +12419,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Le French Diner",
+    "slug": "le-french-diner",    "name": "Le French Diner",
     "vibe": "Cozy, French Bistro, Eat at the Bar, Casual, Small Kitchen, Comfort, Nostalgic, Intimate, Brunch & beyond, Charming",
     "type": ["dinner", "cocktail"],
         "lat": "40.7220477",
@@ -12463,7 +12463,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "(SUB)MERCER",
+    "slug": "sub-mercer",    "name": "(SUB)MERCER",
     "vibe": "Trendy, Exclusive, Chic, Cocktail Bar, Lounge, Hidden, Speakeasy, Luxe Life, Stylish, Secret, Refined, Late-night",
     "type": ["speakeasy", "lounge"],
         "lat": "40.7249122",
@@ -12505,7 +12505,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "COQODAQ",
+    "slug": "coqodaq",    "name": "COQODAQ",
     "vibe": "Cozy, Trendy, Modern Dining, Fried Chicken, Champagne, Contemporary, Social, Refined, Comfort",
     "type": ["lunch", "dinner"],
         "lat": "40.7400751",
@@ -12571,7 +12571,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Campbell",
+    "slug": "the-campbell",    "name": "The Campbell",
     "vibe": "Elegant, Historic, Upscale, Cocktail Bar, Weekend Jazz, Classic, Refined, Lounge, Architectural, Chic",
     "type": "cocktail",
         "lat": "40.7529987",
@@ -12615,7 +12615,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Shoo Shoo Nolita",
+    "slug": "shoo-shoo-nolita",    "name": "Shoo Shoo Nolita",
     "vibe": "Chic, Lunch, Brunch, Cozy, Cocktail Bar, Outdoor Dining, Trendy, Casual",
     "type": ["brunch", "lunch", "dinner"],
         "lat": "40.7201124",
@@ -12659,7 +12659,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Bar Pisellino",
+    "slug": "bar-pisellino",    "name": "Bar Pisellino",
     "vibe": "Italian, Casual, Cozy, Cocktail Bar, Warm, Intimate, Chill, Neighborhood, Date",
     "type": "cocktail",
         "lat": "40.7329348",
@@ -12703,7 +12703,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Black Mountain Wine House",
+    "slug": "black-mountain-wine-house",    "name": "Black Mountain Wine House",
     "vibe": "Cozy, Wine Bar, Relaxed, Rustic, Intimate, Neighborhood, Warm, Vintage, Sip",
     "type": "wine bar",
         "lat": "40.6808556",
@@ -12747,7 +12747,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "The Flower Shop Rooftop",
+    "slug": "the-flower-shop-rooftop",    "name": "The Flower Shop Rooftop",
     "vibe": "Chic, Trendy, Rooftop, Scenic Views, Glamorous, Elevated, Sunset, Stylish",
     "type": ["lounge", "rooftop"],
         "lat": "40.718348",
@@ -12791,7 +12791,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Jolene Sound Room",
+    "slug": "jolene-sound-room",    "name": "Jolene Sound Room",
     "vibe": "Dance Spot, Nightlife, DJ, Social, Vibrant, Pulse, Electric, Loud, Rhythmic",
     "type": "club",
         "lat": "40.7116551",
@@ -12831,7 +12831,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "The Ten Bells",
+    "slug": "the-ten-bells",    "name": "The Ten Bells",
     "vibe": "Cozy, Laid-Back, Wine Bar, Natural, Quiet, Earthy, Simple, Local, Restorative",
     "type": "wine bar",
         "lat": "40.71781905",
@@ -12875,7 +12875,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Ammazzacaffè",
+    "slug": "ammazzacaffe",    "name": "Ammazzacaffè",
     "vibe": "Italian, Coffee, Espresso Bar, Aperitifs, Casual, Warm, Local, Crafted, Daytime",
     "type": ["lunch", "dinner"],
         "lat": "40.7114031",
@@ -12929,7 +12929,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Alice",
+    "slug": "alice",    "name": "Alice",
     "vibe": "Farm To Table, Brunch, European-style Café, Relaxed, Artisan, Fresh, Cozy, Calm",
     "type": "dinner",
         "lat": "40.7371073",
@@ -12973,7 +12973,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Vinyl Steakhouse",
+    "slug": "vinyl-steakhouse",    "name": "Vinyl Steakhouse",
     "vibe": "American, Steakhouse, Vinyl, Classic Vibe",
     "type": "dinner",
         "lat": "40.74003245",
@@ -13017,7 +13017,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Saint Tuesday",
+    "slug": "saint-tuesday",    "name": "Saint Tuesday",
     "vibe": "Speakeasy, Jazz, Lounge, Relaxed, Cocktail Bar, Smooth, Lowlight, Sultry, Artistic, Soulful",
     "type": ["speakeasy", "music"],
         "lat": "40.718348",
@@ -13061,7 +13061,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Le Dive",
+    "slug": "le-dive",    "name": "Le Dive",
     "vibe": "Casual, Cozy, Cocktail Bar, Martini, Wine Bar, Laid-back, Unpretentious, Local, Nostalgic, Soft",
     "type": "cocktail",
         "lat": "40.7147362",
@@ -13105,7 +13105,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Scarr's Pizza",
+    "slug": "scarrs-pizza",    "name": "Scarr's Pizza",
     "vibe": "Trendy, Casual, Classic, NYC-style Pizza, Neighborhood Favorite, Slice, Funky, Authentic, Warm",
     "type": ["lunch", "dinner"],
         "lat": "40.7157403",
@@ -13149,7 +13149,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Little Ways",
+    "slug": "little-ways",    "name": "Little Ways",
     "vibe": "Chic, Trendy, Cocktails, Brunch, Social, Modern, Bright, Casual, Stylish, Engaging",
     "type": "cocktail",
         "lat": "40.7225653",
@@ -13193,7 +13193,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "NURA",
+    "slug": "nura",    "name": "NURA",
     "vibe": "Cozy, Dinner, Brunch, Hip, Intimate, Date, Plants, Green, Warm, Stylish, Romance, Fresh",
     "type": ["brunch", "dinner"],
         "lat": "40.7246593",
@@ -13244,7 +13244,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Casa Ora",
+    "slug": "casa-ora",    "name": "Casa Ora",
     "vibe": "Cozy, Relaxed, Intimate, Mediterranean Vibe, Date, Sunlit, Rustic, Warmth, Soothing",
     "type": ["lunch", "dinner"],
         "lat": "40.70783935",
@@ -13295,7 +13295,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "JIMMY",
+    "slug": "jimmy",    "name": "JIMMY",
     "vibe": "Rooftop Bar, Social, Trendy, Upscale, Luxe, Elevated, Sunset, Glam, Stylish",
     "type": ["lounge", "rooftop"],
         "lat": "40.72244",
@@ -13339,7 +13339,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Urban Backyard",
+    "slug": "urban-backyard",    "name": "Urban Backyard",
     "vibe": "Coffee, Café, Outdoor Vibe, Relaxed, Green, Quiet, Breezy, Calm",
     "type": "coffee",
         "lat": "40.7207982",
@@ -13383,7 +13383,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Llama Inn",
+    "slug": "llama-inn",    "name": "Llama Inn",
     "vibe": "Trendy, Dining, Latin-inspired, Artsy, Bold, Whimsical, Colorful, Creative, Tasteful",
     "type": "dinner",
         "lat": "40.716681",
@@ -13427,7 +13427,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Ms. Yoo",
+    "slug": "ms-yoo",    "name": "Ms. Yoo",
     "vibe": "Cocktail, Trendy, Intimate, Korean Dining, Disco Ball, DJ, Funky, Dim, Sexy, Chic",
     "type": ["cocktail", "lounge"],
         "lat": "40.7212083",
@@ -13471,7 +13471,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "NR",
+    "slug": "nr",    "name": "NR",
     "vibe": "Cocktail, Trendy, Upscale, Elegant Dining, Asian, Fine Dining, Polished, Refined, Contemporary",
     "type": ["cocktail", "dinner"],
         "lat": "40.7371073",
@@ -13515,7 +13515,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Macao Trading Company",
+    "slug": "macao-trading-company",    "name": "Macao Trading Company",
     "vibe": "Stylish, Hidden, Speakeasy, Trendy, Cocktail Bar, Secret, Curated, Smooth, Vintage, Intimate",
     "type": "speakeasy",
         "lat": "40.719643",
@@ -13559,7 +13559,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Please Don't Tell",
+    "slug": "please-dont-tell",    "name": "Please Don't Tell",
     "vibe": "Hidden, Speakeasy, Cocktails, Cozy, Small Bites, Quiet, Niche, Classic, Dim",
     "type": "speakeasy",
         "lat": "40.7271211",
@@ -13603,7 +13603,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Thyme Bar",
+    "slug": "thyme-bar",    "name": "Thyme Bar",
     "vibe": "Intimate, Hidden, Cocktail Bar, Relaxed, Lowlight, Quiet, Sophisticated",
     "type": "cocktail",
         "lat": "40.7417356",
@@ -13647,7 +13647,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Bathtub Gin",
+    "slug": "bathtub-gin",    "name": "Bathtub Gin",
     "vibe": "Intimate, Trendy, Speakeasy, Hidden, Elegant, Cocktails, Historic, Dramatic, Refined",
     "type": "speakeasy",
         "lat": "40.7435663",
@@ -13691,7 +13691,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Lucien",
+    "slug": "lucien",    "name": "Lucien",
     "vibe": "Chic, Trendy, Upscale, Fine Dining, French, Elegant, Romantic, Classy, Aesthetic",
     "type": ["lunch", "dinner"],
         "lat": "40.72334135",
@@ -13735,7 +13735,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Glass Ceiling Rooftop",
+    "slug": "glass-ceiling-rooftop",    "name": "Glass Ceiling Rooftop",
     "vibe": "Trendy, Rooftop Bar, Scenic Views, Elevated, Luxe, Stylish, Sunset, Glamorous",
     "type": ["lounge", "rooftop"],
         "lat": "40.7462694",
@@ -13779,7 +13779,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Palmetto",
+    "slug": "palmetto",    "name": "Palmetto",
     "vibe": "Vinyl, Neighborhood Bar, Relaxed, Friendly, Casual, Local, Low-key, Cozy, Chill",
     "type": "bar",
         "lat": "40.7016806",
@@ -13823,7 +13823,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Electric Lemon",
+    "slug": "electric-lemon",    "name": "Electric Lemon",
     "vibe": "Upscale, Rooftop Bar, Stylish, Scenic Views, Contemporary, Bright, Chic, Elevated, Fresh",
     "type": ["lounge", "rooftop"],
         "lat": "40.7545577",
@@ -13867,7 +13867,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Bemelmans Bar",
+    "slug": "bemelmans-bar",    "name": "Bemelmans Bar",
     "vibe": "Martini, Classic, Upscale, Historic, Refined, Timeless, Elegant, Lounge, Vintage",
     "type": "cocktail",
         "lat": "40.7742561",
@@ -13911,7 +13911,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Tyger",
+    "slug": "the-tyger",    "name": "The Tyger",
     "vibe": "Asian, Trendy, Elegant, Upscale, Modern Vibe, Dining, Polished, Bold, Sophisticated, Stylish, Date Night",
     "type": "dinner",
         "lat": "40.718902",
@@ -13955,7 +13955,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "JANE Motorcycles",
+    "slug": "jane-motorcycles",    "name": "JANE Motorcycles",
     "vibe": "Cool, Artsy, Auto, Coffee, Industrial, Creative, Garage-chic, Hip, Laid-back",
     "type": ["random gem", "coffee", "lifestyle"],
         "lat": "40.7125186",
@@ -13999,7 +13999,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Tokyo Record Bar",
+    "slug": "tokyo-record-bar",    "name": "Tokyo Record Bar",
     "vibe": "Trendy, Japanese, Music, Vinyl, Fun, Retro, Eclectic, Night, Nostalgic, Social",
     "type": ["music", "dinner"],
         "lat": "40.7306295",
@@ -14043,7 +14043,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "LaRina Pastificio & Vino",
+    "slug": "larina-pastificio-vino",    "name": "LaRina Pastificio & Vino",
     "vibe": "Date, Italian, Rustic, Wine Bar, Charming, Cozy, Romantic, Earthy, Authentic",
     "type": "wine bar",
         "lat": "40.6932918",
@@ -14087,7 +14087,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Django",
+    "slug": "the-django",    "name": "The Django",
     "vibe": "Chic, Elegant, Jazz Bar, Upscale, Luxe, Smooth, Timeless, Artistic, Soulful",
     "type": "music",
         "lat": "40.7193091",
@@ -14131,7 +14131,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Maracuja",
+    "slug": "maracuja",    "name": "Maracuja",
     "vibe": "Tapas, Pool Table, Natural Wine, Dive Bar, Laid-back, Quirky, Lively, Casual, Colorful",
     "type": "bar",
         "lat": "40.7132401",
@@ -14175,7 +14175,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Woods",
+    "slug": "the-woods",    "name": "The Woods",
     "vibe": "Hip, Nightlife, Dance Floor, Outdoor, Patio, Social, Lively, Vibrant, Party, Energized, Neon",
     "type": "club",
         "lat": "40.7129071",
@@ -14219,7 +14219,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Adore",
+    "slug": "adore",    "name": "Adore",
     "vibe": "Intimate, Date Night, Vinyl, Japanese, Natural Wine, Romantic, Quiet, Authentic, Refined, Serene",
     "type": "wine bar",
         "lat": "40.7268711",
@@ -14263,7 +14263,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Monkey King",
+    "slug": "the-monkey-king",    "name": "The Monkey King",
     "vibe": "Sleek, Social, Asian-Inspired, Wine Bar, Modern, Smooth, Elegant, Polished, Creative",
     "type": ["dinner", "cocktail"],
         "lat": "40.7061629",
@@ -14307,7 +14307,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "The Noble Brooklyn",
+    "slug": "the-noble-brooklyn",    "name": "The Noble Brooklyn",
     "vibe": "Cozy, Neighborhood Bar, Wine Bar, Outdoor Seating, Warm, Welcoming, Rustic, Local, Relaxed",
     "type": "wine bar",
         "lat": "40.7286204",
@@ -14351,7 +14351,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Sereneco",
+    "slug": "sereneco",    "name": "Sereneco",
     "vibe": "Elegant, Bright, Brunch Spot, Outdoor Seating, Cocktails, Airy, Sunny, Refined, Chic, Garden",
     "type": ["brunch", "dinner", "cocktail"],
         "lat": "40.7303713",
@@ -14395,7 +14395,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Cozy Royale",
+    "slug": "cozy-royale",    "name": "Cozy Royale",
     "vibe": "Sandwiches, Burger, Hotdog, Laid-Back, Neighborhood Dining, Comforting, Classic, Casual, Hearty, Relaxed",
     "type": ["lunch", "dinner"],
         "lat": "40.7169346",
@@ -14439,7 +14439,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Nowadays",
+    "slug": "nowadays",    "name": "Nowadays",
     "vibe": "Outdoor, Nightlife, DJ, Dance, Daytime Events, Energetic, Open-air, Eclectic, Social, Eventful",
     "type": "club",
         "lat": "40.6928669",
@@ -14490,7 +14490,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Caffè Panna",
+    "slug": "caffe-panna",    "name": "Caffè Panna",
     "vibe": "Charming, Artisanal, Ice Cream, Café, Sweet, Delightful, Nostalgic, Handmade, Creative",
     "type": "dessert",
         "lat": "40.72437788",
@@ -14534,7 +14534,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Mắm",
+    "slug": "mam",    "name": "Mắm",
     "vibe": "Intimate, Authentic, Vietnamese Street Food, Outdoor Seating, Flavorful, Casual, Green, Humble, Lively",
     "type": ["lunch", "dinner"],
         "lat": "40.7170163",
@@ -14578,7 +14578,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Cosenza's Fish Market",
+    "slug": "cosenzas-fish-market",    "name": "Cosenza's Fish Market",
     "vibe": "Not A Sit Down, Oyster, Seafood Market, Fresh, Raw, Communal, Casual, Coastal",
     "type": ["random gem", "lunch"],
         "lat": "40.8545359",
@@ -14622,7 +14622,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Strong Rope Brewery Red Hook",
+    "slug": "strong-rope-brewery-red-hook",    "name": "Strong Rope Brewery Red Hook",
     "vibe": "Craft Beer, Casual, Waterfront Vibe, Laid-back, Rustic, Spacious, Local, Relaxed",
     "type": "bar",
         "lat": "40.6772792",
@@ -14666,7 +14666,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Roy's Fish Market",
+    "slug": "roys-fish-market",    "name": "Roy's Fish Market",
     "vibe": "Local, No-Frills, Seafood Spot, Sushi, Market, Takeout, Authentic, Budget, Neighborhood",
     "type": ["random gem", "lunch"],
         "lat": "40.76172155",
@@ -14710,7 +14710,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Le Gratin",
+    "slug": "le-gratin",    "name": "Le Gratin",
     "vibe": "Sophisticated, French Bistro, Date Night, Romantic, Elegant, Classic, Refined, Candlelit",
     "type": "dinner",
         "lat": "40.711274",
@@ -14754,7 +14754,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Ella Funt",
+    "slug": "ella-funt",    "name": "Ella Funt",
     "vibe": "Cozy, Cocktails, Hip, Group Dinner, Vinyl, Retro, Lively, Funky, Speakeasy, Nightcap",
     "type": ["cocktail", "dinner"],
         "lat": "40.7262314",
@@ -14798,7 +14798,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Troost",
+    "slug": "troost",    "name": "Troost",
     "vibe": "Laid-back, Cocktails, Neighborhood Bar, Live Music, Chill, Local, Quiet, Casual, Hidden Gem",
     "type": ["cocktail", "music"],
         "lat": "40.7334503",
@@ -14842,7 +14842,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Bar Madonna",
+    "slug": "bar-madonna",    "name": "Bar Madonna",
     "vibe": "Trendy, Italian-inspired, Cocktails, Date Night, Romantic, Stylish, Wine, Lounge, Small Plates",
     "type": "cocktail",
         "lat": "40.7142028",
@@ -14886,7 +14886,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Casetta",
+    "slug": "casetta",    "name": "Casetta",
     "vibe": "Charming, Wine Bar, Café, European, Cozy, Romantic, Sweet, Relaxed, Candlelit",
     "type": "wine bar",
         "lat": "40.715807",
@@ -14930,7 +14930,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Ketchy Shuby",
+    "slug": "ketchy-shuby",    "name": "Ketchy Shuby",
     "vibe": "Hip, Group Dinner, Lively, Eclectic Lounge, Dance, DJ, Hidden Party, Wild, Nightlife",
     "type": ["club", "brunch", "cocktail"],
         "lat": "40.7210382",
@@ -14978,7 +14978,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Arlo Williamsburg",
+    "slug": "arlo-williamsburg",    "name": "Arlo Williamsburg",
     "vibe": "Nightlife, DJ, Swimming Pool, Rooftop, Skyline Views, Trendy, Social, Weekend, Stylish, Energy",
     "type": ["club", "rooftop"],
         "lat": "40.7215045",
@@ -15022,7 +15022,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Westlight",
+    "slug": "westlight",    "name": "Westlight",
     "vibe": "Upscale, Rooftop, Skyline Views, Cocktails, Social, Restaurant, Scenic, Elegant, Vibe, Night Lights",
     "type": ["lounge", "rooftop"],
         "lat": "40.722297",
@@ -15066,7 +15066,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Unveiled",
+    "slug": "unveiled",    "name": "Unveiled",
     "vibe": "Chic, Nightlife, DJ, Exclusive, Club, Stylish, Dance, After Hours, Trendy, Scene",
     "type": "club",
         "lat": "40.7225704",
@@ -15110,7 +15110,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Good Room",
+    "slug": "good-room",    "name": "Good Room",
     "vibe": "Nightlife, DJ, Dance, Multiple Rooms, Club, Loud, Party, High Energy, Beats, Weekend",
     "type": ["club", "late-night"],
         "lat": "40.7269085",
@@ -15154,7 +15154,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Bar Milagro",
+    "slug": "bar-milagro",    "name": "Bar Milagro",
     "vibe": "Hidden Gem, Cozy, Agave Spirits-Focused, Cocktails, Lively, Niche, Local, Quirky, Relaxed, Low Light",
     "type": "cocktail",
         "lat": "40.7115944",
@@ -15198,7 +15198,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "PIPS",
+    "slug": "pips",    "name": "PIPS",
     "vibe": "Cozy, Intimate, Speakeasy, Chill, Retro, Natural Wine, Artistic, Lounge, Quiet, Romantic",
     "type": ["dinner", "wine bar"],
         "lat": "40.6908713",
@@ -15242,7 +15242,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Grand Army",
+    "slug": "grand-army",    "name": "Grand Army",
     "vibe": "Stylish, Sophisticated, Classic, Trendy, Cozy, Refined, Wine, Neighborhood, Date Spot, Jazz",
     "type": "cocktail",
         "lat": "40.6882685",
@@ -15286,7 +15286,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Liar Liar",
+    "slug": "liar-liar",    "name": "Liar Liar",
     "vibe": "Quirky, Casual, Eclectic, Fun, Playful, Hip, Neighborhood, Chill, Creative, Friendly",
     "type": "bar",
         "lat": "40.6796022",
@@ -15330,7 +15330,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Elsa",
+    "slug": "elsa",    "name": "Elsa",
     "vibe": "Modern, Sleek, Casual, Chic, Inviting, Dim, Candlelit, Date Spot, Stylish, Cozy",
     "type": ["cocktail", "patio"],
         "lat": "40.6902868",
@@ -15374,7 +15374,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Saint Julivert",
+    "slug": "saint-julivert",    "name": "Saint Julivert",
     "vibe": "Nautical, Cozy, Elegant, Relaxed, Intimate, Romantic, Seafood, Small Plates, Wine, Patio",
     "type": "wine bar",
         "lat": "40.6878828",
@@ -15418,7 +15418,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Otheroom",
+    "slug": "the-otheroom",    "name": "The Otheroom",
     "vibe": "Laid-back, Trendy, Dimly-lit, Casual, Hip, Lounge, Cocktails, Wine, Neighborhood, Chill, Hidden",
     "type": "cocktail",
         "lat": "40.7349434",
@@ -15462,7 +15462,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Ophelia Lounge NYC",
+    "slug": "ophelia-lounge-nyc",    "name": "Ophelia Lounge NYC",
     "vibe": "Glamorous, Lounge, Rooftop, Upscale, Elegant, Scenic, Luxurious, Night Lights, Vibe, Date Night",
     "type": ["lounge", "rooftop"],
         "lat": "40.7533299",
@@ -15506,7 +15506,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Koi Bā",
+    "slug": "koi-ba",    "name": "Koi Bā",
     "vibe": "Modern, Chic, Japanese Intimate, Trendy, Hidden, Speakeasy, Stylish, Nightcap, Cocktail, Sleek",
     "type": "speakeasy",
         "lat": "40.7189329",
@@ -15550,7 +15550,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Bridges",
+    "slug": "bridges",    "name": "Bridges",
     "vibe": "Modern, Stylish, Eclectic, Chill, Urban, Art-Inspired, Cool, Social, Creative",
     "type": "dinner",
         "lat": "40.7140307",
@@ -15594,7 +15594,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Hildur",
+    "slug": "hildur",    "name": "Hildur",
     "vibe": "Intimate, Cozy, Chic, Sophisticated, Patio, Romantic, Hidden Gem, Date Spot, Wine, Elegant",
     "type": ["wine bar", "dinner", "patio"],
         "lat": "40.7026903",
@@ -15638,7 +15638,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Knockdown Center",
+    "slug": "knockdown-center",    "name": "Knockdown Center",
     "vibe": "Industrial, Concert, Open-Air, Artsy, Experimental, Creative, Curated, Dance, Underground",
     "type": ["music", "club"],
         "lat": "40.7152788",
@@ -15676,7 +15676,7 @@ const nycData = [
     "duration": 3
   },
   {
-    "name": "Winona's",
+    "slug": "winonas",    "name": "Winona's",
     "vibe": "Casual, Laid‑back, Neighborhood, Inviting, Cozy, Local, Easygoing, Warm, Friendly",
     "type": ["dinner", "brunch", "wine bar"],
         "lat": "40.7000476",
@@ -15720,7 +15720,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Market Hotel",
+    "slug": "market-hotel",    "name": "Market Hotel",
     "vibe": "Lively, Vibrant, Music‑Focused, Community‑Oriented, Social, Nightlife, Bold",
     "type": "club",
         "lat": "40.6969323",
@@ -15758,7 +15758,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Le Boudoir",
+    "slug": "le-boudoir",    "name": "Le Boudoir",
     "vibe": "Sexy, Intimate, Elegant, Lounge, Romantic, Low‑Light, Chic, Velvet, Date Night",
     "type": "lounge",
         "lat": "40.6907472",
@@ -15802,7 +15802,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Father Knows Best",
+    "slug": "father-knows-best",    "name": "Father Knows Best",
     "vibe": "Divey, Eclectic, Funky, Local, Laid‑back, Gritty, Nostalgic, Neighborhood, Electric",
     "type": ["brunch", "lunch", "cocktail"],
         "lat": "40.6902212",
@@ -15846,7 +15846,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Umbra",
+    "slug": "umbra",    "name": "Umbra",
     "vibe": "Dark, Moody, Trendy, Hidden, Underground, Shadows, Chic, Atmosphere, Nocturnal",
     "type": "speakeasy",
         "lat": "40.701113",
@@ -15890,7 +15890,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Jupiter Disco",
+    "slug": "jupiter-disco",    "name": "Jupiter Disco",
     "vibe": "Underground, Funky, Party, Electronic, Dance, Beats, Neon, Retro, Nightlife",
     "type": "club",
         "lat": "40.7081511",
@@ -15934,7 +15934,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Roberta's",
+    "slug": "robertas",    "name": "Roberta's",
     "vibe": "Hip, Casual, Cozy, Local Favorite, Warm, Community, Comfort, Rustic, Classic",
     "type": ["lunch", "dinner"],
         "lat": "40.7050062",
@@ -15978,7 +15978,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Mood Ring",
+    "slug": "mood-ring",    "name": "Mood Ring",
     "vibe": "Colorful, Whimsical, Experimental, Quirky, Vibrant, Eclectic, Retro, Bohemian, Playful, LGBTQ+",
     "type": "club",
         "lat": "40.6977941",
@@ -16022,7 +16022,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Goldie's Bar",
+    "slug": "goldies-bar",    "name": "Goldie's Bar",
     "vibe": "Intimate, Fun, Craft Cocktails, Chill, Cozy, Curated, Artful, Low‑Light, Date Night",
     "type": ["cocktail", "patio"],
         "lat": "40.7256573",
@@ -16066,7 +16066,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Razor-N-Tape",
+    "slug": "razor-n-tape",    "name": "Razor-N-Tape",
     "vibe": "Vintage, Laid‑back, Vinyl, Retro, Nostalgic, Music, Analog, Warm, Dive",
     "type": ["music", "lifestyle"],
         "lat": "40.72707645",
@@ -16110,7 +16110,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Dolly's Swing and Dive",
+    "slug": "dollys-swing-and-dive",    "name": "Dolly's Swing and Dive",
     "vibe": "Dive Bar, Late Night, Cheap Drinks, Punk, Rowdy, No‑Frills, Raw, Funky",
     "type": "bar",
         "lat": "40.7207181",
@@ -16154,7 +16154,7 @@ const nycData = [
     "duration": 0.9
   },
   {
-    "name": "Rocka Rolla ",
+    "slug": "rocka-rolla",    "name": "Rocka Rolla ",
     "vibe": "Rock Bar, Divey, Casual Hangout, Locals, Live, Grunge, Gritty, Neighborhood, Loud",
     "type": ["bar", "patio"],
         "lat": "40.7139355",
@@ -16198,7 +16198,7 @@ const nycData = [
     "duration": 0.9
   },
   {
-    "name": "Duff's ",
+    "slug": "duffs",    "name": "Duff's ",
     "vibe": "Metal Bar, Hardcore, Niche Crowd, Themed, Loud, Heavy, Rough, Underground, Fan‑Driven",
     "type": "bar",
         "lat": "40.70885025",
@@ -16242,7 +16242,7 @@ const nycData = [
     "duration": 0.9
   },
   {
-    "name": "TØRST ",
+    "slug": "torst",    "name": "TØRST ",
     "vibe": "Craft Beer, Scandinavian, Date Night, Upscale Chill, Refined, Hygge, Artistic, Chill, Elevated",
     "type": "wine bar",
         "lat": "40.7233997",
@@ -16286,7 +16286,7 @@ const nycData = [
     "duration": 1.33
   },
   {
-    "name": "Ray's Hometown Bar ",
+    "slug": "rays-hometown-bar",    "name": "Ray's Hometown Bar ",
     "vibe": "Western, Dive Bar, Authentic, Pool Table, Nostalgic, Casual, Trendy, Energetic",
     "type": "bar",
         "lat": "40.7235334",
@@ -16330,7 +16330,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Good Bar",
+    "slug": "good-bar",    "name": "Good Bar",
     "vibe": "Vinyl, Laid‑Back, DJ, Listening Bar, Friendly, Daytime, Community, Chill",
     "type": "bar",
         "lat": "40.7238537",
@@ -16374,7 +16374,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Berry Park ",
+    "slug": "berry-park",    "name": "Berry Park ",
     "vibe": "Rooftop, Sports Bar, Euro Vibes, Sunny, Social, Scenic, Weekend",
     "type": ["bar", "rooftop"],
         "lat": "40.7224689",
@@ -16418,7 +16418,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "The Gutter",
+    "slug": "the-gutter",    "name": "The Gutter",
     "vibe": "Bowling Bar, Retro, Group Hang, Divey, Playful, Vintage, Social, No‑Frills, Local",
     "type": ["bar", "activity"],
         "lat": "40.7227408",
@@ -16462,7 +16462,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Brooklyn Billiards",
+    "slug": "brooklyn-billiards",    "name": "Brooklyn Billiards",
     "vibe": "Pool Hall, Sports, Late Night, Competitive, Gritty, Local, Social, Gamey, Low‑Key",
     "type": ["bar", "activity"],
         "lat": "40.721591",
@@ -16506,7 +16506,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Bathhouse Williamsburg",
+    "slug": "bathhouse-williamsburg",    "name": "Bathhouse Williamsburg",
     "vibe": "Spa, Date Night, Wellness, Upscale Relaxation, Serene, Healing, Elegant, Introspective, Luxury",
     "type": "spa",
         "lat": "40.720582",
@@ -16550,7 +16550,7 @@ const nycData = [
     "duration": 2.25
   },
   {
-    "name": "Juicery Kitchen",
+    "slug": "juicery-kitchen",    "name": "Juicery Kitchen",
     "vibe": "Juice Bar, Health Food, Breakfast, Clean Eating, Fresh, Wellness, Light, Bright, Daily",
     "type": ["coffee", "juice bar"],
         "lat": "40.71778365",
@@ -16594,7 +16594,7 @@ const nycData = [
     "duration": 0.25
   },
   {
-    "name": "Bar Americano ",
+    "slug": "bar-americano",    "name": "Bar Americano ",
     "vibe": "Cocktail Bar, Date Night, Intimate, Stylish, Italian, Aperitivo, Refined, Cozy, Candlelit",
     "type": "cocktail",
         "lat": "40.7313991",
@@ -16638,7 +16638,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Little Rascal Bar",
+    "slug": "little-rascal-bar",    "name": "Little Rascal Bar",
     "vibe": "Cocktail Bar, Trendy, Date Spot, Chill, Cozy, Creative, Stylish, Welcoming, Artistic",
     "type": "cocktail",
         "lat": "40.729358",
@@ -16682,7 +16682,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Paulie Gee's Slice Shop ",
+    "slug": "paulie-gees-slice-shop",    "name": "Paulie Gee's Slice Shop ",
     "vibe": "Pizza, Quick Bite, NYC Classic, Late Night, Casual, Cheap, Comforting, Fast, No‑frills",
     "type": ["lunch", "dinner"],
         "lat": "40.7283593",
@@ -16726,7 +16726,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Bk Backyard Bar ",
+    "slug": "bk-backyard-bar",    "name": "Bk Backyard Bar ",
     "vibe": "Outdoor Bar, Casual, Group Hang, Music, Chill, Neighborhood, Social, Relaxed, Local",
     "type": ["bar", "patio"],
         "lat": "40.72407826",
@@ -16770,7 +16770,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Beco",
+    "slug": "beco",    "name": "Beco",
     "vibe": "Brazilian, Happy Hour, Local Gem, Chill Vibe, Festive, Lively, Sunny, Friendly, Relaxed",
     "type": ["lunch", "dinner"],
         "lat": "40.718569",
@@ -16814,7 +16814,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Cafe MSMN ",
+    "slug": "cafe-msmn",    "name": "Cafe MSMN ",
     "vibe": "Minimalist Cafe, Remote Work, Coffee, Chill, Quiet, Clean, Productive, Modern, Simple",
     "type": "coffee",
         "lat": "40.71997973",
@@ -16858,7 +16858,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Hide & Seek",
+    "slug": "hide-seek",    "name": "Hide & Seek",
     "vibe": "Coffee + Bar Hybrid, Creative Crowd, Low-key Drinks, Hidden, Intimate, Artistic, Chill, Niche",
     "type": ["coffee", "lounge"],
         "lat": "40.7229766",
@@ -16902,7 +16902,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Birdee ",
+    "slug": "birdee",    "name": "Birdee ",
     "vibe": "Coffee Shop, Trendy, Dog‑Friendly, Good Lighting, Cozy, Lowkey, Friendly, Bright, Neighborhood",
     "type": ["coffee", "breakfast"],
         "lat": "40.71364545",
@@ -16946,7 +16946,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "The Charleston ",
+    "slug": "the-charleston",    "name": "The Charleston ",
     "vibe": "Dive Bar, Pizza with Beer, Music, Grungy, Rustic, Loud, Local, Casual, Raw",
     "type": "bar",
         "lat": "40.7181636",
@@ -16990,7 +16990,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "SESSION TRAINING | SOUTH WILLIAMSBURG ",
+    "slug": "session-training-south-williamsburg",    "name": "SESSION TRAINING | SOUTH WILLIAMSBURG ",
     "vibe": "Wellness, Boutique Gym, Group Workouts, Mindful, Active, Fresh, Community, Energetic",
     "type": "fitness",
         "lat": "40.7121091",
@@ -17034,7 +17034,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Barcade ",
+    "slug": "barcade",    "name": "Barcade ",
     "vibe": "Arcade Bar, Nostalgia, Craft Beer, Group Hang, Nerdy, Playful, Retro, Social, Fun, Gamey",
     "type": ["bar", "activity"],
         "lat": "40.7120257",
@@ -17078,7 +17078,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Last Place On Earth ",
+    "slug": "last-place-on-earth",    "name": "Last Place On Earth ",
     "vibe": "Board‑Game Café, All‑Ages Friendly, Neighborhood Hangout, Casual, Cozy, Shared‑Plates, Quiet, Community",
     "type": "activity",
         "lat": "40.721326",
@@ -17122,7 +17122,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Union Square Greenmarket ",
+    "slug": "union-square-greenmarket",    "name": "Union Square Greenmarket ",
     "vibe": "Farmers Market, Local Produce, Seasonal, Fresh, Outdoor, Daytime, Community, Neighborhood",
     "type": "market",
         "lat": "40.66337083",
@@ -17166,7 +17166,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Brooklyn Borough Hall Greenmarket ",
+    "slug": "brooklyn-borough-hall-greenmarket",    "name": "Brooklyn Borough Hall Greenmarket ",
     "vibe": "Farmers Market, Small & Local, Fresh, Walkable, Community, Casual, Local",
     "type": "market",
         "lat": "40.6938768",
@@ -17210,7 +17210,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Tompkins Square Park Greenmarket ",
+    "slug": "tompkins-square-park-greenmarket",    "name": "Tompkins Square Park Greenmarket ",
     "vibe": "Community Market, Organic, Neighborhood Vibe, Fresh, Green, Local, Daytime, Serene",
     "type": "market",
         "lat": "40.777048",
@@ -17254,7 +17254,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Fort Greene Park Greenmarket ",
+    "slug": "fort-greene-park-greenmarket",    "name": "Fort Greene Park Greenmarket ",
     "vibe": "Family Friendly, Local Veggies, Fresh, Sunny, Community, Casual, Healthy",
     "type": "market",
         "lat": "40.6913475",
@@ -17298,7 +17298,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "McCarren Park Greenmarket ",
+    "slug": "mccarren-park-greenmarket",    "name": "McCarren Park Greenmarket ",
     "vibe": "Farmers Market, Trendy, Outdoor, Fresh, Local, Social",
     "type": "market",
         "lat": "40.70880713",
@@ -17342,7 +17342,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Stuyvesant Town Greenmarket ",
+    "slug": "stuyvesant-town-greenmarket",    "name": "Stuyvesant Town Greenmarket ",
     "vibe": "Low‑key, Locals, Groceries, Fresh, Neighborhood, Quiet, Casual, Daily",
     "type": "market",
         "lat": "40.7325505",
@@ -17386,7 +17386,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Tribeca Greenmarket ",
+    "slug": "tribeca-greenmarket",    "name": "Tribeca Greenmarket ",
     "vibe": "Low‑key, Locals, Groceries, Fresh, Neighborhood, Quiet, Casual, Daily",
     "type": "market",
         "lat": "40.708299",
@@ -17430,7 +17430,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Carroll Gardens Greenmarket ",
+    "slug": "carroll-gardens-greenmarket",    "name": "Carroll Gardens Greenmarket ",
     "vibe": "Low‑key, Locals, Groceries, Fresh, Neighborhood, Quiet, Casual, Daily",
     "type": "market",
         "lat": "40.6805223",
@@ -17474,7 +17474,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Staten Island Ferry Whitehall Terminal Greenmarket ",
+    "slug": "staten-island-ferry-whitehall-terminal-greenmarket",    "name": "Staten Island Ferry Whitehall Terminal Greenmarket ",
     "vibe": "Low‑key, Locals, Groceries, Fresh, Neighborhood, Quiet, Casual, Daily",
     "type": "market",
         "lat": "40.7011331",
@@ -17518,7 +17518,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Smorgasburg Williamsburg ",
+    "slug": "smorgasburg-williamsburg",    "name": "Smorgasburg Williamsburg ",
     "vibe": "Food Festival, Trendy, Instagrammable, Variety, Social, Outdoor, Vibrant, Weekend, Diverse",
     "type": "market",
         "lat": "40.7209531",
@@ -17562,7 +17562,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Smorgasburg WTC ",
+    "slug": "smorgasburg-wtc",    "name": "Smorgasburg WTC ",
     "vibe": "Food Festival, Trendy, Instagrammable, Variety, Social, Outdoor, Vibrant, Weekend, Diverse",
     "type": "market",
         "lat": "40.71155485",
@@ -17606,7 +17606,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Smorgasburg Prospect Park ",
+    "slug": "smorgasburg-prospect-park",    "name": "Smorgasburg Prospect Park ",
     "vibe": "Food Festival, Picnic, Family Friendly, Outdoor Eating, Weekend, Breezy, Casual, Shareable, Local",
     "type": "market",
         "lat": "40.6591667",
@@ -17650,7 +17650,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Grand Banks Park ",
+    "slug": "grand-banks-park",    "name": "Grand Banks Park ",
     "vibe": "Oyster Bar, Waterfront, Summer Vibe, Date Night, Scenic, Coastal, Romantic, Laid-back, Fresh",
     "type": ["cocktail", "lunch", "dinner"],
         "lat": "40.7215197",
@@ -17694,7 +17694,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Water Tower Bar ",
+    "slug": "the-water-tower-bar",    "name": "The Water Tower Bar ",
     "vibe": "Rooftop, Fancy Cocktails, Views, Hotel Bar, Elevated, Glamorous, Chic, Sunset, Stylish, Music",
     "type": ["cocktail", "rooftop"],
         "lat": "40.7215151",
@@ -17738,7 +17738,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "elNico ",
+    "slug": "elnico",    "name": "elNico ",
     "vibe": "Rooftop, Modern Mexican, Upscale, Scenic, Bold, Trendy, Urban, Elevated, Fresh",
     "type": ["cocktail", "rooftop"],
         "lat": "40.71575715",
@@ -17782,7 +17782,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Pineapple Club",
+    "slug": "pineapple-club",    "name": "Pineapple Club",
     "vibe": "Cozy, Cocktails, Laid-back, Intimate Vibe, Tropical, Quiet, Chill, Nightcap, Neighborhood",
     "type": ["cocktail", "dinner"],
         "lat": "40.72533265",
@@ -17826,7 +17826,7 @@ const nycData = [
     "duration": 1.33
   },
   {
-    "name": "Book Club Bar",
+    "slug": "book-club-bar",    "name": "Book Club Bar",
     "vibe": "Literary-themed, Relaxed Atmosphere, Casual, Cozy, Vintage, Quiet, Neighborhood, Introspective",
     "type": ["bookstore", "bar"],
         "lat": "40.72297255",
@@ -17870,7 +17870,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Happy Medium",
+    "slug": "happy-medium",    "name": "Happy Medium",
     "vibe": "Vibrant, Artsy, Eclectic, Fun, Casual, Date Night, Colorful, Creative, Playful, Social, Trendy",
     "type": "activity",
         "lat": "40.7332695",
@@ -17914,7 +17914,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Books Are Magic",
+    "slug": "books-are-magic",    "name": "Books Are Magic",
     "vibe": "Indie Bookstore, Eclectic, Community Feel, Quiet, Creative, Reflective, Local, Niche",
     "type": "bookstore",
         "lat": "40.6840334",
@@ -17958,7 +17958,7 @@ const nycData = [
     "duration": 0.66
   },
   {
-    "name": "Commune Cafe + Wine Bar",
+    "slug": "commune-cafe-wine-bar",    "name": "Commune Cafe + Wine Bar",
     "vibe": "Wine Bar, Coffee, Neighborhood-friendly, Outdoor Seating, Cozy, Social, Relaxed, Brunch, Floral",
     "type": ["wine bar", "coffee", "breakfast"],
         "lat": "40.6868109",
@@ -18002,7 +18002,7 @@ const nycData = [
     "duration": 0.66
   },
   {
-    "name": "Holcombe Rucker Park",
+    "slug": "holcombe-rucker-park",    "name": "Holcombe Rucker Park",
     "vibe": "Sports (Basketball), Street Culture, Community Space, Energetic, Iconic NYC Landmark, Vibrant, Athletic, Local, Open-air, Hip",
     "type": "park",
         "lat": "40.8288869",
@@ -18046,7 +18046,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Tomi Jazz",
+    "slug": "tomi-jazz",    "name": "Tomi Jazz",
     "vibe": "Jazz Club, Cozy, Upscale Yet Unpretentious, Live Music, Romantic Ambiance, Soulful, Intimate, Night, Lounge, Classic",
     "type": ["music", "dinner"],
         "lat": "40.75722835",
@@ -18090,7 +18090,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "The Morgan Library & Museum",
+    "slug": "the-morgan-library-museum",    "name": "The Morgan Library & Museum",
     "vibe": "Historic, Elegant, Literary, Cultural, Refined, Classical, Quiet, Museum, Architectural, Serene",
     "type": "gallery",
         "lat": "40.7492685",
@@ -18134,7 +18134,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Brooklyn Flea",
+    "slug": "brooklyn-flea",    "name": "Brooklyn Flea",
     "vibe": "Eclectic, Bustling, Vintage, Artisan, Community, Hip, Colorful, Market, Local, Creative",
     "type": "market",
         "lat": "40.702588",
@@ -18178,7 +18178,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Puerh Brooklyn Teashop",
+    "slug": "puerh-brooklyn-teashop",    "name": "Puerh Brooklyn Teashop",
     "vibe": "Tranquil, Minimalist, Zen, Intimate, Calm, Quiet, Boutique, Natural, Reflective, Cozy",
     "type": "tea",
         "lat": "40.7143305",
@@ -18222,7 +18222,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Patio Tropical",
+    "slug": "patio-tropical",    "name": "Patio Tropical",
     "vibe": "Latin, Tropical, Laid-back, Hidden, Casual, Breezy, Sunny, Bright, Plants, Chill",
     "type": "lunch",
         "lat": "40.7135282",
@@ -18266,7 +18266,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Pete's Candy Store",
+    "slug": "petes-candy-store",    "name": "Pete's Candy Store",
     "vibe": "Cozy, Comedy, Live Music, Fun, Lowkey, Quirky, Intimate, Indie, Humorous",
     "type": "music",
         "lat": "40.7181021",
@@ -18310,7 +18310,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Wiggle Room",
+    "slug": "wiggle-room",    "name": "Wiggle Room",
     "vibe": "Funky, Lively, LGBTQ+ Friendly, Playful, Hidden, Colorful, Underground, Joyful, Nightlife, Intimate",
     "type": "club",
         "lat": "40.7226631",
@@ -18354,7 +18354,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Broken Shaker",
+    "slug": "broken-shaker",    "name": "Broken Shaker",
     "vibe": "Chic, Rooftop, Views, Trendy, Stylish, Cocktails, Sunset, Vibe, Elevated",
     "type": ["cocktail", "rooftop"],
         "lat": "40.7395891",
@@ -18398,7 +18398,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Nerina",
+    "slug": "nerina",    "name": "Nerina",
     "vibe": "Artisanal, Cozy, Modern, Intimate, Local, Handcrafted, Rustic, Neighborhood, Quiet, Sophisticated",
     "type": "dinner",
         "lat": "40.736665",
@@ -18442,7 +18442,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Tara Rose",
+    "slug": "tara-rose",    "name": "Tara Rose",
     "vibe": "Brunch, Irish, Craft Cocktails, Refined, Live Music, Lively, Parties",
     "type": ["brunch", "cocktail"],
         "lat": "40.7417705",
@@ -18486,7 +18486,7 @@ const nycData = [
     "duration": 1.33
   },
   {
-    "name": "Tavern 29",
+    "slug": "tavern-29",    "name": "Tavern 29",
     "vibe": "Rustic, Cocktails, Relaxed, Warm, Cozy, Local, Laid-back, Intimate",
     "type": ["rooftop", "bar"],
         "lat": "40.7445031",
@@ -18530,7 +18530,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Amélie west village Restaurant, Bistro & Wine Bar",
+    "slug": "amelie-west-village-restaurant-bistro-wine-bar",    "name": "Amélie west village Restaurant, Bistro & Wine Bar",
     "vibe": "French-inspired, Intimate, Romantic, Wine, Charming, Bistro, Elegant, Cozy, Candlelit",
     "type": ["wine bar", "cocktail"],
         "lat": "40.7326969",
@@ -18574,7 +18574,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Zona Rosa Brooklyn",
+    "slug": "zona-rosa-brooklyn",    "name": "Zona Rosa Brooklyn",
     "vibe": "Modern, Vibrant, Lively, Mexican, Casual, Colorful, Urban, Festive, Flavorful, Casual",
     "type": ["lunch", "dinner"],
         "lat": "40.7139332",
@@ -18618,7 +18618,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Pally",
+    "slug": "pally",    "name": "Pally",
     "vibe": "Trendy, Sleek, Intimate, Creative Cocktails, Stylish, Hip, Cozy, Design, Quiet, Contemporary",
     "type": ["coffee", "wine bar", "cocktail"],
         "lat": "40.7168987",
@@ -18662,7 +18662,7 @@ const nycData = [
     "duration": 0.66
   },
   {
-    "name": "Pan Pan",
+    "slug": "pan-pan",    "name": "Pan Pan",
     "vibe": "Bakery, Wine, Spanish, Minimalist, Relaxed Atmosphere, Warm, Local, Quiet, Daytime, Cozy",
     "type": ["bakery", "wine bar"],
         "lat": "40.72593",
@@ -18706,7 +18706,7 @@ const nycData = [
     "duration": 0.66
   },
   {
-    "name": "Gabriela",
+    "slug": "gabriela",    "name": "Gabriela",
     "vibe": "Dance Club, Disco Ball, Nightlife, Party Atmosphere, Fun, High-energy, Late-night, Loud, Flashy, Scene, DJ",
     "type": "club",
         "lat": "40.721792",
@@ -18750,7 +18750,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "forecast",
+    "slug": "forecast",    "name": "forecast",
     "vibe": "Art Space, Trendy Hangout, Creative Vibes, Industrial Setting, Cool, Relaxed, Lifestyle, Aesthetic, Gallery, Studio, Niche, Visual",
     "type": "lifestyle",
         "lat": "40.7264841",
@@ -18794,7 +18794,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Yawning Cobra",
+    "slug": "yawning-cobra",    "name": "Yawning Cobra",
     "vibe": "Speakeasy, Hidden Bar, Creative Cocktails, Intimate, Moody, Quiet, Lounge, Elegant, Retro",
     "type": "speakeasy",
         "lat": "40.72691925",
@@ -18838,7 +18838,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Garret",
+    "slug": "the-garret",    "name": "The Garret",
     "vibe": "Trendy, Casual, Hidden Bar, Cocktails, Chill, Cozy, Date, Neighborhood, Stylish",
     "type": "speakeasy",
         "lat": "40.7323251",
@@ -18882,7 +18882,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Cafe Kitsune West Village",
+    "slug": "cafe-kitsune-west-village",    "name": "Cafe Kitsune West Village",
     "vibe": "French Café, Cozy, Coffee, Pastries, Quiet, Brunch, Artistic, Warm, Minimal",
     "type": "coffee",
         "lat": "40.735053",
@@ -18926,7 +18926,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Tompkins Square Bagels",
+    "slug": "tompkins-square-bagels",    "name": "Tompkins Square Bagels",
     "vibe": "Iconic, Breakfast, Quick Bite, Neighborhood Gem, Busy, Local, Classic, Comfort, Cheap",
     "type": ["bakery", "breakfast"],
         "lat": "40.7281762",
@@ -18970,7 +18970,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Maison Close Restaurant",
+    "slug": "maison-close-restaurant",    "name": "Maison Close Restaurant",
     "vibe": "French-inspired, Chic, Wine, Romantic, Upscale, Bistro, Elegant, Flirty, Date",
     "type": ["lunch", "dinner"],
         "lat": "40.7232195",
@@ -19014,7 +19014,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Scarlet Lounge",
+    "slug": "scarlet-lounge",    "name": "Scarlet Lounge",
     "vibe": "Neighborhood Bar, Relaxed, Intimate Atmosphere, Creative Cocktails, Low-key, Stylish, Cozy, Lounge, Candlelit, Vibe, Quiet",
     "type": ["cocktail", "lounge", "music"],
         "lat": "40.7855628",
@@ -19058,7 +19058,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Baretto New York",
+    "slug": "barretto-new-york",    "name": "Baretto New York",
     "vibe": "Jazz, European, Wine, Refined, Moderate Energy, Intimate, Vintage, Sophisticated, Soft, Classic, Mood",
     "type": "music",
         "lat": "40.7567686",
@@ -19102,7 +19102,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Desert 5 Spot",
+    "slug": "desert-5-spot",    "name": "Desert 5 Spot",
     "vibe": "Country, Laid-back, Moderate Energy, Casual, Kitschy, Retro, Playful, Bar, Group",
     "type": "bar",
         "lat": "40.72167975",
@@ -19146,7 +19146,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Bar Nena",
+    "slug": "bar-nena",    "name": "Bar Nena",
     "vibe": "Wine Bar, Quiet, Romantic, Cozy, Date, Dim, Elegant, Lowkey, Candlelit",
     "type": "wine bar",
         "lat": "40.7297917",
@@ -19190,7 +19190,7 @@ const nycData = [
     "duration": 1.66
   },
   {
-    "name": "Easy Lover",
+    "slug": "easy-lover",    "name": "Easy Lover",
     "vibe": "Hidden Gem, Cocktails, Chic, Stylish, Chill, Lounge, Vibe, Artsy",
     "type": "bar",
         "lat": "40.7145615",
@@ -19234,7 +19234,7 @@ const nycData = [
     "duration": 1.66
   },
   {
-    "name": "Prima Brooklyn",
+    "slug": "prima-brooklyn",    "name": "Prima Brooklyn",
     "vibe": "Italian Bistro, Romantic, Moderate Energy, Stylish, Wine, Date, Soft, Cozy, Upscale",
     "type": ["coffee", "wine bar", "lunch", "dinner"],
         "lat": "40.6867938",
@@ -19278,7 +19278,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "The Riff Raff Club",
+    "slug": "the-riff-raff-club",    "name": "The Riff Raff Club",
     "vibe": "Rooftop Club, Chic, High Energy, Trendy, Upscale, Dance, Flashy, DJ, Loud, Scene",
     "type": ["club", "rooftop"],
         "lat": "40.74647695",
@@ -19322,7 +19322,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Silver Lining Lounge",
+    "slug": "silver-lining-lounge",    "name": "Silver Lining Lounge",
     "vibe": "Speakeasy, Cocktails, Intimate, Relaxed, Moody, Soft, Retro, Quiet, Jazz",
     "type": "lounge",
         "lat": "40.71906775",
@@ -19366,7 +19366,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Castell Rooftop Lounge",
+    "slug": "castell-rooftop-lounge",    "name": "Castell Rooftop Lounge",
     "vibe": "Rooftop Bar, City Views, Chic, Upscale, Lively, Elegant, Sunset, Scenic, Sophisticated, Lounge",
     "type": ["lounge", "rooftop"],
         "lat": "40.755533",
@@ -19410,7 +19410,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Selva",
+    "slug": "selva",    "name": "Selva",
     "vibe": "Latin, Wine, Artistic, Moderate Energy, Creative, Chill, Colorful, Vibe, Cultural",
     "type": ["bar", "coffee", "lifestyle", "gallery"],
         "lat": "40.7063004",
@@ -19454,7 +19454,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Daintree",
+    "slug": "daintree",    "name": "Daintree",
     "vibe": "Rooftop Bar, High Energy, Chic, Upscale Cocktails, Glamorous, View, Flashy, DJ, Party",
     "type": ["cocktail", "rooftop"],
         "lat": "40.7518932",
@@ -19498,7 +19498,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Laziza",
+    "slug": "laziza",    "name": "Laziza",
     "vibe": "Caribbean, Comfort Food, Vibrant, Casual, Tropical, Music, Hidden, Soulful, Community, Shareable",
     "type": "dinner",
         "lat": "40.68241685",
@@ -19542,7 +19542,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Che",
+    "slug": "che",    "name": "Che",
     "vibe": "Cozy, Neighborhood Spot, Authentic, Lively, Latin, Warm, Local, Inviting, Flavorful, Casual",
     "type": ["breakfast", "lunch", "dinner"],
         "lat": "40.6825223",
@@ -19586,7 +19586,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Suono",
+    "slug": "suono",    "name": "Suono",
     "vibe": "Live Music, Eclectic, High Energy, Artsy, Neighborhood Gem, Lively, Creative, Nostalgic, Sound, Performance",
     "type": "music",
         "lat": "40.686525",
@@ -19630,7 +19630,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Bar Camillo",
+    "slug": "bar-camillo",    "name": "Bar Camillo",
     "vibe": "Cocktail Bar, Trendy, Stylish, Intimate, Chic, Date Night, Aperitivo, Smooth, Contemporary",
     "type": "cocktail",
         "lat": "40.6865279",
@@ -19675,7 +19675,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Tadpole",
+    "slug": "tadpole",    "name": "Tadpole",
     "vibe": "Laid-back, Neighborhood Spot, Cocktails, Chill, Easygoing, Local, Quiet, Soft",
     "type": ["bar", "cocktail"],
         "lat": "40.68482895",
@@ -19719,7 +19719,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Reservoir",
+    "slug": "reservoir",    "name": "Reservoir",
     "vibe": "Casual, Trendy, Laid-back, Craft Beer, Cozy, Rustic, Local, Chill, Friendly, Woodsy, Neighborhood",
     "type": ["lunch", "bar", "cocktail"],
         "lat": "40.7331707",
@@ -19763,7 +19763,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Skylark - Rooftop Bar",
+    "slug": "the-skylark-rooftop-bar",    "name": "The Skylark - Rooftop Bar",
     "vibe": "Chic, Sophisticated, Panoramic Views, Upscale, Cocktail Lounge, Rooftop, Glamorous, Scenic, Elegant, Sunset",
     "type": ["lounge", "rooftop"],
         "lat": "40.7540102",
@@ -19807,7 +19807,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Iggy's",
+    "slug": "iggys",    "name": "Iggy's",
     "vibe": "Dive Bar, Relaxed, Casual, Live Music, Gritty Atmosphere, Loud, Raw, Local, Nostalgic, Unfiltered",
     "type": ["bar", "late-night"],
         "lat": "40.7711285",
@@ -19851,7 +19851,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Space Karaoke Bar & Lounge | Koreatown NYC",
+    "slug": "space-karaoke-bar-lounge-koreatown-nyc",    "name": "Space Karaoke Bar & Lounge | Koreatown NYC",
     "vibe": "Lively, Karaoke, Party Vibe, Casual, Group-friendly, Energetic, Fun, Loud, Retro, Playful, Social",
     "type": ["activity", "late-night"],
         "lat": "40.7477981",
@@ -19895,7 +19895,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "161 Lafayette",
+    "slug": "161-lafayette",    "name": "161 Lafayette",
     "vibe": "Trendy, Vibrant, Sleek Design, Upscale Cocktails, Intimate, Stylish Crowd, Chic, Modern, Lounge, Polished, Nightlife",
     "type": "cocktail",
         "lat": "40.7198136",
@@ -19939,7 +19939,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "McSorley's Old Ale House",
+    "slug": "mcsorleys-old-ale-house",    "name": "McSorley's Old Ale House",
     "vibe": "Historic, Rustic, Irish Pub, Laid-back, Classic, Nostalgic, Local, Warm, Tavern",
     "type": "bar",
         "lat": "40.7287612",
@@ -19983,7 +19983,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Reforesters Laboratory",
+    "slug": "reforesters-laboratory",    "name": "Reforesters Laboratory",
     "vibe": "Innovative, Eco-conscious, Casual, Neighborhood Cafe, Artisanal Coffee, Creative Space, Mindful, Wellness, Quiet, Botanical, Retreat",
     "type": ["coffee", "lifestyle"],
         "lat": "40.7161422",
@@ -20027,7 +20027,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Gelateria Gentile - Williamsburg",
+    "slug": "gelateria-gentile-williamsburg",    "name": "Gelateria Gentile - Williamsburg",
     "vibe": "Ice Cream, Gelato, Date Spot, Sweet, Cozy, Charming, Classic, Summer",
     "type": "dessert",
         "lat": "40.7162118",
@@ -20071,7 +20071,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "10 ft Single by Stella Dallas",
+    "slug": "10-ft-single-by-stella-dallas",    "name": "10 ft Single by Stella Dallas",
     "vibe": "Vintage, Retro, Quirky, Thrift, Offbeat, Nostalgic, Local, Boutique",
     "type": "lifestyle",
         "lat": "40.7146109",
@@ -20115,7 +20115,7 @@ const nycData = [
     "duration": 0.66
   },
   {
-    "name": "FourFiveSix",
+    "slug": "fourfivesix",    "name": "FourFiveSix",
     "vibe": "Hip, Laid-back, Casual, Craft Cocktails, Modern Decor, Trendy, Sleek, Chill, Stylish, Intimate",
     "type": "cocktail",
         "lat": "40.7191201",
@@ -20159,7 +20159,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Birria-Landia",
+    "slug": "birria-landia",    "name": "Birria-Landia",
     "vibe": "Mexican Street Food, Tacos, Casual, Quick Bites, Late-night, Authentic, Flavorful, Spicy, Local, Fast, Festive",
     "type": ["dinner", "late-night"],
         "lat": "40.71398192",
@@ -20203,7 +20203,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "The Commodore",
+    "slug": "the-commodore",    "name": "The Commodore",
     "vibe": "Fun, Dive Bar, Casual Hangout, Retro Feel, Lively, Boisterous, Nostalgic, Social, Classic",
     "type": ["lunch", "bar", "late-night"],
         "lat": "40.7139513",
@@ -20247,7 +20247,7 @@ const nycData = [
     "duration": 1.33
   },
   {
-    "name": "Roebling Sporting Club",
+    "slug": "roebling-sporting-club",    "name": "Roebling Sporting Club",
     "vibe": "Sports Bar, Lively, Fun Atmosphere, Active, Social, Loud, Night, Game",
     "type": "bar",
         "lat": "40.7169763",
@@ -20291,7 +20291,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Tabare Williamsburg",
+    "slug": "tabare-williamsburg",    "name": "Tabare Williamsburg",
     "vibe": "Cozy, South American Flavors, Intimate, Lively, Dimly Lit, Warm, Ethnic, Rustic, Quiet, Flavorful",
     "type": ["brunch", "lunch", "dinner"],
         "lat": "40.7129782",
@@ -20335,7 +20335,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Lavender Lake",
+    "slug": "lavender-lake",    "name": "Lavender Lake",
     "vibe": "Chill, Neighborhood Bar, Outdoor Space, Cocktails, Laid-back, Eclectic Vibe, Breezy, Casual, Garden, Social, Friendly",
     "type": "cocktail",
         "lat": "40.7107645",
@@ -20379,7 +20379,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "TBA Brooklyn",
+    "slug": "tba-brooklyn",    "name": "TBA Brooklyn",
     "vibe": "Hidden Gem, DJ, Dance, Nightlife, Cocktails, Underground, Pulse, Vibrant, Late‑Night, Hype",
     "type": ["club", "late-night"],
         "lat": "40.7111986",
@@ -20423,7 +20423,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Lucali",
+    "slug": "lucali",    "name": "Lucali",
     "vibe": "Cozy, Casual, Wood‑fired Pizza, Neighborhood Staple, Trendy, Comforting, Rustic, Warm, Local, Laid‑Back",
     "type": "dinner",
         "lat": "40.6818319",
@@ -20467,7 +20467,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Steve's Authentic Key Lime Pie",
+    "slug": "steves-authentic-key-lime-pie",    "name": "Steve's Authentic Key Lime Pie",
     "vibe": "Family‑owned, Nostalgic, Desserts, Classic Treat, Casual, Quirky, Authentic, Fresh, Sweet, Retro, Welcoming",
     "type": "dessert",
         "lat": "40.6777473",
@@ -20511,7 +20511,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "On The 7 - Where Manhattan Meets LIC",
+    "slug": "on-the-7-where-manhattan-meets-lic",    "name": "On The 7 - Where Manhattan Meets LIC",
     "vibe": "Relaxed, Live Music, Jazz, Oysters, Wine, Cozy, Romantic, Intimate, Curated, Chill",
     "type": ["music", "bar"],
         "lat": "40.74262675",
@@ -20555,7 +20555,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "56709",
+    "slug": "56709",    "name": "56709",
     "vibe": "Hidden Gem, Intimate, Artsy, Cocktails, Underground Vibe, Japanese, Moody, Chic, Lowkey, Creative, Quiet",
     "type": "speakeasy",
         "lat": "40.7490013",
@@ -20599,7 +20599,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Lost in Paradise Rooftop",
+    "slug": "lost-in-paradise-rooftop",    "name": "Lost in Paradise Rooftop",
     "vibe": "Rooftop Lounge, Scenic Views, Tropical Vibe, Laid‑back, Chill, Sunset, Escape, Poolside, Breezy",
     "type": ["lounge", "rooftop"],
         "lat": "40.751801",
@@ -20643,7 +20643,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Anable Basin Sailing Bar & Grill",
+    "slug": "anable-basin-sailing-bar-grill",    "name": "Anable Basin Sailing Bar & Grill",
     "vibe": "Waterfront Bar, Laid‑back, Outdoor Seating, Casual, Scenic, Relaxed, Local, Peaceful, Beachy",
     "type": ["bar", "patio"],
         "lat": "40.7494671",
@@ -20687,7 +20687,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Gutter Bar LIC",
+    "slug": "the-gutter-bar-lic",    "name": "The Gutter Bar LIC",
     "vibe": "Dive Bar, Chill Vibe, Classic, Bowling, Active, Gritty, Retro, Social, No‑Frills, Local",
     "type": ["bar", "activity"],
         "lat": "40.7465899",
@@ -20731,7 +20731,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "LIC Bar",
+    "slug": "lic-bar",    "name": "LIC Bar",
     "vibe": "Relaxed, Neighborhood Bar, Casual Drinks, Outdoor Seating, Chill, Local, Easygoing, Sunny, Weekend",
     "type": "bar",
         "lat": "40.7470196",
@@ -20775,7 +20775,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Darling",
+    "slug": "darling",    "name": "Darling",
     "vibe": "Upscale, Rooftop Bar, Glamorous, Sophisticated Cocktails, Scenic Views, Trendy, Elegant, Luxe, Sunset, Stylish, Elevated",
     "type": ["lounge", "rooftop"],
         "lat": "40.764621",
@@ -20819,7 +20819,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Brooklyn Farmacy & Soda Fountain",
+    "slug": "brooklyn-farmacy-soda-fountain",    "name": "Brooklyn Farmacy & Soda Fountain",
     "vibe": "Nostalgic, Vintage, Family‑friendly, Ice Cream, Retro Diner, Charming, Wholesome, Bright, Old‑school, Local, Sweet",
     "type": "dessert",
         "lat": "40.6840022",
@@ -20863,7 +20863,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Turbo Pizza",
+    "slug": "turbo-pizza",    "name": "Turbo Pizza",
     "vibe": "Casual, Quirky, Late‑night Pizza, Pool Table, Vibrant, Neighborhood Gem, Cheesy, Loud, Fun, Fast, Cozy",
     "type": "bar",
         "lat": "40.70245015",
@@ -20907,7 +20907,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "O'Hanlon's",
+    "slug": "ohanlons",    "name": "O'Hanlon's",
     "vibe": "Dive Bar, Sports Bar, Relaxed, Irish Pub, Casual, Loud, Classic, Local, Friendly",
     "type": "bar",
         "lat": "40.7317717",
@@ -20951,7 +20951,7 @@ const nycData = [
     "duration": 1.66
   },
   {
-    "name": "Legends",
+    "slug": "legends",    "name": "Legends",
     "vibe": "Sports Bar, Lively, Classic, Casual, High‑energy, Crowded, Game‑day, Loud, Social, Exciting",
     "type": "bar",
         "lat": "40.7479631",
@@ -20995,7 +20995,7 @@ const nycData = [
     "duration": 1.66
   },
   {
-    "name": "Huuma",
+    "slug": "huuma",    "name": "Huuma",
     "vibe": "Upscale, Cozy, Intimate, Craft Cocktails, Trendy, Sleek Design, Bao, Modern, Luxe, Stylish, Quiet, Warm",
     "type": ["cocktail", "dinner"],
         "lat": "40.7178259",
@@ -21039,7 +21039,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Little Island",
+    "slug": "little-island",    "name": "Little Island",
     "vibe": "Waterfront, Outdoor, Events, Public Space, Scenic, Breezy, Artsy, Family, Relaxed",
     "type": "park",
         "lat": "40.73393933",
@@ -21083,7 +21083,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Domino Park",
+    "slug": "domino-park",    "name": "Domino Park",
     "vibe": "Outdoor, Relaxed, Street Food, Garden, Casual, Volleyball, Green, Breezy, Picnic, Scenic, Social",
     "type": "park",
         "lat": "40.71662833",
@@ -21127,7 +21127,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Harriet's Rooftop",
+    "slug": "harriets-rooftop",    "name": "Harriet's Rooftop",
     "vibe": "Rooftop, Sophisticated, Cocktails, Scenic Views, Elegant, Elevated, Sunset, Luxe, Stylish",
     "type": ["lounge", "rooftop"],
         "lat": "40.7024228",
@@ -21171,7 +21171,7 @@ const nycData = [
     "duration": 3.5
   },
   {
-    "name": "Brooklyn Crab",
+    "slug": "brooklyn-crab",    "name": "Brooklyn Crab",
     "vibe": "Seafood, Waterfront, Family‑friendly, Fun, Lively, Casual, Rustic, Local, Relaxed",
     "type": ["lunch", "dinner", "patio"],
         "lat": "40.6753603",
@@ -21215,7 +21215,7 @@ const nycData = [
     "duration": 3
   },
   {
-    "name": "All Blues",
+    "slug": "all-blues",    "name": "All Blues",
     "vibe": "Trendy, Stylish, Cocktail Lounge, Classy, Dimly Lit, Moody, Chic, Intimate, Smooth, Elegant",
     "type": ["lounge", "music"],
         "lat": "40.7178766",
@@ -21259,7 +21259,7 @@ const nycData = [
     "duration": 3
   },
   {
-    "name": "TIME AGAIN",
+    "slug": "time-again",    "name": "TIME AGAIN",
     "vibe": "Lively, Small Bites, Natural Wine, Cozy, Cocktail Bar, Night Out, Group, Outdoor Seating",
     "type": ["bar", "cocktail"],
         "lat": "40.7156747",
@@ -21303,7 +21303,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Undercote",
+    "slug": "undercote",    "name": "Undercote",
     "vibe": "Upscale, Sophisticated, Cocktail Lounge, Relaxed, Cozy, Speakeasy, Ambient, Dark, Sleek",
     "type": "lounge",
         "lat": "40.7412149",
@@ -21347,7 +21347,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Barely Disfigured",
+    "slug": "barely-disfigured",    "name": "Barely Disfigured",
     "vibe": "Creative Cocktails, Backyard Patio, Casual, Laid‑back, Bohemian, Offbeat",
     "type": ["cocktail", "patio"],
         "lat": "40.6830816",
@@ -21391,7 +21391,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Bar Valentina",
+    "slug": "bar-valentina",    "name": "Bar Valentina",
     "vibe": "Cozy, Intimate, Stylish, Hidden Gem, Dimly Lit, European, Romantic, Nooks, Patio, Trendy",
     "type": ["bar", "dinner"],
         "lat": "40.7180749",
@@ -21435,7 +21435,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Bar Oliver",
+    "slug": "bar-oliver",    "name": "Bar Oliver",
     "vibe": "Upscale, Trendy, Cocktail Bar, Cozy, Sophisticated, Chic, Smooth, Refined, Elegant, Soft",
     "type": "cocktail",
         "lat": "40.7130612",
@@ -21479,7 +21479,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Kettl Tea - Greenpoint",
+    "slug": "kettl-tea-greenpoint",    "name": "Kettl Tea - Greenpoint",
     "vibe": "Calm, Zen, Minimalist, Relaxing, Intimate, Tranquil, Mindful, Light, Quiet, Boutique",
     "type": "tea",
         "lat": "40.7296813",
@@ -21523,7 +21523,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Little Rascal",
+    "slug": "little-rascal",    "name": "Little Rascal",
     "vibe": "Cozy, Vintage, Relaxed, Trendy, Intimate, Hip, Welcoming, Quiet, Local, Rustic",
     "type": "cocktail",
         "lat": "40.7208393",
@@ -21567,7 +21567,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Dae",
+    "slug": "dae",    "name": "Dae",
     "vibe": "Cocktails, Homeware, Laid‑back, Neighborhood Spot, Creative, Craft, Artistic, Welcoming, Community, Local",
     "type": ["cocktail", "lifestyle"],
         "lat": "40.6785539",
@@ -21611,7 +21611,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Rude Mouth",
+    "slug": "rude-mouth",    "name": "Rude Mouth",
     "vibe": "Casual, Wine, Backyard Patio, Group, Loud, Fun, Playful, Eclectic, Vibrant",
     "type": ["wine bar", "patio"],
         "lat": "40.714274",
@@ -21655,7 +21655,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Swiss Institute",
+    "slug": "swiss-institute",    "name": "Swiss Institute",
     "vibe": "Artistic, Creative, Cultural Hub, Contemporary, Cool, Gallery, Inspired, Minimal, Intellectual, Refined",
     "type": "gallery",
         "lat": "40.7284048",
@@ -21699,7 +21699,7 @@ const nycData = [
     "duration": 3
   },
   {
-    "name": "San Tokki Studio (Appt. only)",
+    "slug": "san-tokki-studio-appt-only",    "name": "San Tokki Studio (Appt. only)",
     "vibe": "Creative, Plants, Floral, Botanical, Niche, Art, Intimate, Green",
     "type": ["random gem", "lifestyle"],
         "lat": "40.676984",
@@ -21743,7 +21743,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "THE LAST CALL",
+    "slug": "the-last-call",    "name": "THE LAST CALL",
     "vibe": "Cozy, Casual, Hidden Gem, Lively, Neighborhood Bar, Warm, Friendly, Low‑key, Local",
     "type": "bar",
         "lat": "40.7110998",
@@ -21787,7 +21787,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Double Chicken Please",
+    "slug": "double-chicken-please",    "name": "Double Chicken Please",
     "vibe": "Casual, Quirky, Date, Fun, Interactive, Cocktails, Playful, Funky, Social, Offbeat",
     "type": ["cocktail", "dinner"],
         "lat": "40.7195842",
@@ -21831,7 +21831,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Cubbyhole",
+    "slug": "cubbyhole",    "name": "Cubbyhole",
     "vibe": "LGBTQ+ Friendly, Cozy, Casual, Intimate, Fun, Live Music, Colorful, Welcoming, Neighborhood, Night, Playful",
     "type": "bar",
         "lat": "40.7376427",
@@ -21875,7 +21875,7 @@ const nycData = [
     "duration": 3
   },
   {
-    "name": "Julius'",
+    "slug": "julius",    "name": "Julius'",
     "vibe": "LGBTQ+, Energetic, Chill, Classic, Dive Bar, Historic, Old‑school, Local, Retro, Communal, No‑frills",
     "type": "bar",
         "lat": "40.7345416",
@@ -21919,7 +21919,7 @@ const nycData = [
     "duration": 3
   },
   {
-    "name": "The Cobra Club",
+    "slug": "the-cobra-club",    "name": "The Cobra Club",
     "vibe": "Trendy, Neighborhood Bar, Live Music, Cocktail Bar, Vibrant, Lively, Indie, Stage, Night, Urban",
     "type": "bar",
         "lat": "40.7067043",
@@ -21963,7 +21963,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "ANIMAL",
+    "slug": "animal",    "name": "ANIMAL",
     "vibe": "LGBTQ+, Dance, Fun, Neighborhood Bar, Vintage, Playful, Local, Energetic",
     "type": "club",
         "lat": "40.71870937",
@@ -22007,7 +22007,7 @@ const nycData = [
     "duration": 3.5
   },
   {
-    "name": "Hidden Lane Bar",
+    "slug": "hidden-lane-bar",    "name": "Hidden Lane Bar",
     "vibe": "Cozy, Intimate, Hidden Gem, Secret Bar, Speakeasy, Unique, Moody, Exclusive, Stylish, Retro",
     "type": "speakeasy",
         "lat": "40.7345947",
@@ -22051,7 +22051,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Botanica at Widow Jane",
+    "slug": "botanica-at-widow-jane",    "name": "Botanica at Widow Jane",
     "vibe": "Tropical Vibe, Relaxing, Hidden Gem, Creative, Cocktails, Botanical, Exotic, Quiet, Lush, Artistic",
     "type": "cocktail",
         "lat": "40.677249",
@@ -22095,7 +22095,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "La Bicyclette Bakery",
+    "slug": "la-bicyclette-bakery",    "name": "La Bicyclette Bakery",
     "vibe": "Cozy, Bakery, Delicious, Sweet, Charming, Retro, Wholesome, Nostalgic, Local, Rustic, Friendly",
     "type": "bakery",
         "lat": "40.7143881",
@@ -22139,7 +22139,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Elizabeth Street Garden",
+    "slug": "elizabeth-street-garden",    "name": "Elizabeth Street Garden",
     "vibe": "Outdoors, Garden, Relaxing, Scenic, Tranquil, Greenery, Quiet, Urban Oasis, Peaceful, Hidden, Green",
     "type": ["park", "garden"],
         "lat": "40.720326",
@@ -22183,7 +22183,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Brooklyn Botanic Garden",
+    "slug": "brooklyn-botanic-garden",    "name": "Brooklyn Botanic Garden",
     "vibe": "Tranquil, Natural, Scenic, Botanical, Relaxing, Serene, Green, Floral, Retreat, Calm",
     "type": ["park", "garden"],
         "lat": "40.6676619",
@@ -22227,7 +22227,7 @@ const nycData = [
     "duration": 3
   },
   {
-    "name": "Xanadu Roller Arts",
+    "slug": "xanadu-roller-arts",    "name": "Xanadu Roller Arts",
     "vibe": "Unique, Fun, Active, Roller Skating, Artistic, Energetic, Creative, Playful, Retro, Leisure",
     "type": "activity",
         "lat": "40.7064509",
@@ -22271,7 +22271,7 @@ const nycData = [
     "duration": 3
   },
   {
-    "name": "The Clocktower",
+    "slug": "the-clocktower",    "name": "The Clocktower",
     "vibe": "Upscale, Artsy, Elegant, Historic, Modern Design, Opulent, Refined, Architectural, Intimate",
     "type": ["breakfast", "lunch", "dinner"],
         "lat": "40.7413262",
@@ -22339,7 +22339,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Little Dipper",
+    "slug": "little-dipper",    "name": "Little Dipper",
     "vibe": "Cozy, Intimate, Cocktail Bar, Unique, Trendy, Casual, Chic, Low‑light, Compact, Warm, Stylish",
     "type": "cocktail",
         "lat": "40.7482055",
@@ -22383,7 +22383,7 @@ const nycData = [
     "duration": 2.25
   },
   {
-    "name": "Bar Bonobo",
+    "slug": "bar-bonobo",    "name": "Bar Bonobo",
     "vibe": "Cozy, Stylish, Trendy, Cocktail Bar, Relaxed, Hip, Group, Retro, Disco, Neighborhood, Sleek",
     "type": "cocktail",
         "lat": "40.742976",
@@ -22427,7 +22427,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "The Ripple Room",
+    "slug": "the-ripple-room",    "name": "The Ripple Room",
     "vibe": "Lively, Eclectic, Music, Cocktail Bar, Trendy, Vibrant, Dance, Retro, Nightlife, Fun",
     "type": "cocktail",
         "lat": "40.7204795",
@@ -22471,7 +22471,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Rockaway Brewing Company",
+    "slug": "rockaway-brewing-company",    "name": "Rockaway Brewing Company",
     "vibe": "Craft Beer, Fun, Social, Brewery, Local, Laid‑back, Coastal, Taproom, Friendly, Cheerful",
     "type": "bar",
         "lat": "40.7471977",
@@ -22515,7 +22515,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Fifth Hammer Brewing Company",
+    "slug": "fifth-hammer-brewing-company",    "name": "Fifth Hammer Brewing Company",
     "vibe": "Craft Beer, Fun, Lively, Brewery, Neighborhood Spot, Rustic, Communal, Local, Easygoing, Buzzing",
     "type": "bar",
         "lat": "40.7464921",
@@ -22559,7 +22559,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Achilles Heel",
+    "slug": "achilles-heel",    "name": "Achilles Heel",
     "vibe": "Cozy, Trendy, Wine, Casual Drinks, Scenic, Laid‑back, Local, Date Night, Charming",
     "type": ["cocktail", "dinner"],
         "lat": 40.7331765,
@@ -22605,7 +22605,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Saint James Libations",
+    "slug": "saint-james-libations",    "name": "Saint James Libations",
     "vibe": "Stylish, Cozy, Cocktail Bar, Date Spot, Elegant, Low‑key, Romantic, Polished, Soft",
     "type": "cocktail",
         "lat": 40.701737,
@@ -22651,7 +22651,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Hell Phone",
+    "slug": "hell-phone",    "name": "Hell Phone",
     "vibe": "Speakeasy, Quirky, Intimate, Hidden Gem, Mysterious, Hidden, Dark",
     "type": "speakeasy",
         "lat": 40.70423585,
@@ -22696,7 +22696,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Vacations BK",
+    "slug": "vacations-bk",    "name": "Vacations BK",
     "vibe": "Relaxed, Neighborhood Bar, Casual, Fun, Rooftop, Tropical, Dog‑Friendly, Lush, Lively, Social",
     "type": ["bar", "rooftop"],
         "lat": 40.7082711,
@@ -22741,7 +22741,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Lovejoys",
+    "slug": "lovejoys",    "name": "Lovejoys",
     "vibe": "Cozy, Casual, Chill, Friendly, Warm, Neighborhood, Low‑key, Inviting, Relaxed",
     "type": "bar",
         "lat": 40.7067992,
@@ -22786,7 +22786,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Left Hand Path",
+    "slug": "left-hand-path",    "name": "Left Hand Path",
     "vibe": "Creative, Relaxed, Edgy, Cocktail Bar, Alternative, Artsy, Dark, Stylish, Unique",
     "type": "cocktail",
         "lat": 40.7051341,
@@ -22831,7 +22831,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Kato Sake Works",
+    "slug": "kato-sake-works",    "name": "Kato Sake Works",
     "vibe": "Sake Bar, Brewery, Japanese‑Inspired, Craft, Cozy, Local, Refined",
     "type": "bar",
         "lat": 40.7059366,
@@ -22876,7 +22876,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Lou's Athletic Club",
+    "slug": "lous-athletic-club",    "name": "Lou's Athletic Club",
     "vibe": "Fun, Neighborhood Spot, Casual, Lively, Playful, Vintage, Affordable, Local, Social",
     "type": "bar",
         "lat": 40.700231,
@@ -22921,7 +22921,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "ALPHAVILLE",
+    "slug": "alphaville",    "name": "ALPHAVILLE",
     "vibe": "Trendy, Hip, Live Music, Casual, Eclectic, Youthful, Nightlife, Fun, Indie",
     "type": "bar",
         "lat": 40.700587,
@@ -22966,7 +22966,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Narrows",
+    "slug": "the-narrows",    "name": "The Narrows",
     "vibe": "Upscale, Chic, Relaxed, Scenic, Elegant, Quiet, Elevated, Sunset, Refined",
     "type": "cocktail",
         "lat": 40.7040945,
@@ -23011,7 +23011,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Yours Sincerely",
+    "slug": "yours-sincerely",    "name": "Yours Sincerely",
     "vibe": "Cozy, Cocktail Bar, Trendy, Intimate, Warm, Soft, Romantic, Stylish, Quiet",
     "type": "cocktail",
         "lat": 40.7028281,
@@ -23056,7 +23056,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Fini Pizza",
+    "slug": "fini-pizza",    "name": "Fini Pizza",
     "vibe": "Casual, Neighborhood Spot, Pizza, Relaxed, Comforting, Local, Quick-Bite, Friendly, Chill",
     "type": ["lunch", "dinner"],
         "lat": 40.7134723,
@@ -23101,7 +23101,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Fast Times",
+    "slug": "fast-times",    "name": "Fast Times",
     "vibe": "Retro, Fun, Casual, Coffee, Quirky, Light, Local, Nostalgic, Chill",
     "type": ["coffee", "bookstore", "lifestyle"],
         "lat": 40.7216246,
@@ -23146,7 +23146,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Leonessa",
+    "slug": "leonessa",    "name": "Leonessa",
     "vibe": "Elegant, Aperitivo, Rooftop, Scenic, Italian Food, Romantic, Italian, Sunset, Refined, Plush",
     "type": ["cocktail", "rooftop"],
         "lat": 40.7151482,
@@ -23191,7 +23191,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "The Five Lamps",
+    "slug": "the-five-lamps",    "name": "The Five Lamps",
     "vibe": "Intimate, Cocktail Bar, Cozy, Relaxed, Soft, Low‑key, Classic, Slick, Friendly",
     "type": "cocktail",
         "lat": 40.77421885,
@@ -23236,7 +23236,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Soda Club",
+    "slug": "soda-club",    "name": "Soda Club",
     "vibe": "Trendy, Stylish, Cocktail Bar, Vibrant, Colorful, Playful, Loud, Nightlife, Hip",
     "type": ["brunch", "cocktail"],
         "lat": 40.7256895,
@@ -23286,7 +23286,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Ha's Snack Bar",
+    "slug": "has-snack-bar",    "name": "Ha's Snack Bar",
     "vibe": "Trendy, Asian Food, Casual, Neighborhood Hangout, Flavorful, Small Kitchen, Cozy, Relaxed",
     "type": "dinner",
         "lat": 40.7186095,
@@ -23331,7 +23331,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "BabySips",
+    "slug": "babysips",    "name": "BabySips",
     "vibe": "LGBTQ+ Friendly, Cozy, Fun, Casual Drinks, Playful, Inclusive, Friendly, Colorful, Quirky",
     "type": "wine bar",
         "lat": 40.7189528,
@@ -23376,7 +23376,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Brooklyn Granary & Mill",
+    "slug": "brooklyn-granary-mill",    "name": "Brooklyn Granary & Mill",
     "vibe": "Rustic, Industrial, Cozy, Artisan Coffee, Relaxed Atmosphere, Warm, Handmade, Local, Quiet",
     "type": ["coffee", "bakery"],
         "lat": 40.67557747,
@@ -23421,7 +23421,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Olmo",
+    "slug": "olmo",    "name": "Olmo",
     "vibe": "Sleek, Modern, Neighborhood Spot, Casual Dining, Mediterranean-Inspired, Trendy",
     "type": "dinner",
         "lat": 40.6831425,
@@ -23466,7 +23466,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "DOLORES",
+    "slug": "dolores",    "name": "DOLORES",
     "vibe": "Vibrant, Artistic, Contemporary, Creative Cocktails, Eclectic, Stylish Ambience, Latin",
     "type": ["cocktail", "dinner"],
         "lat": 40.683861,
@@ -23511,7 +23511,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "kalei nyc",
+    "slug": "kalei-nyc",    "name": "kalei nyc",
     "vibe": "Artistic, Minimalist, Chic, Contemporary, Floral, Coffee and Craft Cocktails",
     "type": ["gallery", "coffee"],
         "lat": 40.7195805,
@@ -23556,7 +23556,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Demo",
+    "slug": "demo",    "name": "Demo",
     "vibe": "Stylish, Trendy, Boutique Bar, Cozy Atmosphere, Exclusive, Craft Cocktails, Hidden Gem",
     "type": ["dinner", "cocktail"],
         "lat": 40.7299274,
@@ -23601,7 +23601,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Sunn's",
+    "slug": "sunns",    "name": "Sunn's",
     "vibe": "Cozy, Intimate, Trendy, Wine, Banchan, Contemporary Vibe",
     "type": ["dinner", "wine bar"],
         "lat": 40.7143881,
@@ -23646,7 +23646,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Banzarbar",
+    "slug": "banzarbar",    "name": "Banzarbar",
     "vibe": "Eclectic, Quirky, Hidden Gem, Relaxed, Fun, Creative Cocktails, Unique Experience",
     "type": "speakeasy",
         "lat": 40.72148537,
@@ -23691,7 +23691,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Plug Uglies",
+    "slug": "plug-uglies",    "name": "Plug Uglies",
     "vibe": "Classic, Dive Bar, Sports Bar, Relaxed, Late-Night Vibe, Casual Drinks, Loud Atmosphere",
     "type": "bar",
         "lat": 40.73843685,
@@ -23736,7 +23736,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Unlisted",
+    "slug": "unlisted-npc",    "name": "Unlisted",
     "vibe": "Exclusive, Hidden Speakeasy, Upscale, Intimate, Trendy Cocktails, Sophisticated Vibe",
     "type": ["speakeasy", "rooftop"],
         "lat": 40.72148873,
@@ -23781,7 +23781,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Elevated Acre",
+    "slug": "elevated-acre",    "name": "Elevated Acre",
     "vibe": "Outdoor, Scenic Views, Relaxing, Green Space, Peaceful, Urban Escape, Quiet Retreat",
     "type": "park",
         "lat": 40.7033361,
@@ -23826,7 +23826,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Maison Nur",
+    "slug": "maison-nur",    "name": "Maison Nur",
     "vibe": "Upscale, Modern, Elegant, Craft Cocktails, Elegant Dining, Artisanal Vibe",
     "type": ["cocktail", "dinner"],
         "lat": 40.7217163,
@@ -23871,7 +23871,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Moonflower",
+    "slug": "moonflower",    "name": "Moonflower",
     "vibe": "Calm, Intimate, Cozy, Trendy, Modern Design, Artisan Coffee, Relaxed Vibes",
     "type": ["wine bar", "dj"],
         "lat": 40.8070452,
@@ -23916,7 +23916,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Gem Home",
+    "slug": "gem-home",    "name": "Gem Home",
     "vibe": "Cozy, Trendy, Artistic, Boutique, Homey, Craft Cocktails, Casual Vibe, Vintage Feel",
     "type": ["lifestyle", "lunch", "wine bar"],
         "lat": 40.72069095,
@@ -23961,7 +23961,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Good Guy's",
+    "slug": "good-guys",    "name": "Good Guy's",
     "vibe": "Cozy, Chill, Intimate, Eclectic, Relaxed, Hip Vibe, Casual Drinks, Community Spot",
     "type": ["wine bar", "cocktail"],
         "lat": 40.7188823,
@@ -24006,7 +24006,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "June",
+    "slug": "june",    "name": "June",
     "vibe": "Intimate, Stylish, Cozy, Wine Bar, Cozy Atmosphere, Trendy, Relaxing Vibes",
     "type": "wine bar",
         "lat": 40.6860636,
@@ -24051,7 +24051,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Swallow Cafe",
+    "slug": "swallow-cafe",    "name": "Swallow Cafe",
     "vibe": "Cozy, Chic, Casual, Hip, Relaxed Atmosphere, Trendy Ambience",
     "type": ["coffee", "breakfast", "lunch"],
         "lat": 40.6901367,
@@ -24096,7 +24096,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "6BC Botanical Garden",
+    "slug": "6bc-botanical-garden",    "name": "6BC Botanical Garden",
     "vibe": "Outdoors, Greenery, Tranquil, Relaxing, Nature Escape, Urban Garden, Peaceful Retreat",
     "type": ["park", "garden"],
         "lat": 40.7237765,
@@ -24141,7 +24141,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Binx",
+    "slug": "binx",    "name": "Binx",
     "vibe": "Trendy, Upscale, Lounge, Casual Drinks, Relaxed, Cozy, Artistic Atmosphere",
     "type": "lounge",
         "lat": 40.733941,
@@ -24186,7 +24186,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Saturn Road",
+    "slug": "saturn-road",    "name": "Saturn Road",
     "vibe": "Intimate, Hip, Casual, Coffee & Cocktails, Trendy, Relaxed, Creative Vibes",
     "type": ["coffee", "wine", "cocktail", "patio"],
         "lat": 40.6847429,
@@ -24231,7 +24231,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Rose Marie",
+    "slug": "rose-marie",    "name": "Rose Marie",
     "vibe": "Cozy, Intimate, Relaxed, Artistic, Trendy, Modern Design, Chill Vibes",
     "type": ["cocktail", "lunch", "dinner"],
         "lat": 40.7125159,
@@ -24276,7 +24276,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Quick Eternity",
+    "slug": "quick-eternity",    "name": "Quick Eternity",
     "vibe": "Eclectic, Unique, Trendy, Hidden Bar, Artisanal Cocktails, Relaxed Vibe",
     "type": ["dinner", "cocktail"],
         "lat": 40.7080782,
@@ -24321,7 +24321,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Fandi Mata",
+    "slug": "fandi-mata",    "name": "Fandi Mata",
     "vibe": "Cozy, Trendy, Comfort Food, Laid-back, Relaxed, Artsy, Casual Vibe",
     "type": ["brunch", "dinner"],
         "lat": 40.7188471,
@@ -24366,7 +24366,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Ye's Apothecary 夜莺",
+    "slug": "yes-apothecary",    "name": "Ye's Apothecary 夜莺",
     "vibe": "Intimate, Relaxing, Sophisticated, Hidden Bar, Unique Vibe, Cocktail Lounge",
     "type": "speakeasy",
         "lat": 40.71956833,
@@ -24411,7 +24411,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "New Love City",
+    "slug": "new-love-city",    "name": "New Love City",
     "vibe": "Chill, Cozy, Unique, Intimate, Eclectic, Relaxing, Vibrant Atmosphere",
     "type": ["fitness", "yoga"],
         "lat": 40.7295188,
@@ -24456,7 +24456,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "OH MERCY",
+    "slug": "oh-mercy",    "name": "OH MERCY",
     "vibe": "Cozy, Warm, Trendy, Casual Bar, Relaxed Vibes, Quirky, Intimate Cocktails",
     "type": "cocktail",
         "lat": 40.7292924,
@@ -24501,7 +24501,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Élysée's",
+    "slug": "elysees",    "name": "Élysée's",
     "vibe": "Upscale, Elegant, Cocktail Lounge, Exclusive, Romantic Vibe, Trendy, Intimate",
     "type": ["cocktail", "dinner"],
         "lat": 40.723611,
@@ -24546,7 +24546,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Wildcard Bar",
+    "slug": "wildcard-bar",    "name": "Wildcard Bar",
     "vibe": "Fun, Trendy, Speakeasy, Unique Cocktails, Stylish, Relaxed, Intimate Vibe",
     "type": "speakeasy",
         "lat": 40.7568586,
@@ -24591,7 +24591,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Paragon",
+    "slug": "paragon",    "name": "Paragon",
     "vibe": "DJ, Dance, Modern, Neighborhood Spot, Club, Trendy Vibe, High-energy, Flashy, Scene, Beats, Late-night",
     "type": "club",
         "lat": 40.6961288,
@@ -24636,7 +24636,7 @@ const nycData = [
     "duration": 4
   },
   {
-    "name": "Pearl Street Caviar",
+    "slug": "pearl-street-caviar",    "name": "Pearl Street Caviar",
     "vibe": "Upscale, Luxe, Trendy, Seafood, Modern, Elegant, Cocktail Bar, Sophisticated, Refined, Polished, Date‑Night",
     "type": ["cocktail", "lunch", "dinner"],
         "lat": 40.6806807,
@@ -24681,7 +24681,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "MEILI Rooftop",
+    "slug": "meili-rooftop",    "name": "MEILI Rooftop",
     "vibe": "Trendy, Scenic, Chill, Rooftop Bar, Williamsburg Views, Stylish, Breezy, Urban, Sunset, Elevated, Open‑air",
     "type": ["cocktail", "rooftop"],
     "lat": 40.7209065,
@@ -24726,7 +24726,7 @@ const nycData = [
     "duration": 2.25
   },
   {
-    "name": "Fellini Cucina",
+    "slug": "fellini-cucina",    "name": "Fellini Cucina",
     "vibe": "Cozy, Casual, Italian, Friendly, Coffee, Neighborhood Gem, Warm, Daytime, Local, Relaxed, Comforting",
     "type": ["coffee", "lunch", "dinner"],
     "lat": 40.735914,
@@ -24771,7 +24771,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Fellini Coffee Soho",
+    "slug": "fellini-coffee-soho",    "name": "Fellini Coffee Soho",
     "vibe": "Hip, Cozy, Artsy, Soho Vibes, Specialty Coffee, Local Favorite, Indie, Quiet, Creative, Minimalist, Aesthetic",
     "type": "coffee",
     "lat": 40.7259694,
@@ -24816,7 +24816,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Apartment 5",
+    "slug": "apartment-5",    "name": "Apartment 5",
     "vibe": "Intimate, Low-Key, Hidden Gem, Chill, Boutique, Cozy Drinks, Moody, Romantic, Soft, Niche, Warm",
     "type": ["speakeasy", "cocktail"],
     "lat": 40.72100615,
@@ -24861,7 +24861,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "NAZ AROMA INC",
+    "slug": "naz-aroma-inc",    "name": "NAZ AROMA INC",
     "vibe": "Hidden Gem, Aromatic, Perfume, Family-Owned, Self-care, Gift, Local",
     "type": ["random gem", "lifestyle"],
     "lat": 40.7473764,
@@ -24906,7 +24906,7 @@ const nycData = [
     "duration": 0.66
   },
   {
-    "name": "The Hidden Pearl",
+    "slug": "the-hidden-pearl",    "name": "The Hidden Pearl",
     "vibe": "Intimate, Cozy, Cozy Cocktails, Neighborhood Bar, Hidden Gem, Laid-Back, Soft, Quiet, Romantic, Local, Warm",
     "type": "speakeasy",
     "lat": 40.7235819,
@@ -24951,7 +24951,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "LALIKO",
+    "slug": "laliko",    "name": "LALIKO",
     "vibe": "Chic, Modern, Wine Bar, Trendy, Upscale, European Charm, Elegant, Refined, Date‑Night, Ambient, Smooth",
     "type": ["wine bar", "dinner"],
     "lat": 40.7294493,
@@ -24996,7 +24996,7 @@ const nycData = [
     "duration": 2.25
   },
   {
-    "name": "Yesterday's News Antiques and Collectibles",
+    "slug": "yesterdays-news-antiques-and-collectibles",    "name": "Yesterday's News Antiques and Collectibles",
     "vibe": "Nostalgic, Vintage, Quirky, Antique, Eclectic, Hidden Treasures, Retro, Collector, Cozy, Nostalgic, Artful",
     "type": ["random gem", "lifestyle"],
     "lat": 40.6792892,
@@ -25041,7 +25041,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Sloane's",
+    "slug": "sloanes",    "name": "Sloane's",
     "vibe": "Artistic, Cozy, Cocktail Bar, Soho Vibes, Intimate, Relaxed, Creative, Low-Light, Warm, Chill, Artful",
     "type": "cocktail",
     "lat": 40.72407133,
@@ -25086,7 +25086,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Bayard's Ale House",
+    "slug": "bayards-ale-house",    "name": "Bayard's Ale House",
     "vibe": "Classic, Pub Vibes, Laid-Back, Casual Drinks, Historical, Cozy, Timeless, Local, Warm, Community, Low‑key",
     "type": "bar",
     "lat": 40.7343055,
@@ -25131,7 +25131,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Automatic Slim’s",
+    "slug": "automatic-slims",    "name": "Automatic Slim’s",
     "vibe": "Dive Bar, Vintage, Funky, Casual, Old-School, Neighborhood Spot, Grungy, Loud, Local, Raw, Nostalgic",
     "type": ["bar", "late-night"],
     "lat": 40.7363112,
@@ -25176,7 +25176,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Margaux",
+    "slug": "margaux",    "name": "Margaux",
     "vibe": "Elegant, Upscale, Sophisticated, French-Inspired, Cozy, Refined Dining, Chic, Romantic, Candlelit, Polished, Luxe",
     "type": ["breakfast", "lunch", "dinner"],
     "lat": 40.7326395,
@@ -25221,7 +25221,7 @@ const nycData = [
     "duration": 2.25
   },
   {
-    "name": "Waverly Inn",
+    "slug": "waverly-inn",    "name": "Waverly Inn",
     "vibe": "Classic, Upscale, Cozy, Historic, Elegant, Old-World Charm, Timeless, Refined, Warm, Architectural, Romantic",
     "type": "dinner",
     "lat": 40.7369557,
@@ -25266,7 +25266,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Vin Sur Vingt Wine Bar - West Village",
+    "slug": "vin-sur-vingt-wine-bar-west-village",    "name": "Vin Sur Vingt Wine Bar - West Village",
     "vibe": "Wine Lovers, Sophisticated, Cozy, West Village, Intimate, French Vibes, Romantic, Elegant, Low-Light, Local, Boutique",
     "type": "wine bar",
     "lat": 40.736338,
@@ -25311,7 +25311,7 @@ const nycData = [
     "duration": 1.66
   },
   {
-    "name": "Arthur's Tavern",
+    "slug": "arthurs-tavern",    "name": "Arthur's Tavern",
     "vibe": "Classic, Dive Bar, Old-School, Neighborhood Pub, Live Music, Casual, Lively, Nostalgic, Social, Warm, Unpretentious",
     "type": "bar",
     "lat": 40.7331992,
@@ -25356,7 +25356,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Sip&Guzzle",
+    "slug": "sip-and-guzzle",    "name": "Sip&Guzzle",
     "vibe": "Fun, Relaxed, Chill, Soho, Craft Cocktails, Small Plates, Casual, Light, Trendy, Social, Playful",
     "type": "cocktail",
     "lat": 40.7314151,
@@ -25401,7 +25401,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "John's of Bleecker Street",
+    "slug": "johns-of-bleecker-street",    "name": "John's of Bleecker Street",
     "vibe": "Iconic, Classic, Pizzeria, Old-School, Casual, Authentic, Cheesy, Nostalgic, Local, Comforting, Quick‑bite",
     "type": ["lunch", "dinner"],
     "lat": 40.7316098,
@@ -25446,7 +25446,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "SoHo Cigar Bar",
+    "slug": "soho-cigar-bar",    "name": "SoHo Cigar Bar",
     "vibe": "Loungey, Vintage, Upscale, Dimly Lit, Classic NYC, Masculine Energy",
     "type": "lounge",
     "lat": 40.7236175,
@@ -25491,7 +25491,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Houston Hall",
+    "slug": "houston-hall",    "name": "Houston Hall",
     "vibe": "Lively, Beer Hall, Social, Loud, Communal Tables, Spacious, Beer Garden, Casual, NYC Vibes, Open-air, Bright, Group, Weekend, Friendly",
     "type": "bar",
     "lat": 40.732383,
@@ -25536,7 +25536,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Ear Inn",
+    "slug": "ear-inn",    "name": "Ear Inn",
     "vibe": "Oldest Bar in NYC, Chill, Historical, Laid-Back, Timeless, Classic, Cozy, Dive Bar, Warm, Local, Nostalgic, Community",
     "type": "bar",
     "lat": 40.7275726,
@@ -25581,7 +25581,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Rocco's Sports & Recreation",
+    "slug": "roccos-sports-recreation",    "name": "Rocco's Sports & Recreation",
     "vibe": "Playful, Retro, Sports Bar, Social, Games, Kitschy Fun, Casual, Fun, Sports Bar, Lively, Energetic, Loud, Local, Unpretentious",
     "type": "bar",
     "lat": 40.7303392,
@@ -25626,7 +25626,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Bleecker Street Bar",
+    "slug": "bleecker-street-bar",    "name": "Bleecker Street Bar",
     "vibe": "No-Frills, Laid-Back, Crowd-Pleaser, Historic, Lively, Social, Dive Bar, Casual, Fun, Crowded, Local",
     "type": "bar",
     "lat": 40.7285425,
@@ -25671,7 +25671,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Lei",
+    "slug": "lei",    "name": "Lei",
     "vibe": "Chic, Wine Bar, Trendy, Ambient, Stylish, Intimate, Modern, Tropical-Inspired, Date Spot, Hidden Gem",
     "type": "wine bar",
     "lat": 40.714595,
@@ -25716,7 +25716,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "BADABOOM",
+    "slug": "badaboom",    "name": "BADABOOM",
     "vibe": "French, Wine, Chicken Rotisserie, Casual, Fun, Retro, Artsy, Offbeat, Curated, Creative",
     "type": "dinner",
     "lat": 40.728442,
@@ -25762,7 +25762,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Bascule",
+    "slug": "bascule",    "name": "Bascule",
     "vibe": "Intimate, Sophisticated, French-Inspired, Hidden Gem, Romantic, Wine, Neighborhood, Soft, Chill, Candlelit",
     "type": "wine bar",
     "lat": 40.727163,
@@ -25807,7 +25807,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Le Chêne",
+    "slug": "le-chene",    "name": "Le Chêne",
     "vibe": "Refined, Wine List, Romantic, French Dining, Upscale, Quiet, Romantic, Elegant, Moody, Date Spot, Upscale",
     "type": "dinner",
     "lat": 40.732182,
@@ -25852,7 +25852,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Atelier Ariana",
+    "slug": "atelier-ariana",    "name": "Atelier Ariana",
     "vibe": "Parisian, Artistic, Boutique, Bakery, Cafe, Design, Curated, Expressive",
     "type": ["coffee", "bakery"],
     "lat": 40.748201,
@@ -25897,7 +25897,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Lulla's Bakery - Grand Café & Cocktails",
+    "slug": "lullas-bakery-grand-cafe-cocktails",    "name": "Lulla's Bakery - Grand Café & Cocktails",
     "vibe": "Cozy, Day-to-Night, Stylish, Baked Goods & Cocktails, Social, Brunch, Patio, Flirty, Sweet, Lighthearted",
     "type": ["bakery", "breakfast", "lunch", "cocktail"],
     "lat": 40.718912,
@@ -25942,7 +25942,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Eckhaus Latta",
+    "slug": "eckhaus-latta",    "name": "Eckhaus Latta",
     "vibe": "Avant-Garde, Minimalist, Fashion-Forward, Conceptual, Indie Cool, Edgy, Expressive, Gallery, Niche, Curated",
     "type": "lifestyle",
     "lat": 40.719774,
@@ -25987,7 +25987,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "OLD JEWELRY STORE",
+    "slug": "old-jewelry-store",    "name": "OLD JEWELRY STORE",
     "vibe": "Eclectic, Nostalgic, Artistic, Vintage Finds, Hidden Gem, Refined, Offbeat, Retro, Art, Quiet",
     "type": "lifestyle",
     "lat": 40.721033,
@@ -26032,7 +26032,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Argosy Book Store",
+    "slug": "argosy-book-store",    "name": "Argosy Book Store",
     "vibe": "Intellectual, Historic, Rare Books, Academic, NYC Classic, Introspective, Poetic, Analog, Niche, Reflective",
     "type": "bookstore",
     "lat": 40.758215,
@@ -26077,7 +26077,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "McNally Jackson Books Seaport",
+    "slug": "mcnally-jackson-books-seaport",    "name": "McNally Jackson Books Seaport",
     "vibe": "Literary, Cozy, Indie Bookstore, Cultural, Welcoming, Creative Space, Quiet, Scenic, Bookstore",
     "type": "bookstore",
     "lat": 40.706291,
@@ -26122,7 +26122,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Kitchen Arts & Letters, books on food and drink",
+    "slug": "kitchen-arts-letters-books-on-food-and-drink",    "name": "Kitchen Arts & Letters, books on food and drink",
     "vibe": "Culinary, Niche, Expert, Intellectual, Cozy, Flavorful, Curated, Artisan, Culinary, Indie",
     "type": "bookstore",
     "lat": 40.782183,
@@ -26167,7 +26167,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Left Bank Books",
+    "slug": "left-bank-books",    "name": "Left Bank Books",
     "vibe": "Intellectual, Rare Finds, Nostalgic, Independent, Author, Analog, Introspective, Niche, Poetic",
     "type": "bookstore",
     "lat": 40.735255,
@@ -26212,7 +26212,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Rizzoli Bookstore",
+    "slug": "rizzoli-bookstore",    "name": "Rizzoli Bookstore",
     "vibe": "Elegant, Curated, Literary, International, Sophisticated, Refined, Classical, Elegant, Moody, Vintage",
     "type": "bookstore",
     "lat": 40.751135,
@@ -26257,7 +26257,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Albertine",
+    "slug": "albertine",    "name": "Albertine",
     "vibe": "Literary, French, Global, Intellectual, Elegant, Introspective, Aesthetic, Curated, Romantic, Serene",
     "type": "bookstore",
     "lat": 40.773087,
@@ -26302,7 +26302,7 @@ const nycData = [
     "duration": 1.25
   },
    {
-    "name": "Mast Books",
+    "slug": "mast-books",    "name": "Mast Books",
     "vibe": "Minimalist, Cultured, Literary, Curated, Indie, Studio, Analog, Design, Slow, Quiet",
     "type": "bookstore",
     "lat": 40.726092,
@@ -26347,7 +26347,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Spoonbill & Sugartown Books",
+    "slug": "spoonbill-sugartown-books",    "name": "Spoonbill & Sugartown Books",
     "vibe": "Artsy, Quirky, Eclectic, Literary, Neighborhood, Creative Space,",
     "type": "bookstore",
     "lat": 40.717925,
@@ -26392,7 +26392,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Bar Centrale",
+    "slug": "bar-centrale",    "name": "Bar Centrale",
     "vibe": "Hidden, Elegant, Theater Crowd, Quiet, Sophisticated, Dim, Romantic, Nightcap, Moody, Speakeasy",
     "type": "cocktail",
     "lat": 40.763476,
@@ -26437,7 +26437,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Lion's Milk",
+    "slug": "lions-milk",    "name": "Lion's Milk",
     "vibe": "Chill, Trendy, Global, Coffee, Stylish",
     "type": ["coffee", "patio"],
     "lat": 40.717875,
@@ -26482,7 +26482,7 @@ const nycData = [
     "duration": 1
   },
    {
-    "name": "Intelligentsia Coffee High Line Hotel Coffeebar",
+    "slug": "intelligentsia-coffee-high-line-hotel-coffeebar",    "name": "Intelligentsia Coffee High Line Hotel Coffeebar",
     "vibe": "Coffee, Small Space, Design‑driven, Low-key, Mellow",
     "type": "coffee",
     "lat": 40.7465,
@@ -26527,7 +26527,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Drawing Room Midtown: Creative Living",
+    "slug": "drawing-room-midtown-creative-living",    "name": "Drawing Room Midtown: Creative Living",
     "vibe": "Artistic, Cozy, Creative, Quiet, Studio, Inspiration, Neighborhood, Relaxed, Analog, Local, Journal",
     "type": ["random gem", "activity"],
     "lat": 40.7527,
@@ -26572,7 +26572,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Drawing Room Williamsburg: Creative Living",
+    "slug": "drawing-room-williamsburg-creative-living",    "name": "Drawing Room Williamsburg: Creative Living",
     "vibe": "Artistic, Cozy, Creative, Quiet, Studio, Inspiration, Neighborhood, Relaxed, Analog, Local, Journal",
     "type": ["random gem", "activity"],
     "lat": 40.7105,
@@ -26617,7 +26617,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Loaf on Paper by niconeco zakkaya",
+    "slug": "loaf-on-paper-by-niconeco-zakkaya",    "name": "Loaf on Paper by niconeco zakkaya",
     "vibe": "Japanese stationery, Aesthetic gifts, Minimal, Artful, Boutique",
     "type": ["coffee", "random gem"],
     "lat": 40.7156481,
@@ -26662,7 +26662,7 @@ const nycData = [
     "duration": 1
   },
    {
-    "name": "The Long Island Bar",
+    "slug": "the-long-island-bar",    "name": "The Long Island Bar",
     "vibe": "Retro, Classic Cocktails, Brooklyn Staple, Laid‑Back, Stylish",
     "type": "bar",
     "lat": 40.6869,
@@ -26707,7 +26707,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Primo's",
+    "slug": "primos",    "name": "Primo's",
     "vibe": "Swanky, Vintage, Loungey, Sophisticated, Scene-y, Late‑Night",
     "type": ["lounge", "cocktail"],
     "lat": 40.7174,
@@ -26752,7 +26752,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "BRASS",
+    "slug": "brass",    "name": "BRASS",
     "vibe": "Modern, Sleek, Hidden, Stylish Crowd, Upscale Cocktails",
     "type": "cocktail",
     "lat": 40.7172,
@@ -26797,7 +26797,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "GATHER espresso & wine bar",
+    "slug": "gather-espresso-wine-bar",    "name": "GATHER espresso & wine bar",
     "vibe": "Hybrid, Chic, Cozy, Dual‑Purpose, Neighborhood Hangout",
     "type": ["coffee", "wine bar"],
     "lat": 40.716593,
@@ -26842,7 +26842,7 @@ const nycData = [
     "duration": 1.5
   },
    {
-    "name": "Do or Dive Bar",
+    "slug": "do-or-dive-bar",    "name": "Do or Dive Bar",
     "vibe": "Grungy, Divey, Hip, Laid-Back, Late-Night, Neighborhood Staple",
     "type": "bar",
     "lat": 40.6867791,
@@ -26887,7 +26887,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "The Swan",
+    "slug": "the-swan",    "name": "The Swan",
     "vibe": "Sports Bar, Lively, Soccer, Fun, Energetic",
     "type": "bar",
     "lat": 40.6890943,
@@ -26932,7 +26932,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Singers",
+    "slug": "singers",    "name": "Singers",
     "vibe": "Casual, Chic, Cocktail, Patio, LGBTQ",
     "type": "bar",
     "lat": 40.6902169,
@@ -26977,7 +26977,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Milly's Neighborhood Bar",
+    "slug": "millys-neighborhood-bar",    "name": "Milly's Neighborhood Bar",
     "vibe": "Low-Key, Cozy, Neighborhood Favorite, Relaxed, Intimate",
     "type": "bar",
     "lat": 40.6881039,
@@ -27022,7 +27022,7 @@ const nycData = [
     "duration": 1.5
   },
    {
-    "name": "The Holler",
+    "slug": "the-holler",    "name": "The Holler",
     "vibe": "Honky-tonk, Americana, Lively, Vintage Jukebox, Community Vibe",
     "type": "bar",
     "lat": 40.6872281,
@@ -27067,7 +27067,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Disco Birdies",
+    "slug": "disco-birdies",    "name": "Disco Birdies",
     "vibe": "Retro-themed, Bright, Funky Cocktails, Day-to-Evening Vibe",
     "type": "bar",
     "lat": 40.6872785,
@@ -27112,7 +27112,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Dynaco",
+    "slug": "dynaco",    "name": "Dynaco",
     "vibe": "Hideaway, Candlelit, Intimate, Vintage Interiors, Warm, Fireplace, Relaxed",
     "type": "bar",
     "lat": 40.6866784,
@@ -27157,7 +27157,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Fan Fan Doughnuts",
+    "slug": "fan-fan-doughnuts",    "name": "Fan Fan Doughnuts",
     "vibe": "Artisan Doughnuts, Local Favorite, Sweet & Savory, Bright & Casual",
     "type": "bakery",
     "lat": 40.6890824,
@@ -27202,7 +27202,7 @@ const nycData = [
     "duration": 1
   },
    {
-    "name": "Bar Laika by e-flux",
+    "slug": "bar-laika-by-e-flux",    "name": "Bar Laika by e-flux",
     "vibe": "Artsy, Experimental, Intellectual, Avant-garde, Low-key",
     "type": "cocktail",
     "lat": 40.6870032,
@@ -27247,7 +27247,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Izzy Rose",
+    "slug": "izzy-rose",    "name": "Izzy Rose",
     "vibe": "Chic, Feminine, Garden Patio, Queer-Friendly, Date Spot",
     "type": "cocktail",
     "lat": 40.6868393,
@@ -27292,7 +27292,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Place des Fêtes",
+    "slug": "place-des-fetes",    "name": "Place des Fêtes",
     "vibe": "Elegant, Spanish-Inspired, Natural Wine, Intimate, Date Night",
     "type": "wine bar",
     "lat": 40.6868258,
@@ -27337,7 +27337,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Locanda Vini & Olii",
+    "slug": "locanda-vini-olii",    "name": "Locanda Vini & Olii",
     "vibe": "Rustic, Italian, Historic Pharmacy, Date Night, Refined",
     "type": "dinner",
     "lat": 40.684965,
@@ -27382,7 +27382,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Speedy Romeo",
+    "slug": "speedy-romeo",    "name": "Speedy Romeo",
     "vibe": "Lively, Industrial, Wood-Fired, Local Favorite, Brooklyn Vibe",
     "type": ["wine bar", "lunch", "dinner"],
     "lat": 40.6875,
@@ -27427,7 +27427,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Little Grenjai",
+    "slug": "little-grenjai",    "name": "Little Grenjai",
     "vibe": "Minimalist, Thai, Charming, Small Plates, Cozy",
     "type": ["lunch", "dinner"],
     "lat": 40.6866874,
@@ -27487,7 +27487,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Van Leeuwen Ice Cream",
+    "slug": "van-leeuwen-ice-cream",    "name": "Van Leeuwen Ice Cream",
     "vibe": "Sweet, Colorful, Family-Friendly, Classic Treat, Trendy",
     "type": "dessert",
     "lat": 40.703191,
@@ -27532,7 +27532,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Dick and Jane's",
+    "slug": "dick-and-janes",    "name": "Dick and Jane's",
     "vibe": "Classic, Neighborhood, Laid-back, Craft Cocktails, Hidden Gem",
     "type": "cocktail",
     "lat": 40.689854,
@@ -27577,7 +27577,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Loafers Cocktail Bar",
+    "slug": "loafers-cocktail-bar",    "name": "Loafers Cocktail Bar",
     "vibe": "Low-Key, Dimly Lit, Retro Vibes, Neighborhood Favorite, Chill, LGTBQ+",
     "type": "cocktail",
     "lat": 40.6750845,
@@ -27622,7 +27622,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Travel Bar",
+    "slug": "travel-bar",    "name": "Travel Bar",
     "vibe": "Relaxed, Whiskey-Focused, Unpretentious, Local Feel, Classic",
     "type": ["bar", "cocktail"],
     "lat": 40.6761496,
@@ -27667,7 +27667,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Nerd be cool. Espresso Lab",
+    "slug": "nerd-be-cool-espresso-lab",    "name": "Nerd be cool. Espresso Lab",
     "vibe": "Minimalist, Bright, Trendy Coffee, Cool Aesthetic, Community",
     "type": "coffee",
     "lat": 40.6761949,
@@ -27712,7 +27712,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Court Street Grocers",
+    "slug": "court-street-grocers",    "name": "Court Street Grocers",
     "vibe": "Classic Deli, Hearty Sandwiches, Brooklyn Staple, Laid-Back",
     "type": "lunch",
     "lat": 40.6762056,
@@ -27757,7 +27757,7 @@ const nycData = [
     "duration": 1
   },
    {
-    "name": "F&F Restaurant and Bar",
+    "slug": "f-and-f-restaurant-and-bar",    "name": "F&F Restaurant and Bar",
     "vibe": "Refined, Intimate, Hidden Gem, Italian-Inspired, Cozy Date Spot",
     "type": "dinner",
     "lat": 40.6772305,
@@ -27802,7 +27802,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Baby Luc's",
+    "slug": "baby-lucs",    "name": "Baby Luc's",
     "vibe": "Trendy, Colorful, Brooklyn Cool, Pizza & Drinks, Casual Fun",
     "type": ["lunch", "dinner"],
     "lat": 40.6800784,
@@ -27847,7 +27847,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "DISTRICT",
+    "slug": "district",    "name": "DISTRICT",
     "vibe": "Gym, Movement, Early Morning Vibes, Clean Aesthetic, Health-Driven",
     "type": "fitness",
     "lat": 40.6799225,
@@ -27892,7 +27892,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "PKLYN",
+    "slug": "pklyn",    "name": "PKLYN",
     "vibe": "Athletic, Pickleball, Active, Community",
     "type": "activity",
     "lat": 40.676563,
@@ -27937,7 +27937,7 @@ const nycData = [
     "duration": 1.5
   },
    {
-    "name": "Cafecito Social",
+    "slug": "cafecito-social",    "name": "Cafecito Social",
     "vibe": "Bright, Latin‑inspired, Community café, Chill, Coffee shop",
     "type": "coffee",
     "lat": 40.6805498,
@@ -27982,7 +27982,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "South Brooklyn Weightlifting Club",
+    "slug": "south-brooklyn-weightlifting-club",    "name": "South Brooklyn Weightlifting Club",
     "vibe": "Gritty, Athletic, Community, Old‑school gym, Strength training focus",
     "type": "fitness",
     "lat": 40.6805386,
@@ -28027,7 +28027,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "The Armory",
+    "slug": "the-armory",    "name": "The Armory",
     "vibe": "Cozy, Exposed Brick, Cocktails, Small Bites",
     "type": "cocktail",
     "lat": 40.6793157,
@@ -28072,7 +28072,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Parklife",
+    "slug": "parklife",    "name": "Parklife",
     "vibe": "Outdoor, Community bar, Ping‑pong, Texas Longhorns, Group energy",
     "type": ["bar", "patio"],
     "lat": 40.6787343,
@@ -28117,7 +28117,7 @@ const nycData = [
     "duration": 2
   },
    {
-    "name": "Royal Palms Shuffleboard Club",
+    "slug": "royal-palms-shuffleboard-club",    "name": "Royal Palms Shuffleboard Club",
     "vibe": "Playful, Retro, Group fun, Competitive, Social Club",
     "type": ["bar", "activity"],
     "lat": 40.6786376,
@@ -28162,7 +28162,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "cityWell brooklyn",
+    "slug": "citywell-brooklyn",    "name": "cityWell brooklyn",
     "vibe": "Wellness, Serene, Soothing, Spa, Relaxation, Hidden Oasis",
     "type": "spa",
     "lat": 40.6778803,
@@ -28207,7 +28207,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Cotra",
+    "slug": "cotra",    "name": "Cotra",
     "vibe": "Minimalist, Design‑forward, Calm, Small Bites, Japanese, Low‑key",
     "type": ["cocktail", "dinner"],
     "lat": 40.6775859,
@@ -28252,7 +28252,7 @@ const nycData = [
     "duration": 1.5
   },
    {
-    "name": "Logan's Run",
+    "slug": "logans-run",    "name": "Logan's Run",
     "vibe": "Retro neon, All‑night dance, Electronic vibes, Surreal, Immersive",
     "type": "cocktail",
     "lat": 40.6710497,
@@ -28297,7 +28297,7 @@ const nycData = [
     "duration": 3
   },
   {
-    "name": "LoFI Bar",
+    "slug": "lofi-bar",    "name": "LoFI Bar",
     "vibe": "Chill beats, DJ sets, Underground, Artistic, Hip‑hop playlist",
     "type": "bar",
     "lat": 40.6736217,
@@ -28342,7 +28342,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Blueprint",
+    "slug": "blueprint",    "name": "Blueprint",
     "vibe": "Modern lounge, Craft cocktails, Fashionably late, Couples crowd",
     "type": "cocktail",
     "lat": 40.6768844,
@@ -28387,7 +28387,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Vinegar Hill House",
+    "slug": "vinegar-hill-house",    "name": "Vinegar Hill House",
     "vibe": "Rustic, Romantic, Seasonal dining, Hidden courtyard, Neighborhood gem",
     "type": ["lunch", "dinner"],
     "lat": 40.7027648,
@@ -28448,7 +28448,7 @@ const nycData = [
     "duration": 2
   },
    {
-    "name": "Archivio Records",
+    "slug": "archivio-records",    "name": "Archivio Records",
     "vibe": "Vintage vinyl, Curated collection, Music lovers, Indie cred",
     "type": ["random gem", "lifestyle"],
     "lat": 40.7031,
@@ -28493,7 +28493,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Cafe Mado",
+    "slug": "cafe-mado",    "name": "Cafe Mado",
     "vibe": "Korean café, Brunch spot, Sweet & savory pastries, Cozy",
     "type": ["breakfast", "lunch", "dinner"],
     "lat": 40.6729083,
@@ -28538,7 +28538,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Rialto Grande",
+    "slug": "rialto-grande",    "name": "Rialto Grande",
     "vibe": "Bustling Italian spot, Seafood, Family-friendly, Energetic service",
     "type": ["cocktail", "wine bar"],
     "lat": 40.676346,
@@ -28583,7 +28583,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Kissa Kissa",
+    "slug": "kissa-kissa",    "name": "Kissa Kissa",
     "vibe": "Japanese café, Green tea lounge, Matcha cocktails, Elegant, Quiet",
     "type": "cocktail",
     "lat": 40.6756639,
@@ -28628,7 +28628,7 @@ const nycData = [
     "duration": 1.75
   },
     {
-    "name": "Welcome Home",
+    "slug": "welcome-home",    "name": "Welcome Home",
     "vibe": "cozy, nostalgic, neighborly, baked-goods, morning spot, homey, community-driven, relaxed, minimalist, heartfelt",
     "type": "bakery",
     "lat": "40.6881606",
@@ -28674,7 +28674,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Misi",
+    "slug": "misi",    "name": "Misi",
     "vibe": "refined, pasta-focused, sleek, date-night, trendy, upscale, culinary artistry, intimate, seasonal, Brooklyn-chic",
     "type": "dinner",
     "lat": "40.713401",
@@ -28720,7 +28720,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Blinky’s",
+    "slug": "blinkys",    "name": "Blinky’s",
     "vibe": "moody, cocktail-forward, late-night, eclectic, intimate, underground, dim-lit, cool crowd, creative energy, Brooklyn edge",
     "type": ["bar", "patio"],
     "lat": "40.7114709",
@@ -28766,7 +28766,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Comal",
+    "slug": "comal",    "name": "Comal",
     "vibe": "rustic-modern, Mexican-inspired, vibrant, artisanal, foodie destination, communal, colorful, cultural fusion, warm ambiance, inventive",
     "type": "dinner",
     "lat": "40.7191233",
@@ -28812,7 +28812,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "King Cole Bar",
+    "slug": "king-cole-bar",    "name": "King Cole Bar",
     "vibe": "historic, iconic, upscale, martini vibes, refined, Midtown classic, business crowd, timeless, leather + wood, old New York",
     "type": "cocktail",
     "lat": "40.761289",
@@ -28858,7 +28858,7 @@ const nycData = [
     "duration": 1.66
   },
   {
-    "name": "Lobby Bar at The Hotel Chelsea",
+    "slug": "lobby-bar-at-the-hotel-chelsea",    "name": "Lobby Bar at The Hotel Chelsea",
     "vibe": "artistic, legendary, bohemian, stylish, storied, eclectic crowd, intimate, literary vibes, curated cocktails, cultural landmark",
     "type": "cocktail",
     "lat": "40.744428",
@@ -28904,7 +28904,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Hank’s Bar",
+    "slug": "hanks-bar",    "name": "Hank’s Bar",
     "vibe": "divey, unpretentious, casual, locals hangout, cheap drinks, gritty, authentic Brooklyn, friendly, jukebox vibes, no-frills",
     "type": "bar",
     "lat": "40.6985858",
@@ -28950,7 +28950,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "Birdy’s",
+    "slug": "birdys",    "name": "Birdy’s",
     "vibe": "quirky, eclectic, artsy crowd, affordable, dive-bar feel, colorful, indie, late-night, neighborhood energy, unpretentious",
     "type": "bar",
     "lat": "40.6975171",
@@ -28996,7 +28996,7 @@ const nycData = [
     "duration": 1.25
   },
   {
-    "name": "El Vez and Burrito Bar",
+    "slug": "el-vez-and-burrito-bar",    "name": "El Vez and Burrito Bar",
     "vibe": "lively, colorful, fun, group-friendly, casual dining, tequila-heavy, festive, energetic, playful, social",
     "type": ["lunch", "dinner"],
     "lat": "40.714811",
@@ -29042,7 +29042,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Bushwick Country Club",
+    "slug": "bushwick-country-club",    "name": "Bushwick Country Club",
     "vibe": "kitschy, ironic, hipster dive, outdoor hang, cheap drinks, quirky games, casual, irreverent, punk energy, hidden gem",
     "type": "bar",
     "lat": "40.7111521",
@@ -29088,7 +29088,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "recess grove",
+    "slug": "recess-grove",    "name": "recess grove",
     "vibe": "serene, artsy, cafe-culture, contemplative, creative, plant-filled, modern minimalist, community feel, peaceful, soft aesthetic",
     "type": ["activity", "random gem"],
     "lat": "40.71274685",
@@ -29134,7 +29134,7 @@ const nycData = [
     "duration": 1.66
   },
   {
-    "name": "St. Mazie Bar & Supper Club",
+    "slug": "st-mazie-bar-supper-club",    "name": "St. Mazie Bar & Supper Club",
     "vibe": "romantic, vintage, candlelit, jazz-heavy, supper-club vibe, old-world charm, sultry, intimate, timeless, atmospheric",
     "type": ["music", "dinner", "cocktail"],
     "lat": "40.7125929",
@@ -29180,7 +29180,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Fred's Dog House",
+    "slug": "freds-dog-house",    "name": "Fred's Dog House",
     "vibe": "playful, quirky, neighborhood-friendly, dive-bar charm, live music, casual, funky, approachable, dog-loving, eclectic crowd",
     "type": ["music", "bar"],
     "lat": "40.71224115",
@@ -29226,7 +29226,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Canary Cafe",
+    "slug": "canary-cafe",    "name": "Canary Cafe",
     "vibe": "cozy, airy, neighborhood-friendly, artistic, modern café, warm lighting, creative, plant-filled, casual hangout, welcoming",
     "type": ["coffee", "breakfast"],
     "lat": "40.7113494",
@@ -29272,7 +29272,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Whim Golf Club",
+    "slug": "whim-golf-club",    "name": "Whim Golf Club",
     "vibe": "experimental, ironic, social-club vibe, Brooklyn cool, playful, curated aesthetic, offbeat, niche community, hip, concept-driven",
     "type": ["activity", "random gem"],
     "lat": "40.7188441",
@@ -29318,7 +29318,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Outer Heaven",
+    "slug": "outer-heaven",    "name": "Outer Heaven",
     "vibe": "underground, edgy, nightlife-heavy, techno-forward, gritty, experimental, youth-driven, late-night energy, immersive, raw",
     "type": "club",
     "lat": "40.7219976",
@@ -29364,7 +29364,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Celene's",
+    "slug": "celenes",    "name": "Celene's",
     "vibe": "moody, niche, intimate, casual cocktails, artsy, hidden-away, quirky, mellow, neighborhood energy, understated",
     "type": "cocktail",
     "lat": "40.7410183",
@@ -29410,7 +29410,7 @@ const nycData = [
     "duration": 2.5
   },
   {
-    "name": "Sweet Pickle Books",
+    "slug": "sweet-pickle-books",    "name": "Sweet Pickle Books",
     "vibe": "whimsical, indie, book-lover friendly, quirky, literary, creative, playful branding, niche community, artsy, cozy",
     "type": "bookstore",
     "lat": "40.7164063",
@@ -29456,7 +29456,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Paley Park",
+    "slug": "paley-park",    "name": "Paley Park",
     "vibe": "tranquil, pocket-park, urban escape, waterfall sounds, intimate, relaxing, minimalist, contemplative, green retreat, peaceful",
     "type": ["park", "garden"],
     "lat": "40.7602575",
@@ -29502,7 +29502,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Greenacre Park",
+    "slug": "greenacre-park",    "name": "Greenacre Park",
     "vibe": "lush, urban hideaway, serene, waterfall feature, Midtown escape, contemplative, well-designed, refreshing, intimate, calm energy",
     "type": ["park", "garden"],
     "lat": "40.7562408",
@@ -29548,7 +29548,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Bobo",
+    "slug": "bobo",    "name": "Bobo",
     "vibe": "chic, French-inspired, romantic, garden vibe, elegant, hidden gem, stylish, intimate, West Village charm, sophisticated",
     "type": ["brunch", "dinner"],
     "lat": "40.7344552",
@@ -29594,7 +29594,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "VALERIE",
+    "slug": "valerie",    "name": "VALERIE",
     "vibe": "sleek, cocktail-forward, elegant, modern classic, social hub, refined, lively, Midtown energy, cosmopolitan, date spot",
     "type": "cocktail",
     "lat": "40.7563426",
@@ -29640,7 +29640,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Turks & Frogs",
+    "slug": "turks-frogs",    "name": "Turks & Frogs",
     "vibe": "eclectic, cozy, vintage décor, romantic, Old World vibe, intimate, candlelit, wine-forward, quirky, tucked-away gem",
     "type": ["cocktail", "wine bar"],
     "lat": "40.7357449",
@@ -29686,7 +29686,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Orient Express Cocktail Bar",
+    "slug": "orient-express-cocktail-bar",    "name": "Orient Express Cocktail Bar",
     "vibe": "themed, train-inspired, moody, unique cocktails, intimate, speakeasy vibe, transportive, stylish, atmospheric, niche experience",
     "type": "cocktail",
     "lat": "40.7358256",
@@ -29732,7 +29732,7 @@ const nycData = [
     "duration": 1.66
   },
   {
-    "name": "Fairfax",
+    "slug": "fairfax",    "name": "Fairfax",
     "vibe": "modern, chic, brunch-friendly, airy, European café vibes, stylish, social, bright, welcoming, West Village charm",
     "type": ["brunch", "lunch", "dinner"],
     "lat": "40.734351",
@@ -29778,7 +29778,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Cellar Dog",
+    "slug": "cellar-dog",    "name": "Cellar Dog",
     "vibe": "basement vibe, retro games, casual, beer-heavy, unpretentious, social hang, quirky, playful, dive energy, nostalgic",
     "type": "bar",
     "lat": "40.7336334",
@@ -29824,7 +29824,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Dia Chelsea",
+    "slug": "dia-chelsea",    "name": "Dia Chelsea",
     "vibe": "minimalist, contemporary art, intellectual, clean-lined, cultural hub, thoughtful, avant-garde, creative, contemplative, design-focused",
     "type": "gallery",
     "lat": "40.7478387",
@@ -29870,7 +29870,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "RHYTHM ZERO",
+    "slug": "rhythm-zero",    "name": "RHYTHM ZERO",
     "vibe": "creative café, indie, minimalist, artsy, intimate, modern, community-driven, peaceful, offbeat, curated vibes",
     "type": "coffee",
     "lat": "40.7332909",
@@ -29916,7 +29916,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Little Owl",
+    "slug": "little-owl",    "name": "Little Owl",
     "vibe": "cozy, iconic, West Village charm, intimate, foodie destination, understated, neighborhood favorite, rustic, warm, classic NYC",
     "type": ["lunch", "dinner"],
     "lat": "40.7322791",
@@ -29962,7 +29962,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "The Commerce Inn",
+    "slug": "the-commerce-inn",    "name": "The Commerce Inn",
     "vibe": "Shaker-inspired, refined, historic-feel, minimalist, culinary artistry, contemplative, upscale, thoughtful design, intimate, unique",
     "type": ["breakfast", "brunch", "lunch", "dinner"],
     "lat": "40.731477",
@@ -30008,7 +30008,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Tía Pol",
+    "slug": "tia-pol",    "name": "Tía Pol",
     "vibe": "tapas-focused, lively, intimate, Spanish influence, wine-heavy, West Chelsea gem, foodie-oriented, cozy, authentic, stylish",
     "type": ["brunch", "dinner"],
     "lat": "40.74728",
@@ -30054,7 +30054,7 @@ const nycData = [
     "duration": 1.66
   },
   {
-    "name": "Chantelle NYC",
+    "slug": "chantelle-nyc",    "name": "Chantelle NYC",
     "vibe": "flashy, rooftop vibes, clubby, social scene, late-night, bottle service, trendy, energetic, young crowd, loud",
     "type": "club",
     "lat": "40.718386",
@@ -30100,7 +30100,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "The Dancer",
+    "slug": "the-dancer",    "name": "The Dancer",
     "vibe": "intimate, cocktail-heavy, dim-lit, artistic, moody, curated crowd, indie, underground, Brooklyn edge, late-night",
     "type": "cocktail",
     "lat": "40.7139726",
@@ -30146,7 +30146,7 @@ const nycData = [
     "duration": 1.66
   },
   {
-    "name": "Happy Medium",
+    "slug": "happy-medium-bk",    "name": "Happy Medium",
     "vibe": "artsy, experimental, café-gallery hybrid, playful, creative hub, community-oriented, indie, colorful, modern, cozy",
     "type": ["activity", "random gem"],
     "lat": "40.7119043",
@@ -30192,7 +30192,7 @@ const nycData = [
     "duration": 1.66
   },
   {
-    "name": "Overstory",
+    "slug": "overstory",    "name": "Overstory",
     "vibe": "upscale, skyline views, luxe cocktails, sleek, romantic, modern classic, NYC glamour, date spot, high-rise vibe, polished",
     "type": "cocktail",
     "lat": "40.7065765",
@@ -30238,7 +30238,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Café Colmado",
+    "slug": "cafe-colmado",    "name": "Café Colmado",
     "vibe": "cozy, artisanal, coffee-forward, indie, neighborhood charm, creative energy, airy, plant-filled, relaxed, minimalist",
     "type": "coffee",
     "lat": "40.71862695",
@@ -30284,7 +30284,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "124 Old Rabbit Club",
+    "slug": "124-old-rabbit-club",    "name": "124 Old Rabbit Club",
     "vibe": "underground, secretive, beer-focused, moody, quirky, divey, niche, intimate, countercultural, eclectic",
     "type": "bar",
     "lat": "40.729905",
@@ -30330,7 +30330,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Off the Wagon",
+    "slug": "off-the-wagon",    "name": "Off the Wagon",
     "vibe": "fratty, lively, student-heavy, cheap drinks, sportsy, chaotic, loud, casual, rowdy, social hangout",
     "type": "bar",
     "lat": "40.7299118",
@@ -30376,7 +30376,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Copper & Oak",
+    "slug": "copper-oak",    "name": "Copper & Oak",
     "vibe": "warm, rustic-modern, upscale bar vibe, wood-forward, stylish, casual chic, date-friendly, craft cocktails, mellow, intimate",
     "type": "cocktail",
     "lat": "40.7210247",
@@ -30422,7 +30422,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "George Bang Bang",
+    "slug": "george-bang-bang",    "name": "George Bang Bang",
     "vibe": "eclectic, cocktail-driven, edgy, playful, youthful energy, vibrant, moody lighting, hip, stylish, creative vibe",
     "type": "cocktail",
     "lat": "40.7457045",
@@ -30468,7 +30468,7 @@ const nycData = [
     "duration": 1.6
   },
   {
-    "name": "Aldo Sohm Wine Bar",
+    "slug": "aldo-sohm-wine-bar",    "name": "Aldo Sohm Wine Bar",
     "vibe": "sophisticated, wine-centric, refined, relaxed luxury, European-inspired, intimate, polished, sleek, date-night, sommelier-driven",
     "type": "wine bar",
     "lat": "40.76120496",
@@ -30514,7 +30514,7 @@ const nycData = [
     "duration": 1.66
   },
   {
-    "name": "nuar",
+    "slug": "nuar",    "name": "nuar",
     "vibe": "minimalist, dessert-forward, elegant, stylish, modern, artsy, chic, niche foodie, quiet, curated",
     "type": "dessert",
     "lat": "40.7449414",
@@ -30560,7 +30560,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Lisbonata",
+    "slug": "lisbonata",    "name": "Lisbonata",
     "vibe": "cozy, bakery vibes, Portuguese charm, authentic, warm, artisanal, nostalgic, sweet, inviting, homey",
     "type": "bakery",
     "lat": "40.672615",
@@ -30606,7 +30606,7 @@ const nycData = [
     "duration": 0.75
   },
   {
-    "name": "Pil Pil",
+    "slug": "pil-pil",    "name": "Pil Pil",
     "vibe": "lively, tapas-focused, Spanish-inspired, social, authentic, group-friendly, wine-heavy, colorful, modern, stylish",
     "type": ["brunch", "lunch", "dinner"],
     "lat": "40.7729328",
@@ -30652,7 +30652,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Jeremy's",
+    "slug": "jeremys",    "name": "Jeremy's",
     "vibe": "casual, neighborhood bar, cozy, intimate, friendly, unpretentious, mellow, creative cocktails, artsy, approachable",
     "type": "cocktail",
     "lat": "40.777496",
@@ -30698,7 +30698,7 @@ const nycData = [
     "duration": 1.75
   },
   {
-    "name": "Sunday to Sunday",
+    "slug": "sunday-to-sunday",    "name": "Sunday to Sunday",
     "vibe": "brunch-heavy, American comfort, relaxed, casual chic, bright, friendly, modern, neighborhood vibe, warm, social",
     "type": ["breakfast", "lunch", "dinner"],
     "lat": "40.7180119",
@@ -30744,7 +30744,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Chalk Gyms",
+    "slug": "chalk-gyms",    "name": "Chalk Gyms",
     "vibe": "modern, fitness-forward, clean, minimalist, social gym, functional, high-energy, boutique vibe, disciplined, community-driven",
     "type": "fitness",
     "lat": "40.718347",
@@ -30790,7 +30790,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Serpentine",
+    "slug": "serpentine",    "name": "Serpentine",
     "vibe": "cocktail-forward, intimate, sleek, stylish, creative, moody, Brooklyn-chic, social, sophisticated, curated crowd",
     "type": "cocktail",
     "lat": "40.7361304",
@@ -30836,7 +30836,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "StudioTwentySeven",
+    "slug": "studiotwentyseven",    "name": "StudioTwentySeven",
     "vibe": "contemporary, minimalist, design-driven, intellectual, curated, aesthetic, stylish, modern art, thoughtful, cultural",
     "type": "gallery",
     "lat": "40.7174008",
@@ -30882,7 +30882,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Sargent's Daughters",
+    "slug": "sargents-daughters",    "name": "Sargent's Daughters",
     "vibe": "contemporary art, thoughtful, emerging artists, creative, intimate gallery, cultural hub, experimental, clean-lined, intellectual, boutique",
     "type": "gallery",
     "lat": "40.717639",
@@ -30928,7 +30928,7 @@ const nycData = [
     "duration": 1.33
   },
   {
-    "name": "The Vilcek Foundation",
+    "slug": "the-vilcek-foundation",    "name": "The Vilcek Foundation",
     "vibe": "philanthropic, cultural, contemporary art, nonprofit-driven, educational, thoughtful, intellectual, socially conscious, curated, inspiring",
     "type": "gallery",
     "lat": "40.77076085",
@@ -30974,7 +30974,7 @@ const nycData = [
     "duration": 1.33
   },
   {
-    "name": "Tappeto Volante",
+    "slug": "tappeto-volante",    "name": "Tappeto Volante",
     "vibe": "underground art, experimental, avant-garde, edgy, indie, creative, grassroots, raw, community vibe, niche",
     "type": "gallery",
     "lat": "40.6693268",
@@ -31020,7 +31020,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Ricco/Maresca Gallery",
+    "slug": "Ricco-maresca-gallery",    "name": "Ricco/Maresca Gallery",
     "vibe": "contemporary, outsider art, eclectic, curated, thought-provoking, niche, artistic, intellectual, creative, cultural hub",
     "type": "gallery",
     "lat": "40.7465171",
@@ -31066,7 +31066,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Karma Gallery",
+    "slug": "karma-gallery",    "name": "Karma Gallery",
     "vibe": "trendy, contemporary art, youthful, stylish, curated, experimental, creative, Brooklyn-chic, modern, social art scene",
     "type": "gallery",
     "lat": "40.7224564",
@@ -31112,7 +31112,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Judd Foundation",
+    "slug": "judd-foundation",    "name": "Judd Foundation",
     "vibe": "minimalist, architectural, design-driven, contemplative, intellectual, art-world landmark, modernist, clean, thoughtful, cultural",
     "type": "gallery",
     "lat": "40.7235189",
@@ -31158,7 +31158,7 @@ const nycData = [
     "duration": 1.33
   },
   {
-    "name": "Isabel Sullivan Gallery",
+    "slug": "isabel-sullivan-gallery",    "name": "Isabel Sullivan Gallery",
     "vibe": "intimate, contemporary art, boutique, experimental, stylish, curated, creative, intellectual, emerging artists, modern",
     "type": "gallery",
     "lat": "40.7198682",
@@ -31204,7 +31204,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Hollis Taggart",
+    "slug": "hollis-taggart",    "name": "Hollis Taggart",
     "vibe": "refined, contemporary art, blue-chip, intellectual, professional, polished, traditional-modern, cultural hub, creative, upscale",
     "type": "gallery",
     "lat": "40.7502048",
@@ -31250,7 +31250,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Hashimoto Contemporary",
+    "slug": "hashimoto-contemporary",    "name": "Hashimoto Contemporary",
     "vibe": "urban, contemporary art, street-influenced, edgy, youthful, experimental, creative, moody, modern, gallery scene",
     "type": "gallery",
     "lat": "40.7165611",
@@ -31296,7 +31296,7 @@ const nycData = [
     "duration": 1.33
   },
   {
-    "name": "François Ghebaly New York",
+    "slug": "francois-ghebaly-new-york",    "name": "François Ghebaly New York",
     "vibe": "avant-garde, conceptual, contemporary art, experimental, cutting-edge, cultural, intellectual, modern, creative, niche",
     "type": "gallery",
     "lat": "40.7159389",
@@ -31342,7 +31342,7 @@ const nycData = [
     "duration": 1.33
   },
   {
-    "name": "CUE Art Foundation",
+    "slug": "cue-art-foundation",    "name": "CUE Art Foundation",
     "vibe": "nonprofit, experimental, emerging artists, contemporary, cultural, community-driven, creative, educational, thoughtful, independent",
     "type": "gallery",
     "lat": "40.745074",
@@ -31388,7 +31388,7 @@ const nycData = [
     "duration": 1.33
   },
   {
-    "name": "Broadway Gallery",
+    "slug": "broadway-gallery",    "name": "Broadway Gallery",
     "vibe": "intimate, boutique gallery, creative, experimental, cultural hub, modern art, niche, intellectual, stylish, artistic",
     "type": "gallery",
     "lat": "40.7179084",
@@ -31434,7 +31434,7 @@ const nycData = [
     "duration": 1
   },
   {
-    "name": "Fort Greene Park",
+    "slug": "fort-greene-park",    "name": "Fort Greene Park",
     "vibe": "green, community hub, historic, relaxed, lively, local charm, picnic vibe, social, peaceful, cultural gathering",
     "type": "park",
     "lat": "40.6914322",
@@ -31480,7 +31480,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Brooklyn Bridge Park",
+    "slug": "brooklyn-bridge-park",    "name": "Brooklyn Bridge Park",
     "vibe": "iconic, waterfront, scenic, tourist-heavy, family-friendly, lively, expansive, vibrant, photogenic, community hub",
     "type": "park",
     "lat": "40.7022422",
@@ -31526,7 +31526,7 @@ const nycData = [
     "duration": 1.5
   },
   {
-    "name": "Clover Smoothie&Tea",
+    "slug": "clover-smoothie-tea",    "name": "Clover Smoothie&Tea",
     "vibe": "fresh, colorful, juice-forward, casual, plant-based, youthful, trendy, health-conscious, cozy, cheerful",
     "type": ["juice bar", "tea"],
     "lat": "40.6871772",
@@ -31572,7 +31572,7 @@ const nycData = [
     "duration": 0.5
   },
   {
-    "name": "Swoony's",
+    "slug": "swoonys",    "name": "Swoony's",
     "vibe": "elevated, American cuisine, modern chic, date-night, stylish, Brooklyn energy, vibrant, foodie destination, intimate, polished",
     "type": "dinner",
     "lat": "40.6847011",
@@ -31618,7 +31618,7 @@ const nycData = [
     "duration": 2
   },
   {
-    "name": "Alma BK",
+    "slug": "alma-bk",    "name": "Alma BK",
     "vibe": "colorful, Mexican-inspired, rooftop views, lively, festive, group-friendly, casual, trendy, tequila-forward, Brooklyn charm",
     "type": ["lunch", "dinner"],
     "lat": "40.6855707",

@@ -18,6 +18,8 @@ export interface Database {
           venue_id: string;
           created_at: string | null;
           data: Json | null;
+          source_url?: string | null;
+          city?: string | null;
         };
         Insert: {
           id?: string;
@@ -25,6 +27,8 @@ export interface Database {
           venue_id: string;
           created_at?: string | null;
           data?: Json | null;
+          source_url?: string | null;
+          city?: string | null;
         };
         Update: {
           id?: string;
@@ -32,6 +36,8 @@ export interface Database {
           venue_id?: string;
           created_at?: string | null;
           data?: Json | null;
+          source_url?: string | null;
+          city?: string | null;
         };
         Relationships: [
           {
@@ -59,6 +65,8 @@ export interface Database {
           stops: Json;
           city: string | null;
           created_at: string;
+          source_url: string | null;
+          slug?: string | null;
         };
         Insert: {
           id?: string;
@@ -67,6 +75,8 @@ export interface Database {
           stops: Json;
           city?: string | null;
           created_at?: string;
+          source_url: string | null;
+          slug?: string | null;
         };
         Update: {
           id?: string;
@@ -75,6 +85,8 @@ export interface Database {
           stops?: Json;
           city?: string | null;
           created_at?: string;
+          source_url: string | null;
+          slug?: string | null;
         };
         Relationships: [
           {

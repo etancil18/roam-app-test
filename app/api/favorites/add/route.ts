@@ -45,10 +45,16 @@ export async function POST(req: Request) {
       )
     }
 
+    const city = venue.city
+    if (city !== 'atl' && city !== 'nyc') {
+      throw new Error('Invalid or missing city for venue.')
+    }
+
     const result = await addVenueToFavorites({
       userId: user.id as UUID,
       venueId: venue.id,
       venueData,
+      city,
     })
 
     return NextResponse.json({ success: true, data: result })

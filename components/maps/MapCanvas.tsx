@@ -1,4 +1,3 @@
-// Fixed MapCanvas.tsx to show only route markers and correctly number them
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
@@ -15,10 +14,13 @@ import 'leaflet/dist/leaflet.css'
 import 'leaflet-routing-machine'
 import 'leaflet-routing-machine/dist/leaflet-routing-machine.css'
 
+import { useSearchParams, useParams } from 'next/navigation'
 import { isVenueOpenNow } from '@/utils/timeUtils'
 import { coverCandidates } from '@/utils/imageUtils'
 import { themeById } from '@/lib/crawlConfig'
+import { useRouteStore } from '@/lib/store/routeStore'
 import type { Venue } from '@/types/venue'
+import type { RouteStop } from '@/validators/favorite'
 
 const daypartColorMap: Record<string, string> = {
   M: 'blue',
@@ -80,18 +82,10 @@ function MapRefSetter({ mapRef }: { mapRef: React.MutableRefObject<LeafletMap | 
   return null
 }
 
-function MapControl({ center }: { center: [number, number] }) {
-  const map = useMap()
-  useEffect(() => {
-    map.flyTo(center, 12, { animate: true })
-  }, [center, map])
-  return null
-}
-
 function numberedMarkerIcon(number: number) {
   return new L.DivIcon({
-    className: 'numbered-marker',
-    html: `<div style="background:#333;color:white;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:12px;">${number}</div>`,
+    className: 'numbered‑marker',
+    html: `<div style="background:#333;color:white;border‑radius:50%;width:24px;height:24px;display:flex;align‑items:center;justify‑content:center;font‑size:12px;">${number}</div>`,
     iconSize: [24, 24],
     iconAnchor: [12, 24],
   })
@@ -111,22 +105,131 @@ export default function MapCanvas({
   themeId?: string
 }) {
   const mapRef = useRef<LeafletMap | null>(null)
+  const markerRefs = useRef<Record<string, L.Marker>>({})
   const [isFavoriting, setIsFavoriting] = useState(false)
+
+  const {
+    storeCenter,
+    focusVenueSlug,
+    setCurrentRoute,
+    setCenter: setStoreCenter,
+    clearFocusVenueSlug,
+    currentRoute,
+  } = useRouteStore()
+
+  const searchParams = useSearchParams()
+  const params = useParams()
+
   const cityCenters: Record<string, [number, number]> = {
     atl: [33.749, -84.388],
     nyc: [40.73061, -73.935242],
   }
 
-  const center = cityCenters[city] ?? [40.73, -73.93]
+  const defaultCenter = cityCenters[city] ?? [40.73, -73.93]
+  const centerFromStore = storeCenter || defaultCenter
   const validVenues = venues.filter((v) => v.slug && Number.isFinite(v.lat) && Number.isFinite(v.lon))
   const lineColor = themeColorMap[themeId ?? ''] ?? 'cyan'
   const themeName = themeId ? themeById[themeId]?.name : null
 
   useEffect(() => {
-    if (!mapRef.current || !route?.length) return
-    const bounds = L.latLngBounds(route.map((v) => [v.lat, v.lon] as [number, number]))
-    mapRef.current.fitBounds(bounds, { padding: [50, 50] })
-  }, [route])
+  const map = mapRef.current
+  const newCenter = cityCenters[city]
+
+  if (map && newCenter) {
+    const currentZoom = map.getZoom()
+    const zoomOutLevel = 4
+    const targetZoom = 12
+
+    map.flyTo(map.getCenter(), zoomOutLevel, {
+      animate: true,
+      duration: 1.25,
+    })
+
+    setTimeout(() => {
+      map.flyTo(newCenter, targetZoom, {
+        animate: true,
+        duration: 1.75,
+      })
+    }, 600)
+  }
+}, [city])
+
+  // Hydrate route by slug OR legacy URL
+  useEffect(() => {
+    const slugParam = params?.slug as string | undefined
+    if (slugParam) {
+      fetch(`/api/routes/getBySlug?slug=${slugParam}`)
+        .then((res) => {
+          if (!res.ok) throw new Error('Failed fetching route by slug')
+          return res.json()
+        })
+        .then((data: { stops: RouteStop[] }) => {
+          const mapped: Venue[] = data.stops.map((stop: RouteStop) => ({
+            id: stop.name,
+            slug: stop.name.toLowerCase().replace(/\s+/g, '-'),
+            name: stop.name,
+            lat: stop.lat,
+            lon: stop.lon,
+            type: stop.type,
+            link: '',
+            instagram_handle: undefined,
+            cover: stop.image_url || undefined,
+            tags: undefined,
+            tier: undefined,
+            timeCategory: undefined,
+            energyRamp: undefined,
+            price: undefined,
+            duration: undefined,
+            city,
+          }))
+          setCurrentRoute(mapped)
+          setStoreCenter(mapped[0].lat, mapped[0].lon)
+        })
+        .catch((err) => console.error('❌ Failed to load route via slug:', err))
+      return
+    }
+
+    // Legacy route via ?route=...
+    const encodedRoute = searchParams?.get('route')
+    if (encodedRoute) {
+      try {
+        const stops: RouteStop[] = JSON.parse(atob(encodedRoute))
+        const mapped: Venue[] = stops.map((stop: RouteStop) => ({
+          id: stop.name,
+          slug: stop.name.toLowerCase().replace(/\s+/g, '-'),
+          name: stop.name,
+          lat: stop.lat,
+          lon: stop.lon,
+          type: stop.type,
+          link: '',
+          instagram_handle: undefined,
+          cover: stop.image_url || undefined,
+          tags: undefined,
+          tier: undefined,
+          timeCategory: undefined,
+          energyRamp: undefined,
+          price: undefined,
+          duration: undefined,
+          city,
+        }))
+        setCurrentRoute(mapped)
+        setStoreCenter(mapped[0].lat, mapped[0].lon)
+        console.warn('⚠️ Loaded crawl via legacy ?route= param')
+      } catch (err) {
+        console.error('❌ Failed to decode route from URL:', err)
+      }
+    }
+  }, [params, searchParams, clearFocusVenueSlug, setCurrentRoute, setStoreCenter, city])
+
+  useEffect(() => {
+    const r = route?.length && route.length > 0 ? route : currentRoute
+    if (mapRef.current && r && r.length) {
+      const bounds = L.latLngBounds(r.map((v) => [v.lat, v.lon] as [number, number]))
+      mapRef.current.fitBounds(bounds, { padding: [50, 50] })
+    }
+  }, [route, currentRoute])
+
+  const visibleVenues = route?.length && route.length > 0 ? route : validVenues
 
   useEffect(() => {
     const map = mapRef.current
@@ -159,9 +262,6 @@ export default function MapCanvas({
     }
   }
 
-  // If a route is active, only show those venues, else show all
-  const visibleVenues = route?.length ? route : validVenues
-
   return (
     <div className="h-screen w-screen relative">
       {themeName && (
@@ -169,18 +269,17 @@ export default function MapCanvas({
           Theme: {themeName}
         </div>
       )}
-      <MapContainer center={center} zoom={12} className="h-full w-full z-0">
+      <MapContainer center={centerFromStore} zoom={12} className="h-full w-full z-0">
         <MapRefSetter mapRef={mapRef} />
         <TileLayer url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png" />
-        <MapControl center={center} />
 
         {visibleVenues.map((v, idx) => {
-          const today = ['sun','mon','tue','wed','thu','fri','sat'][new Date().getDay()]
+          const today = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'][new Date().getDay()]
           const isOpen = isVenueOpenNow(v)
           const dp = v.dayParts?.[today] || ''
           const color = isOpen ? daypartColorMap[dp] || 'gray' : 'black'
 
-          const icon = route?.length
+          const icon = route?.length && route.length > 0
             ? numberedMarkerIcon(idx + 1)
             : new L.Icon({
                 iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${color}.png`,
@@ -194,7 +293,16 @@ export default function MapCanvas({
           const firstCandidate = coverCandidates(v)[0]
 
           return (
-            <Marker key={v.slug ?? v.name} position={[v.lat, v.lon]} icon={icon}>
+            <Marker
+              key={v.slug ?? v.name}
+              position={[v.lat, v.lon]}
+              icon={icon}
+              ref={(ref) => {
+                if (v.slug && ref) {
+                  markerRefs.current[v.slug] = ref
+                }
+              }}
+            >
               <Tooltip>{v.name}</Tooltip>
               <Popup>
                 <div style={{ fontSize: 14 }}>
@@ -222,7 +330,9 @@ export default function MapCanvas({
           )
         })}
 
-        {route && route.length > 1 && <RouteControl route={route} color={lineColor} />}
+        {((route && route.length > 1) || currentRoute.length > 1) && (
+          <RouteControl route={route?.length ? route : currentRoute} color={lineColor} />
+        )}
       </MapContainer>
     </div>
   )
