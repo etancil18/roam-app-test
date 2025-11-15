@@ -6,6 +6,8 @@ import FavoritesList from '@/components/FavoritesList'
 import type { CombinedFavorite } from '@/types/ui'
 import { parseFavoriteList, parseRouteList } from '@/lib/parsers/favorite'
 
+import { removeSavedRouteAction } from './actions'  // ← NEW: delete crawl server action
+
 export default async function FavoritesPage() {
   const supabase = await createServerClient()
   const {
@@ -32,18 +34,17 @@ export default async function FavoritesPage() {
       getSavedRoutes(),
     ])
 
-    
     const savedRoutes = parseRouteList(savedRoutesRaw)
+
     const venueFavs = parseFavoriteList(venueFavsRaw).filter(
-    (v): v is NonNullable<typeof v> => v !== null
+      (v): v is NonNullable<typeof v> => v !== null
     )
 
     const mappedVenues: CombinedFavorite[] = venueFavs.map((v) => ({
-    type: 'venue',
-    record: v,
-    data: v.data,
+      type: 'venue',
+      record: v,
+      data: v.data,
     }))
-
 
     const mappedRoutes: CombinedFavorite[] = savedRoutes.map((r) => ({
       type: 'route',
@@ -66,10 +67,26 @@ export default async function FavoritesPage() {
     )
   }
 
+  // --- NEW: wired delete handler for saved crawls ---
+  async function handleDeleteCrawl(routeId: string) {
+    'use server'
+
+    try {
+      await removeSavedRouteAction(routeId)
+      console.log('🗑️ Deleted crawl:', routeId)
+    } catch (e) {
+      console.error('❌ Failed to delete crawl:', e)
+    }
+  }
+
   return (
     <main className="min-h-screen p-8 bg-white text-black">
       <h1 className="text-2xl font-bold mb-4">My Favorites</h1>
-      <FavoritesList favorites={combined} />
+
+      <FavoritesList
+        favorites={combined}
+        onDeleteCrawl={handleDeleteCrawl}  // ← PASS DELETE HANDLER TO COMPONENT
+      />
     </main>
   )
 }
