@@ -37,7 +37,7 @@ export default function VenueAdminPage() {
   const [success, setSuccess] = useState(false)
 
   // --- AUTH CHECK ---
-  const allowedEmails = ["evantancil@gmail.com", "otheradmin@example.com"]
+  const allowedEmails = ["evantancil@gmail.com", "evantancil@roamcurated.com"]
 
   useEffect(() => {
     async function loadUser() {
